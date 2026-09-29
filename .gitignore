@@ -1,0 +1,6 @@
+__pycache__/
+projects/*/work/
+examples/*/work/
+examples/*/out/draft.mp4
+projects/*/out/draft.mp4
+edl.raw.txt

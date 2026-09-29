@@ -1,0 +1,554 @@
+{
+ "language": "vi",
+ "duration": 36.910000000000004,
+ "segments": [
+  {
+   "start": 0.4,
+   "end": 5.775,
+   "text": "Cùng là đau lưng, nhưng có người đỡ nhanh, có người kéo dài mãi.",
+   "words": [
+    {
+     "start": 0.4,
+     "end": 0.74,
+     "word": "Cùng",
+     "prob": 0.95
+    },
+    {
+     "start": 0.78,
+     "end": 1.03,
+     "word": "là",
+     "prob": 0.95
+    },
+    {
+     "start": 1.07,
+     "end": 1.365,
+     "word": "đau",
+     "prob": 0.95
+    },
+    {
+     "start": 1.405,
+     "end": 1.79,
+     "word": "lưng,",
+     "prob": 0.95
+    },
+    {
+     "start": 1.97,
+     "end": 2.355,
+     "word": "nhưng",
+     "prob": 0.95
+    },
+    {
+     "start": 2.395,
+     "end": 2.645,
+     "word": "có",
+     "prob": 0.95
+    },
+    {
+     "start": 2.685,
+     "end": 3.07,
+     "word": "người",
+     "prob": 0.95
+    },
+    {
+     "start": 3.11,
+     "end": 3.36,
+     "word": "đỡ",
+     "prob": 0.95
+    },
+    {
+     "start": 3.4,
+     "end": 3.83,
+     "word": "nhanh,",
+     "prob": 0.95
+    },
+    {
+     "start": 4.01,
+     "end": 4.26,
+     "word": "có",
+     "prob": 0.95
+    },
+    {
+     "start": 4.3,
+     "end": 4.685,
+     "word": "người",
+     "prob": 0.95
+    },
+    {
+     "start": 4.725,
+     "end": 5.02,
+     "word": "kéo",
+     "prob": 0.95
+    },
+    {
+     "start": 5.06,
+     "end": 5.355,
+     "word": "dài",
+     "prob": 0.95
+    },
+    {
+     "start": 5.395,
+     "end": 5.735,
+     "word": "mãi.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 6.075,
+   "end": 10.37,
+   "text": "Ranh giới quan trọng nằm ở chỗ: chưa tê hay đã tê.",
+   "words": [
+    {
+     "start": 6.075,
+     "end": 6.415,
+     "word": "Ranh",
+     "prob": 0.95
+    },
+    {
+     "start": 6.455,
+     "end": 6.795,
+     "word": "giới",
+     "prob": 0.95
+    },
+    {
+     "start": 6.835,
+     "end": 7.175,
+     "word": "quan",
+     "prob": 0.95
+    },
+    {
+     "start": 7.215,
+     "end": 7.6,
+     "word": "trọng",
+     "prob": 0.95
+    },
+    {
+     "start": 7.64,
+     "end": 7.935,
+     "word": "nằm",
+     "prob": 0.95
+    },
+    {
+     "start": 7.975,
+     "end": 8.18,
+     "word": "ở",
+     "prob": 0.95
+    },
+    {
+     "start": 8.22,
+     "end": 8.56,
+     "word": "chỗ:",
+     "prob": 0.95
+    },
+    {
+     "start": 8.74,
+     "end": 9.08,
+     "word": "chưa",
+     "prob": 0.95
+    },
+    {
+     "start": 9.12,
+     "end": 9.37,
+     "word": "tê",
+     "prob": 0.95
+    },
+    {
+     "start": 9.41,
+     "end": 9.705,
+     "word": "hay",
+     "prob": 0.95
+    },
+    {
+     "start": 9.745,
+     "end": 9.995,
+     "word": "đã",
+     "prob": 0.95
+    },
+    {
+     "start": 10.035,
+     "end": 10.33,
+     "word": "tê.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 11.77,
+   "end": 12.015,
+   "text": "ờ",
+   "words": [
+    {
+     "start": 11.77,
+     "end": 11.975,
+     "word": "ờ",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 12.515,
+   "end": 16.125,
+   "text": "Giai đoạn sớm, chỉ đau lưng, chưa tê chân.",
+   "words": [
+    {
+     "start": 12.515,
+     "end": 12.855,
+     "word": "Giai",
+     "prob": 0.95
+    },
+    {
+     "start": 12.895,
+     "end": 13.235,
+     "word": "đoạn",
+     "prob": 0.95
+    },
+    {
+     "start": 13.275,
+     "end": 13.615,
+     "word": "sớm,",
+     "prob": 0.95
+    },
+    {
+     "start": 13.795,
+     "end": 14.09,
+     "word": "chỉ",
+     "prob": 0.95
+    },
+    {
+     "start": 14.13,
+     "end": 14.425,
+     "word": "đau",
+     "prob": 0.95
+    },
+    {
+     "start": 14.465,
+     "end": 14.85,
+     "word": "lưng,",
+     "prob": 0.95
+    },
+    {
+     "start": 15.03,
+     "end": 15.37,
+     "word": "chưa",
+     "prob": 0.95
+    },
+    {
+     "start": 15.41,
+     "end": 15.66,
+     "word": "tê",
+     "prob": 0.95
+    },
+    {
+     "start": 15.7,
+     "end": 16.085,
+     "word": "chân.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 17.225,
+   "end": 21.61,
+   "text": "Khi đĩa đệm bị chèn ép, dây thần kinh bị kích thích.",
+   "words": [
+    {
+     "start": 17.225,
+     "end": 17.52,
+     "word": "Khi",
+     "prob": 0.95
+    },
+    {
+     "start": 17.56,
+     "end": 17.855,
+     "word": "đĩa",
+     "prob": 0.95
+    },
+    {
+     "start": 17.895,
+     "end": 18.19,
+     "word": "đệm",
+     "prob": 0.95
+    },
+    {
+     "start": 18.23,
+     "end": 18.48,
+     "word": "bị",
+     "prob": 0.95
+    },
+    {
+     "start": 18.52,
+     "end": 18.86,
+     "word": "chèn",
+     "prob": 0.95
+    },
+    {
+     "start": 18.9,
+     "end": 19.195,
+     "word": "ép,",
+     "prob": 0.95
+    },
+    {
+     "start": 19.375,
+     "end": 19.67,
+     "word": "dây",
+     "prob": 0.95
+    },
+    {
+     "start": 19.71,
+     "end": 20.05,
+     "word": "thần",
+     "prob": 0.95
+    },
+    {
+     "start": 20.09,
+     "end": 20.43,
+     "word": "kinh",
+     "prob": 0.95
+    },
+    {
+     "start": 20.47,
+     "end": 20.72,
+     "word": "bị",
+     "prob": 0.95
+    },
+    {
+     "start": 20.76,
+     "end": 21.1,
+     "word": "kích",
+     "prob": 0.95
+    },
+    {
+     "start": 21.14,
+     "end": 21.57,
+     "word": "thích.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 22.01,
+   "end": 28.215,
+   "text": "Lúc đó sẽ có ba dấu hiệu: đau lan xuống chân, tê bì, và chân yếu dần.",
+   "words": [
+    {
+     "start": 22.01,
+     "end": 22.305,
+     "word": "Lúc",
+     "prob": 0.95
+    },
+    {
+     "start": 22.345,
+     "end": 22.595,
+     "word": "đó",
+     "prob": 0.95
+    },
+    {
+     "start": 22.635,
+     "end": 22.885,
+     "word": "sẽ",
+     "prob": 0.95
+    },
+    {
+     "start": 22.925,
+     "end": 23.175,
+     "word": "có",
+     "prob": 0.95
+    },
+    {
+     "start": 23.215,
+     "end": 23.465,
+     "word": "ba",
+     "prob": 0.95
+    },
+    {
+     "start": 23.505,
+     "end": 23.8,
+     "word": "dấu",
+     "prob": 0.95
+    },
+    {
+     "start": 23.84,
+     "end": 24.225,
+     "word": "hiệu:",
+     "prob": 0.95
+    },
+    {
+     "start": 24.405,
+     "end": 24.7,
+     "word": "đau",
+     "prob": 0.95
+    },
+    {
+     "start": 24.74,
+     "end": 25.035,
+     "word": "lan",
+     "prob": 0.95
+    },
+    {
+     "start": 25.075,
+     "end": 25.46,
+     "word": "xuống",
+     "prob": 0.95
+    },
+    {
+     "start": 25.5,
+     "end": 25.885,
+     "word": "chân,",
+     "prob": 0.95
+    },
+    {
+     "start": 26.065,
+     "end": 26.315,
+     "word": "tê",
+     "prob": 0.95
+    },
+    {
+     "start": 26.355,
+     "end": 26.65,
+     "word": "bì,",
+     "prob": 0.95
+    },
+    {
+     "start": 26.83,
+     "end": 27.08,
+     "word": "và",
+     "prob": 0.95
+    },
+    {
+     "start": 27.12,
+     "end": 27.46,
+     "word": "chân",
+     "prob": 0.95
+    },
+    {
+     "start": 27.5,
+     "end": 27.795,
+     "word": "yếu",
+     "prob": 0.95
+    },
+    {
+     "start": 27.835,
+     "end": 28.175,
+     "word": "dần.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 29.415,
+   "end": 32.565,
+   "text": "Khoan! Đừng tự xoa bóp mạnh khi đã tê.",
+   "words": [
+    {
+     "start": 29.415,
+     "end": 29.845,
+     "word": "Khoan!",
+     "prob": 0.95
+    },
+    {
+     "start": 29.885,
+     "end": 30.225,
+     "word": "Đừng",
+     "prob": 0.95
+    },
+    {
+     "start": 30.265,
+     "end": 30.515,
+     "word": "tự",
+     "prob": 0.95
+    },
+    {
+     "start": 30.555,
+     "end": 30.85,
+     "word": "xoa",
+     "prob": 0.95
+    },
+    {
+     "start": 30.89,
+     "end": 31.185,
+     "word": "bóp",
+     "prob": 0.95
+    },
+    {
+     "start": 31.225,
+     "end": 31.565,
+     "word": "mạnh",
+     "prob": 0.95
+    },
+    {
+     "start": 31.605,
+     "end": 31.9,
+     "word": "khi",
+     "prob": 0.95
+    },
+    {
+     "start": 31.94,
+     "end": 32.19,
+     "word": "đã",
+     "prob": 0.95
+    },
+    {
+     "start": 32.23,
+     "end": 32.525,
+     "word": "tê.",
+     "prob": 0.95
+    }
+   ]
+  },
+  {
+   "start": 33.065,
+   "end": 36.11,
+   "text": "Muốn biết kỹ hơn, inbox cho Sơn nhé.",
+   "words": [
+    {
+     "start": 33.065,
+     "end": 33.405,
+     "word": "Muốn",
+     "prob": 0.95
+    },
+    {
+     "start": 33.445,
+     "end": 33.785,
+     "word": "biết",
+     "prob": 0.95
+    },
+    {
+     "start": 33.825,
+     "end": 34.075,
+     "word": "kỹ",
+     "prob": 0.95
+    },
+    {
+     "start": 34.115,
+     "end": 34.455,
+     "word": "hơn,",
+     "prob": 0.95
+    },
+    {
+     "start": 34.635,
+     "end": 35.02,
+     "word": "inbox",
+     "prob": 0.95
+    },
+    {
+     "start": 35.06,
+     "end": 35.355,
+     "word": "cho",
+     "prob": 0.95
+    },
+    {
+     "start": 35.395,
+     "end": 35.69,
+     "word": "Sơn",
+     "prob": 0.95
+    },
+    {
+     "start": 35.73,
+     "end": 36.07,
+     "word": "nhé.",
+     "prob": 0.95
+    }
+   ]
+  }
+ ]
+}
