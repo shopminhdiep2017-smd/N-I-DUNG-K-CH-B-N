@@ -1,0 +1,418 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.1,
+    0.4
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.12,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "sharpen": 0.6
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0.0,
+        0.96
+      ],
+      [
+        4.52,
+        4.94
+      ],
+      [
+        9.96,
+        10.52
+      ],
+      [
+        11.62,
+        11.98
+      ],
+      [
+        13.56,
+        14.16
+      ],
+      [
+        16.38,
+        16.82
+      ],
+      [
+        18.5,
+        19.06
+      ],
+      [
+        21.22,
+        21.56
+      ],
+      [
+        24.48,
+        24.82
+      ],
+      [
+        25.7,
+        26.06
+      ],
+      [
+        27.48,
+        28.0
+      ],
+      [
+        31.32,
+        31.8
+      ],
+      [
+        33.04,
+        33.68
+      ],
+      [
+        35.22,
+        35.64
+      ],
+      [
+        38.18,
+        38.88
+      ],
+      [
+        43.46,
+        43.84
+      ],
+      [
+        44.62,
+        45.04
+      ],
+      [
+        46.1,
+        46.58
+      ],
+      [
+        48.36,
+        48.6
+      ],
+      [
+        50.1,
+        50.8
+      ],
+      [
+        53.92,
+        54.26
+      ],
+      [
+        55.2,
+        55.76
+      ],
+      [
+        58.98,
+        59.78
+      ],
+      [
+        60.8,
+        61.4
+      ],
+      [
+        64.78,
+        65.76
+      ],
+      [
+        70.34,
+        70.64
+      ],
+      [
+        74.26,
+        74.7
+      ],
+      [
+        79.16,
+        80.52
+      ],
+      [
+        58.94,
+        65.78
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:04",
+      "speech": "Dùng tiền mua thời gian hay dùng thời gian kiếm tiền?",
+      "idea": "HOOK – nghịch lý",
+      "visual": "So sánh 2 cột + VS, zoom 105%"
+    },
+    {
+      "time": "00:04–00:10",
+      "speech": "Người trẻ có nhiều thời gian nhưng dùng để kiếm tiền",
+      "idea": "Giai đoạn 1",
+      "visual": "Headline “Đổi thời gian lấy tiền”"
+    },
+    {
+      "time": "00:10–00:16",
+      "speech": "Càng lớn tuổi, thời gian càng quý",
+      "idea": "Giai đoạn 2",
+      "visual": "Headline"
+    },
+    {
+      "time": "00:16–00:27",
+      "speech": "Tiền mua lại thời gian, không gian, chất lượng sống",
+      "idea": "Giá trị của tiền",
+      "visual": "Headline → checklist 3 ý"
+    },
+    {
+      "time": "00:27–00:33",
+      "speech": "Một thứ tiền không mua lại được: sức khỏe",
+      "idea": "Punchline",
+      "visual": "Headline → “Sức khỏe” đỏ cỡ lớn + zoom 107% + whoosh"
+    },
+    {
+      "time": "00:33–00:43",
+      "speech": "Bỏ nhiều tiền điều trị nhưng chưa chắc lấy lại",
+      "idea": "Hệ quả",
+      "visual": "So sánh 2 cột"
+    },
+    {
+      "time": "00:43–00:58",
+      "speech": "Trẻ kiếm tiền, lớn tuổi mong sống khỏe, chủ động, có thời gian",
+      "idea": "Thay đổi ưu tiên",
+      "visual": "So sánh → checklist 3 ý"
+    },
+    {
+      "time": "00:58–01:05",
+      "speech": "(câu nói lặp lần 1 – bị vấp)",
+      "idea": "—",
+      "visual": "CẮT BỎ"
+    },
+    {
+      "time": "01:05–01:19",
+      "speech": "Câu hỏi đúng: kiếm bao nhiêu, giai đoạn nào, còn đủ sức khỏe?",
+      "idea": "Kết – framework 3 câu hỏi",
+      "visual": "3 bước 01–03 sáng lần lượt + zoom"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "split",
+      "start": 0.9,
+      "end": 4.4,
+      "left": {
+        "text": "Tiền mua thời gian",
+        "color": "red"
+      },
+      "right": {
+        "text": "Thời gian kiếm tiền",
+        "color": "ink"
+      },
+      "reveal": [
+        1.0,
+        2.6
+      ],
+      "accent": "red",
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.245
+    },
+    {
+      "type": "headline",
+      "start": 4.88,
+      "end": 9.8,
+      "kicker": "Người trẻ",
+      "text": "Đổi thời gian lấy tiền",
+      "sub": "nhiều thời gian, ít tiền",
+      "accent": "red",
+      "size": 92,
+      "anim": "slide",
+      "y": 0.245
+    },
+    {
+      "type": "headline",
+      "start": 10.3,
+      "end": 16.25,
+      "kicker": "Càng lớn tuổi",
+      "text": "Thời gian càng quý giá",
+      "accent": "red",
+      "size": 96,
+      "anim": "fade",
+      "y": 0.245
+    },
+    {
+      "type": "headline",
+      "start": 16.64,
+      "end": 21.1,
+      "kicker": "Đến một giai đoạn",
+      "text": "Tiền không chỉ mua vật chất",
+      "accent": "red",
+      "size": 84,
+      "anim": "slide",
+      "y": 0.245
+    },
+    {
+      "type": "checklist",
+      "start": 21.37,
+      "end": 27.35,
+      "title": "Tiền còn giúp mua lại",
+      "items": [
+        "Thời gian",
+        "Không gian",
+        "Chất lượng cuộc sống"
+      ],
+      "reveal": [
+        23.81,
+        24.73,
+        26.21
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.245
+    },
+    {
+      "type": "headline",
+      "start": 27.93,
+      "end": 31.2,
+      "kicker": "Nhưng",
+      "text": "Một thứ tiền không mua lại được",
+      "accent": "red",
+      "size": 84,
+      "anim": "fade",
+      "y": 0.245
+    },
+    {
+      "type": "headline",
+      "start": 31.69,
+      "end": 33.4,
+      "kicker": "Đó là",
+      "text": "Sức khỏe",
+      "color": "red",
+      "accent": "red",
+      "size": 150,
+      "sfx": "whoosh",
+      "zoom": 1.07,
+      "y": 0.245
+    },
+    {
+      "type": "split",
+      "start": 33.41,
+      "end": 43.3,
+      "title": "Khi sức khỏe mất đi",
+      "left": {
+        "text": "Bỏ nhiều tiền",
+        "sub": "để điều trị",
+        "color": "ink"
+      },
+      "right": {
+        "text": "Chưa chắc lấy lại",
+        "sub": "những ngày khỏe mạnh",
+        "color": "red"
+      },
+      "reveal": [
+        36.45,
+        39.59
+      ],
+      "accent": "red",
+      "y": 0.245
+    },
+    {
+      "type": "split",
+      "start": 43.75,
+      "end": 50.0,
+      "title": "Vì vậy",
+      "left": {
+        "text": "Khi còn trẻ",
+        "sub": "cố gắng kiếm tiền",
+        "color": "ink"
+      },
+      "right": {
+        "text": "Càng lớn tuổi",
+        "sub": "mong sống khỏe hơn",
+        "color": "red"
+      },
+      "reveal": [
+        44.83,
+        48.95
+      ],
+      "accent": "red",
+      "sfx": "whoosh",
+      "y": 0.245
+    },
+    {
+      "type": "checklist",
+      "start": 50.63,
+      "end": 58.9,
+      "title": "Điều nhiều người mong muốn",
+      "items": [
+        "Sống khỏe",
+        "Sống chủ động",
+        "Thời gian cho bản thân & gia đình"
+      ],
+      "reveal": [
+        53.19,
+        54.19,
+        56.31
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 44,
+      "y": 0.245
+    },
+    {
+      "type": "steps",
+      "start": 65.86,
+      "end": 79.1,
+      "title": "Câu hỏi đúng",
+      "items": [
+        "Kiếm được bao nhiêu tiền?",
+        "Đang ở giai đoạn nào?",
+        "Còn đủ sức khỏe tận hưởng?"
+      ],
+      "active": [
+        [
+          69.42,
+          0
+        ],
+        [
+          71.66,
+          1
+        ],
+        [
+          74.74,
+          2
+        ]
+      ],
+      "color": "red",
+      "accent": "red",
+      "sfx": "whoosh",
+      "y": 0.245
+    }
+  ],
+  "zooms": [
+    {
+      "start": 71.66,
+      "end": 73.5,
+      "to": 1.04
+    },
+    {
+      "start": 74.74,
+      "end": 78.9,
+      "to": 1.06
+    }
+  ],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "highlight": {
+      "sức khỏe": "#F5C542"
+    }
+  },
+  "audio": {
+    "denoise": true,
+    "loudness": -14,
+    "music": null,
+    "sfx_db": -22
+  }
+}

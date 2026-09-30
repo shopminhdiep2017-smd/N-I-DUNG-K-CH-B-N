@@ -345,7 +345,9 @@ class Split(Element):
         fi = font(S.FONT_XBOLD, fsz)
         subs = [s.get("sub") for s in sides]
         fsub = font(S.FONT_BOLD, 38)
-        card_h = line_h(fi) * 2 + (line_h(fsub) * 2 if any(subs) else 0) + 50
+        n_main = max(len(wrap(U(sd["text"]), fi, colw - 60, 2) or [1]) for sd in sides)
+        n_sub = max([len(wrap(sd["sub"], fsub, colw - 40, 2) or []) for sd in sides if sd.get("sub")] or [0])
+        card_h = int(fi.size * 0.7) + 6 + line_h(fi) * n_main + line_h(fsub) * n_sub + 52
         top = (line_h(ft) + 24) if title else 0
         w, h = S.W - 2 * S.SIDE_MARGIN, top + card_h + 20
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -447,9 +449,10 @@ class Steps(Element):
         gap = 22
         cw = (w - gap * (n - 1)) // n
         fn = font(S.FONT_BLACK, 84 if n <= 3 else 64)
-        fl = min(fit(U(it), S.FONT_XBOLD, cw - 30, 40, 26)[0].size for it in items)
+        fl = min(fit(U(it), S.FONT_XBOLD, cw - 30, 40, 30, 3)[0].size for it in items)
         fl = font(S.FONT_XBOLD, fl)
-        ch = line_h(fn) + line_h(fl) * 2 + 40
+        nl = max(len(wrap(U(it), fl, cw - 24, 3) or [1]) for it in items)
+        ch = line_h(fn) + line_h(fl) * nl + 40
         top = line_h(ft) + 20 if title else 0
         img = Image.new("RGBA", (w, top + ch), (0, 0, 0, 0))
         if title:
@@ -465,7 +468,7 @@ class Steps(Element):
             num = f"{i + 1:02d}"
             draw_text(card, ((cw - text_w(num, fn)) // 2, 14), num, fn, c, stroke=4, shadow=False)
             y = 14 + line_h(fn)
-            for l in wrap(U(it), fl, cw - 24, 2) or [U(it)]:
+            for l in wrap(U(it), fl, cw - 24, 3) or [U(it)]:
                 draw_text(card, ((cw - text_w(l, fl)) // 2, y), l, fl, c, stroke=3, shadow=False)
                 y += line_h(fl)
             img.alpha_composite(card, (i * (cw + gap), top))
