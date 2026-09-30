@@ -86,7 +86,12 @@ def mix_audio(work: Path, voice_wav, sfx_wav, cfg, duration, root: Path):
     voice = ["highpass=f=75"]
     if cfg.get("denoise", True):
         voice.append("afftdn=nr=10:nf=-45")
-    voice.append("acompressor=threshold=-20dB:ratio=3:attack=8:release=180:makeup=2")
+    if cfg.get("leveler"):
+        # lift soft phrases (sentence endings that trail off) and keep the voice even
+        voice.append("acompressor=threshold=-26dB:ratio=4:attack=5:release=150:makeup=4")
+        voice.append("dynaudnorm=f=200:g=11:p=0.9:m=8")
+    else:
+        voice.append("acompressor=threshold=-20dB:ratio=3:attack=8:release=180:makeup=2")
     voice.append("aresample=48000")
     fc = f"[0:a]{','.join(voice)},asplit=2[v][vsc];[1:a]aresample=48000[fx];"
     music = cfg.get("music")
@@ -101,7 +106,8 @@ def mix_audio(work: Path, voice_wav, sfx_wav, cfg, duration, root: Path):
                f"[v][fx][m]amix=inputs=3:normalize=0:duration=first,")
     else:
         fc += "[vsc]anullsink;[v][fx]amix=inputs=2:normalize=0:duration=first,"
-    fc += f"loudnorm=I={lufs}:TP=-1.5:LRA=11,aresample=48000[out]"
+    fc += (f"loudnorm=I={lufs}:TP=-1.0:LRA=9,volume={float(cfg.get('gain_db', 0))}dB,"
+           f"alimiter=limit=0.89:level=false,aresample=48000[out]")
     run([FFMPEG, "-y", "-v", "error", *inputs, "-filter_complex", fc, "-map", "[out]",
          "-t", f"{duration:.3f}", "-ac", "2", "-ar", "48000", str(out)])
     return out
@@ -288,17 +294,20 @@ def main():
     grad = work / "grad.png"
     g = np.zeros((S.H, S.W, 4), np.uint8)
     ramp = np.clip(1 - np.arange(S.H) / (S.H * 0.46), 0, 1) ** 1.6
-    g[..., 3] = (ramp * 150)[:, None].astype(np.uint8)
+    g[..., 3] = (ramp * 150 * float(subj.get("top_shade", 1.0)))[:, None].astype(np.uint8)
     Image.fromarray(g, "RGBA").save(grad)
     # erase burned-in text (old captions, watermarks) before framing: boxes in source fractions
     clean = "".join(f",delogo=x={max(1, int(x * sw))}:y={max(1, int(y * sh))}:"
                     f"w={min(int(w * sw), sw - 2 - max(1, int(x * sw)))}:h={min(int(h * sh), sh - 2 - max(1, int(y * sh)))}"
                     for x, y, w, h in subj.get("delogo", []))
+    gr = subj.get("grade")     # exposure / colour: {"brightness", "gamma", "contrast", "saturation"}
+    grade = (",eq=" + ":".join(f"{k}={v}" for k, v in gr.items())) if gr else ""
     fc = (f"[0:v]fps={S.FPS},select='{sel}',setpts=N/{S.FPS}/TB{clean},split[a][b];"
           f"[a]scale={S.W}:{S.H}:force_original_aspect_ratio=increase,crop={S.W}:{S.H},"
-          f"boxblur=40:2,eq=brightness=-0.12:saturation=0.8[bg];"
-          f"[b]scale={fw}:{fh}:force_original_aspect_ratio=increase:flags=lanczos,crop={fw}:{fh}"
-          f"{f',unsharp=5:5:{sharpen}' if sharpen else ''}[fg];"
+          f"boxblur=40:2,eq=brightness={subj.get('bg_dim', -0.12)}:saturation=0.8[bg];"
+          f"[b]{'hqdn3d=1.5:1.5:5:5,' if subj.get('denoise') else ''}"
+          f"scale={fw}:{fh}:force_original_aspect_ratio=increase:flags=lanczos,crop={fw}:{fh}"
+          f"{grade}{f',unsharp=5:5:{sharpen}' if sharpen else ''}[fg];"
           f"[bg][fg]overlay=x=(W-w)/2:y={off}+(H-h)/2*{1 if sc < 1 else 0}[base];"
           f"[base][1:v]overlay=0:0,format=rgb24[v]")
     (work / "pass1.txt").write_text(fc)
@@ -319,6 +328,7 @@ def main():
     fx, fy = subj.get("focus", [0.5, 0.55])
     fx, fy = fx * S.W, fy * S.H
     alpha_lut = {}
+    face_cache = {}
     sample_at = set(np.linspace(0, nframes - 1, 12).astype(int).tolist())
     samples = []
     fsize = S.W * S.H * 3
@@ -338,6 +348,28 @@ def main():
                                     resample=Image.BILINEAR)
         else:
             frame = frame.copy()
+        face = subj.get("face")
+        if face:
+            # soft key light + extra detail on the face, following the zoom
+            fcx = fx + (face["center"][0] * S.W - fx) * z
+            fcy = fy + (face["center"][1] * S.H - fy) * z
+            rad = face.get("radius", 0.15) * S.H * z
+            key = (round(z, 3), int(fcx) // 4, int(fcy) // 4)
+            if face_cache.get("key") != key:
+                yy, xx = np.mgrid[0:S.H, 0:S.W].astype(np.float32)
+                m = np.exp(-(((xx - fcx) / (rad * 0.85)) ** 2 + ((yy - fcy) / rad) ** 2) / 2)
+                face_cache.update(key=key, m=m[..., None],
+                                  mask=Image.fromarray((m * 255).astype(np.uint8), "L"),
+                                  box=(max(0, int(fcx - 2.2 * rad)), max(0, int(fcy - 2.4 * rad)),
+                                       min(S.W, int(fcx + 2.2 * rad)), min(S.H, int(fcy + 2.4 * rad))))
+            arr = np.asarray(frame, dtype=np.float32)
+            arr = arr * (1 + face.get("light", 0.12) * face_cache["m"])
+            frame = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+            if face.get("sharpen"):
+                bx = face_cache["box"]
+                crop = frame.crop(bx)
+                sharp = crop.filter(ImageFilter.UnsharpMask(radius=2, percent=int(face["sharpen"]), threshold=2))
+                frame.paste(sharp, bx[:2], face_cache["mask"].crop(bx))
         if subj.get("frost"):
             # frosted-glass band hiding burned-in captions; follows the zoom
             y0, y1 = subj["frost"]

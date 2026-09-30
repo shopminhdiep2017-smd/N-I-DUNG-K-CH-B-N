@@ -13,7 +13,25 @@
       0.5,
       0.5
     ],
-    "sharpen": 0.6
+    "sharpen": 0.7,
+    "denoise": true,
+    "grade": {
+      "brightness": 0.05,
+      "gamma": 1.15,
+      "contrast": 1.05,
+      "saturation": 1.08
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.54
+      ],
+      "radius": 0.13,
+      "light": 0.18,
+      "sharpen": 110
+    },
+    "top_shade": 0.25,
+    "bg_dim": 0.03
   },
   "cuts": {
     "auto": false,
@@ -127,7 +145,7 @@
         74.7
       ],
       [
-        79.16,
+        79.05,
         80.52
       ],
       [
@@ -407,12 +425,15 @@
     "size": 60,
     "highlight": {
       "sức khỏe": "#F5C542"
-    }
+    },
+    "y": 0.765
   },
   "audio": {
     "denoise": true,
-    "loudness": -14,
+    "loudness": -9,
     "music": null,
-    "sfx_db": -22
+    "sfx_db": -22,
+    "leveler": true,
+    "gain_db": 2.5
   }
 }
