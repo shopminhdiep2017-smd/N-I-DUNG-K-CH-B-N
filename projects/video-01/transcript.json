@@ -1,0 +1,1111 @@
+{
+ "language": "vi",
+ "duration": 60.1846875,
+ "asr": "sherpa-onnx zipformer-vi (70k h) + manual correction",
+ "silences": [
+  [
+   0.0,
+   0.28
+  ],
+  [
+   0.8200000000000001,
+   1.18
+  ],
+  [
+   2.12,
+   2.64
+  ],
+  [
+   3.96,
+   4.42
+  ],
+  [
+   7.54,
+   8.040000000000001
+  ],
+  [
+   9.6,
+   10.16
+  ],
+  [
+   12.22,
+   12.700000000000001
+  ],
+  [
+   15.66,
+   16.26
+  ],
+  [
+   18.400000000000002,
+   18.78
+  ],
+  [
+   19.580000000000002,
+   19.92
+  ],
+  [
+   20.52,
+   20.94
+  ],
+  [
+   21.56,
+   21.96
+  ],
+  [
+   22.34,
+   23.0
+  ],
+  [
+   25.02,
+   25.400000000000002
+  ],
+  [
+   26.04,
+   26.38
+  ],
+  [
+   27.14,
+   27.72
+  ],
+  [
+   28.82,
+   29.46
+  ],
+  [
+   30.92,
+   31.44
+  ],
+  [
+   32.5,
+   32.92
+  ],
+  [
+   35.26,
+   36.0
+  ],
+  [
+   38.660000000000004,
+   38.92
+  ],
+  [
+   40.26,
+   40.96
+  ],
+  [
+   42.28,
+   42.62
+  ],
+  [
+   43.800000000000004,
+   44.04
+  ],
+  [
+   44.94,
+   45.18
+  ],
+  [
+   45.86,
+   46.480000000000004
+  ],
+  [
+   51.120000000000005,
+   51.78
+  ],
+  [
+   54.620000000000005,
+   55.1
+  ]
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 2.12,
+   "text": "Ăn gì để bổ thần kinh?",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.4,
+     "word": "Ăn"
+    },
+    {
+     "start": 0.4,
+     "end": 0.82,
+     "word": "gì"
+    },
+    {
+     "start": 1.0,
+     "end": 1.32,
+     "word": "để"
+    },
+    {
+     "start": 1.32,
+     "end": 1.6,
+     "word": "bổ"
+    },
+    {
+     "start": 1.6,
+     "end": 1.88,
+     "word": "thần"
+    },
+    {
+     "start": 1.88,
+     "end": 2.12,
+     "word": "kinh?"
+    }
+   ]
+  },
+  {
+   "start": 2.36,
+   "end": 7.54,
+   "text": "Để chăm sóc hệ thần kinh, chúng ta có thể chú ý đến những nhóm thực phẩm giàu dưỡng chất sau.",
+   "words": [
+    {
+     "start": 2.36,
+     "end": 2.72,
+     "word": "Để"
+    },
+    {
+     "start": 2.72,
+     "end": 2.92,
+     "word": "chăm"
+    },
+    {
+     "start": 2.92,
+     "end": 3.2,
+     "word": "sóc"
+    },
+    {
+     "start": 3.2,
+     "end": 3.44,
+     "word": "hệ"
+    },
+    {
+     "start": 3.44,
+     "end": 3.72,
+     "word": "thần"
+    },
+    {
+     "start": 3.72,
+     "end": 3.96,
+     "word": "kinh,"
+    },
+    {
+     "start": 4.16,
+     "end": 4.44,
+     "word": "chúng"
+    },
+    {
+     "start": 4.44,
+     "end": 4.68,
+     "word": "ta"
+    },
+    {
+     "start": 4.68,
+     "end": 4.88,
+     "word": "có"
+    },
+    {
+     "start": 4.88,
+     "end": 5.12,
+     "word": "thể"
+    },
+    {
+     "start": 5.12,
+     "end": 5.28,
+     "word": "chú"
+    },
+    {
+     "start": 5.28,
+     "end": 5.52,
+     "word": "ý"
+    },
+    {
+     "start": 5.52,
+     "end": 5.68,
+     "word": "đến"
+    },
+    {
+     "start": 5.68,
+     "end": 5.92,
+     "word": "những"
+    },
+    {
+     "start": 5.92,
+     "end": 6.08,
+     "word": "nhóm"
+    },
+    {
+     "start": 6.08,
+     "end": 6.28,
+     "word": "thực"
+    },
+    {
+     "start": 6.28,
+     "end": 6.52,
+     "word": "phẩm"
+    },
+    {
+     "start": 6.52,
+     "end": 6.76,
+     "word": "giàu"
+    },
+    {
+     "start": 6.76,
+     "end": 7.0,
+     "word": "dưỡng"
+    },
+    {
+     "start": 7.0,
+     "end": 7.28,
+     "word": "chất"
+    },
+    {
+     "start": 7.28,
+     "end": 7.54,
+     "word": "sau."
+    }
+   ]
+  },
+  {
+   "start": 7.84,
+   "end": 9.6,
+   "text": "Thứ nhất là Omega-3.",
+   "words": [
+    {
+     "start": 7.84,
+     "end": 8.08,
+     "word": "Thứ"
+    },
+    {
+     "start": 8.08,
+     "end": 8.32,
+     "word": "nhất"
+    },
+    {
+     "start": 8.32,
+     "end": 8.64,
+     "word": "là"
+    },
+    {
+     "start": 8.64,
+     "end": 9.6,
+     "word": "Omega-3."
+    }
+   ]
+  },
+  {
+   "start": 10.0,
+   "end": 15.66,
+   "text": "Omega-3 là chất béo không bão hòa, có vai trò quan trọng đối với não bộ và hệ thần kinh.",
+   "words": [
+    {
+     "start": 10.0,
+     "end": 10.8,
+     "word": "Omega-3"
+    },
+    {
+     "start": 10.8,
+     "end": 11.0,
+     "word": "là"
+    },
+    {
+     "start": 11.0,
+     "end": 11.16,
+     "word": "chất"
+    },
+    {
+     "start": 11.16,
+     "end": 11.48,
+     "word": "béo"
+    },
+    {
+     "start": 11.48,
+     "end": 11.68,
+     "word": "không"
+    },
+    {
+     "start": 11.68,
+     "end": 11.96,
+     "word": "bão"
+    },
+    {
+     "start": 11.96,
+     "end": 12.22,
+     "word": "hòa,"
+    },
+    {
+     "start": 12.48,
+     "end": 12.84,
+     "word": "có"
+    },
+    {
+     "start": 12.84,
+     "end": 13.04,
+     "word": "vai"
+    },
+    {
+     "start": 13.04,
+     "end": 13.36,
+     "word": "trò"
+    },
+    {
+     "start": 13.36,
+     "end": 13.56,
+     "word": "quan"
+    },
+    {
+     "start": 13.56,
+     "end": 13.84,
+     "word": "trọng"
+    },
+    {
+     "start": 13.84,
+     "end": 14.0,
+     "word": "đối"
+    },
+    {
+     "start": 14.0,
+     "end": 14.24,
+     "word": "với"
+    },
+    {
+     "start": 14.24,
+     "end": 14.52,
+     "word": "não"
+    },
+    {
+     "start": 14.52,
+     "end": 14.72,
+     "word": "bộ"
+    },
+    {
+     "start": 14.72,
+     "end": 14.96,
+     "word": "và"
+    },
+    {
+     "start": 14.96,
+     "end": 15.2,
+     "word": "hệ"
+    },
+    {
+     "start": 15.2,
+     "end": 15.48,
+     "word": "thần"
+    },
+    {
+     "start": 15.48,
+     "end": 15.66,
+     "word": "kinh."
+    }
+   ]
+  },
+  {
+   "start": 15.88,
+   "end": 27.14,
+   "text": "Omega-3 có nhiều trong các loại cá béo như cá mòi, cá thu, cá hồi, cá trích và một số loại hạt như hạt óc chó, hạt chia và hạt lanh.",
+   "words": [
+    {
+     "start": 15.88,
+     "end": 16.88,
+     "word": "Omega-3"
+    },
+    {
+     "start": 16.88,
+     "end": 17.04,
+     "word": "có"
+    },
+    {
+     "start": 17.04,
+     "end": 17.28,
+     "word": "nhiều"
+    },
+    {
+     "start": 17.28,
+     "end": 17.44,
+     "word": "trong"
+    },
+    {
+     "start": 17.44,
+     "end": 17.68,
+     "word": "các"
+    },
+    {
+     "start": 17.68,
+     "end": 17.88,
+     "word": "loại"
+    },
+    {
+     "start": 17.88,
+     "end": 18.12,
+     "word": "cá"
+    },
+    {
+     "start": 18.12,
+     "end": 18.4,
+     "word": "béo"
+    },
+    {
+     "start": 18.6,
+     "end": 18.88,
+     "word": "như"
+    },
+    {
+     "start": 18.88,
+     "end": 19.12,
+     "word": "cá"
+    },
+    {
+     "start": 19.12,
+     "end": 19.58,
+     "word": "mòi,"
+    },
+    {
+     "start": 19.827,
+     "end": 20.147,
+     "word": "cá"
+    },
+    {
+     "start": 20.147,
+     "end": 20.52,
+     "word": "thu,"
+    },
+    {
+     "start": 20.827,
+     "end": 21.187,
+     "word": "cá"
+    },
+    {
+     "start": 21.187,
+     "end": 21.56,
+     "word": "hồi,"
+    },
+    {
+     "start": 21.827,
+     "end": 22.047,
+     "word": "cá"
+    },
+    {
+     "start": 22.047,
+     "end": 22.34,
+     "word": "trích"
+    },
+    {
+     "start": 22.707,
+     "end": 22.987,
+     "word": "và"
+    },
+    {
+     "start": 22.987,
+     "end": 23.227,
+     "word": "một"
+    },
+    {
+     "start": 23.227,
+     "end": 23.467,
+     "word": "số"
+    },
+    {
+     "start": 23.467,
+     "end": 23.747,
+     "word": "loại"
+    },
+    {
+     "start": 23.747,
+     "end": 23.947,
+     "word": "hạt"
+    },
+    {
+     "start": 23.947,
+     "end": 24.227,
+     "word": "như"
+    },
+    {
+     "start": 24.227,
+     "end": 24.427,
+     "word": "hạt"
+    },
+    {
+     "start": 24.427,
+     "end": 24.747,
+     "word": "óc"
+    },
+    {
+     "start": 24.747,
+     "end": 25.02,
+     "word": "chó,"
+    },
+    {
+     "start": 25.627,
+     "end": 25.797,
+     "word": "hạt"
+    },
+    {
+     "start": 25.797,
+     "end": 26.04,
+     "word": "chia"
+    },
+    {
+     "start": 26.147,
+     "end": 26.507,
+     "word": "và"
+    },
+    {
+     "start": 26.507,
+     "end": 26.747,
+     "word": "hạt"
+    },
+    {
+     "start": 26.747,
+     "end": 27.14,
+     "word": "lanh."
+    }
+   ]
+  },
+  {
+   "start": 27.507,
+   "end": 28.82,
+   "text": "Thứ hai là nghệ.",
+   "words": [
+    {
+     "start": 27.507,
+     "end": 27.827,
+     "word": "Thứ"
+    },
+    {
+     "start": 27.827,
+     "end": 28.227,
+     "word": "hai"
+    },
+    {
+     "start": 28.227,
+     "end": 28.547,
+     "word": "là"
+    },
+    {
+     "start": 28.547,
+     "end": 28.82,
+     "word": "nghệ."
+    }
+   ]
+  },
+  {
+   "start": 29.227,
+   "end": 35.26,
+   "text": "Trong nghệ có curcumin, một hợp chất thực vật có đặc tính chống oxy hóa và chống viêm.",
+   "words": [
+    {
+     "start": 29.227,
+     "end": 29.587,
+     "word": "Trong"
+    },
+    {
+     "start": 29.587,
+     "end": 29.947,
+     "word": "nghệ"
+    },
+    {
+     "start": 29.947,
+     "end": 30.187,
+     "word": "có"
+    },
+    {
+     "start": 30.187,
+     "end": 30.92,
+     "word": "curcumin,"
+    },
+    {
+     "start": 31.187,
+     "end": 31.547,
+     "word": "một"
+    },
+    {
+     "start": 31.547,
+     "end": 31.787,
+     "word": "hợp"
+    },
+    {
+     "start": 31.787,
+     "end": 32.067,
+     "word": "chất"
+    },
+    {
+     "start": 32.067,
+     "end": 32.307,
+     "word": "thực"
+    },
+    {
+     "start": 32.307,
+     "end": 32.5,
+     "word": "vật"
+    },
+    {
+     "start": 32.667,
+     "end": 32.947,
+     "word": "có"
+    },
+    {
+     "start": 32.947,
+     "end": 33.147,
+     "word": "đặc"
+    },
+    {
+     "start": 33.147,
+     "end": 33.427,
+     "word": "tính"
+    },
+    {
+     "start": 33.427,
+     "end": 33.627,
+     "word": "chống"
+    },
+    {
+     "start": 33.627,
+     "end": 34.147,
+     "word": "oxy"
+    },
+    {
+     "start": 34.147,
+     "end": 34.427,
+     "word": "hóa"
+    },
+    {
+     "start": 34.427,
+     "end": 34.707,
+     "word": "và"
+    },
+    {
+     "start": 34.707,
+     "end": 35.027,
+     "word": "chống"
+    },
+    {
+     "start": 35.027,
+     "end": 35.26,
+     "word": "viêm."
+    }
+   ]
+  },
+  {
+   "start": 35.667,
+   "end": 39.786,
+   "text": "Đây là dưỡng chất đang được nghiên cứu về nhiều lợi ích đối với sức khỏe.",
+   "words": [
+    {
+     "start": 35.667,
+     "end": 35.987,
+     "word": "Đây"
+    },
+    {
+     "start": 35.987,
+     "end": 36.307,
+     "word": "là"
+    },
+    {
+     "start": 36.307,
+     "end": 36.587,
+     "word": "dưỡng"
+    },
+    {
+     "start": 36.587,
+     "end": 36.827,
+     "word": "chất"
+    },
+    {
+     "start": 36.827,
+     "end": 37.067,
+     "word": "đang"
+    },
+    {
+     "start": 37.067,
+     "end": 37.307,
+     "word": "được"
+    },
+    {
+     "start": 37.307,
+     "end": 37.507,
+     "word": "nghiên"
+    },
+    {
+     "start": 37.507,
+     "end": 37.827,
+     "word": "cứu"
+    },
+    {
+     "start": 37.827,
+     "end": 38.067,
+     "word": "về"
+    },
+    {
+     "start": 38.067,
+     "end": 38.347,
+     "word": "nhiều"
+    },
+    {
+     "start": 38.347,
+     "end": 38.547,
+     "word": "lợi"
+    },
+    {
+     "start": 38.547,
+     "end": 38.667,
+     "word": "ích"
+    },
+    {
+     "start": 38.826,
+     "end": 38.986,
+     "word": "đối"
+    },
+    {
+     "start": 38.986,
+     "end": 39.266,
+     "word": "với"
+    },
+    {
+     "start": 39.266,
+     "end": 39.466,
+     "word": "sức"
+    },
+    {
+     "start": 39.466,
+     "end": 39.786,
+     "word": "khỏe."
+    }
+   ]
+  },
+  {
+   "start": 39.786,
+   "end": 51.12,
+   "text": "Nói chung, một chế độ ăn đa dạng, đầy đủ chất béo tốt, protein, vitamin và khoáng chất sẽ giúp cung cấp dưỡng chất cần thiết cho não bộ và hệ thần kinh.",
+   "words": [
+    {
+     "start": 39.786,
+     "end": 40.106,
+     "word": "Nói"
+    },
+    {
+     "start": 40.106,
+     "end": 40.26,
+     "word": "chung,"
+    },
+    {
+     "start": 40.666,
+     "end": 41.066,
+     "word": "một"
+    },
+    {
+     "start": 41.066,
+     "end": 41.266,
+     "word": "chế"
+    },
+    {
+     "start": 41.266,
+     "end": 41.506,
+     "word": "độ"
+    },
+    {
+     "start": 41.506,
+     "end": 41.786,
+     "word": "ăn"
+    },
+    {
+     "start": 41.786,
+     "end": 42.066,
+     "word": "đa"
+    },
+    {
+     "start": 42.066,
+     "end": 42.28,
+     "word": "dạng,"
+    },
+    {
+     "start": 42.466,
+     "end": 42.706,
+     "word": "đầy"
+    },
+    {
+     "start": 42.706,
+     "end": 43.026,
+     "word": "đủ"
+    },
+    {
+     "start": 43.026,
+     "end": 43.266,
+     "word": "chất"
+    },
+    {
+     "start": 43.266,
+     "end": 43.586,
+     "word": "béo"
+    },
+    {
+     "start": 43.586,
+     "end": 43.8,
+     "word": "tốt,"
+    },
+    {
+     "start": 43.946,
+     "end": 44.94,
+     "word": "protein,"
+    },
+    {
+     "start": 45.066,
+     "end": 45.86,
+     "word": "vitamin"
+    },
+    {
+     "start": 46.266,
+     "end": 46.666,
+     "word": "và"
+    },
+    {
+     "start": 46.666,
+     "end": 46.986,
+     "word": "khoáng"
+    },
+    {
+     "start": 46.986,
+     "end": 47.306,
+     "word": "chất"
+    },
+    {
+     "start": 47.306,
+     "end": 47.546,
+     "word": "sẽ"
+    },
+    {
+     "start": 47.546,
+     "end": 47.866,
+     "word": "giúp"
+    },
+    {
+     "start": 47.866,
+     "end": 48.066,
+     "word": "cung"
+    },
+    {
+     "start": 48.066,
+     "end": 48.346,
+     "word": "cấp"
+    },
+    {
+     "start": 48.346,
+     "end": 48.586,
+     "word": "dưỡng"
+    },
+    {
+     "start": 48.586,
+     "end": 48.866,
+     "word": "chất"
+    },
+    {
+     "start": 48.866,
+     "end": 49.146,
+     "word": "cần"
+    },
+    {
+     "start": 49.146,
+     "end": 49.346,
+     "word": "thiết"
+    },
+    {
+     "start": 49.346,
+     "end": 49.586,
+     "word": "cho"
+    },
+    {
+     "start": 49.586,
+     "end": 49.866,
+     "word": "não"
+    },
+    {
+     "start": 49.866,
+     "end": 50.106,
+     "word": "bộ"
+    },
+    {
+     "start": 50.106,
+     "end": 50.346,
+     "word": "và"
+    },
+    {
+     "start": 50.346,
+     "end": 50.626,
+     "word": "hệ"
+    },
+    {
+     "start": 50.626,
+     "end": 50.866,
+     "word": "thần"
+    },
+    {
+     "start": 50.866,
+     "end": 51.12,
+     "word": "kinh."
+    }
+   ]
+  },
+  {
+   "start": 51.466,
+   "end": 60.185,
+   "text": "Nếu cô chú anh chị thấy video hay và ý nghĩa, hãy ấn lưu, chia sẻ và nhấn follow kênh để nhận thêm nhiều giá trị hữu ích mỗi ngày nhé!",
+   "words": [
+    {
+     "start": 51.466,
+     "end": 51.906,
+     "word": "Nếu"
+    },
+    {
+     "start": 51.906,
+     "end": 52.106,
+     "word": "cô"
+    },
+    {
+     "start": 52.106,
+     "end": 52.346,
+     "word": "chú"
+    },
+    {
+     "start": 52.346,
+     "end": 52.586,
+     "word": "anh"
+    },
+    {
+     "start": 52.586,
+     "end": 52.786,
+     "word": "chị"
+    },
+    {
+     "start": 52.786,
+     "end": 53.026,
+     "word": "thấy"
+    },
+    {
+     "start": 53.026,
+     "end": 53.506,
+     "word": "video"
+    },
+    {
+     "start": 53.506,
+     "end": 53.826,
+     "word": "hay"
+    },
+    {
+     "start": 53.826,
+     "end": 54.106,
+     "word": "và"
+    },
+    {
+     "start": 54.106,
+     "end": 54.386,
+     "word": "ý"
+    },
+    {
+     "start": 54.386,
+     "end": 54.62,
+     "word": "nghĩa,"
+    },
+    {
+     "start": 54.906,
+     "end": 55.226,
+     "word": "hãy"
+    },
+    {
+     "start": 55.226,
+     "end": 55.506,
+     "word": "ấn"
+    },
+    {
+     "start": 55.506,
+     "end": 55.92,
+     "word": "lưu,"
+    },
+    {
+     "start": 55.92,
+     "end": 56.16,
+     "word": "chia"
+    },
+    {
+     "start": 56.16,
+     "end": 56.4,
+     "word": "sẻ"
+    },
+    {
+     "start": 56.4,
+     "end": 56.64,
+     "word": "và"
+    },
+    {
+     "start": 56.64,
+     "end": 56.92,
+     "word": "nhấn"
+    },
+    {
+     "start": 56.92,
+     "end": 57.36,
+     "word": "follow"
+    },
+    {
+     "start": 57.36,
+     "end": 57.64,
+     "word": "kênh"
+    },
+    {
+     "start": 57.64,
+     "end": 57.88,
+     "word": "để"
+    },
+    {
+     "start": 57.88,
+     "end": 58.12,
+     "word": "nhận"
+    },
+    {
+     "start": 58.12,
+     "end": 58.32,
+     "word": "thêm"
+    },
+    {
+     "start": 58.32,
+     "end": 58.56,
+     "word": "nhiều"
+    },
+    {
+     "start": 58.56,
+     "end": 58.72,
+     "word": "giá"
+    },
+    {
+     "start": 58.72,
+     "end": 59.0,
+     "word": "trị"
+    },
+    {
+     "start": 59.0,
+     "end": 59.16,
+     "word": "hữu"
+    },
+    {
+     "start": 59.16,
+     "end": 59.36,
+     "word": "ích"
+    },
+    {
+     "start": 59.36,
+     "end": 59.6,
+     "word": "mỗi"
+    },
+    {
+     "start": 59.6,
+     "end": 59.84,
+     "word": "ngày"
+    },
+    {
+     "start": 59.84,
+     "end": 60.185,
+     "word": "nhé!"
+    }
+   ]
+  }
+ ]
+}

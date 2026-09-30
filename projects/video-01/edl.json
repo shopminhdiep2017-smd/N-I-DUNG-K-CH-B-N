@@ -1,0 +1,431 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.0,
+    "focus": [
+      0.5,
+      0.43
+    ],
+    "sharpen": 0.6,
+    "frost": [
+      0.722,
+      0.858
+    ]
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        2.26,
+        2.56
+      ],
+      [
+        4.1,
+        4.34
+      ],
+      [
+        7.68,
+        7.96
+      ],
+      [
+        9.74,
+        10.08
+      ],
+      [
+        12.36,
+        12.62
+      ],
+      [
+        15.8,
+        16.18
+      ],
+      [
+        20.66,
+        20.86
+      ],
+      [
+        21.7,
+        21.88
+      ],
+      [
+        22.48,
+        22.92
+      ],
+      [
+        27.28,
+        27.64
+      ],
+      [
+        28.96,
+        29.38
+      ],
+      [
+        31.06,
+        31.36
+      ],
+      [
+        32.64,
+        32.84
+      ],
+      [
+        35.4,
+        35.92
+      ],
+      [
+        40.4,
+        40.88
+      ],
+      [
+        46.0,
+        46.4
+      ],
+      [
+        51.26,
+        51.7
+      ],
+      [
+        54.76,
+        55.02
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:02",
+      "speech": "Ăn gì để bổ thần kinh?",
+      "idea": "HOOK – câu hỏi",
+      "visual": "Headline serif lớn + kicker, zoom 105%, pop"
+    },
+    {
+      "time": "00:02–00:07",
+      "speech": "Để chăm sóc hệ thần kinh… nhóm thực phẩm giàu dưỡng chất",
+      "idea": "Vấn đề / lời hứa",
+      "visual": "Keyword slide"
+    },
+    {
+      "time": "00:07–00:09",
+      "speech": "Thứ nhất là Omega-3",
+      "idea": "Chương 01",
+      "visual": "“01 · Omega-3”, zoom, whoosh"
+    },
+    {
+      "time": "00:10–00:15",
+      "speech": "Omega-3 là chất béo không bão hòa… não bộ và hệ thần kinh",
+      "idea": "Định nghĩa + vai trò",
+      "visual": "2 headline nối tiếp: định nghĩa → vai trò"
+    },
+    {
+      "time": "00:15–00:27",
+      "speech": "Có nhiều trong cá mòi, cá thu, cá hồi, cá trích… hạt óc chó, chia, lanh",
+      "idea": "Nguồn thực phẩm",
+      "visual": "2 checklist hiện theo lời"
+    },
+    {
+      "time": "00:27–00:29",
+      "speech": "Thứ hai là nghệ",
+      "idea": "Chương 02",
+      "visual": "“02 · Nghệ”, zoom, whoosh"
+    },
+    {
+      "time": "00:29–00:35",
+      "speech": "Curcumin… chống oxy hóa, chống viêm",
+      "idea": "Hoạt chất",
+      "visual": "Checklist Curcumin"
+    },
+    {
+      "time": "00:35–00:39",
+      "speech": "Đang được nghiên cứu…",
+      "idea": "Tính trung thực (Ogilvy)",
+      "visual": "Keyword “Lưu ý”"
+    },
+    {
+      "time": "00:39–00:51",
+      "speech": "Chế độ ăn đa dạng: chất béo tốt, protein, vitamin, khoáng chất",
+      "idea": "Kết luận – framework",
+      "visual": "Headline → 4 bước 01–04 → headline kết"
+    },
+    {
+      "time": "00:51–01:00",
+      "speech": "Thấy hay… lưu, chia sẻ, follow",
+      "idea": "CTA",
+      "visual": "Keyword → Lưu/Chia sẻ/Follow → CTA"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 0.2,
+      "end": 2.3,
+      "kicker": "Dinh dưỡng · Thần kinh",
+      "text": "Ăn gì để bổ thần kinh?",
+      "accent": "red",
+      "size": 100,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.215
+    },
+    {
+      "type": "keyword",
+      "start": 2.36,
+      "end": 7.6,
+      "kicker": "Chăm sóc hệ thần kinh",
+      "text": "Nhóm thực phẩm giàu dưỡng chất",
+      "accent": "red",
+      "anim": "slide",
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 7.84,
+      "end": 9.9,
+      "kicker": "Thứ nhất",
+      "text": "01 · Omega-3",
+      "accent": "red",
+      "size": 120,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 10.0,
+      "end": 12.45,
+      "kicker": "Omega-3 là",
+      "text": "Chất béo không bão hòa",
+      "accent": "red",
+      "size": 90,
+      "anim": "fade",
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 12.48,
+      "end": 15.8,
+      "kicker": "Vai trò quan trọng với",
+      "text": "Não bộ & hệ thần kinh",
+      "accent": "red",
+      "size": 92,
+      "anim": "fade",
+      "y": 0.215
+    },
+    {
+      "type": "checklist",
+      "start": 15.88,
+      "end": 22.6,
+      "title": "Có nhiều trong cá béo",
+      "items": [
+        "Cá mòi",
+        "Cá thu",
+        "Cá hồi",
+        "Cá trích"
+      ],
+      "reveal": [
+        18.88,
+        19.83,
+        20.83,
+        21.83
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 42,
+      "y": 0.215
+    },
+    {
+      "type": "checklist",
+      "start": 22.71,
+      "end": 27.35,
+      "title": "Và các loại hạt",
+      "items": [
+        "Hạt óc chó",
+        "Hạt chia",
+        "Hạt lanh"
+      ],
+      "reveal": [
+        24.23,
+        25.63,
+        26.51
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 42,
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 27.51,
+      "end": 29.1,
+      "kicker": "Thứ hai",
+      "text": "02 · Nghệ",
+      "accent": "red",
+      "size": 120,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.215
+    },
+    {
+      "type": "checklist",
+      "start": 29.23,
+      "end": 35.4,
+      "title": "Curcumin trong nghệ",
+      "items": [
+        "Hợp chất thực vật",
+        "Đặc tính chống oxy hóa",
+        "Đặc tính chống viêm"
+      ],
+      "reveal": [
+        31.19,
+        32.95,
+        34.43
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 42,
+      "y": 0.215
+    },
+    {
+      "type": "keyword",
+      "start": 35.67,
+      "end": 39.72,
+      "kicker": "Lưu ý",
+      "text": "Đang được nghiên cứu",
+      "sub": "về nhiều lợi ích đối với sức khỏe",
+      "accent": "red",
+      "anim": "fade",
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 39.79,
+      "end": 42.35,
+      "kicker": "Nói chung",
+      "text": "Một chế độ ăn đa dạng",
+      "accent": "red",
+      "size": 96,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.215
+    },
+    {
+      "type": "steps",
+      "start": 42.4,
+      "end": 47.25,
+      "title": "Đầy đủ",
+      "items": [
+        "Chất béo tốt",
+        "Protein",
+        "Vitamin",
+        "Khoáng chất"
+      ],
+      "active": [
+        [
+          43.03,
+          0
+        ],
+        [
+          43.95,
+          1
+        ],
+        [
+          45.07,
+          2
+        ],
+        [
+          46.67,
+          3
+        ]
+      ],
+      "color": "red",
+      "accent": "red",
+      "y": 0.215
+    },
+    {
+      "type": "headline",
+      "start": 47.31,
+      "end": 51.2,
+      "kicker": "Giúp cung cấp",
+      "text": "Dưỡng chất cần thiết",
+      "sub": "cho não bộ và hệ thần kinh",
+      "accent": "red",
+      "size": 88,
+      "anim": "fade",
+      "y": 0.215
+    },
+    {
+      "type": "keyword",
+      "start": 51.47,
+      "end": 54.8,
+      "kicker": "Cô chú anh chị",
+      "text": "Thấy hay và ý nghĩa?",
+      "accent": "red",
+      "anim": "slide",
+      "y": 0.215
+    },
+    {
+      "type": "steps",
+      "start": 54.91,
+      "end": 57.6,
+      "title": "Đừng quên",
+      "items": [
+        "Lưu",
+        "Chia sẻ",
+        "Follow"
+      ],
+      "active": [
+        [
+          55.51,
+          0
+        ],
+        [
+          55.92,
+          1
+        ],
+        [
+          56.64,
+          2
+        ]
+      ],
+      "color": "red",
+      "accent": "red",
+      "y": 0.215
+    },
+    {
+      "type": "cta",
+      "start": 57.64,
+      "end": 60.19,
+      "kicker": "Follow kênh",
+      "text": "Giá trị hữu ích mỗi ngày",
+      "accent": "red",
+      "icon": null,
+      "size": 80,
+      "y": 0.215
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "highlight": {
+      "omega-3": "#F5C542",
+      "nghệ": "#F5C542",
+      "curcumin": "#F5C542"
+    },
+    "y": 0.79
+  },
+  "audio": {
+    "denoise": true,
+    "loudness": -14,
+    "music": null,
+    "sfx_db": -22
+  },
+  "graphics_zone": [
+    0.07,
+    0.36
+  ]
+}

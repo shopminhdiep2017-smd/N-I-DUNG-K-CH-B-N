@@ -37,6 +37,39 @@ SIDE_MARGIN = 70                # px kept clear left/right
 RIGHT_RAIL = (W - 150, int(H * 0.45), W, int(H * 0.88))
 BOTTOM_LEFT = (0, int(H * 0.84), int(W * 0.75), H)
 
+# Theme-dependent values (overridden by apply_theme). "bold" = original dark-panel look.
+INK = (255, 255, 255)           # default text colour on panels
+PANEL_DIM = (10, 14, 22, 90)    # un-revealed cards
+PANEL_STROKE = True             # outline text drawn on panels
+WRAP_TITLES = False             # put split/steps on a panel (needed for light panels)
+UPPER = True                    # all-caps headlines
+FONT_KICKER = FONT_BOLD
+
+THEMES = {
+    # David Ogilvy / Philip Kotler: editorial print-ad look. Serif headlines in
+    # sentence case on cream cards, one accent colour, numbered frameworks.
+    "editorial": dict(
+        FONT_BLACK=str(FONT_DIR / "PlayfairDisplay-VF.ttf") + "#Black",
+        FONT_KICKER=FONT_XBOLD,
+        PANEL=(250, 246, 236, 246), PANEL_DIM=(250, 246, 236, 150),
+        INK=(20, 26, 44), PANEL_STROKE=False, WRAP_TITLES=True, UPPER=False,
+        COLORS={
+            "white": (20, 26, 44), "ink": (20, 26, 44),
+            "green": (22, 120, 60), "red": (170, 30, 36), "yellow": (176, 118, 0),
+            "cyan": (14, 102, 130), "blue": (30, 64, 175), "dim": (170, 164, 150),
+            "gold": (176, 118, 0),
+        },
+    ),
+}
+
+
+def apply_theme(name):
+    if not name or name == "bold":
+        return
+    for k, v in THEMES[name].items():
+        globals()[k] = v
+
+
 HEALTH_BANNED = [
     "chữa khỏi", "điều trị khỏi", "cam kết khỏi", "khỏi hẳn", "hết bệnh",
     "khỏi bệnh", "thay thế thuốc", "chắc chắn hiệu quả", "100%", "dứt điểm",

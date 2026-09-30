@@ -21,7 +21,15 @@ XFADE = 0.16     # crossfade between states (reveal of a new item)
 
 @lru_cache(maxsize=256)
 def font(path: str, size: int) -> ImageFont.FreeTypeFont:
-    return ImageFont.truetype(path, size)
+    path, _, var = path.partition("#")        # "Font-VF.ttf#Black" = variable font instance
+    f = ImageFont.truetype(path, size)
+    if var:
+        f.set_variation_by_name(var)
+    return f
+
+
+def U(text: str) -> str:
+    return text.upper() if S.UPPER else text
 
 
 def text_w(txt, f):
@@ -70,8 +78,10 @@ def line_h(f):
     return int((a + d) * 1.08)
 
 
-def draw_text(img, xy, txt, f, fill, stroke=6, shadow=True, anchor="la"):
+def draw_text(img, xy, txt, f, fill, stroke=6, shadow=True, anchor="la", on_video=False):
     """Text with dark stroke + soft drop shadow so it reads on any background."""
+    if not on_video and not S.PANEL_STROKE:     # light panels: clean ink, no outline
+        stroke, shadow = 0, False
     if shadow:
         sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
         ImageDraw.Draw(sh).text((xy[0] + 3, xy[1] + 5), txt, font=f, fill=(0, 0, 0, 150),
@@ -81,7 +91,8 @@ def draw_text(img, xy, txt, f, fill, stroke=6, shadow=True, anchor="la"):
                              anchor=anchor, stroke_width=stroke, stroke_fill=S.STROKE + (255,))
 
 
-def panel(w, h, radius=34, fill=S.PANEL, accent=None, accent_h=8):
+def panel(w, h, radius=34, fill=None, accent=None, accent_h=8):
+    fill = fill or S.PANEL
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=radius, fill=fill)
@@ -163,7 +174,12 @@ class Element:
 
     def sprite(self, key):
         if key not in self._cache:
-            self._cache[key] = with_shadow(self.build(key))
+            img = self.build(key)
+            if S.WRAP_TITLES and self.kind in ("split", "steps"):
+                bg = panel(img.width + 60, img.height + 60, accent=self.spec.get("accent"))
+                bg.alpha_composite(img, (30, 30))
+                img = bg
+            self._cache[key] = with_shadow(img)
         return self._cache[key]
 
     def change_times(self):
@@ -228,18 +244,26 @@ class Headline(Element):
         maxw = S.W - 2 * S.SIDE_MARGIN - 80
         size = int(sp.get("size", 104))
         ic = sp.get("icon")
-        f, lines = fit(sp["text"].upper(), S.FONT_BLACK, maxw - (int(size * 0.9) + 20 if ic else 0), size, 56)
+        f, lines = fit(U(sp["text"]), S.FONT_BLACK, maxw - (int(size * 0.9) + 20 if ic else 0), size, 56)
         col = S.color(sp.get("color", "white"))
         sub = sp.get("sub")
         fs, slines = (fit(sub, S.FONT_BOLD, maxw, 50, 32) if sub else (None, []))
         ic_s = int(f.size * 0.9) if ic else 0
         lh = line_h(f)
-        w = max([text_w(l, f) for l in lines] + [text_w(l, fs) for l in slines] + [0]) + 90
+        kicker = sp.get("kicker")
+        fk = font(S.FONT_KICKER, 38) if kicker else None
+        kh = line_h(fk) + 8 if kicker else 0
+        kt = " ".join(kicker.upper()) if kicker else ""      # letter-spaced label
+        w = max([text_w(l, f) for l in lines] + [text_w(l, fs) for l in slines] + [text_w(kt, fk) if kicker else 0]) + 90
         w = max(w + (ic_s + 24 if ic else 0), 360)
-        h = lh * len(lines) + (line_h(fs) * len(slines) + 14 if sub else 0) + 70
+        h = kh + lh * len(lines) + (line_h(fs) * len(slines) + 14 if sub else 0) + 70
         img = panel(w, h, accent=sp.get("accent", sp.get("color") if sp.get("color") not in (None, "white") else "cyan")) \
             if sp.get("panel", True) else Image.new("RGBA", (w, h), (0, 0, 0, 0))
         y = 30
+        if kicker:
+            draw_text(img, ((w - text_w(kt, fk)) // 2, y), kt, fk,
+                      S.color(sp.get("kicker_color", sp.get("accent", "red"))), stroke=3)
+            y += kh
         for l in lines:
             lw = text_w(l, f)
             x = (w - lw - (ic_s + 20 if ic else 0)) // 2
@@ -315,9 +339,9 @@ class Split(Element):
         sp = self.spec
         colw = (S.W - 2 * S.SIDE_MARGIN - 40) // 2
         title = sp.get("title")
-        ft = fit(title.upper(), S.FONT_BLACK, S.W - 2 * S.SIDE_MARGIN - 60, 84, 40, 1)[0] if title else None
+        ft = fit(U(title), S.FONT_BLACK, S.W - 2 * S.SIDE_MARGIN - 60, 84, 40, 1)[0] if title else None
         sides = [sp["left"], sp["right"]]
-        fsz = min(fit(s["text"].upper(), S.FONT_XBOLD, colw - 110, 64, 36)[0].size for s in sides)
+        fsz = min(fit(U(s["text"]), S.FONT_XBOLD, colw - 110, 64, 36)[0].size for s in sides)
         fi = font(S.FONT_XBOLD, fsz)
         subs = [s.get("sub") for s in sides]
         fsub = font(S.FONT_BOLD, 38)
@@ -326,18 +350,18 @@ class Split(Element):
         w, h = S.W - 2 * S.SIDE_MARGIN, top + card_h + 20
         img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         if title:
-            draw_text(img, ((w - text_w(title.upper(), ft)) // 2, 0), title.upper(), ft,
+            draw_text(img, ((w - text_w(U(title), ft)) // 2, 0), U(title), ft,
                       S.color(sp.get("title_color", "white")), stroke=5)
         for i, s in enumerate(sides):
             x0 = i * (colw + 40)
             c = S.color(s.get("color", "green" if i == 0 else "red"))
             on = i < n
-            card = panel(colw, card_h, radius=30, fill=S.PANEL if on else (10, 14, 22, 90))
+            card = panel(colw, card_h, radius=30, fill=S.PANEL if on else S.PANEL_DIM)
             d = ImageDraw.Draw(card)
             d.rounded_rectangle((0, 0, colw - 1, card_h - 1), radius=30, outline=c + ((255,) if on else (70,)), width=5)
             if on:
                 ds = int(fi.size * 0.7)
-                lines = wrap(s["text"].upper(), fi, colw - 60, 2) or [s["text"].upper()]
+                lines = wrap(U(s["text"]), fi, colw - 60, 2) or [U(s["text"])]
                 y = 22
                 card.alpha_composite(icon("dot", ds, c), ((colw - ds) // 2, y))
                 y += ds + 6
@@ -346,7 +370,7 @@ class Split(Element):
                     y += line_h(fi)
                 if s.get("sub"):
                     for l in wrap(s["sub"], fsub, colw - 40, 2) or []:
-                        draw_text(card, ((colw - text_w(l, fsub)) // 2, y), l, fsub, (255, 255, 255), stroke=3, shadow=False)
+                        draw_text(card, ((colw - text_w(l, fsub)) // 2, y), l, fsub, S.INK, stroke=3, shadow=False)
                         y += line_h(fsub)
             img.alpha_composite(card, (x0, top))
         if sp.get("vs", True):
@@ -369,7 +393,7 @@ class Checklist(Element):
         sp = self.spec
         w = S.W - 2 * S.SIDE_MARGIN
         title = sp.get("title")
-        ft = fit(title.upper(), S.FONT_BLACK, w - 80, 72, 40, 1)[0] if title else None
+        ft = fit(U(title), S.FONT_BLACK, w - 80, 72, 40, 1)[0] if title else None
         fi = font(S.FONT_XBOLD, int(sp.get("size", 54)))
         mark = sp.get("mark", "check")
         items = sp["items"]
@@ -378,7 +402,7 @@ class Checklist(Element):
         img = panel(w, h, accent=sp.get("accent", "cyan"))
         y = 28
         if title:
-            draw_text(img, ((w - text_w(title.upper(), ft)) // 2, y), title.upper(), ft,
+            draw_text(img, ((w - text_w(U(title), ft)) // 2, y), U(title), ft,
                       S.color(sp.get("title_color", "white")), stroke=4)
             y += line_h(ft) + 16
         ic_s = int(fi.size * 1.0)
@@ -419,29 +443,29 @@ class Steps(Element):
         n = len(items)
         w = S.W - 2 * S.SIDE_MARGIN
         title = sp.get("title")
-        ft = fit(title.upper(), S.FONT_BLACK, w - 60, 70, 40, 1)[0] if title else None
+        ft = fit(U(title), S.FONT_BLACK, w - 60, 70, 40, 1)[0] if title else None
         gap = 22
         cw = (w - gap * (n - 1)) // n
         fn = font(S.FONT_BLACK, 84 if n <= 3 else 64)
-        fl = min(fit(it.upper(), S.FONT_XBOLD, cw - 30, 40, 26)[0].size for it in items)
+        fl = min(fit(U(it), S.FONT_XBOLD, cw - 30, 40, 26)[0].size for it in items)
         fl = font(S.FONT_XBOLD, fl)
         ch = line_h(fn) + line_h(fl) * 2 + 40
         top = line_h(ft) + 20 if title else 0
         img = Image.new("RGBA", (w, top + ch), (0, 0, 0, 0))
         if title:
-            draw_text(img, ((w - text_w(title.upper(), ft)) // 2, 0), title.upper(), ft, (255, 255, 255), stroke=5)
+            draw_text(img, ((w - text_w(U(title), ft)) // 2, 0), U(title), ft, S.INK, stroke=5)
         acc = S.color(sp.get("color", "cyan"))
         for i, it in enumerate(items):
             on = i == active
             done = active >= 0 and i < active
-            c = acc if on else ((255, 255, 255) if done or active < 0 else S.COLORS["dim"])
+            c = acc if on else (S.INK if done or active < 0 else S.COLORS["dim"])
             card = panel(cw, ch, radius=26, fill=(acc + (60,)) if on else S.PANEL)
             ImageDraw.Draw(card).rounded_rectangle((0, 0, cw - 1, ch - 1), radius=26,
                                                    outline=c + ((255,) if on else (90,)), width=6 if on else 3)
             num = f"{i + 1:02d}"
             draw_text(card, ((cw - text_w(num, fn)) // 2, 14), num, fn, c, stroke=4, shadow=False)
             y = 14 + line_h(fn)
-            for l in wrap(it.upper(), fl, cw - 24, 2) or [it.upper()]:
+            for l in wrap(U(it), fl, cw - 24, 2) or [U(it)]:
                 draw_text(card, ((cw - text_w(l, fl)) // 2, y), l, fl, c, stroke=3, shadow=False)
                 y += line_h(fl)
             img.alpha_composite(card, (i * (cw + gap), top))
@@ -458,7 +482,7 @@ class Flow(Element):
 
     def build(self, n):
         sp = self.spec
-        items = [it.upper() for it in sp["items"]]
+        items = [U(it) for it in sp["items"]]
         cols = sp.get("colors") or []
         w = S.W - 2 * S.SIDE_MARGIN
         f = font(S.FONT_BLACK, int(sp.get("size", 70)))
@@ -542,7 +566,7 @@ class Spine(Element):
                 y += dh
         label = sp.get("label")
         if label and on:
-            fl, lines = fit(label.upper(), S.FONT_BLACK, int(w * 0.30), 52, 30, 3)
+            fl, lines = fit(U(label), S.FONT_BLACK, int(w * 0.30), 52, 30, 3)
             ly = h // 2 - len(lines) * line_h(fl) // 2
             for l in lines:
                 draw_text(img, (int(w * 0.70), ly), l, fl, S.color(sp.get("color", "red")), stroke=4, shadow=False)
@@ -622,7 +646,7 @@ class SubtitleRenderer:
             for word in l.split():
                 wl = word.lower().strip(".,!?;:…\"'()")
                 c = next((pc for pw, pc in phrase_words if wl == pw), None) or self._color_for(word, low)
-                draw_text(img, (x, y), word, ff, c or (255, 255, 255), stroke=6)
+                draw_text(img, (x, y), word, ff, c or (255, 255, 255), stroke=6, on_video=True)
                 x += text_w(word, ff) + space
             y += lh
         self._cache[text] = img

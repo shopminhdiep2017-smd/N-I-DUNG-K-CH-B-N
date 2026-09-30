@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).parent))
 import graphics as G  # noqa: E402
@@ -207,6 +207,7 @@ def main():
 
     root = Path(a.project)
     edl = json.loads((root / "edl.json").read_text())
+    S.apply_theme(edl.get("theme"))
     transcript = json.loads((root / edl.get("transcript", "transcript.json")).read_text())
     src = root / edl["source"]
     out_dir = root / "out"
@@ -243,7 +244,12 @@ def main():
         if m.get("zoom"):
             zooms.append((m["start"], m["end"], float(m["zoom"]), 0.3))
 
+    if edl.get("graphics_zone"):          # per-video override of the headline band
+        S.HEADLINE_ZONE = tuple(edl["graphics_zone"])
     sub_cfg = edl.get("subtitles", {})
+    if sub_cfg.get("y"):
+        S.SUBTITLE_CENTER = float(sub_cfg["y"])
+        S.SUBTITLE_ZONE = (S.SUBTITLE_CENTER - 0.09, S.SUBTITLE_CENTER + 0.09)
     subs = G.SubtitleRenderer(sub_cfg.get("highlight"), int(sub_cfg.get("size", 60)))
     cues = subtitle_cues(transcript, tl, sub_cfg) if sub_cfg.get("enabled", True) else []
 
@@ -276,6 +282,7 @@ def main():
     subj = edl.get("subject", {})
     off = int(float(subj.get("offset_y", 0.0)) * S.H)       # push the speaker down, leave headroom
     sc = float(subj.get("scale", 1.0))
+    sharpen = float(subj.get("sharpen", 0))    # 0.5–1.0 helps low-res sources after upscaling
     sel = "+".join(f"between(t,{s:.4f},{e - 0.5 / S.FPS:.4f})" for s, e in segs)
     fw, fh = int(S.W * sc) // 2 * 2, int(S.H * sc) // 2 * 2
     grad = work / "grad.png"
@@ -283,10 +290,15 @@ def main():
     ramp = np.clip(1 - np.arange(S.H) / (S.H * 0.46), 0, 1) ** 1.6
     g[..., 3] = (ramp * 150)[:, None].astype(np.uint8)
     Image.fromarray(g, "RGBA").save(grad)
-    fc = (f"[0:v]fps={S.FPS},select='{sel}',setpts=N/{S.FPS}/TB,split[a][b];"
+    # erase burned-in text (old captions, watermarks) before framing: boxes in source fractions
+    clean = "".join(f",delogo=x={max(1, int(x * sw))}:y={max(1, int(y * sh))}:"
+                    f"w={min(int(w * sw), sw - 2 - max(1, int(x * sw)))}:h={min(int(h * sh), sh - 2 - max(1, int(y * sh)))}"
+                    for x, y, w, h in subj.get("delogo", []))
+    fc = (f"[0:v]fps={S.FPS},select='{sel}',setpts=N/{S.FPS}/TB{clean},split[a][b];"
           f"[a]scale={S.W}:{S.H}:force_original_aspect_ratio=increase,crop={S.W}:{S.H},"
           f"boxblur=40:2,eq=brightness=-0.12:saturation=0.8[bg];"
-          f"[b]scale={fw}:{fh}:force_original_aspect_ratio=increase,crop={fw}:{fh}[fg];"
+          f"[b]scale={fw}:{fh}:force_original_aspect_ratio=increase:flags=lanczos,crop={fw}:{fh}"
+          f"{f',unsharp=5:5:{sharpen}' if sharpen else ''}[fg];"
           f"[bg][fg]overlay=x=(W-w)/2:y={off}+(H-h)/2*{1 if sc < 1 else 0}[base];"
           f"[base][1:v]overlay=0:0,format=rgb24[v]")
     (work / "pass1.txt").write_text(fc)
@@ -326,6 +338,17 @@ def main():
                                     resample=Image.BILINEAR)
         else:
             frame = frame.copy()
+        if subj.get("frost"):
+            # frosted-glass band hiding burned-in captions; follows the zoom
+            y0, y1 = subj["frost"]
+            a0 = int(max(0, fy + (y0 * S.H - fy) * z))
+            a1 = int(min(S.H, fy + (y1 * S.H - fy) * z))
+            band = frame.crop((0, a0, S.W, a1)).filter(ImageFilter.GaussianBlur(22))
+            band = Image.eval(band, lambda v: int(v * 0.5))
+            frame.paste(band, (0, a0))
+            d = ImageDraw.Draw(frame)
+            d.line((0, a0, S.W, a0), fill=(250, 246, 236), width=3)
+            d.line((0, a1 - 2, S.W, a1 - 2), fill=(250, 246, 236), width=3)
         for m, _ in brolls:
             if m["start"] <= t < m["end"]:
                 it = broll_iters.get(id(m))
