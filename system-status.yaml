@@ -1,0 +1,77 @@
+# PERSONAL BRAND AI OS - Trạng thái hệ thống
+project:
+  name: "PERSONAL BRAND AI OS - Dược sĩ Lê Hương"
+  owner: "Dược sĩ Lê Hương"
+  initialized_on: 2026-10-06
+  last_updated: 2026-10-06
+  note: >
+    Repo được khởi tạo ngày 2026-10-06. Kết quả PART-01 và PART-02 được tái tạo từ
+    kết quả đã thống nhất trong phiên chat của chủ thương hiệu (không có dữ liệu
+    workspace cũ). Xem decision-log.md D-011.
+
+summary_counts:
+  claims_total: 26
+  claims_verified: 0
+  claims_approved: 0
+  claims_unverified_or_pending_review: 26
+  banned_phrases: 5
+  open_conflicts: 24          # C-01 đến C-24, xem decision-log.md
+  insights_agreed: 1          # INS-01 (bằng chứng nguồn: CHƯA CÓ NGUỒN)
+  insights_missing_text: 9    # INS-02 đến INS-10
+  hypotheses: 2               # H-01, H-02
+  ideas_with_content: 0       # 30 ô ý tưởng đều CHƯA CÓ NGUỒN
+  missing_documents: "xem products/missing-documents.md"
+
+parts:
+  PART-01:
+    title: "Nền móng thương hiệu: Chuyên gia, Thị trường, Khách hàng, Sản phẩm"
+    unlocked: true
+    status: completed_basic
+    completed_on: 2026-10-06
+    criteria_met: "9/9 (mức cơ bản; sản phẩm thiếu tài liệu đã được ghi nhận)"
+    session_dir: sessions/PART-01/
+
+  PART-02:
+    title: "Insight khách hàng, Định vị, Lời hứa giá trị, Big Idea, Message House"
+    unlocked: true
+    status: recorded_with_open_conflicts
+    recorded_on: 2026-10-06
+    open_conflicts: [C-01, C-02, C-03, C-04, C-05, C-06, C-07, C-08, C-09, C-10, C-11, C-12]
+    blocked_items:
+      - "Độ tuổi khách hàng trong các file PART-02 (C-01)"
+      - "Câu chữ 'an toàn tuyệt đối' trong lời hứa giá trị (C-03)"
+    session_dir: sessions/PART-02/
+
+  PART-03:
+    title: "Hệ thống nội dung, kịch bản và quy trình tư vấn giá trị cao"
+    unlocked: true
+    unlock_basis: "Quyết định của chủ thương hiệu ngày 2026-10-06 (decision-log.md D-011), dù C-01..C-12 còn mở"
+    status: deployed_with_review_constraints
+    deployed_on: 2026-10-06
+    criteria:
+      customer_journey: DAT
+      content_map: DAT
+      content_pillars: DAT
+      content_matrix: DAT
+      idea_bank: "DAT_CAU_TRUC / CHUA_DAT_NOI_DUNG (30/30 ô CHƯA CÓ NGUỒN)"
+      script_templates: DAT
+      vsl_template: DAT
+      consultation_process: "DAT (bước 2 và bước 4 CẦN CON NGƯỜI PHÊ DUYỆT)"
+      objection_library: "DAT_MOT_PHAN (câu trả lời CHƯA QUYẾT ĐỊNH)"
+      approval_process: "DAT (người duyệt CHƯA QUYẾT ĐỊNH - C-24)"
+      no_unsourced_health_content_ready: DAT
+    open_conflicts: [C-13, C-14, C-15, C-16, C-17, C-18, C-19, C-20, C-21, C-22, C-23, C-24]
+    session_dir: sessions/PART-03/
+
+  PART-04:
+    unlocked: false
+    status: pending_review
+    status_label: "Chờ hoàn tất kiểm duyệt các mục UNVERIFIED"
+    unlock_conditions:
+      - "Chốt độ tuổi khách hàng (C-01)"
+      - "Chỉ định người duyệt chuyên môn và pháp lý (C-24)"
+      - "Duyệt hoặc sửa các cụm từ tuyệt đối/nhạy cảm (C-03, C-04, C-07, C-13, C-14, C-15)"
+      - "Quyết định phạm vi cam kết 'đồng hành trọn đời 1-1' (C-06)"
+      - "Cung cấp toàn văn INS-02..INS-10 và nội dung 30 ý tưởng video"
+      - "Duyệt câu trả lời cho OBJ-01..OBJ-03"
+      - "Cung cấp tài liệu sản phẩm để có ít nhất các claim dùng trong nội dung đầu tiên ở trạng thái APPROVED"
