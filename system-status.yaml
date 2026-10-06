@@ -16,10 +16,10 @@ summary_counts:
   claims_approved: 0
   claims_unverified_or_pending_review: 26
   banned_phrases: 5
-  open_conflicts: 28          # C-01 đến C-28, xem decision-log.md
+  open_conflicts: 30          # C-01 đến C-30, xem decision-log.md
   insights_agreed: 1          # INS-01 (bằng chứng nguồn: CHƯA CÓ NGUỒN)
   insights_missing_text: 9    # INS-02 đến INS-10
-  hypotheses: 2               # H-01, H-02
+  hypotheses: 7               # H-01, H-02, PINS-01..05
   ideas_with_content: 0       # 30 ô ý tưởng đều CHƯA CÓ NGUỒN
   missing_documents: "xem products/missing-documents.md"
 

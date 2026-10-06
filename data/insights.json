@@ -140,5 +140,184 @@
       }
     ],
     "notes": "Cách kiểm chứng: NOT_DECIDED"
+  },
+  {
+    "id": "PINS-01",
+    "text": "Tôi muốn biết rõ cơ thể mình đang có vấn đề gì khi tê bì, mệt mỏi kéo dài, nhưng tôi cứ lặng lẽ chịu đựng và trì hoãn đi khám, bởi vì tôi sợ làm con cháu lo, tốn tiền và đảo lộn cuộc sống của chúng.",
+    "status": "HYPOTHESIS",
+    "topic": "Chịu đựng vì sợ thành gánh nặng",
+    "evidence": [
+      {
+        "ref": "V-03",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "V-05",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "W-01",
+        "source": "Thứ cấp – vienyduocviet.org (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-02",
+        "source": "Thứ cấp – vnexpress.net (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-03",
+        "source": "Thứ cấp – nguoiduatin.vn (khảo sát Manulife Asia Care 2026) (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-04",
+        "source": "Thứ cấp – elite-healthcare.com.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Agent 01 (Claude) – nghiên cứu thứ cấp RS-20261006-01",
+        "action": "Đề xuất (HYPOTHESIS)"
+      }
+    ]
+  },
+  {
+    "id": "PINS-02",
+    "text": "Tôi muốn giảm tê bì, ngủ ngon hơn mà không phải phụ thuộc thuốc lâu dài, nhưng tôi ngại cả thuốc Tây lẫn những thứ quảng cáo trên mạng, bởi vì tôi nghe nhiều người nói uống thuốc lâu hại gan thận mà không biết hỏi ai cho đúng.",
+    "status": "HYPOTHESIS",
+    "topic": "Kẹt giữa nỗi sợ thuốc Tây và hàng trôi nổi",
+    "evidence": [
+      {
+        "ref": "OBJ-03",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "W-05",
+        "source": "Thứ cấp – 24h.com.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-06",
+        "source": "Thứ cấp – kenh14.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-07",
+        "source": "Thứ cấp – acc.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Agent 01 (Claude) – nghiên cứu thứ cấp RS-20261006-01",
+        "action": "Đề xuất (HYPOTHESIS)"
+      }
+    ]
+  },
+  {
+    "id": "PINS-03",
+    "text": "Tôi muốn nghe lời khuyên từ người có chuyên môn thật, nhưng tôi nghi ngờ mọi bác sĩ, dược sĩ xuất hiện trên mạng, bởi vì tôi thấy và nghe nhiều người bị lừa mua sản phẩm giá cao qua livestream, quà tặng, đo huyết áp miễn phí.",
+    "status": "HYPOTHESIS",
+    "topic": "Nghi ngờ mọi 'chuyên gia' trên mạng",
+    "evidence": [
+      {
+        "ref": "V-04",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "W-08",
+        "source": "Thứ cấp – baochinhphu.vn (Cục An toàn thực phẩm cảnh báo) (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-09",
+        "source": "Thứ cấp – phunuvietnam.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-10",
+        "source": "Thứ cấp – congan.ninhbinh.gov.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-11",
+        "source": "Thứ cấp – vov.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Agent 01 (Claude) – nghiên cứu thứ cấp RS-20261006-01",
+        "action": "Đề xuất (HYPOTHESIS)"
+      }
+    ]
+  },
+  {
+    "id": "PINS-04",
+    "text": "Tôi muốn tiếp tục tìm cách cải thiện tê bì, mất ngủ, nhưng tôi không muốn bỏ thêm tiền cho bất kỳ sản phẩm nào nữa, bởi vì tôi đã mua nhiều thứ được quảng cáo hay mà không thấy khác gì và sợ lại tiền mất tật mang.",
+    "status": "HYPOTHESIS",
+    "topic": "Mệt mỏi vì bị bán hàng",
+    "evidence": [
+      {
+        "ref": "V-04",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "OBJ-01",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "OBJ-02",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "W-12",
+        "source": "Thứ cấp – vnexpress.net (thực phẩm chức năng giả tràn sàn online) (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-13",
+        "source": "Thứ cấp – vov.gov.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-10",
+        "source": "Thứ cấp – congan.ninhbinh.gov.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Agent 01 (Claude) – nghiên cứu thứ cấp RS-20261006-01",
+        "action": "Đề xuất (HYPOTHESIS)"
+      }
+    ]
+  },
+  {
+    "id": "PINS-05",
+    "text": "Tôi muốn ngủ một mạch tới sáng để ban ngày đầu óc tỉnh táo, nhưng tôi tự xoay xở bằng mẹo dân gian và trà thảo mộc thay vì đi khám, bởi vì tôi nghĩ mất ngủ là chuyện nhỏ của tuổi già, không đáng làm phiền ai.",
+    "status": "HYPOTHESIS",
+    "topic": "Mất ngủ bị xem là chuyện nhỏ",
+    "evidence": [
+      {
+        "ref": "V-02",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "V-05",
+        "source": "CHƯA CÓ NGUỒN (dữ liệu repo, USER-PROVIDED)"
+      },
+      {
+        "ref": "W-14",
+        "source": "Thứ cấp – tuoitre.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-15",
+        "source": "Thứ cấp – benhvien108.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      },
+      {
+        "ref": "W-16",
+        "source": "Thứ cấp – pharmacity.vn (chỉ đọc tóm tắt kết quả tìm kiếm, chưa đọc toàn văn)"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Agent 01 (Claude) – nghiên cứu thứ cấp RS-20261006-01",
+        "action": "Đề xuất (HYPOTHESIS)"
+      }
+    ]
   }
 ]

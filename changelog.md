@@ -52,3 +52,8 @@
 - Cập nhật: `agents/agent-02…`, `agents/agent-03…`, `templates/content-item.md`, `templates/qa-report.md`, `workflows/daily.md`, `workflows/review-approval.md`, `workflows/video-production.md`, `.claude/commands/kiem-duyet.md` (tên trạng thái mới)
 - Cập nhật: `decision-log.md` (D-026..D-031, C-27, C-28), `system-status.yaml` (PART-05)
 - Xóa khỏi git: `tools/__pycache__/` (file biên dịch Python bị commit nhầm ở PART-04)
+
+## 2026-10-06 — Nghiên cứu insight RS-20261006-01
+- Mới: `research/reports/RS-20261006-01.md` (5 insight đề xuất từ nghiên cứu thứ cấp, 16 nguồn)
+- Cập nhật: `data/insights.json` thêm PINS-01..PINS-05 (HYPOTHESIS, chờ người duyệt)
+- Cập nhật: `decision-log.md` thêm C-29, C-30
