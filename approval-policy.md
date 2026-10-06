@@ -18,7 +18,7 @@ Bổ sung cho `content/qa-checklist.md` (PART-03) và `compliance/claim-policy.m
 | Xuất bản | **Không bao giờ** | **Làm** |
 | Cam kết tư vấn y tế/sản phẩm với khách | **Không bao giờ** | **Làm** |
 
-## 2. Vòng đời nội dung
+## 2. Vòng đời nội dung (PART-04 — đã được thay bằng mục 7 từ PART-05)
 `IDEA → DRAFT → NEEDS_SOURCE → NEEDS_REVIEW → APPROVED_TO_RECORD → RECORDED → EDITED → APPROVED_TO_PUBLISH → PUBLISHED → MEASURED → LEARNING_CAPTURED`
 
 | Trạng thái | Ý nghĩa | Ai được chuyển vào | Điều kiện |
@@ -64,3 +64,29 @@ Bổ sung cho `content/qa-checklist.md` (PART-03) và `compliance/claim-policy.m
 
 ## 6. Sự cố
 Phát hiện nội dung đã đăng vi phạm → gỡ hoặc ẩn (con người làm), ghi vào `decision-log.md` mục mâu thuẫn/sự cố, Agent 01 cập nhật bài học.
+
+## 7. Vòng đời 13 trạng thái (PART-05, thay thế mục 2)
+`IDEA → CONTENT_BRIEF → SCRIPT_DRAFT → NEEDS_SOURCE → NEEDS_REVIEW → APPROVED_TO_RECORD → RECORDED → EDITING → FINAL_REVIEW → APPROVED_TO_PUBLISH → PUBLISHED → MEASURED → LEARNING_CAPTURED`
+
+| Trạng thái | Ai chuyển vào | Điều kiện (kiểm tra tự động trong Dashboard và `tools/check_content.py`) |
+|---|---|---|
+| IDEA | Người hoặc AI | — |
+| CONTENT_BRIEF | Người (Kanban) | Brief đã soạn |
+| SCRIPT_DRAFT | **Chỉ qua Hàng chờ phê duyệt** | Người duyệt brief ký `brief_approved_by` + ngày; brief ≥ 80 điểm, không lỗi chặn |
+| NEEDS_SOURCE | Người hoặc AI | Còn claim chưa APPROVED / nhắc sản phẩm |
+| NEEDS_REVIEW | Người hoặc AI | Không còn claim chưa APPROVED |
+| APPROVED_TO_RECORD | **Chỉ qua Hàng chờ phê duyệt** | Kịch bản ≥ 80 điểm, không lỗi chặn, không FAIL; `record_approved_by` + ngày |
+| RECORDED, EDITING, FINAL_REVIEW | Người (Kanban) | Đi từng bước, không nhảy cóc |
+| APPROVED_TO_PUBLISH | **Chỉ qua Hàng chờ phê duyệt — bắt buộc người** | Xác nhận đã xem bản dựng cuối; `publish_approved_by` + ngày |
+| PUBLISHED | Người | Có `published_url` |
+| MEASURED | Người | Đã nhập chỉ số ở trang Phân tích hiệu quả |
+| LEARNING_CAPTURED | Người | Ghi bài học (Agent 01 có thể đề xuất) |
+
+Tên trạng thái cũ vẫn được hiểu: `DRAFT` = `SCRIPT_DRAFT`, `EDITED` = `EDITING`. Trả về bước trước sẽ **hủy chữ ký** của các cổng phía sau.
+
+## 8. Quality Gate 100 điểm (PART-05)
+Chấm bằng logic (Tầng 0, không gọi AI) cho Insight, Content Brief và Kịch bản — tiêu chí chi tiết hiện trong Dashboard và `app/shared/quality.ts`.
+- **< 80:** bắt buộc sửa (NEEDS_REVISION) — không vào Hàng chờ phê duyệt.
+- **80–89:** vào hàng chờ, gắn cờ "cần xem kỹ".
+- **≥ 90:** đủ điều kiện được xem xét. **Không** tự động duyệt hay xuất bản.
+- **Chặn tuyệt đối:** tuyên bố thiếu nguồn / claim chưa APPROVED (BLOCKED), số liệu – kết quả – khan hiếm bịa đặt (REJECTED), sai định vị chuyên môn tuần hoàn, tim mạch (BLOCKED), lĩnh vực rủi ro cao chưa duyệt (BLOCKED).

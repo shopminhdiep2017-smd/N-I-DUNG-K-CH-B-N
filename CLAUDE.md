@@ -71,3 +71,20 @@ private/                   Dữ liệu khách hàng thật — KHÔNG commit (.g
 ```
 - AI (Claude hoặc Agent) **không bao giờ** điền `*_approved_by`, không chuyển nội dung vượt `NEEDS_REVIEW`, không xuất bản, không gửi tin nhắn cho khách.
 - Sau khi sửa file trong `content/items/`, chạy `python3 tools/check_content.py <file>`.
+
+## Bổ sung PART-05 — Dashboard local-first
+```
+package.json, vite.config.ts   Ứng dụng: npm start → http://127.0.0.1:5173
+app/shared/                    Logic Tầng 0: vòng đời, tuân thủ, Quality Gate 100 điểm, Model Router, prompt chuẩn
+app/server/                    API đọc/ghi file trong repo (chạy trong Vite, chỉ 127.0.0.1)
+app/web/                       Giao diện 11 trang (React + TypeScript)
+app/tests/                     Test bắt buộc (npm test)
+config/compliance-rules.json   Luật DÙNG CHUNG cho Dashboard và tools/check_content.py
+config/model-router.json       Cấu hình tầng 0–3; không chứa tên model hay API key
+data/                          insights.json, data-sources.json, approvals.json (nhật ký duyệt), analytics.json
+private/                       Dữ liệu khách hàng thật, yêu cầu nghiên cứu — KHÔNG commit
+```
+- Vòng đời nội dung có **13 trạng thái** (xem `approval-policy.md` mục 7). `DRAFT` cũ = `SCRIPT_DRAFT`, `EDITED` cũ = `EDITING`.
+- Thứ tự xử lý: Tầng 0 logic → Tầng 1 Manual Claude Task → Tầng 2/3 API (tắt mặc định). Việc phê duyệt không bao giờ giao AI.
+- Sửa luật kiểm tra ở `config/compliance-rules.json`, sau đó chạy `npm test`.
+- Dashboard chỉ đọc `brand/`, `strategy/`, `products/`, `compliance/`; thay đổi chiến lược phải ghi `decision-log.md`.

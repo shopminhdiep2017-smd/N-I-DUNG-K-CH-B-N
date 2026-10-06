@@ -10,6 +10,7 @@ Kết quả: PASS / WARN / FAIL. Mã thoát 1 nếu có FAIL.
 Công cụ này chỉ bắt lỗi theo luật cố định; nó KHÔNG thay thế người duyệt.
 Chỉ dùng thư viện chuẩn của Python.
 """
+import json
 import re
 import sys
 from pathlib import Path
@@ -18,28 +19,22 @@ ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "compliance" / "claim-registry.md"
 ITEMS_DIR = ROOT / "content" / "items"
 
-STATUSES = [
-    "IDEA", "DRAFT", "NEEDS_SOURCE", "NEEDS_REVIEW", "APPROVED_TO_RECORD",
-    "RECORDED", "EDITED", "APPROVED_TO_PUBLISH", "PUBLISHED", "MEASURED",
-    "LEARNING_CAPTURED",
-]
-IDX = {s: i for i, s in enumerate(STATUSES)}
+RULES_FILE = ROOT / "config" / "compliance-rules.json"
+RULES = json.loads(RULES_FILE.read_text(encoding="utf-8"))
 
-# BAN-001..005 trong compliance/claim-registry.md
-BANNED = ["chữa khỏi", "đặc trị", "thuốc tiên", "khỏi 100%", "khỏi hoàn toàn",
-          "cam kết khỏi", "thay thế bác sĩ"]
-ABSOLUTE = ["tuyệt đối", "triệt để", "100%", "đúng bệnh", "gốc rễ", "xóa sạch",
-            "dứt điểm", "vĩnh viễn", "đúng tình trạng"]
-PRODUCTS = {
-    "Rich Coenzyme Q10": r"coenzyme\s*q10|\bq10\b",
-    "DHA EPA SQ": r"dha\s*epa",
-    "Nattokinase 60,000 FU": r"nattokinase",
-    "Policosanol 10": r"policosanol",
-}
-HEALTH_WORDS = ["tuần hoàn", "tim mạch", "huyết áp", "mất ngủ", "giấc ngủ", "đột quỵ",
-                "tai biến", "cục máu đông", "huyết khối", "mỡ máu", "cholesterol", "tê bì"]
-PENDING_LABEL = "CHỜ CLAIM ĐƯỢC PHÊ DUYỆT"
-NON_HUMAN = {"ai", "claude", "agent", "bot", "agent01", "agent02", "agent03"}
+# Luật dùng chung với Dashboard (app/shared/compliance.ts) — sửa trong config/compliance-rules.json
+STATUSES = RULES["statuses"]
+ALIASES = RULES["aliases"]
+IDX = {s: i for i, s in enumerate(STATUSES)}
+BANNED = RULES["banned"]
+ABSOLUTE = RULES["absolute"]
+OFF_POSITIONING = RULES["offPositioning"]
+FABRICATION = RULES["fabricationPatterns"]
+PRODUCTS = RULES["products"]
+HEALTH_WORDS = RULES["healthWords"]
+PENDING_LABEL = RULES["pendingLabel"]
+NON_HUMAN = set(RULES["nonHuman"])
+SIGNATURES = RULES["signatures"]
 
 
 def parse(path):
@@ -80,7 +75,7 @@ def check(path, registry):
     meta, body = parse(path)
     low = body.lower()
     fails, warns = [], []
-    status = meta.get("status", "")
+    status = ALIASES.get(meta.get("status", "").strip().upper(), meta.get("status", "").strip().upper())
     if status not in IDX:
         fails.append(f"Trạng thái '{status}' không hợp lệ. Hợp lệ: {', '.join(STATUSES)}")
         return fails, warns
@@ -93,6 +88,13 @@ def check(path, registry):
                 warns.append(f"Có cụm cấm '{w}' trong câu phủ định — người duyệt kiểm tra lại")
             else:
                 fails.append(f"Từ cấm: '{w}' (BAN)")
+    for w in OFF_POSITIONING:
+        if w in low:
+            fails.append(f"Ngoài định vị chuyên môn (tuần hoàn, tim mạch): '{w}'")
+    for rx in FABRICATION:
+        m = re.search(rx, low)
+        if m:
+            fails.append(f"Số liệu/khan hiếm/kết quả không có nguồn: '{m.group(0)}'")
     # 2. Cụm tuyệt đối
     for w in ABSOLUTE:
         if w in low:
@@ -123,15 +125,9 @@ def check(path, registry):
                      f"xác định có phải tuyên bố cần claim không")
 
     # 4. Cổng phê duyệt của con người
-    if s >= IDX["DRAFT"] and not is_human(meta.get("brief_approved_by")):
-        fails.append("Brief chưa được con người duyệt (brief_approved_by trống hoặc không phải người)")
-    if s >= IDX["APPROVED_TO_RECORD"]:
-        if not (is_human(meta.get("record_approved_by")) and meta.get("record_approved_date")):
-            fails.append("APPROVED_TO_RECORD cần record_approved_by (người) và record_approved_date")
-    if s >= IDX["APPROVED_TO_PUBLISH"]:
-        if not (is_human(meta.get("publish_approved_by")) and meta.get("publish_approved_date")):
-            fails.append("APPROVED_TO_PUBLISH bắt buộc con người duyệt: cần publish_approved_by "
-                         "(tên người, không phải AI/Agent) và publish_approved_date")
+    for gate, (by, date) in SIGNATURES.items():
+        if s >= IDX[gate] and not (is_human(meta.get(by)) and meta.get(date)):
+            fails.append(f"{gate} cần {by} là tên người (không phải AI/Agent) và {date}")
 
     # 5. Điểm còn mở
     if re.search(r"\b(35|40)\s*[–-]\s*65\b|\bu40", low):
@@ -157,7 +153,8 @@ def list_status():
     groups = {s: [] for s in STATUSES}
     for p in items:
         meta, _ = parse(p)
-        groups.setdefault(meta.get("status", "?"), []).append(f"{meta.get('id', p.stem)} — {meta.get('title', '')}")
+        st = meta.get("status", "?").strip().upper()
+        groups.setdefault(ALIASES.get(st, st), []).append(f"{meta.get('id', p.stem)} — {meta.get('title', '')}")
     for s, lst in groups.items():
         if lst:
             print(f"\n{s} ({len(lst)})")

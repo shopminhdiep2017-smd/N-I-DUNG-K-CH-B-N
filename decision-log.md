@@ -29,6 +29,12 @@ Chỉ bổ sung, không xóa. Thay đổi quyết định = thêm dòng mới th
 | D-023 | 2026-10-06 | 04 | Pipeline 14 bước và vòng đời 11 trạng thái nội dung (approval-policy.md) | ĐÃ QUYẾT ĐỊNH |
 | D-024 | 2026-10-06 | 04 | Đề xuất kỹ thuật MVP: Agent chạy dưới dạng subagent Claude Code + lệnh tắt; kiểm tra luật cố định bằng tools/check_content.py; dữ liệu tư vấn lưu private/ ngoài git | ĐỀ XUẤT ĐÃ TRIỂN KHAI — chủ thương hiệu có thể đổi |
 | D-025 | 2026-10-06 | 04 | Người duyệt H4/H5: nội dung không nhắc sản phẩm do Dược sĩ Lê Hương tự duyệt; nội dung nhắc sản phẩm thêm người duyệt pháp lý | CẦN CHỦ THƯƠNG HIỆU XÁC NHẬN (C-24) |
+| D-026 | 2026-10-06 | 05 | Vòng đời nội dung 13 trạng thái: IDEA → CONTENT_BRIEF → SCRIPT_DRAFT → NEEDS_SOURCE → NEEDS_REVIEW → APPROVED_TO_RECORD → RECORDED → EDITING → FINAL_REVIEW → APPROVED_TO_PUBLISH → PUBLISHED → MEASURED → LEARNING_CAPTURED (thay vòng đời 11 trạng thái của D-023) | ĐÃ QUYẾT ĐỊNH |
+| D-027 | 2026-10-06 | 05 | Chủ thương hiệu xác nhận: giữ nguyên dữ liệu đã lưu PART-01..04; định vị chuyên môn "Dược sĩ tư vấn tuần hoàn, tim mạch"; KHÔNG đưa nội dung tử vi/xem tuổi vào hệ thống (luật offPositioning chặn tự động) | ĐÃ QUYẾT ĐỊNH |
+| D-028 | 2026-10-06 | 05 | Dashboard local-first 11 trang (TypeScript, React, Vite; dữ liệu là file trong repo; dữ liệu khách thật trong private/) | ĐỀ XUẤT KỸ THUẬT ĐÃ TRIỂN KHAI |
+| D-029 | 2026-10-06 | 05 | Quality Gate 100 điểm cho Insight, Brief, Kịch bản: < 80 sửa, 80–89 xem kỹ, ≥ 90 vào hàng chờ; blocker thắng điểm; không tự động xuất bản | ĐÃ QUYẾT ĐỊNH (tiêu chí chi tiết: đề xuất, chủ thương hiệu có thể điều chỉnh) |
+| D-030 | 2026-10-06 | 05 | Model Router: Tầng 0 logic → Tầng 1 Manual Claude Task → Tầng 2/3 API (tắt mặc định, tên model qua biến môi trường, API key ngoài source code) | ĐÃ QUYẾT ĐỊNH |
+| D-031 | 2026-10-06 | 05 | Phân tích hiệu quả chỉ theo dõi video giáo dục không chứa sản phẩm; câu hỏi khách hàng quay về Agent 01 (workflows/optimization.md) | ĐÃ QUYẾT ĐỊNH |
 
 ## Mâu thuẫn mở — CHƯA QUYẾT ĐỊNH
 | ID | PART | Mâu thuẫn | Phạm vi bị dừng / ảnh hưởng | Con người cần quyết định |
@@ -59,3 +65,5 @@ Chỉ bổ sung, không xóa. Thay đổi quyết định = thêm dòng mới th
 | C-24 | 03 | Người duyệt chuyên môn và pháp lý chưa được chỉ định | Quy trình phê duyệt | Chỉ định người duyệt |
 | C-25 | 04 | Yêu cầu PART-04 ghi nguồn `compliance/Claim-Registry.md`; file thực tế `compliance/claim-registry.md` | Không — dùng file thực tế | Không cần (ghi nhận) |
 | C-26 | 04 | Phần "Editing (CapCut/Vbee)": nếu dùng giọng đọc tổng hợp (Vbee) thay giọng Dược sĩ, có cần ghi rõ cho người xem không | Bước dựng video | CHƯA QUYẾT ĐỊNH |
+| C-27 | 05 | Bản tóm tắt dữ liệu trong yêu cầu PART-05 diễn đạt khác repo ở vài chỗ: lời hứa giá trị (câu chữ khác, không có "an toàn tuyệt đối"), mong muốn "giải pháp thảo dược" (không có trong repo), trụ cột Message House ghi "Giải pháp sản phẩm/dinh dưỡng an toàn" (repo: MSG-02 sản phẩm, CHỜ CLAIM). Dashboard hiển thị đúng bản trong repo | Không — repo là chuẩn theo D-027 | Có muốn cập nhật câu chữ chiến lược theo bản tóm tắt mới không: NOT_DECIDED |
+| C-28 | 05 | Tiêu chí chi tiết của Quality Gate (trọng số từng mục) do hệ thống đề xuất | Không chặn | Xác nhận hoặc điều chỉnh trọng số: NOT_DECIDED |

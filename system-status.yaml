@@ -4,6 +4,7 @@ project:
   owner: "Dược sĩ Lê Hương"
   initialized_on: 2026-10-06
   last_updated: 2026-10-06
+  dashboard: "npm start → http://127.0.0.1:5173 (local-first)"
   note: >
     Repo được khởi tạo ngày 2026-10-06. Kết quả PART-01 và PART-02 được tái tạo từ
     kết quả đã thống nhất trong phiên chat của chủ thương hiệu (không có dữ liệu
@@ -15,7 +16,7 @@ summary_counts:
   claims_approved: 0
   claims_unverified_or_pending_review: 26
   banned_phrases: 5
-  open_conflicts: 26          # C-01 đến C-26, xem decision-log.md
+  open_conflicts: 28          # C-01 đến C-28, xem decision-log.md
   insights_agreed: 1          # INS-01 (bằng chứng nguồn: CHƯA CÓ NGUỒN)
   insights_missing_text: 9    # INS-02 đến INS-10
   hypotheses: 2               # H-01, H-02
@@ -27,6 +28,7 @@ parts:
     title: "Nền móng thương hiệu: Chuyên gia, Thị trường, Khách hàng, Sản phẩm"
     unlocked: true
     status: completed_basic
+    status_label: "Hoàn thành (cơ bản)"
     completed_on: 2026-10-06
     criteria_met: "9/9 (mức cơ bản; sản phẩm thiếu tài liệu đã được ghi nhận)"
     session_dir: sessions/PART-01/
@@ -35,6 +37,7 @@ parts:
     title: "Insight khách hàng, Định vị, Lời hứa giá trị, Big Idea, Message House"
     unlocked: true
     status: recorded_with_open_conflicts
+    status_label: "Đã ghi nhận — còn mâu thuẫn chờ quyết định"
     recorded_on: 2026-10-06
     open_conflicts: [C-01, C-02, C-03, C-04, C-05, C-06, C-07, C-08, C-09, C-10, C-11, C-12]
     blocked_items:
@@ -47,6 +50,7 @@ parts:
     unlocked: true
     unlock_basis: "Quyết định của chủ thương hiệu ngày 2026-10-06 (decision-log.md D-011), dù C-01..C-12 còn mở"
     status: deployed_with_review_constraints
+    status_label: "Đã triển khai — có ràng buộc kiểm duyệt"
     deployed_on: 2026-10-06
     criteria:
       customer_journey: DAT
@@ -92,3 +96,28 @@ parts:
       - "Duyệt câu trả lời cho OBJ-01..OBJ-03"
       - "Cung cấp tài liệu sản phẩm để có claim APPROVED"
     session_dir: sessions/PART-04/
+
+  PART-05:
+    title: "Dashboard local-first, Quality Gate 100 điểm, Model Router, vòng phản hồi"
+    unlocked: true
+    unlock_basis: "Yêu cầu trực tiếp của chủ thương hiệu (decision-log.md D-027..D-031)"
+    status: dashboard_ready_limited
+    status_label: "Dashboard sẵn sàng — nội dung sản phẩm còn bị chặn"
+    deployed_on: 2026-10-06
+    components:
+      dashboard_pages: 11
+      lifecycle_states: 13
+      quality_gate: "app/shared/quality.ts (Tầng 0)"
+      compliance_rules: "config/compliance-rules.json (dùng chung TS + Python)"
+      model_router: "config/model-router.json — tầng 2/3 tắt"
+      optimization_workflow: "workflows/optimization.md"
+    tests: "npm test → 37/37 TypeScript + 6/6 Python ĐẠT"
+    data_sources:
+      connected: [repo-strategy, claim-registry, content-items]
+      not_connected: [customer-data, product-docs, model-api]
+      manual: [social-comments, video-metrics]
+      deferred: [social-api]
+    warning: >
+      Chưa có claim APPROVED, chưa có người duyệt pháp lý, độ tuổi chưa chốt.
+      Chỉ nội dung giáo dục không nhắc sản phẩm có thể đi tới xuất bản (qua người duyệt).
+    session_dir: sessions/PART-05/

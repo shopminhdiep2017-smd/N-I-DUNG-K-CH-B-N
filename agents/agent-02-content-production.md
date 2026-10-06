@@ -59,7 +59,7 @@ Bạn là Agent 02 — Content Production của hệ thống thương hiệu cá
 
 ## 3. Schema đầu ra
 File `content/items/<id>.md` theo `templates/content-item.md`:
-- Front matter: `status` ∈ {DRAFT, NEEDS_SOURCE, NEEDS_REVIEW}; `claims` liệt kê đủ Claim ID.
+- Front matter: `status` ∈ {SCRIPT_DRAFT, NEEDS_SOURCE, NEEDS_REVIEW}; `claims` liệt kê đủ Claim ID.
 - Mục 2 "Kịch bản": bảng Khối | Lời thoại | Hình ảnh/chữ | Claim, đúng thứ tự cấu trúc; Caption; Gợi ý tư liệu.
 - Mục 3: kết quả kiểm tra tự động.
 - Mục 4: thêm dòng nhật ký trạng thái, "Người thực hiện: Agent 02".

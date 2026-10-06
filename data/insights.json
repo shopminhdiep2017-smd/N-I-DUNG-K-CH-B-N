@@ -1,0 +1,144 @@
+[
+  {
+    "id": "INS-01",
+    "text": "Tôi muốn cải thiện triệt để tình trạng tê bì chân tay, ngủ sâu giấc hơn và phòng ngừa từ xa nguy cơ tai biến/tuần hoàn kém để giữ vững sức khỏe tự chủ tuổi trung niên, nhưng tôi vô cùng e ngại các loại thực phẩm bảo vệ sức khỏe trôi nổi, sợ mua phải hàng giả hoặc gặp sản phẩm thổi phồng công dụng không đúng thực tế, bởi vì tôi sợ 'tiền mất tật mang', cơ thể tuổi này rất nhạy cảm và tôi thiếu một Dược sĩ chuyên môn trực tiếp đứng ra bảo chứng, đồng hành theo dõi sát sao suốt quá trình sử dụng.",
+    "status": "HYPOTHESIS",
+    "topic": "Insight chính",
+    "evidence": [
+      {
+        "ref": "V-01",
+        "quote": "Kiến bò trong xương",
+        "source": "CHƯA CÓ NGUỒN"
+      },
+      {
+        "ref": "V-03",
+        "quote": "Sợ thành gánh nặng cho con cháu",
+        "source": "CHƯA CÓ NGUỒN"
+      },
+      {
+        "ref": "V-04",
+        "quote": "Uống đủ thứ tiền mất tật mang",
+        "source": "CHƯA CÓ NGUỒN"
+      }
+    ],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Chủ thương hiệu (phiên học PART-02)",
+        "action": "Thống nhất trong phiên học; bằng chứng CHƯA CÓ NGUỒN (C-10)"
+      }
+    ],
+    "notes": "Nguồn: strategy/customer-insights.md. 'cải thiện triệt để', 'phòng ngừa từ xa nguy cơ tai biến' là mong muốn của khách hàng, không phải lời hứa của thương hiệu."
+  },
+  {
+    "id": "INS-02",
+    "text": "",
+    "status": "MISSING",
+    "topic": "(có thể: nỗi sợ đột quỵ)",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-03",
+    "text": "",
+    "status": "MISSING",
+    "topic": "(có thể: gánh nặng cho con cháu)",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-04",
+    "text": "",
+    "status": "MISSING",
+    "topic": "(có thể: cô đơn trong bệnh lý tuổi già)",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-05",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-06",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-07",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-08",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-09",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "INS-10",
+    "text": "",
+    "status": "MISSING",
+    "topic": "",
+    "evidence": [],
+    "history": [],
+    "notes": "CHƯA CÓ NGUỒN – cần chủ thương hiệu cung cấp toàn văn"
+  },
+  {
+    "id": "H-01",
+    "text": "Hành vi tìm hiểu trên các kênh số cụ thể của khách hàng 40+.",
+    "status": "HYPOTHESIS",
+    "topic": "Giả thuyết",
+    "evidence": [],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Chủ thương hiệu (phiên học PART-02)",
+        "action": "Ghi nhận là giả thuyết"
+      }
+    ],
+    "notes": "Cách kiểm chứng: NOT_DECIDED"
+  },
+  {
+    "id": "H-02",
+    "text": "Khả năng chi trả chính xác theo thu nhập thực tế.",
+    "status": "HYPOTHESIS",
+    "topic": "Giả thuyết",
+    "evidence": [],
+    "history": [
+      {
+        "at": "2026-10-06",
+        "by": "Chủ thương hiệu (phiên học PART-02)",
+        "action": "Ghi nhận là giả thuyết"
+      }
+    ],
+    "notes": "Cách kiểm chứng: NOT_DECIDED"
+  }
+]

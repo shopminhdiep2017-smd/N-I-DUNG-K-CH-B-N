@@ -1,0 +1,33 @@
+{
+  "_note": "Luật kiểm tra dùng chung cho tools/check_content.py (Python) và app/shared/compliance.ts (TypeScript). Sửa ở đây, cả hai cùng cập nhật.",
+  "statuses": [
+    "IDEA", "CONTENT_BRIEF", "SCRIPT_DRAFT", "NEEDS_SOURCE", "NEEDS_REVIEW",
+    "APPROVED_TO_RECORD", "RECORDED", "EDITING", "FINAL_REVIEW",
+    "APPROVED_TO_PUBLISH", "PUBLISHED", "MEASURED", "LEARNING_CAPTURED"
+  ],
+  "aliases": { "DRAFT": "SCRIPT_DRAFT", "EDITED": "EDITING", "CONTENT BRIEF": "CONTENT_BRIEF" },
+  "banned": ["chữa khỏi", "đặc trị", "thuốc tiên", "khỏi 100%", "khỏi hoàn toàn", "cam kết khỏi", "thay thế bác sĩ"],
+  "absolute": ["tuyệt đối", "triệt để", "100%", "đúng bệnh", "gốc rễ", "xóa sạch", "dứt điểm", "vĩnh viễn", "đúng tình trạng"],
+  "offPositioning": ["tử vi", "xem tuổi", "phong thủy", "bói toán", "xem bói", "cung hoàng đạo", "tâm linh"],
+  "products": {
+    "Rich Coenzyme Q10": "coenzyme\\s*q10|\\bq10\\b",
+    "DHA EPA SQ": "dha\\s*epa",
+    "Nattokinase 60,000 FU": "nattokinase",
+    "Policosanol 10": "policosanol"
+  },
+  "healthWords": ["tuần hoàn", "tim mạch", "huyết áp", "mất ngủ", "giấc ngủ", "đột quỵ", "tai biến", "cục máu đông", "huyết khối", "mỡ máu", "cholesterol", "tê bì"],
+  "fabricationPatterns": [
+    "\\d+\\s*(trên|/)\\s*\\d+\\s*(khách|người|bệnh nhân)",
+    "\\d+\\s*%\\s*(khách|người|bệnh nhân)",
+    "khách của tôi đã (hết|khỏi)",
+    "chỉ còn\\s*\\d+\\s*(suất|hộp|phần)"
+  ],
+  "pendingLabel": "CHỜ CLAIM ĐƯỢC PHÊ DUYỆT",
+  "nonHuman": ["ai", "claude", "agent", "bot", "agent01", "agent02", "agent03", "gpt", "model"],
+  "signatures": {
+    "SCRIPT_DRAFT": ["brief_approved_by", "brief_approved_date"],
+    "APPROVED_TO_RECORD": ["record_approved_by", "record_approved_date"],
+    "APPROVED_TO_PUBLISH": ["publish_approved_by", "publish_approved_date"]
+  },
+  "highRiskClaims": ["CLM-006", "CLM-008", "CLM-011", "CLM-012", "CLM-013", "CLM-014", "CLM-020", "CLM-023", "CLM-024", "CLM-025"]
+}

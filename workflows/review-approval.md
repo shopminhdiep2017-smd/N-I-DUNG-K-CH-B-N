@@ -3,7 +3,7 @@
 ## Kiểm duyệt bản thảo (sau Agent 02)
 1. Agent 03 chạy `python3 tools/check_content.py content/items/<id>.md`.
 2. Agent 03 đọc kịch bản theo `content/qa-checklist.md` A–F, ghi `content/qa-reports/<id>-qa.md`.
-3. Có lỗi CHẶN → trả về `DRAFT`, Agent 02 sửa.
+3. Có lỗi CHẶN → trả về `SCRIPT_DRAFT`, Agent 02 sửa.
 4. Còn claim chưa APPROVED → `NEEDS_SOURCE`. Nội dung đứng đây đến khi có tài liệu và claim được duyệt (H3).
 5. Không còn lỗi CHẶN và claim đều APPROVED (hoặc không có claim) → `NEEDS_REVIEW`.
 

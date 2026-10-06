@@ -20,7 +20,7 @@ Lệnh: `python3 tools/check_content.py content/items/<id>.md` → PASS / WARN /
 |---|---|---|---|---|
 
 ## 4. Đề xuất trạng thái (con người quyết định)
-- Đề xuất: giữ DRAFT / chuyển NEEDS_SOURCE / chuyển NEEDS_REVIEW
+- Đề xuất: giữ SCRIPT_DRAFT / chuyển NEEDS_SOURCE / chuyển NEEDS_REVIEW
 - Agent 03 **không** chuyển sang APPROVED_TO_RECORD hay APPROVED_TO_PUBLISH.
 
 ## 5. Việc cần con người quyết định

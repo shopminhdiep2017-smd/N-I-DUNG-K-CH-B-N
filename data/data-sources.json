@@ -1,0 +1,70 @@
+[
+  {
+    "id": "repo-strategy",
+    "name": "Kho chiến lược trong repo (brand/, strategy/)",
+    "kind": "local",
+    "path": "strategy/positioning.md",
+    "status": "CONNECTED",
+    "note": "Dữ liệu PART-01..02, chỉ đọc trên Dashboard"
+  },
+  {
+    "id": "claim-registry",
+    "name": "Claim Registry",
+    "kind": "local",
+    "path": "compliance/claim-registry.md",
+    "status": "CONNECTED",
+    "note": "26 claim; 0 APPROVED (2026-10-06)"
+  },
+  {
+    "id": "content-items",
+    "name": "Kho nội dung (content/items/)",
+    "kind": "local",
+    "path": "content/items",
+    "status": "CONNECTED",
+    "note": "Mỗi nội dung một file markdown"
+  },
+  {
+    "id": "customer-data",
+    "name": "Dữ liệu khách hàng (private/customer-data.json)",
+    "kind": "local",
+    "path": "private/customer-data.json",
+    "status": "NOT_CONNECTED",
+    "note": "Ngoài git. File được tạo khi lưu câu nói đầu tiên"
+  },
+  {
+    "id": "product-docs",
+    "name": "Tài liệu sản phẩm (products/docs/)",
+    "kind": "local",
+    "path": "products/docs",
+    "status": "NOT_CONNECTED",
+    "note": "CHƯA CÓ NGUỒN — cần công bố, nhãn của 4 sản phẩm"
+  },
+  {
+    "id": "social-comments",
+    "name": "Bình luận / tin nhắn mạng xã hội",
+    "kind": "manual",
+    "status": "MANUAL",
+    "note": "Nhập tay (đã ẩn danh) vào Thư viện dữ liệu khách hàng. Kênh cụ thể: NOT_DECIDED"
+  },
+  {
+    "id": "social-api",
+    "name": "Kết nối API mạng xã hội (tự động lấy bình luận, chỉ số)",
+    "kind": "api",
+    "status": "DEFERRED",
+    "note": "Deferred Task: cần chọn kênh, tài khoản, quyền truy cập và chính sách dữ liệu"
+  },
+  {
+    "id": "video-metrics",
+    "name": "Chỉ số video",
+    "kind": "manual",
+    "status": "MANUAL",
+    "note": "Nhập tay ở trang Phân tích hiệu quả"
+  },
+  {
+    "id": "model-api",
+    "name": "Model API (tầng 2/3 của Model Router)",
+    "kind": "api",
+    "status": "NOT_CONNECTED",
+    "note": "Tắt mặc định (local-first). Xem config/model-router.json"
+  }
+]

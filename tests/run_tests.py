@@ -21,8 +21,8 @@ CASES = [
     ("TC5", "Kịch bản bán hàng có sản phẩm UNVERIFIED do Agent 02 viết: có nhãn chờ claim, không FAIL", R / "tc05-sales-script.md", "NO_FAIL", None),
     ("TC5b", "Sản phẩm UNVERIFIED bị đẩy sang APPROVED_TO_RECORD bị chặn", F / "tc05b-sales-forced-record.md", "FAIL", "không được phép khi còn claim chưa APPROVED"),
     ("TC6", "Claim thiếu nguồn bị bắt", F / "tc06-missing-source.md", "FAIL", "không khai báo claim"),
-    ("TC7", "AI tự ký APPROVED_TO_PUBLISH bị chặn", F / "tc07-publish-by-agent.md", "FAIL", "APPROVED_TO_PUBLISH bắt buộc con người duyệt"),
-    ("TC7b", "APPROVED_TO_PUBLISH thiếu chữ ký bị chặn", F / "tc07b-publish-unsigned.md", "FAIL", "APPROVED_TO_PUBLISH bắt buộc con người duyệt"),
+    ("TC7", "AI tự ký APPROVED_TO_PUBLISH bị chặn", F / "tc07-publish-by-agent.md", "FAIL", "APPROVED_TO_PUBLISH cần publish_approved_by"),
+    ("TC7b", "APPROVED_TO_PUBLISH thiếu chữ ký bị chặn", F / "tc07b-publish-unsigned.md", "FAIL", "APPROVED_TO_PUBLISH cần publish_approved_by"),
 ]
 
 

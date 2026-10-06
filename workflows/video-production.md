@@ -14,12 +14,12 @@ Customer Data → Agent 01 (Research & Strategy) → [H1 Human Insight Approval]
 | 2. Research & Strategy | Agent 01 | Research request | `research/reports/RS-…md` | — |
 | 3. Human Insight Approval | Người | Báo cáo RS | Insight được duyệt | — |
 | 4. Content Brief | Người / Agent 02 soạn nháp | Insight đã duyệt | `content/items/CI-…md` | IDEA |
-| 5. Duyệt brief | Người | Brief | `brief_approved_by` | IDEA → DRAFT |
-| 6. Content Production | Agent 02 | Brief đã duyệt | Kịch bản | DRAFT → NEEDS_SOURCE / NEEDS_REVIEW |
+| 5. Duyệt brief | Người | Brief | `brief_approved_by` | CONTENT_BRIEF → SCRIPT_DRAFT |
+| 6. Content Production | Agent 02 | Brief đã duyệt | Kịch bản | SCRIPT_DRAFT → NEEDS_SOURCE / NEEDS_REVIEW |
 | 7. Quality & Compliance | Agent 03 | Kịch bản | `content/qa-reports/…-qa.md` | Đề xuất trạng thái |
 | 8. Human Final Approval | Người | Kịch bản + QA | `record_approved_by` | APPROVED_TO_RECORD |
 | 9. Recording | Người | Kịch bản duyệt | File quay | RECORDED |
-| 10. Editing | Người (CapCut / Vbee) | File quay | Bản dựng | EDITED |
+| 10. Editing | Người (CapCut / Vbee) | File quay | Bản dựng | EDITING → FINAL_REVIEW |
 | 11. Duyệt đăng | Người | Bản dựng cuối | `publish_approved_by` | APPROVED_TO_PUBLISH |
 | 12. Publishing | Người | Bản duyệt | `published_url` | PUBLISHED |
 | 13. Performance Analysis | Người ghi số; Agent 01 phân tích | Chỉ số | `templates/performance-log.md` | MEASURED |

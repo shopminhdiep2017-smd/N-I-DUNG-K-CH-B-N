@@ -37,3 +37,18 @@
 - Mới: thư mục `content/items/`, `content/qa-reports/`, `research/reports/`
 - Mới: `sessions/PART-04/part-04-report.md`, `sessions/PART-04/test-results/`
 - Cập nhật: `README.md`, `CLAUDE.md` (bổ sung mục PART-04), `content/qa-checklist.md` (thêm liên kết PART-04), `decision-log.md` (D-020..D-025, C-25, C-26), `system-status.yaml`
+
+## 2026-10-06 — PART-05: Dashboard local-first, Quality Gate, Model Router
+- Mới: `package.json`, `package-lock.json`, `tsconfig.json`, `vite.config.ts`
+- Mới: `app/shared/` (types, rules, lifecycle, frontmatter, markdown-table, script, compliance, quality, router, prompts)
+- Mới: `app/server/` (repo, api, llm, vite-plugin); `app/cli/check.ts`
+- Mới: `app/web/` (index.html, main.tsx, App.tsx, api.ts, styles.css, components/ui.tsx, 11 trang trong pages/)
+- Mới: `app/tests/` (helpers, rules, quality, workflow — 37 test)
+- Mới: `config/compliance-rules.json`, `config/model-router.json`
+- Mới: `data/insights.json`, `data/data-sources.json`, `data/approvals.json`, `data/analytics.json`
+- Mới: `workflows/optimization.md`, `sessions/PART-05/part-05-report.md`
+- Cập nhật: `tools/check_content.py` (đọc luật chung, 13 trạng thái, chặn ngoài định vị và số liệu bịa), `tests/run_tests.py`
+- Cập nhật: `approval-policy.md` (mục 7 vòng đời 13 trạng thái, mục 8 Quality Gate), `CLAUDE.md`, `README.md`, `.gitignore`
+- Cập nhật: `agents/agent-02…`, `agents/agent-03…`, `templates/content-item.md`, `templates/qa-report.md`, `workflows/daily.md`, `workflows/review-approval.md`, `workflows/video-production.md`, `.claude/commands/kiem-duyet.md` (tên trạng thái mới)
+- Cập nhật: `decision-log.md` (D-026..D-031, C-27, C-28), `system-status.yaml` (PART-05)
+- Xóa khỏi git: `tools/__pycache__/` (file biên dịch Python bị commit nhầm ở PART-04)

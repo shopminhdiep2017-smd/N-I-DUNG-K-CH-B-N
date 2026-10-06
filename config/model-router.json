@@ -1,0 +1,23 @@
+{
+  "_note": "Model Router – local-first. Không ghi tên model hay API key trong file này. Tên model lấy từ biến môi trường (modelEnv); API key lấy từ ANTHROPIC_API_KEY trong .env.local hoặc môi trường máy.",
+  "tiers": {
+    "0": { "name": "Logic (điều kiện, schema, template)", "enabled": true },
+    "1": { "name": "Manual Claude Task (copy prompt vào Claude Code)", "enabled": true },
+    "2": { "name": "Model thấp qua API", "enabled": false, "modelEnv": "AIOS_MODEL_LOW" },
+    "3": { "name": "Model cao qua API", "enabled": false, "modelEnv": "AIOS_MODEL_HIGH" }
+  },
+  "tasks": {
+    "compliance_check": 0,
+    "quality_score": 0,
+    "status_filter": 0,
+    "pii_check": 0,
+    "classify_customer_data": 2,
+    "propose_insight": 3,
+    "draft_script": 3,
+    "draft_caption": 2,
+    "semantic_review": 3,
+    "prepare_consultation": 1,
+    "propose_learning": 2
+  },
+  "humanOnlyTasks": ["approve_insight", "approve_brief", "approve_record", "approve_publish", "approve_claim", "publish", "send_message_to_customer"]
+}

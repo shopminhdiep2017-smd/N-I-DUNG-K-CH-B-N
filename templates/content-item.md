@@ -1,7 +1,7 @@
 ---
 id: CI-YYYYMMDD-01
 title: Tên nội dung
-status: IDEA                 # IDEA, DRAFT, NEEDS_SOURCE, NEEDS_REVIEW, APPROVED_TO_RECORD, RECORDED, EDITED, APPROVED_TO_PUBLISH, PUBLISHED, MEASURED, LEARNING_CAPTURED
+status: IDEA                 # IDEA, CONTENT_BRIEF, SCRIPT_DRAFT, NEEDS_SOURCE, NEEDS_REVIEW, APPROVED_TO_RECORD, RECORDED, EDITING, FINAL_REVIEW, APPROVED_TO_PUBLISH, PUBLISHED, MEASURED, LEARNING_CAPTURED
 format: video-gia-tri        # video-gia-tri, video-sua-niem-tin, video-chuyen-mon, video-cau-chuyen, video-xu-ly-phan-doi, video-ban-hang, vsl
 stage_5a: Aware              # Aware, Appeal, Ask, Act, Advocate
 pillar: P1
