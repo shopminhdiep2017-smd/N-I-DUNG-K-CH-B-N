@@ -25,3 +25,15 @@
 - sessions/PART-03/: `part-03-summary.md`, `part-03-report.md`
 - decision-log.md: D-011..D-019, C-13..C-24
 - system-status.yaml: PART-03 deployed_with_review_constraints; PART-04 khóa (pending_review)
+
+## 2026-10-06 — PART-04: MVP 3 Agent và quy trình vận hành
+- Mới: `approval-policy.md`, `.gitignore` (private/)
+- Mới: `agents/README.md`, `agents/agent-01-research-strategy.md`, `agents/agent-02-content-production.md`, `agents/agent-03-quality-sales.md`
+- Mới: `.claude/agents/research-strategy.md`, `content-production.md`, `quality-sales.md`
+- Mới: `.claude/commands/trang-thai.md`, `nghien-cuu.md`, `viet-kich-ban.md`, `kiem-duyet.md`, `chuan-bi-tu-van.md`
+- Mới: `workflows/daily.md`, `weekly.md`, `video-production.md`, `review-approval.md`
+- Mới: `templates/content-item.md`, `research-request.md`, `qa-report.md`, `consultation-prep.md`, `performance-log.md`
+- Mới: `tools/check_content.py`; `tests/run_tests.py`; `tests/fixtures/` (dữ liệu giả lập)
+- Mới: thư mục `content/items/`, `content/qa-reports/`, `research/reports/`
+- Mới: `sessions/PART-04/part-04-report.md`, `sessions/PART-04/test-results/`
+- Cập nhật: `README.md`, `CLAUDE.md` (bổ sung mục PART-04), `content/qa-checklist.md` (thêm liên kết PART-04), `decision-log.md` (D-020..D-025, C-25, C-26), `system-status.yaml`

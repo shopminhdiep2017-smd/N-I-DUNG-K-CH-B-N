@@ -53,3 +53,21 @@ sessions/PART-XX/          Bản lưu kết quả từng PART
 
 ## Quy trình phê duyệt nội dung
 Xem `content/qa-checklist.md`. Không nội dung sức khỏe nào được đánh dấu "Sẵn sàng xuất bản" khi còn claim chưa `APPROVED`.
+
+## Bổ sung PART-04 — MVP 3 Agent
+```
+agents/                    Định nghĩa 3 Agent (cấu hình, prompt, schema) — nguồn chính
+.claude/agents/            Lớp vỏ subagent cho Claude Code
+.claude/commands/          Lệnh tắt: /trang-thai /nghien-cuu /viet-kich-ban /kiem-duyet /chuan-bi-tu-van
+approval-policy.md         Vòng đời nội dung (IDEA → … → LEARNING_CAPTURED), điểm duyệt H1–H6
+workflows/                 Quy trình hằng ngày, hằng tuần, sản xuất video, kiểm duyệt
+templates/                 Mẫu vận hành: content-item, research-request, qa-report, consultation-prep, performance-log
+content/items/             Mỗi nội dung một file (front matter có status và chữ ký duyệt)
+content/qa-reports/        Báo cáo QA của Agent 03
+research/reports/          Báo cáo nghiên cứu của Agent 01
+tools/check_content.py     Kiểm tra tự động theo luật cố định
+tests/                     Bộ test MVP (dữ liệu giả lập)
+private/                   Dữ liệu khách hàng thật — KHÔNG commit (.gitignore)
+```
+- AI (Claude hoặc Agent) **không bao giờ** điền `*_approved_by`, không chuyển nội dung vượt `NEEDS_REVIEW`, không xuất bản, không gửi tin nhắn cho khách.
+- Sau khi sửa file trong `content/items/`, chạy `python3 tools/check_content.py <file>`.

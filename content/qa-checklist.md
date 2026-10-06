@@ -41,3 +41,6 @@ Cập nhật: 2026-10-06 · Áp dụng cho mọi brief, kịch bản, VSL trư�
 | 5 | Sản xuất & xuất bản | — | Sẵn sàng xuất bản |
 
 **Không nội dung sức khỏe nào được chuyển sang "Sẵn sàng xuất bản" khi còn claim chưa APPROVED.** Hiện tại: 0 nội dung ở trạng thái Sẵn sàng xuất bản.
+
+## Bổ sung từ PART-04
+Vòng đời trạng thái chi tiết và các điểm duyệt H1–H6: xem `approval-policy.md` và `workflows/review-approval.md`. Bộ kiểm tra tự động: `python3 tools/check_content.py`.

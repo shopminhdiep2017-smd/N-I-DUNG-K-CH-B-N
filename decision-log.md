@@ -23,6 +23,12 @@ Chỉ bổ sung, không xóa. Thay đổi quyết định = thêm dòng mới th
 | D-017 | 2026-10-06 | 03 | CTA theo giai đoạn (Aware/Appeal: bình luận; Ask/Act: nhắn tin; Advocate: chia sẻ) | ĐÃ THỐNG NHẤT (C-15) |
 | D-018 | 2026-10-06 | 03 | Quy trình tư vấn 4 bước; follow-up sau 3, 7, 30 ngày | ĐÃ THỐNG NHẤT (C-04, C-06) |
 | D-019 | 2026-10-06 | 03 | Nội dung bắt buộc con người duyệt: VSL, video bán hàng nhắc sản phẩm; tuyên bố tuần hoàn, tim mạch, huyết áp, giấc ngủ; cụm tuyệt đối/nhạy cảm | ĐÃ QUYẾT ĐỊNH |
+| D-020 | 2026-10-06 | 04 | Chủ thương hiệu yêu cầu xây khung MVP Agent an toàn dù điều kiện mở khóa PART-04 chưa đạt (còn claim UNVERIFIED, C-01..C-24 mở). PART-04 mở có giới hạn: hệ thống chỉ soạn nháp/kiểm tra; không nội dung nhắc sản phẩm nào được quay/đăng đến khi claim APPROVED | ĐÃ QUYẾT ĐỊNH |
+| D-021 | 2026-10-06 | 04 | Mô hình 3 Agent: 01 Research & Strategy, 02 Content Production, 03 Quality & Sales Support (agents/) | ĐÃ QUYẾT ĐỊNH |
+| D-022 | 2026-10-06 | 04 | Phân chia AI / con người; APPROVED_TO_PUBLISH, cam kết tư vấn y tế/sản phẩm, phát hành công khai bắt buộc con người | ĐÃ QUYẾT ĐỊNH |
+| D-023 | 2026-10-06 | 04 | Pipeline 14 bước và vòng đời 11 trạng thái nội dung (approval-policy.md) | ĐÃ QUYẾT ĐỊNH |
+| D-024 | 2026-10-06 | 04 | Đề xuất kỹ thuật MVP: Agent chạy dưới dạng subagent Claude Code + lệnh tắt; kiểm tra luật cố định bằng tools/check_content.py; dữ liệu tư vấn lưu private/ ngoài git | ĐỀ XUẤT ĐÃ TRIỂN KHAI — chủ thương hiệu có thể đổi |
+| D-025 | 2026-10-06 | 04 | Người duyệt H4/H5: nội dung không nhắc sản phẩm do Dược sĩ Lê Hương tự duyệt; nội dung nhắc sản phẩm thêm người duyệt pháp lý | CẦN CHỦ THƯƠNG HIỆU XÁC NHẬN (C-24) |
 
 ## Mâu thuẫn mở — CHƯA QUYẾT ĐỊNH
 | ID | PART | Mâu thuẫn | Phạm vi bị dừng / ảnh hưởng | Con người cần quyết định |
@@ -51,3 +57,5 @@ Chỉ bổ sung, không xóa. Thay đổi quyết định = thêm dòng mới th
 | C-22 | 03 | Quyền lợi, giá, combo trong VSL/bán hàng/OBJ-02 — CHƯA CÓ NGUỒN | Video bán hàng, VSL, OBJ-02 | Cung cấp dữ liệu |
 | C-23 | 03 | Yêu cầu pháp lý quảng cáo TPBVSK (khuyến cáo bắt buộc, thủ tục xác nhận nếu có) — CHƯA CÓ NGUỒN | Toàn bộ nội dung công khai | Người phụ trách pháp lý xác nhận |
 | C-24 | 03 | Người duyệt chuyên môn và pháp lý chưa được chỉ định | Quy trình phê duyệt | Chỉ định người duyệt |
+| C-25 | 04 | Yêu cầu PART-04 ghi nguồn `compliance/Claim-Registry.md`; file thực tế `compliance/claim-registry.md` | Không — dùng file thực tế | Không cần (ghi nhận) |
+| C-26 | 04 | Phần "Editing (CapCut/Vbee)": nếu dùng giọng đọc tổng hợp (Vbee) thay giọng Dược sĩ, có cần ghi rõ cho người xem không | Bước dựng video | CHƯA QUYẾT ĐỊNH |
