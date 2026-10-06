@@ -15,7 +15,7 @@ summary_counts:
   claims_approved: 0
   claims_unverified_or_pending_review: 26
   banned_phrases: 5
-  open_conflicts: 24          # C-01 đến C-24, xem decision-log.md
+  open_conflicts: 26          # C-01 đến C-26, xem decision-log.md
   insights_agreed: 1          # INS-01 (bằng chứng nguồn: CHƯA CÓ NGUỒN)
   insights_missing_text: 9    # INS-02 đến INS-10
   hypotheses: 2               # H-01, H-02
@@ -64,14 +64,31 @@ parts:
     session_dir: sessions/PART-03/
 
   PART-04:
-    unlocked: false
-    status: pending_review
-    status_label: "Chờ hoàn tất kiểm duyệt các mục UNVERIFIED"
-    unlock_conditions:
+    title: "Hoàn thiện hệ thống AI Agent và quy trình vận hành MVP"
+    unlocked: true
+    unlock_basis: "Chủ thương hiệu yêu cầu xây khung MVP an toàn dù điều kiện mở khóa cũ chưa đạt (decision-log.md D-020)"
+    status: mvp_ready_limited
+    status_label: "MVP Agent sẵn sàng ở mức giới hạn an toàn"
+    deployed_on: 2026-10-06
+    warning: >
+      Toàn bộ claim sản phẩm vẫn UNVERIFIED; C-01..C-26 còn mở; người duyệt pháp lý
+      chưa chỉ định. Chỉ nội dung KHÔNG nhắc sản phẩm có thể đi tới xuất bản, và vẫn
+      phải qua con người duyệt H4/H5.
+    capabilities:
+      agent_01_research_strategy: ready
+      agent_02_content_production: ready
+      agent_03_quality_sales: ready
+      compliance_checker: "tools/check_content.py"
+      product_content_publishing: blocked_until_claims_approved
+    tests:
+      automated_rule_checks: "6/6 ĐẠT (python3 tests/run_tests.py)"
+      agent_behavior_tests: "8/8 ĐẠT (sessions/PART-04/test-results/)"
+    previous_unmet_conditions_still_open:
       - "Chốt độ tuổi khách hàng (C-01)"
       - "Chỉ định người duyệt chuyên môn và pháp lý (C-24)"
       - "Duyệt hoặc sửa các cụm từ tuyệt đối/nhạy cảm (C-03, C-04, C-07, C-13, C-14, C-15)"
       - "Quyết định phạm vi cam kết 'đồng hành trọn đời 1-1' (C-06)"
       - "Cung cấp toàn văn INS-02..INS-10 và nội dung 30 ý tưởng video"
       - "Duyệt câu trả lời cho OBJ-01..OBJ-03"
-      - "Cung cấp tài liệu sản phẩm để có ít nhất các claim dùng trong nội dung đầu tiên ở trạng thái APPROVED"
+      - "Cung cấp tài liệu sản phẩm để có claim APPROVED"
+    session_dir: sessions/PART-04/
