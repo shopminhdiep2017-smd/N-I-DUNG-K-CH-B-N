@@ -57,3 +57,6 @@
 - Mới: `research/reports/RS-20261006-01.md` (5 insight đề xuất từ nghiên cứu thứ cấp, 16 nguồn)
 - Cập nhật: `data/insights.json` thêm PINS-01..PINS-05 (HYPOTHESIS, chờ người duyệt)
 - Cập nhật: `decision-log.md` thêm C-29, C-30
+
+## 2026-10-07 — Kịch bản đầu tiên từ insight PINS-01
+- Mới: `content/items/CI-20261007-01.md` (video giá trị, Appeal, P8, PINS-01) — Quality Gate kịch bản 100/100, brief 100/100, tuân thủ WARN (từ khóa "tê bì", không có tuyên bố sản phẩm). Trạng thái IDEA, chờ người duyệt brief.
