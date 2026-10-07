@@ -65,3 +65,6 @@
 - `decision-log.md`: D-032 chốt độ tuổi 35–65 (giải quyết C-01)
 - `brand/market-segment.md`, `brand/target-customer.md`: ghi chú cập nhật
 - `content/items/CI-20261007-01.md`: viết lại cho nhóm 35–65 ("Lo cho cả nhà, còn sức khỏe của mình thì sao?"), xưng "anh chị", vẫn ở trạng thái IDEA
+
+## 2026-10-07 — CI-20261007-01 bản v3
+- Viết lại theo lối kể cảnh đời thường: tiêu đề "Lần cuối anh chị đi khám cho chính mình là khi nào?"; Quality Gate 100/100; vẫn IDEA
