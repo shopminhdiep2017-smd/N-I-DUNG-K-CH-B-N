@@ -5,3 +5,6 @@ Người trung niên hay bị **tê bì chân tay, hoa mắt chóng mặt, mất
 
 - Độ tuổi: 35–65 (PART-01) hoặc 40–65 (PART-02). **CHƯA QUYẾT ĐỊNH (C-01)**.
 - Vấn đề ưu tiên cần giải quyết: Xây dựng niềm tin vững chắc; xóa bỏ nỗi sợ hàng giả và nỗi ám ảnh đột quỵ, gánh nặng cho con cháu, thông qua nội dung chuyên môn chân thực.
+
+## Cập nhật 2026-10-07
+- Độ tuổi: **35–65** — chủ thương hiệu chốt (D-032, giải quyết C-01).

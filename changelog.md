@@ -60,3 +60,8 @@
 
 ## 2026-10-07 — Kịch bản đầu tiên từ insight PINS-01
 - Mới: `content/items/CI-20261007-01.md` (video giá trị, Appeal, P8, PINS-01) — Quality Gate kịch bản 100/100, brief 100/100, tuân thủ WARN (từ khóa "tê bì", không có tuyên bố sản phẩm). Trạng thái IDEA, chờ người duyệt brief.
+
+## 2026-10-07 — Chốt độ tuổi 35–65, viết lại kịch bản CI-20261007-01
+- `decision-log.md`: D-032 chốt độ tuổi 35–65 (giải quyết C-01)
+- `brand/market-segment.md`, `brand/target-customer.md`: ghi chú cập nhật
+- `content/items/CI-20261007-01.md`: viết lại cho nhóm 35–65 ("Lo cho cả nhà, còn sức khỏe của mình thì sao?"), xưng "anh chị", vẫn ở trạng thái IDEA

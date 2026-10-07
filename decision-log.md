@@ -35,6 +35,7 @@ Chỉ bổ sung, không xóa. Thay đổi quyết định = thêm dòng mới th
 | D-029 | 2026-10-06 | 05 | Quality Gate 100 điểm cho Insight, Brief, Kịch bản: < 80 sửa, 80–89 xem kỹ, ≥ 90 vào hàng chờ; blocker thắng điểm; không tự động xuất bản | ĐÃ QUYẾT ĐỊNH (tiêu chí chi tiết: đề xuất, chủ thương hiệu có thể điều chỉnh) |
 | D-030 | 2026-10-06 | 05 | Model Router: Tầng 0 logic → Tầng 1 Manual Claude Task → Tầng 2/3 API (tắt mặc định, tên model qua biến môi trường, API key ngoài source code) | ĐÃ QUYẾT ĐỊNH |
 | D-031 | 2026-10-06 | 05 | Phân tích hiệu quả chỉ theo dõi video giáo dục không chứa sản phẩm; câu hỏi khách hàng quay về Agent 01 (workflows/optimization.md) | ĐÃ QUYẾT ĐỊNH |
+| D-032 | 2026-10-07 | 05 | Chủ thương hiệu chốt độ tuổi khách hàng mục tiêu: **35–65** (giải quyết C-01; giữ đúng quyết định PART-01, không dùng 40–65 của PART-02) | ĐÃ QUYẾT ĐỊNH |
 
 ## Mâu thuẫn mở — CHƯA QUYẾT ĐỊNH
 | ID | PART | Mâu thuẫn | Phạm vi bị dừng / ảnh hưởng | Con người cần quyết định |

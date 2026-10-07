@@ -6,3 +6,6 @@ Người trung niên **35–65 tuổi** gặp các vấn đề về tuần hoàn
 
 ## Mâu thuẫn mở
 - **C-01:** PART-02 dùng dữ liệu nhóm **40–65 tuổi**. Độ tuổi cuối cùng: **CHƯA QUYẾT ĐỊNH**. File này giữ nguyên quyết định PART-01 cho đến khi chủ thương hiệu chốt.
+
+## Cập nhật 2026-10-07
+- **C-01 đã chốt: 35–65 tuổi** (decision-log.md D-032).
