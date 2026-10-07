@@ -131,7 +131,7 @@ def check(path, registry):
 
     # 5. Điểm còn mở
     if re.search(r"\b(35|40)\s*[–-]\s*65\b|\bu40", low):
-        warns.append("Có độ tuổi cụ thể — độ tuổi CHƯA QUYẾT ĐỊNH (C-01)")
+        warns.append("Có độ tuổi cụ thể — độ tuổi đã chốt 35–65 (D-032); tránh ghi số tuổi trong lời thoại công khai")
     if "trọn đời" in low:
         warns.append("'trọn đời' — phạm vi cam kết CHƯA QUYẾT ĐỊNH (C-06)")
     return fails, warns

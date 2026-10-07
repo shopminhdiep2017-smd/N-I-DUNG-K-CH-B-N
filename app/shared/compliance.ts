@@ -100,7 +100,7 @@ export function checkCompliance(meta: Meta, body: string, registry: Record<strin
     }
   }
 
-  if (/\b(35|40)\s*[–-]\s*65\b|\bu40/i.test(low)) warn("AGE", "Có độ tuổi cụ thể — độ tuổi NOT_DECIDED (C-01)");
+  if (/\b(35|40)\s*[–-]\s*65\b|\bu40/i.test(low)) warn("AGE", "Có độ tuổi cụ thể — độ tuổi đã chốt 35–65 (D-032); tránh ghi số tuổi trong lời thoại công khai");
   if (low.includes("trọn đời")) warn("LIFETIME", "'trọn đời' — phạm vi cam kết NOT_DECIDED (C-06)");
   return finish(findings);
 }
