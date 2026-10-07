@@ -1,0 +1,409 @@
+{
+ "source": "input.mp4",
+ "transcript": "transcript.json",
+ "theme": "editorial",
+ "graphics_zone": [
+  0.1,
+  0.4
+ ],
+ "subject": {
+  "scale": 1.0,
+  "offset_y": 0.06,
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "sharpen": 0.7,
+  "denoise": true,
+  "grade": {
+   "brightness": 0.04,
+   "gamma": 1.1,
+   "contrast": 1.05,
+   "saturation": 1.06
+  },
+  "face": {
+   "center": [
+    0.5,
+    0.5
+   ],
+   "radius": 0.13,
+   "light": 0.15,
+   "sharpen": 100
+  },
+  "top_shade": 0.25,
+  "bg_dim": 0.03
+ },
+ "cuts": {
+  "auto": false,
+  "remove": [
+   [
+    0.0,
+    0.574
+   ],
+   [
+    3.675,
+    4.068
+   ],
+   [
+    15.175,
+    15.584
+   ],
+   [
+    22.135,
+    22.585
+   ],
+   [
+    24.1,
+    24.301
+   ],
+   [
+    25.467,
+    25.662
+   ],
+   [
+    29.473,
+    29.788
+   ],
+   [
+    32.015,
+    32.476
+   ],
+   [
+    36.821,
+    37.121
+   ],
+   [
+    40.469,
+    40.735
+   ],
+   [
+    43.489,
+    44.011
+   ],
+   [
+    45.971,
+    46.456
+   ],
+   [
+    48.565,
+    48.789
+   ],
+   [
+    49.564,
+    49.8
+   ],
+   [
+    50.942,
+    51.196
+   ],
+   [
+    52.906,
+    53.362
+   ],
+   [
+    58.109,
+    58.356
+   ],
+   [
+    59.537,
+    59.77
+   ],
+   [
+    61.586,
+    62.102
+   ],
+   [
+    66.195,
+    66.715
+   ],
+   [
+    68.707,
+    68.999
+   ],
+   [
+    71.309,
+    71.602
+   ]
+  ]
+ },
+ "edl_table": [
+  {
+   "time": "00:00–00:07",
+   "speech": "Gác lại tê tay chân, mệt mỏi, mất ngủ",
+   "idea": "Hook",
+   "visual": "Checklist 3 dấu hiệu → câu trích “Lo cho nhà xong rồi tính?”"
+  },
+  {
+   "time": "00:07–00:11",
+   "speech": "Video này dành riêng cho anh chị",
+   "idea": "Gọi đúng người",
+   "visual": "Headline"
+  },
+  {
+   "time": "00:11–00:18",
+   "speech": "Chỗ dựa của cả nhà",
+   "idea": "Insight",
+   "visual": "Checklist: con / bố mẹ / công việc"
+  },
+  {
+   "time": "00:18–00:30",
+   "speech": "Chắc tại mệt thôi… chịu đựng một mình",
+   "idea": "Nỗi khổ thầm kín",
+   "visual": "Headline trích dẫn → flow"
+  },
+  {
+   "time": "00:31–00:43",
+   "speech": "Chăm sóc bản thân không ích kỷ… mình khỏe",
+   "idea": "Thông điệp chính",
+   "visual": "Headline + zoom + câu chốt"
+  },
+  {
+   "time": "00:44–01:01",
+   "speech": "Ghi lại dấu hiệu, đi khám",
+   "idea": "Giải pháp",
+   "visual": "Checklist 4 mục ghi chú"
+  },
+  {
+   "time": "01:01–01:11",
+   "speech": "Bao lâu chưa khám… bình luận",
+   "idea": "CTA",
+   "visual": "Câu hỏi + CTA bình luận"
+  }
+ ],
+ "overlays": [
+  {
+   "type": "checklist",
+   "start": 1.9,
+   "end": 4.95,
+   "title": "Anh chị có đang gác lại?",
+   "items": [
+    "Tê tay chân",
+    "Mệt mỏi",
+    "Mất ngủ"
+   ],
+   "reveal": [
+    2.58,
+    2.96,
+    4.16
+   ],
+   "mark": "dot",
+   "mark_color": "yellow",
+   "accent": "yellow",
+   "size": 46,
+   "y": 0.25,
+   "sfx": "pop"
+  },
+  {
+   "type": "headline",
+   "start": 4.98,
+   "end": 7.5,
+   "kicker": "Vì nghĩ",
+   "text": "“Lo cho nhà xong rồi tính”",
+   "accent": "yellow",
+   "size": 84,
+   "anim": "slide",
+   "y": 0.25
+  },
+  {
+   "type": "headline",
+   "start": 7.66,
+   "end": 11.5,
+   "kicker": "Video này",
+   "text": "Dành riêng cho anh chị",
+   "accent": "yellow",
+   "size": 90,
+   "anim": "fade",
+   "y": 0.25
+  },
+  {
+   "type": "checklist",
+   "start": 11.6,
+   "end": 18.5,
+   "title": "Chỗ dựa của cả nhà",
+   "items": [
+    "Lo cho con",
+    "Lo cho bố mẹ",
+    "Lo công việc"
+   ],
+   "reveal": [
+    15.15,
+    16.96,
+    17.8
+   ],
+   "mark": "dot",
+   "mark_color": "yellow",
+   "accent": "yellow",
+   "size": 46,
+   "y": 0.25,
+   "sfx": "pop"
+  },
+  {
+   "type": "headline",
+   "start": 18.9,
+   "end": 24.0,
+   "kicker": "Khi cơ thể lên tiếng",
+   "text": "“Chắc tại mệt thôi”",
+   "accent": "yellow",
+   "size": 92,
+   "anim": "slide",
+   "y": 0.25,
+   "zoom": 1.04
+  },
+  {
+   "type": "checklist",
+   "start": 24.5,
+   "end": 30.9,
+   "title": "Rồi cứ thế…",
+   "items": [
+    "Ngại xin nghỉ",
+    "Ngại người thân lo",
+    "Lặng lẽ chịu đựng một mình"
+   ],
+   "reveal": [
+    24.57,
+    25.94,
+    28.82
+   ],
+   "mark": "dot",
+   "mark_color": "yellow",
+   "accent": "yellow",
+   "size": 46,
+   "y": 0.25
+  },
+  {
+   "type": "headline",
+   "start": 31.1,
+   "end": 37.1,
+   "kicker": "Hương muốn nói",
+   "text": "Chăm sóc bản thân ≠ ích kỷ",
+   "accent": "yellow",
+   "size": 86,
+   "anim": "slide",
+   "y": 0.25,
+   "sfx": "pop"
+  },
+  {
+   "type": "headline",
+   "start": 37.2,
+   "end": 40.4,
+   "kicker": "Và",
+   "text": "Đi khám sớm ≠ làm phiền",
+   "accent": "yellow",
+   "size": 86,
+   "anim": "fade",
+   "y": 0.25
+  },
+  {
+   "type": "headline",
+   "start": 40.8,
+   "end": 43.6,
+   "kicker": "Nhớ nhé",
+   "text": "Mình khỏe, cả nhà yên",
+   "accent": "yellow",
+   "size": 96,
+   "anim": "pop",
+   "y": 0.25,
+   "zoom": 1.07,
+   "sfx": "ding"
+  },
+  {
+   "type": "checklist",
+   "start": 45.5,
+   "end": 53.3,
+   "title": "Ghi lại trước khi đi khám",
+   "items": [
+    "Lúc nào",
+    "Ở đâu",
+    "Kéo dài bao lâu",
+    "Thuốc đang dùng"
+   ],
+   "reveal": [
+    47.9,
+    48.88,
+    49.91,
+    51.31
+   ],
+   "mark": "check",
+   "mark_color": "yellow",
+   "accent": "yellow",
+   "size": 44,
+   "y": 0.25,
+   "sfx": "tick"
+  },
+  {
+   "type": "headline",
+   "start": 53.5,
+   "end": 58.0,
+   "kicker": "Rồi dành ra",
+   "text": "Một buổi đi khám",
+   "sub": "mang ghi chú cho bác sĩ xem",
+   "accent": "yellow",
+   "size": 90,
+   "anim": "slide",
+   "y": 0.25
+  },
+  {
+   "type": "headline",
+   "start": 58.4,
+   "end": 61.3,
+   "kicker": "Chỉ một buổi thôi",
+   "text": "Cả nhà yên tâm hơn",
+   "accent": "yellow",
+   "size": 90,
+   "anim": "fade",
+   "y": 0.25
+  },
+  {
+   "type": "headline",
+   "start": 61.45,
+   "end": 66.4,
+   "kicker": "Câu hỏi cho anh chị",
+   "text": "Bao lâu chưa khám cho mình?",
+   "accent": "yellow",
+   "size": 84,
+   "anim": "slide",
+   "y": 0.25,
+   "zoom": 1.04
+  },
+  {
+   "type": "cta",
+   "start": 66.9,
+   "end": 71.1,
+   "text": "Bình luận cho Hương",
+   "sub": "Hương sẽ đọc và trò chuyện cùng anh chị",
+   "icon": "chat",
+   "y": 0.25,
+   "sfx": "pop"
+  }
+ ],
+ "zooms": [
+  {
+   "start": 0.7,
+   "end": 2.4,
+   "to": 1.04,
+   "ramp": 0.35
+  },
+  {
+   "start": 33.6,
+   "end": 36.6,
+   "to": 1.05,
+   "ramp": 0.35
+  }
+ ],
+ "sfx": [],
+ "subtitles": {
+  "max_words": 7,
+  "size": 62,
+  "y": 0.8,
+  "karaoke": "#FACC15",
+  "base_color": "#FFFFFF"
+ },
+ "audio": {
+  "denoise": true,
+  "loudness": -12,
+  "music": null,
+  "sfx_db": -22,
+  "leveler": true,
+  "gain_db": 1.5
+ }
+}

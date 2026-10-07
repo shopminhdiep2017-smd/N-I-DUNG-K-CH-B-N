@@ -74,3 +74,6 @@
 
 ## 2026-10-07 — Kịch bản CI-20261007-03 (PINS-03, người tư vấn đáng tin)
 - Mới: `content/items/CI-20261007-03.md` — video giá trị, Appeal, P3; Quality Gate 100/100; IDEA; có chỗ trống chứng chỉ (C-08) phải điền trước khi quay
+
+## 2026-10-07 — Dựng video CI-20261007-01 (video-03)
+- Mới: `content/video-edits/video-03/` (edl.json, transcript.json canh theo kịch bản + năng lượng giọng nói, script.txt, report.md). File video nằm ở `videos/` (không đưa lên git).
