@@ -68,3 +68,6 @@
 
 ## 2026-10-07 — CI-20261007-01 bản v3
 - Viết lại theo lối kể cảnh đời thường: tiêu đề "Lần cuối anh chị đi khám cho chính mình là khi nào?"; Quality Gate 100/100; vẫn IDEA
+
+## 2026-10-07 — Kịch bản CI-20261007-02 (PINS-05, mất ngủ)
+- Mới: `content/items/CI-20261007-02.md` — video giá trị, Aware, P6; Quality Gate 100/100; trạng thái IDEA
