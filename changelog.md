@@ -71,3 +71,6 @@
 
 ## 2026-10-07 — Kịch bản CI-20261007-02 (PINS-05, mất ngủ)
 - Mới: `content/items/CI-20261007-02.md` — video giá trị, Aware, P6; Quality Gate 100/100; trạng thái IDEA
+
+## 2026-10-07 — Kịch bản CI-20261007-03 (PINS-03, người tư vấn đáng tin)
+- Mới: `content/items/CI-20261007-03.md` — video giá trị, Appeal, P3; Quality Gate 100/100; IDEA; có chỗ trống chứng chỉ (C-08) phải điền trước khi quay
