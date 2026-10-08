@@ -17,4 +17,6 @@ Kịch bản chi tiết cho 7 ý tưởng trong `../../y-tuong/le-huong-7-y-tuon
 | 6 | "Não cá vàng" tuổi 40 | [06-nao-ca-vang-tuoi-40.md](06-nao-ca-vang-tuoi-40.md) |
 | 7 | Ai lo cho bạn? | [07-ai-lo-cho-ban.md](07-ai-lo-cho-ban.md) |
 
+**Bản lời đọc liền mạch (teleprompter) cho cả 7 video:** [loi-doc-7-video.md](loi-doc-7-video.md)
+
 > Nội dung mang tính tham khảo, không thay thế chẩn đoán và điều trị của bác sĩ.
