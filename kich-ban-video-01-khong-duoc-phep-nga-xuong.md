@@ -1,30 +1,44 @@
-# KỊCH BẢN VIDEO — "MÌNH KHÔNG ĐƯỢC PHÉP NGÃ XUỐNG" (BẢN LỜI THOẠI)
-*Dược sĩ Lê Hương · khoảng 60–75 giây · Insight #1*
+# KỊCH BẢN VIDEO — "MÌNH KHÔNG ĐƯỢC PHÉP NGÃ XUỐNG"
+*Dược sĩ Lê Hương · khoảng 70–80 giây · Insight #1*
 
-**1. Hook – nói đúng suy nghĩ thầm kín**
-Có phải anh chị từng nghĩ: "Mình mà ốm thì cả nhà này ai lo?" Nên đau đầu thì uống tạm viên giảm đau, mệt thì cố thêm chút nữa, còn đi khám thì cứ để tháng sau.
+## HOOK (chọn 1)
+1. **"Có một câu mà rất nhiều anh chị tuổi 40, 50 tự nói với mình mỗi ngày: 'Mình không được phép ốm.'"** *(khuyên dùng)*
+2. "Anh chị có đang uống thuốc giảm đau để… khỏi phải đi khám không?"
+3. "Mình mà ốm thì cả nhà này ai lo? Nếu anh chị từng nghĩ vậy, nghe Hương nói một chút nhé."
 
-**2. Đồng cảm – Hương hiểu vì sao họ né**
-Hương hiểu lắm. Không phải anh chị chủ quan đâu. Anh chị sợ. Sợ đi khám lại "khám ra bệnh", sợ tốn tiền, sợ con cái phải lo. Nên cách dễ nhất là… không biết.
+## LỜI THOẠI HOÀN CHỈNH
 
-**3. Đảo góc nhìn – điểm mấu chốt của video**
-Nhưng anh chị ơi, thứ khiến người ta trở thành gánh nặng cho gia đình thường không phải là bệnh. Mà là bệnh được phát hiện quá muộn. Huyết áp cao, mỡ máu, đường huyết thường không đau, không báo trước. Phát hiện sớm thì đôi khi chỉ cần điều chỉnh ăn uống, hoặc uống thuốc đều đặn, chi phí nhẹ nhàng. Để muộn thì cả nhà mới thật sự vất vả.
+Có một câu mà rất nhiều anh chị tuổi 40, 50 tự nói với mình mỗi ngày: "Mình không được phép ốm."
 
-**4. Chuyện viên thuốc giảm đau "uống tạm"**
-Còn viên giảm đau uống tạm: nếu tuần nào anh chị cũng phải uống vài lần, thì cơn đau đầu đó đang muốn nói với mình điều gì đó. Uống thuốc chỉ làm mình không nghe thấy nó nữa thôi. Dùng giảm đau thường xuyên mà không rõ nguyên nhân có thể còn khiến đau đầu nhiều hơn. Đau đầu lặp đi lặp lại thì nên đi khám để tìm đúng gốc.
+Con còn đang đi học. Bố mẹ thì đã già. Công việc, tiền nong, khoản nào cũng đang chờ mình. Nên đau đầu thì uống tạm viên giảm đau rồi làm tiếp. Mệt thì tự nhủ cố thêm chút nữa. Còn chuyện đi khám thì cứ hẹn: để tháng sau, đợi xong đợt này đã.
 
-**5. Một việc nhỏ, làm được ngay**
-Hương không bảo anh chị phải đi viện làm đủ thứ xét nghiệm. Chỉ cần mỗi năm dành một buổi sáng để biết ba con số: huyết áp, đường huyết và mỡ máu. Một buổi sáng thôi, để yên tâm cả năm.
+Hương hiểu lắm. Không phải anh chị chủ quan đâu. Mà là anh chị sợ. Sợ đi khám lại khám ra bệnh. Sợ tốn tiền. Sợ con cái biết rồi lại lo. Thế nên cách dễ nhất là… không biết gì cả.
 
-**6. Kết – chạm cảm xúc**
-Chăm sức khỏe cho mình không phải là ích kỷ. Đó là cách thương gia đình lâu dài nhất. Vì cả nhà cần anh chị khỏe không chỉ hôm nay, mà còn rất nhiều năm nữa.
-Anh chị lần cuối đo huyết áp là khi nào? Comment cho Hương biết nhé.
+Nhưng anh chị ơi, Hương muốn nói với anh chị một điều thật lòng.
+
+Thứ khiến người ta trở thành gánh nặng cho gia đình thường không phải là bệnh. Mà là bệnh được phát hiện quá muộn.
+
+Huyết áp cao, mỡ máu, đường huyết, những thứ này thường không đau, không báo trước. Mình vẫn thấy khỏe, vẫn đi làm bình thường, trong khi bên trong nó âm thầm tiến triển. Nếu biết sớm, nhiều khi chỉ cần điều chỉnh ăn uống, vận động, hoặc uống thuốc đều đặn theo hướng dẫn của bác sĩ, chi phí cũng nhẹ nhàng. Còn để đến lúc nó lên tiếng, thì người vất vả không chỉ có mình, mà là cả nhà.
+
+Còn viên thuốc giảm đau "uống tạm" kia: nếu tuần nào anh chị cũng phải uống vài lần, thì cơn đau đầu đó đang muốn nói với anh chị điều gì đó. Uống thuốc chỉ làm mình tạm thời không nghe thấy nó thôi. Mà dùng giảm đau thường xuyên, không rõ nguyên nhân, đôi khi còn khiến đau đầu nhiều hơn. Đau đầu cứ lặp đi lặp lại thì mình nên đi khám để tìm đúng gốc, anh chị nhé.
+
+Hương không bảo anh chị phải vào viện làm đủ thứ xét nghiệm đâu. Chỉ cần mỗi năm dành ra một buổi sáng, để biết ba con số của chính mình: huyết áp, đường huyết và mỡ máu. Một buổi sáng thôi, để yên tâm cả năm.
+
+Chăm sức khỏe cho bản thân không phải là ích kỷ. Đó là cách thương gia đình lâu dài nhất. Vì cả nhà cần anh chị khỏe, không chỉ hôm nay, mà còn rất nhiều năm nữa.
+
+Anh chị lần cuối đo huyết áp là khi nào? Comment cho Hương biết nhé. Và nếu có ai trong nhà cũng đang "không được phép ốm", gửi video này cho họ.
 
 ---
 
 **Chữ trên màn hình gợi ý:**
-- Mở đầu: *"Mình mà ốm thì cả nhà ai lo?"*
-- Đoạn 3: *Gánh nặng thật sự = phát hiện QUÁ MUỘN*
-- Đoạn 5: *Mỗi năm 1 buổi sáng · Huyết áp · Đường huyết · Mỡ máu*
+- Mở đầu: *"MÌNH KHÔNG ĐƯỢC PHÉP ỐM"*
+- Câu chốt: *Gánh nặng thật sự = phát hiện QUÁ MUỘN*
+- Đoạn lời khuyên: *Mỗi năm 1 buổi sáng · Huyết áp · Đường huyết · Mỡ máu*
 
-**Lưu ý quay:** Đoạn 1–2 nói chậm, giọng thấu hiểu. Đoạn 3 là câu "chốt", dừng một nhịp trước khi nói. Không dùng hình ảnh bệnh viện, giường bệnh gây sợ; nên dùng cảnh đời thường (bữa cơm gia đình, người mẹ đi chợ, người bố đi làm về).
+**Caption:**
+> "Mình mà ốm thì cả nhà ai lo?" 💭
+> Vì thương gia đình nên càng phải biết sớm. Mỗi năm một buổi sáng kiểm tra huyết áp, đường huyết, mỡ máu là món quà cho cả nhà 💚
+> *Video chia sẻ kiến thức, không thay thế tư vấn của bác sĩ.*
+> #duocsileHuong #suckhoetrungnien #huyetap #khamsuckhoe #thuonggiadinh
+
+**Lưu ý quay:** Nói chậm, giọng tâm sự. Dừng một nhịp trước câu *"Thứ khiến người ta trở thành gánh nặng…"*. Hình ảnh xen kẽ nên là cảnh đời thường (bữa cơm, người bố đi làm về, người mẹ đi chợ), tránh cảnh giường bệnh, bệnh viện.
