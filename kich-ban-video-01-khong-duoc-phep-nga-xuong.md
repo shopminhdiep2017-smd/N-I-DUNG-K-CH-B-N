@@ -42,3 +42,27 @@ Anh chị lần cuối đo huyết áp là khi nào? Comment cho Hương biết 
 > #duocsileHuong #suckhoetrungnien #huyetap #khamsuckhoe #thuonggiadinh
 
 **Lưu ý quay:** Nói chậm, giọng tâm sự. Dừng một nhịp trước câu *"Thứ khiến người ta trở thành gánh nặng…"*. Hình ảnh xen kẽ nên là cảnh đời thường (bữa cơm, người bố đi làm về, người mẹ đi chợ), tránh cảnh giường bệnh, bệnh viện.
+
+---
+
+# PHIÊN BẢN 2 — ĐỔI HOOK: "THUỐC GIẢM ĐAU THAY CHO ĐI KHÁM"
+
+Anh chị có đang uống thuốc giảm đau… để khỏi phải đi khám không?
+
+Đau đầu, uống một viên. Mỏi người, uống một viên. Rồi lại đi làm, lại lo cơm nước, lại chạy việc cho cả nhà. Hương gặp rất nhiều anh chị như vậy ở quầy thuốc. Hỏi sao không đi khám, câu trả lời gần như giống nhau: "Thôi em ơi, đi khám lỡ ra bệnh thì sao. Mình mà nằm xuống thì cả nhà ai lo."
+
+Hương hiểu. Anh chị không phải không thương bản thân. Anh chị chỉ thương gia đình nhiều quá, đến mức không dám ốm.
+
+Nhưng anh chị ơi, Hương muốn nói một điều thật lòng.
+
+Thứ khiến người ta trở thành gánh nặng cho gia đình thường không phải là bệnh. Mà là bệnh được phát hiện quá muộn.
+
+Huyết áp cao, mỡ máu, đường huyết thường không đau, không báo trước. Mình vẫn thấy khỏe, vẫn làm việc bình thường, trong khi bên trong nó âm thầm tiến triển. Biết sớm thì nhiều khi chỉ cần điều chỉnh ăn uống, vận động, hoặc uống thuốc đều đặn theo hướng dẫn của bác sĩ. Để muộn thì người vất vả không chỉ có mình, mà là cả nhà.
+
+Còn viên giảm đau kia, nó chỉ làm mình tạm thời không nghe thấy cơn đau thôi, chứ không trả lời được vì sao mình đau. Nếu tuần nào cũng phải uống vài lần, thì đó là lúc nên đi khám để tìm đúng nguyên nhân. Dùng giảm đau thường xuyên mà không rõ lý do, đôi khi còn khiến đau đầu nhiều hơn.
+
+Hương không bảo anh chị phải làm đủ thứ xét nghiệm đâu. Chỉ cần mỗi năm một buổi sáng, để biết ba con số của chính mình: huyết áp, đường huyết và mỡ máu. Một buổi sáng thôi, để yên tâm cả năm.
+
+Vì thương gia đình, nên mình càng cần biết sớm. Cả nhà cần anh chị khỏe, không chỉ hôm nay, mà còn rất nhiều năm nữa.
+
+Anh chị đang "uống tạm" thuốc gì để cố thêm mỗi ngày? Comment cho Hương nghe nhé. Và gửi video này cho người thân nào cũng đang gồng gánh như vậy.
