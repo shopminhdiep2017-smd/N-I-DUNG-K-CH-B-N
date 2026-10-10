@@ -1,0 +1,10 @@
+# YÊU CẦU DỰNG VIDEO — sửa file này để đổi phong cách cho các video tiếp theo.
+# Dòng bắt đầu bằng dấu # sẽ bị bỏ qua. Viết tiếng Việt bình thường.
+# Ví dụ (bỏ dấu # ở đầu dòng để dùng):
+# Video dọc 9:16 cho TikTok, dài tối đa 60 giây.
+# Phụ đề tiếng Việt, chữ to, in hoa, 2-3 từ mỗi dòng.
+# Màu ấm kiểu điện ảnh.
+
+Cắt bỏ các đoạn ấp úng, ngập ngừng, nói lại và khoảng lặng thừa.
+Thêm phụ đề theo ngôn ngữ đang nói trong video, dễ đọc trên điện thoại.
+Giữ nguyên tỉ lệ khung hình gốc.
