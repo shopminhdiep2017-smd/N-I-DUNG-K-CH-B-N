@@ -50,3 +50,19 @@ Anh chị lưu video này lại, và gửi vào nhóm gia đình nhé. Hy vọng
 - Phần 4 việc: chị Hương đếm trên ngón tay, nhịp rõ ràng, không vội.
 - Phần "tuyệt đối không làm": giọng chắc, nghiêm túc nhưng không dọa.
 - Nên nhờ bác sĩ chuyên khoa duyệt lại lời thoại trước khi đăng.
+
+---
+
+# BẢN NGẮN (~40 GIÂY)
+
+Người thân đang nói chuyện bỗng méo miệng, anh chị có biết phải làm gì trong 5 phút đầu không?
+
+Nhớ 3 bước thôi.
+
+Một, kiểm tra nhanh: nhờ họ cười, giơ hai tay, nói một câu. Miệng lệch, một tay rơi xuống, nói ngọng, chỉ cần một dấu hiệu là nghĩ ngay đến đột quỵ.
+
+Hai, gọi 115 ngay và nhớ giờ bắt đầu có dấu hiệu. Kể cả khi dấu hiệu tự hết, vẫn phải đi viện.
+
+Ba, trong lúc chờ: cho nằm nghiêng nếu nôn hoặc lơ mơ. Không cho ăn uống, không tự cho uống thuốc, không chích máu đầu ngón tay, không cạo gió.
+
+Đột quỵ, mỗi phút đều quý. Lưu lại và gửi vào nhóm gia đình nhé.
