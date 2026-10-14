@@ -13,13 +13,13 @@
       0.5,
       0.5
     ],
-    "sharpen": 0.7,
+    "sharpen": 0.5,
     "denoise": true,
     "grade": {
-      "brightness": 0.05,
-      "gamma": 1.15,
-      "contrast": 1.05,
-      "saturation": 1.08
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
     },
     "face": {
       "center": [
@@ -27,8 +27,8 @@
         0.54
       ],
       "radius": 0.13,
-      "light": 0.18,
-      "sharpen": 110
+      "light": 0.07,
+      "sharpen": 50
     },
     "top_shade": 0.25,
     "bg_dim": 0.03

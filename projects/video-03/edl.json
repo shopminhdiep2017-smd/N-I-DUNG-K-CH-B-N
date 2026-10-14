@@ -1,0 +1,377 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.08,
+    0.4
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.1,
+    "focus": [
+      0.5,
+      0.52
+    ],
+    "sharpen": 0.5,
+    "denoise": true,
+    "top_shade": 0.25,
+    "bg_dim": 0.03,
+    "grade": {
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.54
+      ],
+      "radius": 0.12,
+      "light": 0.07,
+      "sharpen": 50
+    }
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0.0,
+        0.6
+      ],
+      [
+        15.88,
+        16.2
+      ],
+      [
+        29.38,
+        29.58
+      ],
+      [
+        37.06,
+        37.42
+      ],
+      [
+        40.88,
+        41.32
+      ],
+      [
+        51.0,
+        51.5
+      ],
+      [
+        61.58,
+        62.47
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:06",
+      "speech": "Có ba nguyên nhân… không nên bỏ qua",
+      "idea": "HOOK – lời hứa 3 ý",
+      "visual": "Headline serif + kicker “Đừng bỏ qua”, zoom, pop"
+    },
+    {
+      "time": "00:06–00:16",
+      "speech": "Thứ nhất: ăn uống và môi trường sống…",
+      "idea": "Nguyên nhân 01",
+      "visual": "“01 ·” → checklist 3 ý → headline “Lâu dài đến sức khỏe”"
+    },
+    {
+      "time": "00:16–00:29",
+      "speech": "Thứ hai: căng thẳng kéo dài… giấc ngủ, tim mạch, miễn dịch",
+      "idea": "Nguyên nhân 02 + lời khuyên",
+      "visual": "“02 ·” → checklist 4 ý → keyword xanh “Học cách thư giãn”"
+    },
+    {
+      "time": "00:29–00:41",
+      "speech": "Thứ ba: thiếu vận động… đi bộ mỗi ngày",
+      "idea": "Nguyên nhân 03 + lời khuyên",
+      "visual": "“03 ·” → checklist → headline đỏ “Thừa cân & bệnh mãn tính” → keyword xanh"
+    },
+    {
+      "time": "00:41–00:51",
+      "speech": "Sức khỏe không chỉ là ăn no…",
+      "idea": "Kết luận – framework 4 trụ cột",
+      "visual": "Headline → 4 bước 01–04 (xanh) sáng theo lời"
+    },
+    {
+      "time": "00:51–01:01",
+      "speech": "Lưu lại, chia sẻ, theo dõi kênh",
+      "idea": "CTA",
+      "visual": "Keyword → 3 bước → CTA"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 0.6,
+      "end": 5.9,
+      "kicker": "Đừng bỏ qua",
+      "text": "3 nguyên nhân ảnh hưởng sức khỏe",
+      "accent": "red",
+      "size": 82,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 6.0,
+      "end": 8.55,
+      "kicker": "Thứ nhất",
+      "text": "01 · Ăn uống & môi trường sống",
+      "accent": "red",
+      "size": 78,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 8.6,
+      "end": 13.15,
+      "title": "Ăn uống & môi trường",
+      "items": [
+        "Thực phẩm kém chất lượng",
+        "Ô nhiễm môi trường",
+        "Ăn thiếu dinh dưỡng"
+      ],
+      "reveal": [
+        8.64,
+        10.08,
+        11.56
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 44,
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 13.2,
+      "end": 15.75,
+      "kicker": "Có thể ảnh hưởng",
+      "text": "Lâu dài đến sức khỏe",
+      "accent": "red",
+      "size": 90,
+      "anim": "fade",
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 16.16,
+      "end": 18.65,
+      "kicker": "Thứ hai",
+      "text": "02 · Căng thẳng kéo dài",
+      "accent": "red",
+      "size": 88,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 18.7,
+      "end": 25.35,
+      "title": "Ảnh hưởng đến",
+      "items": [
+        "Giấc ngủ",
+        "Tim mạch",
+        "Hệ miễn dịch",
+        "Nhiều hoạt động của cơ thể"
+      ],
+      "reveal": [
+        20.48,
+        21.36,
+        22.28,
+        23.56
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 42,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 25.52,
+      "end": 29.3,
+      "kicker": "Vì vậy",
+      "kicker_color": "green",
+      "text": "Học cách thư giãn",
+      "sub": "và cân bằng cuộc sống",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 29.48,
+      "end": 31.55,
+      "kicker": "Thứ ba",
+      "text": "03 · Thiếu vận động",
+      "accent": "red",
+      "size": 96,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 31.6,
+      "end": 34.05,
+      "title": "Thói quen dễ gặp",
+      "items": [
+        "Ngồi quá lâu",
+        "Ít tập thể dục"
+      ],
+      "reveal": [
+        31.64,
+        32.76
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 34.1,
+      "end": 36.95,
+      "kicker": "Làm tăng nguy cơ",
+      "text": "Thừa cân & bệnh mãn tính",
+      "color": "red",
+      "accent": "red",
+      "size": 84,
+      "anim": "fade",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 37.06,
+      "end": 40.75,
+      "kicker": "Hãy bắt đầu",
+      "kicker_color": "green",
+      "text": "Đi bộ mỗi ngày",
+      "sub": "hoặc vận động phù hợp",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 41.14,
+      "end": 44.35,
+      "kicker": "Sức khỏe",
+      "text": "Không chỉ là ăn no",
+      "accent": "red",
+      "size": 96,
+      "zoom": 1.04,
+      "y": 0.235
+    },
+    {
+      "type": "steps",
+      "start": 44.4,
+      "end": 50.85,
+      "title": "Mà còn là",
+      "items": [
+        "Ăn đủ chất",
+        "Môi trường lành mạnh",
+        "Tinh thần thoải mái",
+        "Vận động đều đặn"
+      ],
+      "active": [
+        [
+          44.94,
+          0
+        ],
+        [
+          46.26,
+          1
+        ],
+        [
+          47.98,
+          2
+        ],
+        [
+          49.7,
+          3
+        ]
+      ],
+      "color": "green",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 51.26,
+      "end": 54.5,
+      "kicker": "Cô chú anh chị",
+      "text": "Thấy video hữu ích?",
+      "accent": "red",
+      "anim": "slide",
+      "y": 0.235
+    },
+    {
+      "type": "steps",
+      "start": 54.57,
+      "end": 58.8,
+      "title": "Đừng quên",
+      "items": [
+        "Lưu lại",
+        "Chia sẻ",
+        "Theo dõi kênh"
+      ],
+      "active": [
+        [
+          54.85,
+          0
+        ],
+        [
+          55.57,
+          1
+        ],
+        [
+          57.21,
+          2
+        ]
+      ],
+      "color": "red",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "cta",
+      "start": 58.85,
+      "end": 61.5,
+      "kicker": "Cùng nhau xây dựng",
+      "text": "Lối sống khỏe mạnh mỗi ngày",
+      "accent": "green",
+      "kicker_color": "green",
+      "icon": null,
+      "size": 74,
+      "y": 0.235
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "y": 0.745,
+    "highlight": {
+      "sức khỏe": "#F5C542"
+    }
+  },
+  "audio": {
+    "denoise": true,
+    "leveler": true,
+    "loudness": -9,
+    "gain_db": 2.5,
+    "music": null,
+    "sfx_db": -22
+  }
+}

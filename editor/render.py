@@ -289,7 +289,8 @@ def main():
     off = int(float(subj.get("offset_y", 0.0)) * S.H)       # push the speaker down, leave headroom
     sc = float(subj.get("scale", 1.0))
     sharpen = float(subj.get("sharpen", 0))    # 0.5–1.0 helps low-res sources after upscaling
-    sel = "+".join(f"between(t,{s:.4f},{e - 0.5 / S.FPS:.4f})" for s, e in segs)
+    # half-frame margins on both ends: each segment yields exactly (e - s) * FPS frames
+    sel = "+".join(f"between(t,{s - 0.5 / S.FPS:.4f},{e - 0.5 / S.FPS:.4f})" for s, e in segs)
     fw, fh = int(S.W * sc) // 2 * 2, int(S.H * sc) // 2 * 2
     grad = work / "grad.png"
     g = np.zeros((S.H, S.W, 4), np.uint8)
@@ -311,9 +312,9 @@ def main():
           f"[bg][fg]overlay=x=(W-w)/2:y={off}+(H-h)/2*{1 if sc < 1 else 0}[base];"
           f"[base][1:v]overlay=0:0,format=rgb24[v]")
     (work / "pass1.txt").write_text(fc)
-    dec = subprocess.Popen([FFMPEG, "-v", "error", "-i", str(src), "-i", str(grad), "-filter_complex_script",
+    dec = subprocess.Popen([FFMPEG, "-v", "fatal", "-i", str(src), "-i", str(grad), "-filter_complex_script",
                             str(work / "pass1.txt"), "-map", "[v]", "-frames:v", str(nframes),
-                            "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+                            "-fps_mode", "passthrough", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     final = out_dir / ("draft.mp4" if a.draft else "final.mp4")
     enc = subprocess.Popen([FFMPEG, "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                             "-s", f"{S.W}x{S.H}", "-r", str(S.FPS), "-i", "-", "-i", str(mix),
@@ -333,12 +334,14 @@ def main():
     samples = []
     fsize = S.W * S.H * 3
     last = None
+    padded = 0
     for i in range(nframes):
         buf = dec.stdout.read(fsize)
         if len(buf) < fsize:
             if last is None:
                 sys.exit("decoder produced no frames")
             buf = last                     # pad the final frame if the decoder ran short
+            padded += 1
         last = buf
         t = i / S.FPS
         frame = Image.frombuffer("RGB", (S.W, S.H), buf, "raw", "RGB", 0, 1)
@@ -434,6 +437,8 @@ def main():
     enc.wait()
     dec.stdout.close()
     dec.wait()
+    if padded > 2:     # picture shorter than sound = frozen ending and lip-sync drift
+        sys.exit(f"decoder delivered {nframes - padded}/{nframes} frames — video would freeze; aborting")
     if enc.returncode:
         sys.exit("encoder failed")
 

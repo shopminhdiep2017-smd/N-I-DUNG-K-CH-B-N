@@ -1,0 +1,1192 @@
+{
+ "language": "vi",
+ "duration": 62.47,
+ "asr": "sherpa-onnx zipformer-vi + whisper cross-check + manual correction",
+ "silences": [
+  [
+   0.0,
+   0.7
+  ],
+  [
+   0.72,
+   1.14
+  ],
+  [
+   3.6,
+   3.86
+  ],
+  [
+   8.54,
+   8.9
+  ],
+  [
+   10.08,
+   10.28
+  ],
+  [
+   13.08,
+   13.46
+  ],
+  [
+   15.7,
+   16.3
+  ],
+  [
+   16.88,
+   17.24
+  ],
+  [
+   18.5,
+   18.9
+  ],
+  [
+   21.06,
+   21.5
+  ],
+  [
+   23.14,
+   23.58
+  ],
+  [
+   25.32,
+   25.74
+  ],
+  [
+   26.28,
+   26.62
+  ],
+  [
+   29.2,
+   29.68
+  ],
+  [
+   30.4,
+   30.68
+  ],
+  [
+   31.44,
+   31.76
+  ],
+  [
+   32.62,
+   32.96
+  ],
+  [
+   35.52,
+   35.74
+  ],
+  [
+   36.88,
+   37.52
+  ],
+  [
+   40.7,
+   41.42
+  ],
+  [
+   45.54,
+   45.86
+  ],
+  [
+   47.3,
+   47.74
+  ],
+  [
+   50.82,
+   51.6
+  ],
+  [
+   53.54,
+   53.84
+  ],
+  [
+   54.32,
+   54.62
+  ],
+  [
+   55.42,
+   55.66
+  ],
+  [
+   60.98,
+   62.46
+  ]
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 6.0,
+   "text": "Có ba nguyên nhân làm ảnh hưởng đến sức khỏe mà cô chú anh chị không nên bỏ qua.",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.72,
+     "word": "Có"
+    },
+    {
+     "start": 1.04,
+     "end": 1.4,
+     "word": "ba"
+    },
+    {
+     "start": 1.4,
+     "end": 1.72,
+     "word": "nguyên"
+    },
+    {
+     "start": 1.72,
+     "end": 2.08,
+     "word": "nhân"
+    },
+    {
+     "start": 2.08,
+     "end": 2.4,
+     "word": "làm"
+    },
+    {
+     "start": 2.4,
+     "end": 2.56,
+     "word": "ảnh"
+    },
+    {
+     "start": 2.56,
+     "end": 2.8,
+     "word": "hưởng"
+    },
+    {
+     "start": 2.8,
+     "end": 3.04,
+     "word": "đến"
+    },
+    {
+     "start": 3.04,
+     "end": 3.28,
+     "word": "sức"
+    },
+    {
+     "start": 3.28,
+     "end": 3.6,
+     "word": "khỏe"
+    },
+    {
+     "start": 3.6,
+     "end": 3.92,
+     "word": "mà"
+    },
+    {
+     "start": 3.92,
+     "end": 4.16,
+     "word": "cô"
+    },
+    {
+     "start": 4.16,
+     "end": 4.36,
+     "word": "chú"
+    },
+    {
+     "start": 4.36,
+     "end": 4.6,
+     "word": "anh"
+    },
+    {
+     "start": 4.6,
+     "end": 4.8,
+     "word": "chị"
+    },
+    {
+     "start": 4.8,
+     "end": 5.04,
+     "word": "không"
+    },
+    {
+     "start": 5.04,
+     "end": 5.28,
+     "word": "nên"
+    },
+    {
+     "start": 5.28,
+     "end": 5.56,
+     "word": "bỏ"
+    },
+    {
+     "start": 5.56,
+     "end": 6.0,
+     "word": "qua."
+    }
+   ]
+  },
+  {
+   "start": 6.0,
+   "end": 8.54,
+   "text": "Thứ nhất là ăn uống và môi trường sống.",
+   "words": [
+    {
+     "start": 6.0,
+     "end": 6.32,
+     "word": "Thứ"
+    },
+    {
+     "start": 6.32,
+     "end": 6.56,
+     "word": "nhất"
+    },
+    {
+     "start": 6.56,
+     "end": 6.88,
+     "word": "là"
+    },
+    {
+     "start": 6.88,
+     "end": 7.16,
+     "word": "ăn"
+    },
+    {
+     "start": 7.16,
+     "end": 7.44,
+     "word": "uống"
+    },
+    {
+     "start": 7.44,
+     "end": 7.68,
+     "word": "và"
+    },
+    {
+     "start": 7.68,
+     "end": 7.92,
+     "word": "môi"
+    },
+    {
+     "start": 7.92,
+     "end": 8.24,
+     "word": "trường"
+    },
+    {
+     "start": 8.24,
+     "end": 8.54,
+     "word": "sống."
+    }
+   ]
+  },
+  {
+   "start": 8.64,
+   "end": 15.7,
+   "text": "Thực phẩm kém chất lượng, ô nhiễm môi trường và chế độ ăn thiếu dinh dưỡng có thể ảnh hưởng đến lâu dài về sức khỏe.",
+   "words": [
+    {
+     "start": 8.64,
+     "end": 8.88,
+     "word": "Thực"
+    },
+    {
+     "start": 8.88,
+     "end": 9.2,
+     "word": "phẩm"
+    },
+    {
+     "start": 9.2,
+     "end": 9.48,
+     "word": "kém"
+    },
+    {
+     "start": 9.48,
+     "end": 9.72,
+     "word": "chất"
+    },
+    {
+     "start": 9.72,
+     "end": 10.08,
+     "word": "lượng,"
+    },
+    {
+     "start": 10.08,
+     "end": 10.32,
+     "word": "ô"
+    },
+    {
+     "start": 10.32,
+     "end": 10.72,
+     "word": "nhiễm"
+    },
+    {
+     "start": 10.72,
+     "end": 10.96,
+     "word": "môi"
+    },
+    {
+     "start": 10.96,
+     "end": 11.28,
+     "word": "trường"
+    },
+    {
+     "start": 11.28,
+     "end": 11.56,
+     "word": "và"
+    },
+    {
+     "start": 11.56,
+     "end": 11.8,
+     "word": "chế"
+    },
+    {
+     "start": 11.8,
+     "end": 12.0,
+     "word": "độ"
+    },
+    {
+     "start": 12.0,
+     "end": 12.24,
+     "word": "ăn"
+    },
+    {
+     "start": 12.24,
+     "end": 12.52,
+     "word": "thiếu"
+    },
+    {
+     "start": 12.52,
+     "end": 12.72,
+     "word": "dinh"
+    },
+    {
+     "start": 12.72,
+     "end": 13.08,
+     "word": "dưỡng"
+    },
+    {
+     "start": 13.2,
+     "end": 13.44,
+     "word": "có"
+    },
+    {
+     "start": 13.44,
+     "end": 13.72,
+     "word": "thể"
+    },
+    {
+     "start": 13.72,
+     "end": 13.92,
+     "word": "ảnh"
+    },
+    {
+     "start": 13.92,
+     "end": 14.12,
+     "word": "hưởng"
+    },
+    {
+     "start": 14.12,
+     "end": 14.32,
+     "word": "đến"
+    },
+    {
+     "start": 14.32,
+     "end": 14.56,
+     "word": "lâu"
+    },
+    {
+     "start": 14.56,
+     "end": 14.88,
+     "word": "dài"
+    },
+    {
+     "start": 14.88,
+     "end": 15.2,
+     "word": "về"
+    },
+    {
+     "start": 15.2,
+     "end": 15.44,
+     "word": "sức"
+    },
+    {
+     "start": 15.44,
+     "end": 15.7,
+     "word": "khỏe."
+    }
+   ]
+  },
+  {
+   "start": 16.16,
+   "end": 25.32,
+   "text": "Thứ hai là căng thẳng kéo dài, sức khỏe có thể làm ảnh hưởng đến giấc ngủ, tim mạch, hệ miễn dịch và nhiều hoạt động khác của cơ thể.",
+   "words": [
+    {
+     "start": 16.16,
+     "end": 16.56,
+     "word": "Thứ"
+    },
+    {
+     "start": 16.56,
+     "end": 16.88,
+     "word": "hai"
+    },
+    {
+     "start": 17.165,
+     "end": 17.405,
+     "word": "là"
+    },
+    {
+     "start": 17.405,
+     "end": 17.645,
+     "word": "căng"
+    },
+    {
+     "start": 17.645,
+     "end": 17.95,
+     "word": "thẳng"
+    },
+    {
+     "start": 17.95,
+     "end": 18.2,
+     "word": "kéo"
+    },
+    {
+     "start": 18.2,
+     "end": 18.5,
+     "word": "dài,"
+    },
+    {
+     "start": 18.725,
+     "end": 19.005,
+     "word": "sức"
+    },
+    {
+     "start": 19.005,
+     "end": 19.245,
+     "word": "khỏe"
+    },
+    {
+     "start": 19.245,
+     "end": 19.445,
+     "word": "có"
+    },
+    {
+     "start": 19.445,
+     "end": 19.685,
+     "word": "thể"
+    },
+    {
+     "start": 19.685,
+     "end": 19.925,
+     "word": "làm"
+    },
+    {
+     "start": 19.925,
+     "end": 20.125,
+     "word": "ảnh"
+    },
+    {
+     "start": 20.125,
+     "end": 20.285,
+     "word": "hưởng"
+    },
+    {
+     "start": 20.285,
+     "end": 20.485,
+     "word": "đến"
+    },
+    {
+     "start": 20.485,
+     "end": 20.845,
+     "word": "giấc"
+    },
+    {
+     "start": 20.845,
+     "end": 21.06,
+     "word": "ngủ,"
+    },
+    {
+     "start": 21.365,
+     "end": 21.725,
+     "word": "tim"
+    },
+    {
+     "start": 21.725,
+     "end": 22.285,
+     "word": "mạch,"
+    },
+    {
+     "start": 22.285,
+     "end": 22.605,
+     "word": "hệ"
+    },
+    {
+     "start": 22.605,
+     "end": 22.885,
+     "word": "miễn"
+    },
+    {
+     "start": 22.885,
+     "end": 23.14,
+     "word": "dịch"
+    },
+    {
+     "start": 23.245,
+     "end": 23.565,
+     "word": "và"
+    },
+    {
+     "start": 23.565,
+     "end": 23.845,
+     "word": "nhiều"
+    },
+    {
+     "start": 23.845,
+     "end": 24.045,
+     "word": "hoạt"
+    },
+    {
+     "start": 24.045,
+     "end": 24.285,
+     "word": "động"
+    },
+    {
+     "start": 24.285,
+     "end": 24.525,
+     "word": "khác"
+    },
+    {
+     "start": 24.525,
+     "end": 24.765,
+     "word": "của"
+    },
+    {
+     "start": 24.765,
+     "end": 25.045,
+     "word": "cơ"
+    },
+    {
+     "start": 25.045,
+     "end": 25.32,
+     "word": "thể."
+    }
+   ]
+  },
+  {
+   "start": 25.525,
+   "end": 29.2,
+   "text": "Vì vậy, hãy học cách thư giãn và cân bằng cuộc sống.",
+   "words": [
+    {
+     "start": 25.525,
+     "end": 25.925,
+     "word": "Vì"
+    },
+    {
+     "start": 25.925,
+     "end": 26.28,
+     "word": "vậy,"
+    },
+    {
+     "start": 26.365,
+     "end": 26.685,
+     "word": "hãy"
+    },
+    {
+     "start": 26.685,
+     "end": 26.925,
+     "word": "học"
+    },
+    {
+     "start": 26.925,
+     "end": 27.245,
+     "word": "cách"
+    },
+    {
+     "start": 27.245,
+     "end": 27.485,
+     "word": "thư"
+    },
+    {
+     "start": 27.485,
+     "end": 27.805,
+     "word": "giãn"
+    },
+    {
+     "start": 27.805,
+     "end": 28.165,
+     "word": "và"
+    },
+    {
+     "start": 28.165,
+     "end": 28.405,
+     "word": "cân"
+    },
+    {
+     "start": 28.405,
+     "end": 28.685,
+     "word": "bằng"
+    },
+    {
+     "start": 28.685,
+     "end": 28.965,
+     "word": "cuộc"
+    },
+    {
+     "start": 28.965,
+     "end": 29.2,
+     "word": "sống."
+    }
+   ]
+  },
+  {
+   "start": 29.485,
+   "end": 31.44,
+   "text": "Thứ ba là thiếu vận động.",
+   "words": [
+    {
+     "start": 29.485,
+     "end": 29.805,
+     "word": "Thứ"
+    },
+    {
+     "start": 29.805,
+     "end": 30.125,
+     "word": "ba"
+    },
+    {
+     "start": 30.125,
+     "end": 30.4,
+     "word": "là"
+    },
+    {
+     "start": 30.525,
+     "end": 30.885,
+     "word": "thiếu"
+    },
+    {
+     "start": 30.885,
+     "end": 31.125,
+     "word": "vận"
+    },
+    {
+     "start": 31.125,
+     "end": 31.44,
+     "word": "động."
+    }
+   ]
+  },
+  {
+   "start": 31.645,
+   "end": 36.88,
+   "text": "Ngồi quá lâu, ít tập thể dục và làm tăng nguy cơ thừa cân và nhiều bệnh mãn tính.",
+   "words": [
+    {
+     "start": 31.645,
+     "end": 32.005,
+     "word": "Ngồi"
+    },
+    {
+     "start": 32.005,
+     "end": 32.285,
+     "word": "quá"
+    },
+    {
+     "start": 32.285,
+     "end": 32.62,
+     "word": "lâu,"
+    },
+    {
+     "start": 32.765,
+     "end": 33.045,
+     "word": "ít"
+    },
+    {
+     "start": 33.045,
+     "end": 33.285,
+     "word": "tập"
+    },
+    {
+     "start": 33.285,
+     "end": 33.445,
+     "word": "thể"
+    },
+    {
+     "start": 33.445,
+     "end": 33.685,
+     "word": "dục"
+    },
+    {
+     "start": 33.685,
+     "end": 33.885,
+     "word": "và"
+    },
+    {
+     "start": 33.885,
+     "end": 34.125,
+     "word": "làm"
+    },
+    {
+     "start": 34.125,
+     "end": 34.405,
+     "word": "tăng"
+    },
+    {
+     "start": 34.405,
+     "end": 34.605,
+     "word": "nguy"
+    },
+    {
+     "start": 34.605,
+     "end": 34.885,
+     "word": "cơ"
+    },
+    {
+     "start": 34.885,
+     "end": 35.125,
+     "word": "thừa"
+    },
+    {
+     "start": 35.125,
+     "end": 35.52,
+     "word": "cân"
+    },
+    {
+     "start": 35.525,
+     "end": 35.805,
+     "word": "và"
+    },
+    {
+     "start": 35.805,
+     "end": 36.085,
+     "word": "nhiều"
+    },
+    {
+     "start": 36.085,
+     "end": 36.365,
+     "word": "bệnh"
+    },
+    {
+     "start": 36.365,
+     "end": 36.645,
+     "word": "mãn"
+    },
+    {
+     "start": 36.645,
+     "end": 36.88,
+     "word": "tính."
+    }
+   ]
+  },
+  {
+   "start": 37.057,
+   "end": 40.7,
+   "text": "Hãy bắt đầu bằng việc đi bộ hoặc là vận động phù hợp mỗi ngày.",
+   "words": [
+    {
+     "start": 37.057,
+     "end": 37.457,
+     "word": "Hãy"
+    },
+    {
+     "start": 37.457,
+     "end": 37.697,
+     "word": "bắt"
+    },
+    {
+     "start": 37.697,
+     "end": 37.897,
+     "word": "đầu"
+    },
+    {
+     "start": 37.897,
+     "end": 38.137,
+     "word": "bằng"
+    },
+    {
+     "start": 38.137,
+     "end": 38.417,
+     "word": "việc"
+    },
+    {
+     "start": 38.417,
+     "end": 38.617,
+     "word": "đi"
+    },
+    {
+     "start": 38.617,
+     "end": 38.857,
+     "word": "bộ"
+    },
+    {
+     "start": 38.857,
+     "end": 39.057,
+     "word": "hoặc"
+    },
+    {
+     "start": 39.057,
+     "end": 39.297,
+     "word": "là"
+    },
+    {
+     "start": 39.297,
+     "end": 39.457,
+     "word": "vận"
+    },
+    {
+     "start": 39.457,
+     "end": 39.737,
+     "word": "động"
+    },
+    {
+     "start": 39.737,
+     "end": 39.937,
+     "word": "phù"
+    },
+    {
+     "start": 39.937,
+     "end": 40.217,
+     "word": "hợp"
+    },
+    {
+     "start": 40.217,
+     "end": 40.537,
+     "word": "mỗi"
+    },
+    {
+     "start": 40.537,
+     "end": 40.7,
+     "word": "ngày."
+    }
+   ]
+  },
+  {
+   "start": 41.137,
+   "end": 50.82,
+   "text": "Sức khỏe không chỉ nằm ở việc ăn no, mà còn ăn ở đủ chất, sống trong môi trường lành mạnh, giữ tinh thần thoải mái và vận động đều đặn.",
+   "words": [
+    {
+     "start": 41.137,
+     "end": 41.457,
+     "word": "Sức"
+    },
+    {
+     "start": 41.457,
+     "end": 41.857,
+     "word": "khỏe"
+    },
+    {
+     "start": 41.857,
+     "end": 42.097,
+     "word": "không"
+    },
+    {
+     "start": 42.097,
+     "end": 42.337,
+     "word": "chỉ"
+    },
+    {
+     "start": 42.337,
+     "end": 42.537,
+     "word": "nằm"
+    },
+    {
+     "start": 42.537,
+     "end": 42.737,
+     "word": "ở"
+    },
+    {
+     "start": 42.737,
+     "end": 42.977,
+     "word": "việc"
+    },
+    {
+     "start": 42.977,
+     "end": 43.257,
+     "word": "ăn"
+    },
+    {
+     "start": 43.257,
+     "end": 43.777,
+     "word": "no,"
+    },
+    {
+     "start": 43.777,
+     "end": 44.097,
+     "word": "mà"
+    },
+    {
+     "start": 44.097,
+     "end": 44.417,
+     "word": "còn"
+    },
+    {
+     "start": 44.417,
+     "end": 44.697,
+     "word": "ăn"
+    },
+    {
+     "start": 44.697,
+     "end": 44.937,
+     "word": "ở"
+    },
+    {
+     "start": 44.937,
+     "end": 45.217,
+     "word": "đủ"
+    },
+    {
+     "start": 45.217,
+     "end": 45.54,
+     "word": "chất,"
+    },
+    {
+     "start": 45.697,
+     "end": 45.977,
+     "word": "sống"
+    },
+    {
+     "start": 45.977,
+     "end": 46.257,
+     "word": "trong"
+    },
+    {
+     "start": 46.257,
+     "end": 46.497,
+     "word": "môi"
+    },
+    {
+     "start": 46.497,
+     "end": 46.817,
+     "word": "trường"
+    },
+    {
+     "start": 46.817,
+     "end": 47.097,
+     "word": "lành"
+    },
+    {
+     "start": 47.097,
+     "end": 47.3,
+     "word": "mạnh,"
+    },
+    {
+     "start": 47.657,
+     "end": 47.977,
+     "word": "giữ"
+    },
+    {
+     "start": 47.977,
+     "end": 48.097,
+     "word": "tinh"
+    },
+    {
+     "start": 48.097,
+     "end": 48.497,
+     "word": "thần"
+    },
+    {
+     "start": 48.497,
+     "end": 48.897,
+     "word": "thoải"
+    },
+    {
+     "start": 48.897,
+     "end": 49.337,
+     "word": "mái"
+    },
+    {
+     "start": 49.337,
+     "end": 49.697,
+     "word": "và"
+    },
+    {
+     "start": 49.697,
+     "end": 49.937,
+     "word": "vận"
+    },
+    {
+     "start": 49.937,
+     "end": 50.257,
+     "word": "động"
+    },
+    {
+     "start": 50.257,
+     "end": 50.537,
+     "word": "đều"
+    },
+    {
+     "start": 50.537,
+     "end": 50.82,
+     "word": "đặn."
+    }
+   ]
+  },
+  {
+   "start": 51.257,
+   "end": 60.98,
+   "text": "Nếu cô chú anh chị thấy video hay, hữu ích, hãy lưu lại, chia sẻ cho người thân và theo dõi kênh để cùng nhau xây dựng lối sống khỏe mạnh mỗi ngày nhé!",
+   "words": [
+    {
+     "start": 51.257,
+     "end": 51.617,
+     "word": "Nếu"
+    },
+    {
+     "start": 51.617,
+     "end": 51.817,
+     "word": "cô"
+    },
+    {
+     "start": 51.817,
+     "end": 52.017,
+     "word": "chú"
+    },
+    {
+     "start": 52.017,
+     "end": 52.177,
+     "word": "anh"
+    },
+    {
+     "start": 52.177,
+     "end": 52.377,
+     "word": "chị"
+    },
+    {
+     "start": 52.377,
+     "end": 52.577,
+     "word": "thấy"
+    },
+    {
+     "start": 52.577,
+     "end": 53.217,
+     "word": "video"
+    },
+    {
+     "start": 53.217,
+     "end": 53.54,
+     "word": "hay,"
+    },
+    {
+     "start": 53.777,
+     "end": 54.097,
+     "word": "hữu"
+    },
+    {
+     "start": 54.097,
+     "end": 54.32,
+     "word": "ích,"
+    },
+    {
+     "start": 54.57,
+     "end": 54.85,
+     "word": "hãy"
+    },
+    {
+     "start": 54.85,
+     "end": 55.09,
+     "word": "lưu"
+    },
+    {
+     "start": 55.09,
+     "end": 55.42,
+     "word": "lại,"
+    },
+    {
+     "start": 55.57,
+     "end": 55.81,
+     "word": "chia"
+    },
+    {
+     "start": 55.81,
+     "end": 56.09,
+     "word": "sẻ"
+    },
+    {
+     "start": 56.09,
+     "end": 56.33,
+     "word": "cho"
+    },
+    {
+     "start": 56.33,
+     "end": 56.57,
+     "word": "người"
+    },
+    {
+     "start": 56.57,
+     "end": 56.89,
+     "word": "thân"
+    },
+    {
+     "start": 56.89,
+     "end": 57.21,
+     "word": "và"
+    },
+    {
+     "start": 57.21,
+     "end": 57.41,
+     "word": "theo"
+    },
+    {
+     "start": 57.41,
+     "end": 57.69,
+     "word": "dõi"
+    },
+    {
+     "start": 57.69,
+     "end": 57.93,
+     "word": "kênh"
+    },
+    {
+     "start": 57.93,
+     "end": 58.25,
+     "word": "để"
+    },
+    {
+     "start": 58.25,
+     "end": 58.53,
+     "word": "cùng"
+    },
+    {
+     "start": 58.53,
+     "end": 58.85,
+     "word": "nhau"
+    },
+    {
+     "start": 58.85,
+     "end": 59.09,
+     "word": "xây"
+    },
+    {
+     "start": 59.09,
+     "end": 59.37,
+     "word": "dựng"
+    },
+    {
+     "start": 59.37,
+     "end": 59.53,
+     "word": "lối"
+    },
+    {
+     "start": 59.53,
+     "end": 59.81,
+     "word": "sống"
+    },
+    {
+     "start": 59.81,
+     "end": 60.01,
+     "word": "khỏe"
+    },
+    {
+     "start": 60.01,
+     "end": 60.29,
+     "word": "mạnh"
+    },
+    {
+     "start": 60.29,
+     "end": 60.53,
+     "word": "mỗi"
+    },
+    {
+     "start": 60.53,
+     "end": 60.81,
+     "word": "ngày"
+    },
+    {
+     "start": 60.81,
+     "end": 60.98,
+     "word": "nhé!"
+    }
+   ]
+  }
+ ]
+}
