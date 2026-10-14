@@ -172,7 +172,7 @@ def lint(edl, elements, cues, zooms, transcript, tl, subs):
         if len(cols) > 3:
             warn.append(f"{len(cols)} accent colours on screen at {t:.1f}s: {sorted(cols)} (max 2–3).")
             break
-    for c0, c1, txt in cues:
+    for c0, c1, txt, _ in cues:
         sp, x, y = subs.place(txt)
         if y < S.H * S.SUBTITLE_ZONE[0] or y + sp.height > S.H * S.SUBTITLE_ZONE[1]:
             warn.append(f"Subtitle outside 62–82% band at {c0:.1f}s: “{txt}”.")
@@ -262,7 +262,7 @@ def main():
     if sub_cfg.get("y"):
         S.SUBTITLE_CENTER = float(sub_cfg["y"])
         S.SUBTITLE_ZONE = (S.SUBTITLE_CENTER - 0.09, S.SUBTITLE_CENTER + 0.09)
-    subs = G.SubtitleRenderer(sub_cfg.get("highlight"), int(sub_cfg.get("size", 60)))
+    subs = G.SubtitleRenderer(sub_cfg.get("highlight"), int(sub_cfg.get("size", 60)), sub_cfg.get("karaoke"))
     cues = subtitle_cues(transcript, tl, sub_cfg) if sub_cfg.get("enabled", True) else []
 
     warn, err = lint(edl, elements, cues, zooms, transcript, tl, subs)
@@ -336,6 +336,10 @@ def main():
     fx, fy = fx * S.W, fy * S.H
     alpha_lut = {}
     face_cache = {}
+    beauty = None
+    if subj.get("beauty"):
+        from beauty import Beauty
+        beauty = Beauty(subj["beauty"], S.FPS)
     sample_at = set(np.linspace(0, nframes - 1, 12).astype(int).tolist())
     samples = []
     fsize = S.W * S.H * 3
@@ -351,6 +355,8 @@ def main():
         last = buf
         t = i / S.FPS
         frame = Image.frombuffer("RGB", (S.W, S.H), buf, "raw", "RGB", 0, 1)
+        if beauty:
+            frame = Image.fromarray(beauty.apply(np.frombuffer(buf, np.uint8).reshape(S.H, S.W, 3), i))
         z = zoom_at(t, zooms)
         if z > 1.001:
             frame = frame.transform((S.W, S.H), Image.AFFINE, (1 / z, 0, fx - fx / z, 0, 1 / z, fy - fy / z),
@@ -429,9 +435,13 @@ def main():
                 else:
                     mask = sp.getchannel("A")
                 frame.paste(sp.convert("RGB"), (x, y), mask)
-        for c0, c1, txt in cues:
+        for c0, c1, txt, starts in cues:
             if c0 <= t < c1:
-                sp, x, y = subs.place(txt)
+                upto = -1
+                if subs.karaoke and starts:
+                    lag = float(sub_cfg.get("karaoke_lag", 0.12))   # word stamps run slightly early
+                    upto = sum(1 for s in starts if s + lag <= t) - 1
+                sp, x, y = subs.place(txt, upto)
                 frame.paste(sp.convert("RGB"), (x, y), sp.getchannel("A"))
                 break
         if i in sample_at:
@@ -443,6 +453,8 @@ def main():
     enc.wait()
     dec.stdout.close()
     dec.wait()
+    if beauty:
+        print(f"beauty: face found on {beauty.found}/{beauty.frames} frames")
     if padded > 2:     # picture shorter than sound = frozen ending and lip-sync drift
         sys.exit(f"decoder delivered {nframes - padded}/{nframes} frames — video would freeze; aborting")
     if enc.returncode:

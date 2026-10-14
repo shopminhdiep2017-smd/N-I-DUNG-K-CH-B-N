@@ -606,8 +606,9 @@ def make(spec: dict) -> Element | None:
 class SubtitleRenderer:
     """White bold sans subtitles, max 2 lines, keyword highlights only."""
 
-    def __init__(self, highlights: dict | None = None, size=60):
+    def __init__(self, highlights: dict | None = None, size=60, karaoke=None):
         self.f = font(S.FONT_XBOLD, size)
+        self.karaoke = S.color(karaoke) if karaoke else None   # colour of words already spoken
         self.hl = {k.lower(): S.color(v) for k, v in (highlights or {}).items()}
         self._cache = {}
 
@@ -618,9 +619,10 @@ class SubtitleRenderer:
                 return c
         return None
 
-    def sprite(self, text: str):
-        if text in self._cache:
-            return self._cache[text]
+    def sprite(self, text: str, upto: int = -1):
+        key = (text, upto)
+        if key in self._cache:
+            return self._cache[key]
         f = self.f
         maxw = S.W - 2 * S.SIDE_MARGIN - 60
         lines = wrap(text, f, maxw, 2)
@@ -644,19 +646,24 @@ class SubtitleRenderer:
                     phrase_words.add((pw, c))
         y = 10
         space = text_w(" ", ff)
+        k = 0
         for l in lines:
             x = (w - text_w(l, ff)) // 2
             for word in l.split():
                 wl = word.lower().strip(".,!?;:…\"'()")
-                c = next((pc for pw, pc in phrase_words if wl == pw), None) or self._color_for(word, low)
+                if self.karaoke:
+                    c = self.karaoke if k <= upto else None
+                else:
+                    c = next((pc for pw, pc in phrase_words if wl == pw), None) or self._color_for(word, low)
+                k += 1
                 draw_text(img, (x, y), word, ff, c or (255, 255, 255), stroke=6, on_video=True)
                 x += text_w(word, ff) + space
             y += lh
-        self._cache[text] = img
+        self._cache[key] = img
         return img
 
-    def place(self, text):
-        sp = self.sprite(text)
+    def place(self, text, upto: int = -1):
+        sp = self.sprite(text, upto)
         x = (S.W - sp.width) // 2
         y = int(S.H * S.SUBTITLE_CENTER - sp.height / 2)
         return sp, x, y

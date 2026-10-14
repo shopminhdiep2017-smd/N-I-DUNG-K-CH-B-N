@@ -92,7 +92,7 @@ def subtitle_cues(transcript: dict, tl: Timeline, cfg: dict):
     """Group words into 4-10 word semantic chunks (max 2 lines)."""
     overrides = cfg.get("overrides")
     if overrides:
-        return [(tl.map(o["start"]), tl.map(o["end"]), o["text"]) for o in overrides]
+        return [(tl.map(o["start"]), tl.map(o["end"]), o["text"], None) for o in overrides]
     max_words = int(cfg.get("max_words", 8))
     min_words = int(cfg.get("min_words", 3))
     fillers = set(cfg.get("fillers", S.FILLERS))
@@ -106,7 +106,8 @@ def subtitle_cues(transcript: dict, tl: Timeline, cfg: dict):
             text = " ".join(w["word"] for w in cur)
             for k, v in replace.items():
                 text = re.sub(re.escape(k), v, text, flags=re.I)
-            cues.append([tl.map(cur[0]["start"]), tl.map(cur[-1]["end"]), text])
+            starts = [tl.map(w["start"]) for w in cur] if len(text.split()) == len(cur) else None
+            cues.append([tl.map(cur[0]["start"]), tl.map(cur[-1]["end"]), text, starts])
             cur.clear()
 
     for i, w in enumerate(words):
