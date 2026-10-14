@@ -22,6 +22,9 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).parent))
 import graphics as G  # noqa: E402
+import illustrations  # noqa: E402
+
+G.ELEMENTS.update(illustrations.ELEMENTS)
 import sfx as SFX  # noqa: E402
 import style as S  # noqa: E402
 from timeline import Timeline, keep_segments, subtitle_cues  # noqa: E402
@@ -238,8 +241,11 @@ def main():
             m["reveal"] = [tl.map(t) for t in sp["reveal"]]
         if sp.get("active"):
             m["active"] = [[tl.map(t), i] for t, i in sp["active"]]
-        if sp.get("highlight_at"):
-            m["highlight_at"] = tl.map(sp["highlight_at"])
+        for k, v in sp.items():           # any "*_at" time (highlight_at, clot_at, ...)
+            if k.endswith("_at") and isinstance(v, (int, float)):
+                m[k] = tl.map(v)
+        if isinstance(sp.get("region"), dict) and "at" in sp["region"]:
+            m["region"] = dict(sp["region"], at=tl.map(sp["region"]["at"]))
         if m.get("path"):
             m["path"] = str(root / m["path"])
         elements.append((m, G.make(m) if m["type"] != "broll" else None))

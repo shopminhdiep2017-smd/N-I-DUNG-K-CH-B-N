@@ -1,0 +1,106 @@
+{
+  "source": "../video-03/input.mp4",
+  "transcript": "../video-03/transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.06,
+    0.42
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.1,
+    "focus": [
+      0.5,
+      0.52
+    ],
+    "sharpen": 0.5,
+    "denoise": true,
+    "top_shade": 0.25,
+    "bg_dim": 0.03,
+    "grade": {
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.54
+      ],
+      "radius": 0.12,
+      "light": 0.07,
+      "sharpen": 50
+    }
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0,
+        16.0
+      ],
+      [
+        25.35,
+        62.47
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:09",
+      "speech": "Thứ hai là căng thẳng kéo dài… giấc ngủ, tim mạch…",
+      "idea": "Demo minh họa động",
+      "visual": "Headline → bộ não → mạch máu"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 16.16,
+      "end": 18.65,
+      "kicker": "Thứ hai",
+      "text": "02 · Căng thẳng kéo dài",
+      "accent": "red",
+      "size": 88,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "brain",
+      "start": 18.7,
+      "end": 21.3,
+      "label": "Ảnh hưởng đến giấc ngủ",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "vessel",
+      "start": 21.36,
+      "end": 25.3,
+      "clot_at": 99,
+      "label": "Ảnh hưởng đến tim mạch",
+      "accent": "red",
+      "y": 0.235
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "y": 0.745,
+    "highlight": {
+      "sức khỏe": "#F5C542"
+    }
+  },
+  "audio": {
+    "denoise": true,
+    "leveler": true,
+    "loudness": -9,
+    "gain_db": 2.5,
+    "music": null,
+    "sfx_db": -22
+  }
+}

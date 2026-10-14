@@ -54,6 +54,8 @@ important/attention · `cyan` knowledge/terms · `blue`. Max 2–3 accent colour
 | `steps` | 01 / 02 / 03 stages | `title`, `items[]`, `active:[[t,index],…]`, `color` |
 | `flow` | cause → effect: BÓP → NƯỚC THẤM SÂU | `items[]`, `colors[]`, `reveal:[…]` |
 | `spine` | spine diagram, one disc compressed | `label`, `disc` (0–3), `highlight_at`, `color` |
+| `vessel` | animated blood vessel, red cells flowing; optional clot that slows the flow | `label`, `label_after`, `clot_at` (omit or set past `end` for no clot), `tag` |
+| `brain` | animated brain with travelling neural signals; optional highlighted region | `label`, `region{center:[x,y], radius, color, at, label}` |
 | `image` | your own PNG/JPG diagram or product shot | `path`, `width`, `height` |
 | `broll` | video B-roll, 1–3 s | `path`, `mode` (`pip` in the top zone · `cutaway` full frame) |
 
