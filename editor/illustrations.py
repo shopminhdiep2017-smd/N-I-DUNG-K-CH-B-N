@@ -277,4 +277,244 @@ class Brain(Animated):
             self.label(img, self.spec.get("label"))
 
 
-ELEMENTS = {c.kind: c for c in (Vessel, Brain)}
+def _at(spec, key, start, default=None):
+    v = spec.get(key, default)
+    return None if v is None else float(v) - start
+
+
+# ---------------------------------------------------------------- heart ----
+class Heart(Animated):
+    """Beating heart with a scrolling ECG trace; optional faster beat at `fast_at`."""
+    kind = "heart"
+    RED, DARK = (214, 52, 64), (160, 28, 40)
+
+    def __init__(self, spec):
+        super().__init__(spec)
+        th = np.linspace(0, 2 * math.pi, 240)
+        self.shape = np.stack([16 * np.sin(th) ** 3,
+                               -(13 * np.cos(th) - 5 * np.cos(2 * th) - 2 * np.cos(3 * th) - np.cos(4 * th))], 1)
+        self.fast_at = _at(spec, "fast_at", self.start)
+
+    def bpm(self, t):
+        return 72 + (38 * ease((t - self.fast_at) / 1.0) if self.fast_at is not None else 0)
+
+    def phase(self, t):
+        # closed-form integral of bpm/60 so the tempo change stays continuous
+        ph = 1.2 * t
+        if self.fast_at is not None and t > self.fast_at:
+            u = min(1.0, t - self.fast_at)
+            ramp = u ** 3 - u ** 4 / 2 + max(0.0, t - self.fast_at - 1.0)
+            ph += 38 / 60 * ramp
+        return ph
+
+    @staticmethod
+    def beat(ph):
+        f = ph % 1.0                        # lub (big) then dub (small)
+        return math.exp(-((f - 0.05) / 0.05) ** 2) + 0.55 * math.exp(-((f - 0.28) / 0.05) ** 2)
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        ph = self.phase(t)
+        k = 1 + 0.10 * self.beat(ph)
+        cx, cy, sc = CW * 0.5, self.h * 0.36, 7.2 * k
+        pts = [(cx + x * sc, cy + y * sc) for x, y in self.shape]
+        glow = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(glow).polygon(pts, fill=self.RED + (int(110 * self.beat(ph)),))
+        img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(18)))
+        d.polygon(pts, fill=self.RED + (255,))
+        d.ellipse((cx - 70 * sc / 7, cy - 60 * sc / 7, cx - 20 * sc / 7, cy - 25 * sc / 7), fill=(240, 120, 128, 255))
+        # ECG strip
+        y0, x0, x1 = self.h * 0.70, 60, CW - 60
+        d.line((x0, y0, x1, y0), fill=(220, 200, 196, 255), width=2)
+        xs = np.linspace(x0, x1, 260)
+        tt = t - (x1 - xs) / 260.0          # trace scrolls right-to-left, 1 s per 260 px
+        trace = []
+        for x, ti in zip(xs, tt):
+            f = (self.phase(max(ti, 0)) if ti > 0 else ti * 1.2) % 1.0
+            v = (-1.0 * math.exp(-((f - 0.05) / 0.012) ** 2) + 0.35 * math.exp(-((f - 0.09) / 0.015) ** 2)
+                 - 0.15 * math.exp(-((f - 0.30) / 0.05) ** 2))
+            trace.append((x, y0 + v * 60))
+        d.line(trace, fill=self.DARK + (255,), width=4, joint="curve")
+        fast = self.fast_at is not None and t >= self.fast_at + 0.6
+        self.label(img, self.spec.get("label_after") if fast else self.spec.get("label"), "red" if fast else "ink")
+
+
+# ------------------------------------------------------------- pressure ----
+class Pressure(Animated):
+    """Gauge whose needle rises from the normal zone into the high zone at `high_at`."""
+    kind = "pressure"
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        cx, cy, r = CW * 0.5, self.h * 0.62, 210
+        zones = [(180, 252, (46, 160, 90)), (252, 300, (232, 176, 40)), (300, 360, (206, 52, 60))]
+        for a0, a1, col in zones:
+            d.arc((cx - r, cy - r, cx + r, cy + r), a0, a1, fill=col + (255,), width=44)
+        for k in range(0, 13):                 # ticks
+            a = math.radians(180 + k * 15)
+            d.line((cx + (r - 30) * math.cos(a), cy + (r - 30) * math.sin(a),
+                    cx + (r - 56) * math.cos(a), cy + (r - 56) * math.sin(a)), fill=(120, 110, 100, 255), width=3)
+        hi = _at(self.spec, "high_at", self.start)
+        k = ease((t - hi) / 1.6) if hi is not None else 0
+        wob = 2.5 * math.sin(t * 9) * (0.3 + k)
+        ang = math.radians(180 + 40 + (120 * k) + wob)    # 220° (normal) -> 340° (high)
+        L = r - 40
+        d.line((cx, cy, cx + L * math.cos(ang), cy + L * math.sin(ang)), fill=S.color("ink") + (255,), width=10)
+        d.ellipse((cx - 22, cy - 22, cx + 22, cy + 22), fill=S.color("ink") + (255,))
+        f = G.font(S.FONT_XBOLD, 34)
+        for txt, x, col in (("Bình thường", cx - r - 10, "green"), ("Cao", cx + r + 10, "red")):
+            G.draw_text(img, (int(x), int(cy + 42)), txt, f, S.color(col), stroke=2, anchor="mt")
+        self.label(img, self.spec.get("label_after") if k > 0.6 else self.spec.get("label"),
+                   "red" if k > 0.6 else "ink")
+
+
+# ---------------------------------------------------------------- nerve ----
+class Nerve(Animated):
+    """Neuron passing signals; from `tingle_at` the signal flickers with sparks (numbness)."""
+    kind = "nerve"
+    BODY, AXON = (124, 92, 196), (150, 126, 214)
+
+    def __init__(self, spec):
+        super().__init__(spec)
+        rng = np.random.default_rng(5)
+        self.cx, self.cy = CW * 0.18, self.h * 0.40
+        self.dend = []
+        for k in range(7):
+            a = math.pi * (0.55 + k / 6 * 0.9)
+            pts = [(self.cx, self.cy)]
+            x, y = self.cx, self.cy
+            for _ in range(4):
+                x += math.cos(a) * 26
+                y += math.sin(a) * 26
+                a += rng.uniform(-0.5, 0.5)
+                pts.append((x, y))
+            self.dend.append(pts)
+        xs = np.linspace(self.cx + 40, CW - 70, 120)
+        self.axon = [(x, self.cy + 18 * math.sin((x - self.cx) / 70)) for x in xs]
+        self.sparks = rng.uniform(0, 1, (18, 3))
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        for pts in self.dend:
+            d.line(pts, fill=self.AXON + (255,), width=7, joint="curve")
+        d.line(self.axon, fill=self.AXON + (255,), width=12, joint="curve")
+        for k in range(0, len(self.axon) - 10, 14):        # myelin segments
+            seg = self.axon[k:k + 9]
+            d.line(seg, fill=(232, 206, 150, 255), width=22, joint="curve")
+        ex, ey = self.axon[-1]
+        for a in (-0.6, 0, 0.6):
+            d.line((ex, ey, ex + 34 * math.cos(a), ey + 34 * math.sin(a)), fill=self.AXON + (255,), width=6)
+        d.ellipse((self.cx - 46, self.cy - 46, self.cx + 46, self.cy + 46), fill=self.BODY + (255,))
+        d.ellipse((self.cx - 16, self.cy - 16, self.cx + 16, self.cy + 16), fill=(84, 58, 150, 255))
+        ti = _at(self.spec, "tingle_at", self.start)
+        bad = ti is not None and t >= ti
+        glow = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        dg = ImageDraw.Draw(glow)
+        n = len(self.axon)
+        for j in range(3):
+            u = (t * 0.7 + j / 3) % 1.0
+            if bad and (math.sin(t * 23 + j * 2) > 0.2 or u > 0.55):
+                continue                         # signal drops out = numbness
+            x, y = self.axon[min(n - 1, int(u * n))]
+            dg.ellipse((x - 20, y - 20, x + 20, y + 20), fill=(255, 210, 80, 230))
+            d.ellipse((x - 8, y - 8, x + 8, y + 8), fill=(255, 250, 220, 255))
+        if bad:
+            k = ease((t - ti) / 0.6)
+            for sx, sy, sp in self.sparks:
+                x, y = self.axon[int(0.45 * n + sx * 0.5 * n) % n]
+                if math.sin(t * 17 + sp * 40) > 0.3:
+                    yy = y + (sy - 0.5) * 70
+                    for a in range(4):
+                        aa = a * math.pi / 2 + t * 3
+                        dg.line((x, yy, x + 16 * math.cos(aa), yy + 16 * math.sin(aa)), fill=(230, 60, 60, int(240 * k)),
+                                width=4)
+        img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(4)))
+        img.alpha_composite(glow)
+        self.label(img, self.spec.get("label_after") if bad else self.spec.get("label"), "red" if bad else "ink")
+
+
+# ---------------------------------------------------------------- sleep ----
+class Sleep(Animated):
+    """Night scene: moon, stars, a clock running through the night, floating Zzz.
+    `wake_at` stops the Zzz and highlights the clock (waking in the night)."""
+    kind = "sleep"
+
+    def __init__(self, spec):
+        super().__init__(spec)
+        rng = np.random.default_rng(9)
+        self.stars = rng.uniform(0, 1, (26, 3))
+        self.h0 = float(spec.get("from_hour", 22))
+        self.h1 = float(spec.get("to_hour", 26))     # 26 = 2 am next day
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        d.rectangle((0, 0, CW, self.h - 96), fill=(30, 40, 78, 255))
+        for sx, sy, sp in self.stars:
+            a = int(140 + 115 * (0.5 + 0.5 * math.sin(t * 3 + sp * 20)))
+            x, y = sx * CW, sy * (self.h - 120)
+            d.ellipse((x - 3, y - 3, x + 3, y + 3), fill=(255, 244, 200, a))
+        mx, my = CW * 0.20, self.h * 0.30
+        d.ellipse((mx - 70, my - 70, mx + 70, my + 70), fill=(250, 226, 150, 255))
+        d.ellipse((mx - 40, my - 86, mx + 100, my + 54), fill=(30, 40, 78, 255))
+        cx, cy, r = CW * 0.62, self.h * 0.40, 120
+        wk = _at(self.spec, "wake_at", self.start)
+        awake = wk is not None and t >= wk
+        dur = max(0.1, self.end - self.start)
+        hour = self.h0 + (self.h1 - self.h0) * ease(t / dur)
+        ring = (230, 80, 80) if awake and int(t * 4) % 2 else (240, 236, 226)
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(250, 246, 236, 255), outline=ring + (255,), width=10)
+        for k in range(12):
+            a = math.radians(k * 30 - 90)
+            d.line((cx + (r - 14) * math.cos(a), cy + (r - 14) * math.sin(a),
+                    cx + (r - 30) * math.cos(a), cy + (r - 30) * math.sin(a)), fill=(60, 60, 80, 255), width=4)
+        hm = (hour % 12) / 12 * 2 * math.pi - math.pi / 2
+        mm = (hour % 1) * 2 * math.pi - math.pi / 2
+        d.line((cx, cy, cx + 60 * math.cos(hm), cy + 60 * math.sin(hm)), fill=(30, 34, 52, 255), width=10)
+        d.line((cx, cy, cx + 92 * math.cos(mm), cy + 92 * math.sin(mm)), fill=(30, 34, 52, 255), width=6)
+        d.ellipse((cx - 10, cy - 10, cx + 10, cy + 10), fill=(200, 40, 50, 255))
+        if not awake:
+            f = G.font(S.FONT_BLACK, 54)
+            for j in range(3):
+                u = (t * 0.4 + j / 3) % 1.0
+                a = int(255 * math.sin(math.pi * u))
+                zz = Image.new("RGBA", img.size, (0, 0, 0, 0))
+                G.draw_text(zz, (int(CW * 0.80 + 40 * u), int(self.h * 0.55 - 220 * u)), "z", f,
+                            (220, 226, 255), stroke=0, shadow=False, on_video=True)
+                zz.putalpha(zz.getchannel("A").point(lambda v, a=a: v * a // 255))
+                img.alpha_composite(zz)
+        self.label(img, self.spec.get("label_after") if awake else self.spec.get("label"), "red" if awake else "ink")
+
+
+# ----------------------------------------------------------------- walk ----
+class Walk(Animated):
+    """A person walking on a scrolling path (daily activity)."""
+    kind = "walk"
+    BODY = (22, 120, 60)
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        ground = self.h * 0.76
+        d.rectangle((0, ground, CW, ground + 14), fill=(190, 214, 190, 255))
+        for k in range(8):                       # trees scroll by
+            x = (k * 170 - t * 120) % (CW + 170) - 85
+            d.rectangle((x - 6, ground - 70, x + 6, ground), fill=(140, 110, 80, 255))
+            d.ellipse((x - 42, ground - 150, x + 42, ground - 60), fill=(120, 190, 130, 255))
+        cx, ph = CW * 0.5, t * 2 * math.pi * 1.1
+        hip = (cx, ground - 150 - 4 * abs(math.sin(ph)))
+        sh = (cx + 8, hip[1] - 120)
+        c = self.BODY + (255,)
+        def limb(p, a1, l1, a2, l2, w):
+            k1 = (p[0] + l1 * math.sin(a1), p[1] + l1 * math.cos(a1))
+            k2 = (k1[0] + l2 * math.sin(a2), k1[1] + l2 * math.cos(a2))
+            d.line((p, k1, k2), fill=c, width=w, joint="curve")
+        s = math.sin(ph)
+        limb(sh, -0.6 * s, 62, -0.6 * s + 0.5, 58, 18)           # back arm
+        limb(hip, 0.55 * s, 78, 0.55 * s - 0.35 * max(0, -s) - 0.1, 76, 22)
+        limb(hip, -0.55 * s, 78, -0.55 * s - 0.35 * max(0, s) - 0.1, 76, 22)
+        d.line((hip, sh), fill=c, width=34)
+        limb(sh, 0.6 * s, 62, 0.6 * s + 0.5, 58, 18)             # front arm
+        d.ellipse((sh[0] - 34, sh[1] - 96, sh[0] + 34, sh[1] - 28), fill=(232, 190, 160, 255))
+        self.label(img, self.spec.get("label"))
+
+
+ELEMENTS = {c.kind: c for c in (Vessel, Brain, Heart, Pressure, Nerve, Sleep, Walk)}

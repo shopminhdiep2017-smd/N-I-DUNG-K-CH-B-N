@@ -56,6 +56,11 @@ important/attention · `cyan` knowledge/terms · `blue`. Max 2–3 accent colour
 | `spine` | spine diagram, one disc compressed | `label`, `disc` (0–3), `highlight_at`, `color` |
 | `vessel` | animated blood vessel, red cells flowing; optional clot that slows the flow | `label`, `label_after`, `clot_at` (omit or set past `end` for no clot), `tag` |
 | `brain` | animated brain with travelling neural signals; optional highlighted region | `label`, `region{center:[x,y], radius, color, at, label}` |
+| `heart` | beating heart + ECG trace; faster beat from `fast_at` | `label`, `label_after`, `fast_at` |
+| `pressure` | blood-pressure gauge; needle rises into the red zone at `high_at` | `label`, `label_after`, `high_at` |
+| `nerve` | neuron passing signals; flickers with red sparks (numbness) from `tingle_at` | `label`, `label_after`, `tingle_at` |
+| `sleep` | night scene, clock running through the night, Zzz; `wake_at` = waking up | `label`, `label_after`, `wake_at`, `from_hour`, `to_hour` |
+| `walk` | person walking past trees | `label` |
 | `image` | your own PNG/JPG diagram or product shot | `path`, `width`, `height` |
 | `broll` | video B-roll, 1–3 s | `path`, `mode` (`pip` in the top zone · `cutaway` full frame) |
 
