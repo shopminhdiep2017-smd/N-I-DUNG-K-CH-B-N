@@ -87,6 +87,12 @@ def mix_audio(work: Path, voice_wav, sfx_wav, cfg, duration, root: Path):
     out = work / "mix.wav"
     inputs = ["-i", str(voice_wav), "-i", str(sfx_wav)]
     voice = ["highpass=f=75"]
+    if cfg.get("rnnoise"):                     # RNN speech denoiser (model file in editor/assets/rnnoise)
+        model = Path(__file__).parent / "assets" / "rnnoise" / f"{cfg['rnnoise']}.rnnn"
+        voice.append(f"arnndn=m='{model}':mix={float(cfg.get('rnnoise_mix', 0.9))}")
+    if cfg.get("dereverb"):
+        voice.append("equalizer=f=300:t=q:w=1.2:g=-2.5")      # tame boxy room resonance
+        voice.append("agate=threshold=0.012:ratio=2:attack=5:release=150:range=0.3")  # soften tails in pauses
     if cfg.get("denoise", True):
         voice.append("afftdn=nr=10:nf=-45")
     if cfg.get("leveler"):
@@ -212,6 +218,8 @@ def main():
     ap.add_argument("--draft", action="store_true", help="fast encode for checking")
     ap.add_argument("--force", action="store_true", help="render despite lint errors")
     ap.add_argument("--limit", type=float, help="render only the first N output seconds")
+    ap.add_argument("--audio-only", action="store_true",
+                    help="redo only the sound and put it on the existing out/final.mp4 (picture unchanged)")
     a = ap.parse_args()
 
     root = Path(a.project)
@@ -282,13 +290,27 @@ def main():
         sys.exit("lint errors — fix the EDL or pass --force (see out/report.md)")
 
     # ---- audio: cut voice in numpy (sample exact), synth SFX, mix
-    voice = cut_audio(load_audio(src, dur), segs) if has_audio else np.zeros(int(tl.duration * SFX.SR), np.float32)
+    acfg = edl.get("audio", {})
+    raw = load_audio(src, dur) if has_audio else None
+    if has_audio and acfg.get("dereverb"):
+        from dereverb import dereverb
+        dr = acfg["dereverb"] if isinstance(acfg["dereverb"], dict) else {}
+        raw = dereverb(raw, SFX.SR, rt60=float(dr.get("rt60", 0.5)), strength=float(dr.get("strength", 1.0)))
+    voice = cut_audio(raw, segs) if has_audio else np.zeros(int(tl.duration * SFX.SR), np.float32)
     SFX.write_wav(work / "voice.wav", voice[: int(T * SFX.SR)])
     acfg = edl.get("audio", {})
     events = [(tl.map(e["t"]), e["type"]) for e in edl.get("sfx", [])]
     events += [(m["start"], m["sfx"]) for m, _ in elements if m.get("sfx")]
     SFX.write_wav(work / "sfx.wav", SFX.render_track(events, T, float(acfg.get("sfx_db", -16))))
     mix = mix_audio(work, work / "voice.wav", work / "sfx.wav", acfg, T, root)
+    if a.audio_only:
+        final = out_dir / "final.mp4"
+        tmp = out_dir / "final.audio.tmp.mp4"
+        run([FFMPEG, "-y", "-v", "error", "-i", str(final), "-i", str(mix), "-map", "0:v", "-map", "1:a",
+             "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(tmp)])
+        tmp.replace(final)
+        print(f"audio replaced → {final}")
+        return
 
     # ---- video pass 1: cut + 9:16 framing, decoded to raw frames
     subj = edl.get("subject", {})

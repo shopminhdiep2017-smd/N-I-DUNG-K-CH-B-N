@@ -472,6 +472,12 @@
     "loudness": -9,
     "gain_db": 2.5,
     "music": null,
-    "sfx_db": -22
+    "sfx_db": -22,
+    "dereverb": {
+      "rt60": 0.5,
+      "strength": 1.2
+    },
+    "rnnoise": "sh",
+    "rnnoise_mix": 0.9
   }
 }
