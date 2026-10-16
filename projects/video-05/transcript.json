@@ -1,0 +1,2189 @@
+{
+ "language": "vi",
+ "duration": 103.37,
+ "asr": "sherpa-onnx zipformer-vi + whisper cross-check + manual correction",
+ "silences": [
+  [
+   0.0,
+   0.62
+  ],
+  [
+   1.48,
+   1.7
+  ],
+  [
+   3.68,
+   4.04
+  ],
+  [
+   6.52,
+   6.86
+  ],
+  [
+   7.4,
+   7.6
+  ],
+  [
+   9.46,
+   9.92
+  ],
+  [
+   10.84,
+   11.24
+  ],
+  [
+   12.74,
+   13.0
+  ],
+  [
+   13.8,
+   14.08
+  ],
+  [
+   16.3,
+   16.86
+  ],
+  [
+   18.12,
+   18.48
+  ],
+  [
+   21.2,
+   21.78
+  ],
+  [
+   22.1,
+   22.32
+  ],
+  [
+   22.98,
+   23.34
+  ],
+  [
+   24.18,
+   24.38
+  ],
+  [
+   25.06,
+   25.5
+  ],
+  [
+   27.82,
+   28.34
+  ],
+  [
+   28.98,
+   29.18
+  ],
+  [
+   29.76,
+   30.22
+  ],
+  [
+   30.7,
+   31.06
+  ],
+  [
+   31.84,
+   32.2
+  ],
+  [
+   34.04,
+   34.38
+  ],
+  [
+   35.86,
+   36.26
+  ],
+  [
+   37.1,
+   37.46
+  ],
+  [
+   38.1,
+   38.78
+  ],
+  [
+   39.66,
+   40.08
+  ],
+  [
+   40.6,
+   41.08
+  ],
+  [
+   43.7,
+   44.3
+  ],
+  [
+   45.0,
+   45.34
+  ],
+  [
+   46.08,
+   46.54
+  ],
+  [
+   50.12,
+   50.52
+  ],
+  [
+   51.22,
+   51.58
+  ],
+  [
+   52.94,
+   53.46
+  ],
+  [
+   56.26,
+   56.8
+  ],
+  [
+   57.52,
+   57.96
+  ],
+  [
+   59.46,
+   60.0
+  ],
+  [
+   60.82,
+   61.08
+  ],
+  [
+   63.56,
+   63.84
+  ],
+  [
+   65.08,
+   65.6
+  ],
+  [
+   67.1,
+   67.38
+  ],
+  [
+   68.52,
+   69.0
+  ],
+  [
+   71.9,
+   72.44
+  ],
+  [
+   75.22,
+   75.68
+  ],
+  [
+   76.12,
+   76.52
+  ],
+  [
+   77.06,
+   77.44
+  ],
+  [
+   79.28,
+   79.74
+  ],
+  [
+   82.54,
+   82.92
+  ],
+  [
+   84.92,
+   85.4
+  ],
+  [
+   86.14,
+   86.7
+  ],
+  [
+   87.24,
+   87.6
+  ],
+  [
+   88.76,
+   89.24
+  ],
+  [
+   90.18,
+   90.58
+  ],
+  [
+   92.66,
+   93.22
+  ],
+  [
+   93.94,
+   94.14
+  ],
+  [
+   94.94,
+   95.58
+  ],
+  [
+   97.22,
+   97.6
+  ],
+  [
+   98.84,
+   99.22
+  ],
+  [
+   100.42,
+   100.64
+  ],
+  [
+   101.8,
+   103.34
+  ]
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 6.52,
+   "text": "Chóng mặt, mất ngủ, tê bì tay chân, uống bổ não mãi không đỡ, thì có thể là cô chú đang chăm sóc chưa đúng chỗ.",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.56,
+     "word": "Chóng"
+    },
+    {
+     "start": 0.56,
+     "end": 0.92,
+     "word": "mặt,"
+    },
+    {
+     "start": 0.92,
+     "end": 1.16,
+     "word": "mất"
+    },
+    {
+     "start": 1.16,
+     "end": 1.48,
+     "word": "ngủ,"
+    },
+    {
+     "start": 1.48,
+     "end": 1.76,
+     "word": "tê"
+    },
+    {
+     "start": 1.76,
+     "end": 1.96,
+     "word": "bì"
+    },
+    {
+     "start": 1.96,
+     "end": 2.12,
+     "word": "tay"
+    },
+    {
+     "start": 2.12,
+     "end": 2.4,
+     "word": "chân,"
+    },
+    {
+     "start": 2.4,
+     "end": 2.76,
+     "word": "uống"
+    },
+    {
+     "start": 2.76,
+     "end": 2.91,
+     "word": "bổ"
+    },
+    {
+     "start": 2.91,
+     "end": 3.03,
+     "word": "não"
+    },
+    {
+     "start": 3.0,
+     "end": 3.24,
+     "word": "mãi"
+    },
+    {
+     "start": 3.24,
+     "end": 3.48,
+     "word": "không"
+    },
+    {
+     "start": 3.48,
+     "end": 3.68,
+     "word": "đỡ,"
+    },
+    {
+     "start": 3.8,
+     "end": 4.08,
+     "word": "thì"
+    },
+    {
+     "start": 4.08,
+     "end": 4.28,
+     "word": "có"
+    },
+    {
+     "start": 4.28,
+     "end": 4.48,
+     "word": "thể"
+    },
+    {
+     "start": 4.48,
+     "end": 4.68,
+     "word": "là"
+    },
+    {
+     "start": 4.68,
+     "end": 4.92,
+     "word": "cô"
+    },
+    {
+     "start": 4.92,
+     "end": 5.16,
+     "word": "chú"
+    },
+    {
+     "start": 5.16,
+     "end": 5.4,
+     "word": "đang"
+    },
+    {
+     "start": 5.4,
+     "end": 5.6,
+     "word": "chăm"
+    },
+    {
+     "start": 5.6,
+     "end": 5.8,
+     "word": "sóc"
+    },
+    {
+     "start": 5.8,
+     "end": 6.04,
+     "word": "chưa"
+    },
+    {
+     "start": 6.04,
+     "end": 6.28,
+     "word": "đúng"
+    },
+    {
+     "start": 6.28,
+     "end": 6.52,
+     "word": "chỗ."
+    }
+   ]
+  },
+  {
+   "start": 6.72,
+   "end": 16.32,
+   "text": "Thật ra những biểu hiện này không chỉ là riêng não bộ, mà còn liên quan đến cả một hệ thống tim bơm máu, mạch máu dẫn máu, rồi não mới nhận ra được oxy và dưỡng chất.",
+   "words": [
+    {
+     "start": 6.72,
+     "end": 7.0,
+     "word": "Thật"
+    },
+    {
+     "start": 7.0,
+     "end": 7.32,
+     "word": "ra"
+    },
+    {
+     "start": 7.32,
+     "end": 7.6,
+     "word": "những"
+    },
+    {
+     "start": 7.6,
+     "end": 7.84,
+     "word": "biểu"
+    },
+    {
+     "start": 7.84,
+     "end": 8.04,
+     "word": "hiện"
+    },
+    {
+     "start": 8.04,
+     "end": 8.28,
+     "word": "này"
+    },
+    {
+     "start": 8.28,
+     "end": 8.48,
+     "word": "không"
+    },
+    {
+     "start": 8.48,
+     "end": 8.64,
+     "word": "chỉ"
+    },
+    {
+     "start": 8.64,
+     "end": 8.84,
+     "word": "là"
+    },
+    {
+     "start": 8.84,
+     "end": 9.08,
+     "word": "riêng"
+    },
+    {
+     "start": 9.08,
+     "end": 9.36,
+     "word": "não"
+    },
+    {
+     "start": 9.36,
+     "end": 9.48,
+     "word": "bộ,"
+    },
+    {
+     "start": 9.68,
+     "end": 9.92,
+     "word": "mà"
+    },
+    {
+     "start": 9.92,
+     "end": 10.2,
+     "word": "còn"
+    },
+    {
+     "start": 10.2,
+     "end": 10.44,
+     "word": "liên"
+    },
+    {
+     "start": 10.44,
+     "end": 10.68,
+     "word": "quan"
+    },
+    {
+     "start": 10.68,
+     "end": 10.84,
+     "word": "đến"
+    },
+    {
+     "start": 11.0,
+     "end": 11.24,
+     "word": "cả"
+    },
+    {
+     "start": 11.24,
+     "end": 11.48,
+     "word": "một"
+    },
+    {
+     "start": 11.48,
+     "end": 11.72,
+     "word": "hệ"
+    },
+    {
+     "start": 11.72,
+     "end": 12.0,
+     "word": "thống"
+    },
+    {
+     "start": 12.0,
+     "end": 12.24,
+     "word": "tim"
+    },
+    {
+     "start": 12.24,
+     "end": 12.52,
+     "word": "bơm"
+    },
+    {
+     "start": 12.52,
+     "end": 12.74,
+     "word": "máu,"
+    },
+    {
+     "start": 12.88,
+     "end": 13.12,
+     "word": "mạch"
+    },
+    {
+     "start": 13.12,
+     "end": 13.36,
+     "word": "máu"
+    },
+    {
+     "start": 13.36,
+     "end": 13.6,
+     "word": "dẫn"
+    },
+    {
+     "start": 13.6,
+     "end": 13.8,
+     "word": "máu,"
+    },
+    {
+     "start": 13.92,
+     "end": 14.24,
+     "word": "rồi"
+    },
+    {
+     "start": 14.24,
+     "end": 14.48,
+     "word": "não"
+    },
+    {
+     "start": 14.48,
+     "end": 14.68,
+     "word": "mới"
+    },
+    {
+     "start": 14.68,
+     "end": 14.84,
+     "word": "nhận"
+    },
+    {
+     "start": 14.84,
+     "end": 15.04,
+     "word": "ra"
+    },
+    {
+     "start": 15.04,
+     "end": 15.2,
+     "word": "được"
+    },
+    {
+     "start": 15.2,
+     "end": 15.68,
+     "word": "oxy"
+    },
+    {
+     "start": 15.68,
+     "end": 15.92,
+     "word": "và"
+    },
+    {
+     "start": 15.92,
+     "end": 16.2,
+     "word": "dưỡng"
+    },
+    {
+     "start": 16.2,
+     "end": 16.32,
+     "word": "chất."
+    }
+   ]
+  },
+  {
+   "start": 16.64,
+   "end": 21.2,
+   "text": "Chỉ cần một khâu gặp vấn đề, sức khỏe của cô chú anh chị cũng có thể là bị ảnh hưởng.",
+   "words": [
+    {
+     "start": 16.64,
+     "end": 16.88,
+     "word": "Chỉ"
+    },
+    {
+     "start": 16.88,
+     "end": 17.08,
+     "word": "cần"
+    },
+    {
+     "start": 17.08,
+     "end": 17.28,
+     "word": "một"
+    },
+    {
+     "start": 17.28,
+     "end": 17.56,
+     "word": "khâu"
+    },
+    {
+     "start": 17.56,
+     "end": 17.8,
+     "word": "gặp"
+    },
+    {
+     "start": 17.8,
+     "end": 18.04,
+     "word": "vấn"
+    },
+    {
+     "start": 18.04,
+     "end": 18.424,
+     "word": "đề,"
+    },
+    {
+     "start": 18.424,
+     "end": 18.624,
+     "word": "sức"
+    },
+    {
+     "start": 18.624,
+     "end": 18.784,
+     "word": "khỏe"
+    },
+    {
+     "start": 18.784,
+     "end": 18.984,
+     "word": "của"
+    },
+    {
+     "start": 18.984,
+     "end": 19.184,
+     "word": "cô"
+    },
+    {
+     "start": 19.184,
+     "end": 19.424,
+     "word": "chú"
+    },
+    {
+     "start": 19.424,
+     "end": 19.624,
+     "word": "anh"
+    },
+    {
+     "start": 19.624,
+     "end": 19.824,
+     "word": "chị"
+    },
+    {
+     "start": 19.824,
+     "end": 20.024,
+     "word": "cũng"
+    },
+    {
+     "start": 20.024,
+     "end": 20.184,
+     "word": "có"
+    },
+    {
+     "start": 20.184,
+     "end": 20.384,
+     "word": "thể"
+    },
+    {
+     "start": 20.384,
+     "end": 20.584,
+     "word": "là"
+    },
+    {
+     "start": 20.584,
+     "end": 20.824,
+     "word": "bị"
+    },
+    {
+     "start": 20.824,
+     "end": 21.064,
+     "word": "ảnh"
+    },
+    {
+     "start": 21.064,
+     "end": 21.2,
+     "word": "hưởng."
+    }
+   ]
+  },
+  {
+   "start": 21.544,
+   "end": 22.98,
+   "text": "Thứ nhất: đó là tim.",
+   "words": [
+    {
+     "start": 21.544,
+     "end": 21.784,
+     "word": "Thứ"
+    },
+    {
+     "start": 21.784,
+     "end": 22.1,
+     "word": "nhất:"
+    },
+    {
+     "start": 22.144,
+     "end": 22.424,
+     "word": "đó"
+    },
+    {
+     "start": 22.424,
+     "end": 22.664,
+     "word": "là"
+    },
+    {
+     "start": 22.664,
+     "end": 22.98,
+     "word": "tim."
+    }
+   ]
+  },
+  {
+   "start": 23.104,
+   "end": 29.76,
+   "text": "Khi tim bơm máu kém hiệu quả, thì cô chú anh chị có thể là cảm thấy là chóng mặt, mệt mỏi, hụt hơi.",
+   "words": [
+    {
+     "start": 23.104,
+     "end": 23.384,
+     "word": "Khi"
+    },
+    {
+     "start": 23.384,
+     "end": 23.664,
+     "word": "tim"
+    },
+    {
+     "start": 23.664,
+     "end": 23.904,
+     "word": "bơm"
+    },
+    {
+     "start": 23.904,
+     "end": 24.18,
+     "word": "máu"
+    },
+    {
+     "start": 24.304,
+     "end": 24.584,
+     "word": "kém"
+    },
+    {
+     "start": 24.584,
+     "end": 24.824,
+     "word": "hiệu"
+    },
+    {
+     "start": 24.824,
+     "end": 25.06,
+     "word": "quả,"
+    },
+    {
+     "start": 25.184,
+     "end": 25.544,
+     "word": "thì"
+    },
+    {
+     "start": 25.544,
+     "end": 25.784,
+     "word": "cô"
+    },
+    {
+     "start": 25.784,
+     "end": 25.984,
+     "word": "chú"
+    },
+    {
+     "start": 25.984,
+     "end": 26.184,
+     "word": "anh"
+    },
+    {
+     "start": 26.184,
+     "end": 26.344,
+     "word": "chị"
+    },
+    {
+     "start": 26.344,
+     "end": 26.504,
+     "word": "có"
+    },
+    {
+     "start": 26.504,
+     "end": 26.704,
+     "word": "thể"
+    },
+    {
+     "start": 26.704,
+     "end": 26.904,
+     "word": "là"
+    },
+    {
+     "start": 26.904,
+     "end": 27.064,
+     "word": "cảm"
+    },
+    {
+     "start": 27.064,
+     "end": 27.264,
+     "word": "thấy"
+    },
+    {
+     "start": 27.264,
+     "end": 27.504,
+     "word": "là"
+    },
+    {
+     "start": 27.504,
+     "end": 27.704,
+     "word": "chóng"
+    },
+    {
+     "start": 27.704,
+     "end": 27.824,
+     "word": "mặt,"
+    },
+    {
+     "start": 27.984,
+     "end": 28.584,
+     "word": "mệt"
+    },
+    {
+     "start": 28.584,
+     "end": 28.98,
+     "word": "mỏi,"
+    },
+    {
+     "start": 29.144,
+     "end": 29.464,
+     "word": "hụt"
+    },
+    {
+     "start": 29.464,
+     "end": 29.76,
+     "word": "hơi."
+    }
+   ]
+  },
+  {
+   "start": 30.064,
+   "end": 31.84,
+   "text": "Thứ hai: đó là mạch máu.",
+   "words": [
+    {
+     "start": 30.064,
+     "end": 30.344,
+     "word": "Thứ"
+    },
+    {
+     "start": 30.344,
+     "end": 30.7,
+     "word": "hai:"
+    },
+    {
+     "start": 30.824,
+     "end": 31.064,
+     "word": "đó"
+    },
+    {
+     "start": 31.064,
+     "end": 31.304,
+     "word": "là"
+    },
+    {
+     "start": 31.304,
+     "end": 31.624,
+     "word": "mạch"
+    },
+    {
+     "start": 31.624,
+     "end": 31.84,
+     "word": "máu."
+    }
+   ]
+  },
+  {
+   "start": 31.984,
+   "end": 39.66,
+   "text": "Những vấn đề về tuần hoàn và mạch máu có thể liên quan đến tình trạng là tê bì tay chân, đau đầu, cứng cổ vai gáy.",
+   "words": [
+    {
+     "start": 31.984,
+     "end": 32.264,
+     "word": "Những"
+    },
+    {
+     "start": 32.264,
+     "end": 32.424,
+     "word": "vấn"
+    },
+    {
+     "start": 32.424,
+     "end": 32.664,
+     "word": "đề"
+    },
+    {
+     "start": 32.664,
+     "end": 32.864,
+     "word": "về"
+    },
+    {
+     "start": 32.864,
+     "end": 33.104,
+     "word": "tuần"
+    },
+    {
+     "start": 33.104,
+     "end": 33.304,
+     "word": "hoàn"
+    },
+    {
+     "start": 33.304,
+     "end": 33.584,
+     "word": "và"
+    },
+    {
+     "start": 33.584,
+     "end": 33.824,
+     "word": "mạch"
+    },
+    {
+     "start": 33.824,
+     "end": 34.04,
+     "word": "máu"
+    },
+    {
+     "start": 34.144,
+     "end": 34.384,
+     "word": "có"
+    },
+    {
+     "start": 34.384,
+     "end": 34.624,
+     "word": "thể"
+    },
+    {
+     "start": 34.624,
+     "end": 34.824,
+     "word": "liên"
+    },
+    {
+     "start": 34.824,
+     "end": 35.064,
+     "word": "quan"
+    },
+    {
+     "start": 35.064,
+     "end": 35.304,
+     "word": "đến"
+    },
+    {
+     "start": 35.304,
+     "end": 35.544,
+     "word": "tình"
+    },
+    {
+     "start": 35.544,
+     "end": 35.784,
+     "word": "trạng"
+    },
+    {
+     "start": 35.784,
+     "end": 36.201,
+     "word": "là"
+    },
+    {
+     "start": 36.201,
+     "end": 36.401,
+     "word": "tê"
+    },
+    {
+     "start": 36.401,
+     "end": 36.681,
+     "word": "bì"
+    },
+    {
+     "start": 36.681,
+     "end": 36.921,
+     "word": "tay"
+    },
+    {
+     "start": 36.921,
+     "end": 37.1,
+     "word": "chân,"
+    },
+    {
+     "start": 37.441,
+     "end": 37.801,
+     "word": "đau"
+    },
+    {
+     "start": 37.801,
+     "end": 38.1,
+     "word": "đầu,"
+    },
+    {
+     "start": 38.521,
+     "end": 38.881,
+     "word": "cứng"
+    },
+    {
+     "start": 38.881,
+     "end": 39.121,
+     "word": "cổ"
+    },
+    {
+     "start": 39.121,
+     "end": 39.361,
+     "word": "vai"
+    },
+    {
+     "start": 39.361,
+     "end": 39.66,
+     "word": "gáy."
+    }
+   ]
+  },
+  {
+   "start": 39.961,
+   "end": 43.7,
+   "text": "Tuy nhiên, những biểu hiện này cũng có thể là do nhiều nguyên nhân khác nhau.",
+   "words": [
+    {
+     "start": 39.961,
+     "end": 40.281,
+     "word": "Tuy"
+    },
+    {
+     "start": 40.281,
+     "end": 40.6,
+     "word": "nhiên,"
+    },
+    {
+     "start": 40.761,
+     "end": 41.081,
+     "word": "những"
+    },
+    {
+     "start": 41.081,
+     "end": 41.281,
+     "word": "biểu"
+    },
+    {
+     "start": 41.281,
+     "end": 41.481,
+     "word": "hiện"
+    },
+    {
+     "start": 41.481,
+     "end": 41.681,
+     "word": "này"
+    },
+    {
+     "start": 41.681,
+     "end": 41.881,
+     "word": "cũng"
+    },
+    {
+     "start": 41.881,
+     "end": 42.041,
+     "word": "có"
+    },
+    {
+     "start": 42.041,
+     "end": 42.201,
+     "word": "thể"
+    },
+    {
+     "start": 42.201,
+     "end": 42.401,
+     "word": "là"
+    },
+    {
+     "start": 42.401,
+     "end": 42.601,
+     "word": "do"
+    },
+    {
+     "start": 42.601,
+     "end": 42.841,
+     "word": "nhiều"
+    },
+    {
+     "start": 42.841,
+     "end": 43.041,
+     "word": "nguyên"
+    },
+    {
+     "start": 43.041,
+     "end": 43.281,
+     "word": "nhân"
+    },
+    {
+     "start": 43.281,
+     "end": 43.561,
+     "word": "khác"
+    },
+    {
+     "start": 43.561,
+     "end": 43.7,
+     "word": "nhau."
+    }
+   ]
+  },
+  {
+   "start": 44.001,
+   "end": 46.08,
+   "text": "Và thứ ba: đó là não bộ.",
+   "words": [
+    {
+     "start": 44.001,
+     "end": 44.361,
+     "word": "Và"
+    },
+    {
+     "start": 44.361,
+     "end": 44.681,
+     "word": "thứ"
+    },
+    {
+     "start": 44.681,
+     "end": 45.0,
+     "word": "ba:"
+    },
+    {
+     "start": 45.121,
+     "end": 45.361,
+     "word": "đó"
+    },
+    {
+     "start": 45.361,
+     "end": 45.641,
+     "word": "là"
+    },
+    {
+     "start": 45.641,
+     "end": 45.921,
+     "word": "não"
+    },
+    {
+     "start": 45.921,
+     "end": 46.08,
+     "word": "bộ."
+    }
+   ]
+  },
+  {
+   "start": 46.281,
+   "end": 52.94,
+   "text": "Khi giấc ngủ không tốt, thì cô chú anh chị có thể là cảm thấy là hay quên, khó tập trung, và mệt mỏi vào ban ngày.",
+   "words": [
+    {
+     "start": 46.281,
+     "end": 46.561,
+     "word": "Khi"
+    },
+    {
+     "start": 46.561,
+     "end": 46.801,
+     "word": "giấc"
+    },
+    {
+     "start": 46.801,
+     "end": 47.041,
+     "word": "ngủ"
+    },
+    {
+     "start": 47.041,
+     "end": 47.281,
+     "word": "không"
+    },
+    {
+     "start": 47.281,
+     "end": 47.481,
+     "word": "tốt,"
+    },
+    {
+     "start": 47.481,
+     "end": 47.801,
+     "word": "thì"
+    },
+    {
+     "start": 47.801,
+     "end": 48.001,
+     "word": "cô"
+    },
+    {
+     "start": 48.001,
+     "end": 48.161,
+     "word": "chú"
+    },
+    {
+     "start": 48.161,
+     "end": 48.361,
+     "word": "anh"
+    },
+    {
+     "start": 48.361,
+     "end": 48.521,
+     "word": "chị"
+    },
+    {
+     "start": 48.521,
+     "end": 48.681,
+     "word": "có"
+    },
+    {
+     "start": 48.681,
+     "end": 48.841,
+     "word": "thể"
+    },
+    {
+     "start": 48.841,
+     "end": 49.001,
+     "word": "là"
+    },
+    {
+     "start": 49.001,
+     "end": 49.241,
+     "word": "cảm"
+    },
+    {
+     "start": 49.241,
+     "end": 49.401,
+     "word": "thấy"
+    },
+    {
+     "start": 49.401,
+     "end": 49.601,
+     "word": "là"
+    },
+    {
+     "start": 49.601,
+     "end": 49.881,
+     "word": "hay"
+    },
+    {
+     "start": 49.881,
+     "end": 50.12,
+     "word": "quên,"
+    },
+    {
+     "start": 50.361,
+     "end": 50.681,
+     "word": "khó"
+    },
+    {
+     "start": 50.681,
+     "end": 51.001,
+     "word": "tập"
+    },
+    {
+     "start": 51.001,
+     "end": 51.22,
+     "word": "trung,"
+    },
+    {
+     "start": 51.321,
+     "end": 51.561,
+     "word": "và"
+    },
+    {
+     "start": 51.561,
+     "end": 52.041,
+     "word": "mệt"
+    },
+    {
+     "start": 52.041,
+     "end": 52.281,
+     "word": "mỏi"
+    },
+    {
+     "start": 52.281,
+     "end": 52.521,
+     "word": "vào"
+    },
+    {
+     "start": 52.521,
+     "end": 52.801,
+     "word": "ban"
+    },
+    {
+     "start": 52.801,
+     "end": 52.94,
+     "word": "ngày."
+    }
+   ]
+  },
+  {
+   "start": 53.443,
+   "end": 59.46,
+   "text": "Cho nên thay vì là chỉ tập trung vào một sản phẩm bổ não, cô chú anh chị nên quan tâm đến cả ba khâu.",
+   "words": [
+    {
+     "start": 53.443,
+     "end": 53.643,
+     "word": "Cho"
+    },
+    {
+     "start": 53.643,
+     "end": 53.883,
+     "word": "nên"
+    },
+    {
+     "start": 53.883,
+     "end": 54.043,
+     "word": "thay"
+    },
+    {
+     "start": 54.043,
+     "end": 54.243,
+     "word": "vì"
+    },
+    {
+     "start": 54.243,
+     "end": 54.443,
+     "word": "là"
+    },
+    {
+     "start": 54.443,
+     "end": 54.643,
+     "word": "chỉ"
+    },
+    {
+     "start": 54.643,
+     "end": 54.843,
+     "word": "tập"
+    },
+    {
+     "start": 54.843,
+     "end": 55.003,
+     "word": "trung"
+    },
+    {
+     "start": 55.003,
+     "end": 55.203,
+     "word": "vào"
+    },
+    {
+     "start": 55.203,
+     "end": 55.403,
+     "word": "một"
+    },
+    {
+     "start": 55.403,
+     "end": 55.563,
+     "word": "sản"
+    },
+    {
+     "start": 55.563,
+     "end": 55.843,
+     "word": "phẩm"
+    },
+    {
+     "start": 55.843,
+     "end": 56.083,
+     "word": "bổ"
+    },
+    {
+     "start": 56.083,
+     "end": 56.26,
+     "word": "não,"
+    },
+    {
+     "start": 56.603,
+     "end": 56.843,
+     "word": "cô"
+    },
+    {
+     "start": 56.843,
+     "end": 57.083,
+     "word": "chú"
+    },
+    {
+     "start": 57.083,
+     "end": 57.363,
+     "word": "anh"
+    },
+    {
+     "start": 57.363,
+     "end": 57.52,
+     "word": "chị"
+    },
+    {
+     "start": 57.723,
+     "end": 58.043,
+     "word": "nên"
+    },
+    {
+     "start": 58.043,
+     "end": 58.283,
+     "word": "quan"
+    },
+    {
+     "start": 58.283,
+     "end": 58.523,
+     "word": "tâm"
+    },
+    {
+     "start": 58.523,
+     "end": 58.763,
+     "word": "đến"
+    },
+    {
+     "start": 58.763,
+     "end": 58.963,
+     "word": "cả"
+    },
+    {
+     "start": 58.963,
+     "end": 59.243,
+     "word": "ba"
+    },
+    {
+     "start": 59.243,
+     "end": 59.46,
+     "word": "khâu."
+    }
+   ]
+  },
+  {
+   "start": 59.723,
+   "end": 68.52,
+   "text": "Và ở đây thì Coenzyme Q10 thường được nhắc đến trong việc là hỗ trợ chức năng tim mạch, các sản phẩm hỗ trợ tuần hoàn, hướng đến sức khỏe mạch máu.",
+   "words": [
+    {
+     "start": 59.723,
+     "end": 60.043,
+     "word": "Và"
+    },
+    {
+     "start": 60.043,
+     "end": 60.283,
+     "word": "ở"
+    },
+    {
+     "start": 60.283,
+     "end": 60.563,
+     "word": "đây"
+    },
+    {
+     "start": 60.563,
+     "end": 60.82,
+     "word": "thì"
+    },
+    {
+     "start": 61.163,
+     "end": 61.803,
+     "word": "Coenzyme"
+    },
+    {
+     "start": 61.803,
+     "end": 62.283,
+     "word": "Q10"
+    },
+    {
+     "start": 62.283,
+     "end": 62.443,
+     "word": "thường"
+    },
+    {
+     "start": 62.443,
+     "end": 62.683,
+     "word": "được"
+    },
+    {
+     "start": 62.683,
+     "end": 62.883,
+     "word": "nhắc"
+    },
+    {
+     "start": 62.883,
+     "end": 63.083,
+     "word": "đến"
+    },
+    {
+     "start": 63.083,
+     "end": 63.243,
+     "word": "trong"
+    },
+    {
+     "start": 63.243,
+     "end": 63.483,
+     "word": "việc"
+    },
+    {
+     "start": 63.483,
+     "end": 63.763,
+     "word": "là"
+    },
+    {
+     "start": 63.763,
+     "end": 63.963,
+     "word": "hỗ"
+    },
+    {
+     "start": 63.963,
+     "end": 64.243,
+     "word": "trợ"
+    },
+    {
+     "start": 64.243,
+     "end": 64.443,
+     "word": "chức"
+    },
+    {
+     "start": 64.443,
+     "end": 64.723,
+     "word": "năng"
+    },
+    {
+     "start": 64.723,
+     "end": 64.963,
+     "word": "tim"
+    },
+    {
+     "start": 64.963,
+     "end": 65.083,
+     "word": "mạch,"
+    },
+    {
+     "start": 65.323,
+     "end": 65.603,
+     "word": "các"
+    },
+    {
+     "start": 65.603,
+     "end": 65.803,
+     "word": "sản"
+    },
+    {
+     "start": 65.803,
+     "end": 66.083,
+     "word": "phẩm"
+    },
+    {
+     "start": 66.083,
+     "end": 66.283,
+     "word": "hỗ"
+    },
+    {
+     "start": 66.283,
+     "end": 66.563,
+     "word": "trợ"
+    },
+    {
+     "start": 66.563,
+     "end": 66.803,
+     "word": "tuần"
+    },
+    {
+     "start": 66.803,
+     "end": 67.1,
+     "word": "hoàn,"
+    },
+    {
+     "start": 67.163,
+     "end": 67.403,
+     "word": "hướng"
+    },
+    {
+     "start": 67.403,
+     "end": 67.643,
+     "word": "đến"
+    },
+    {
+     "start": 67.643,
+     "end": 67.803,
+     "word": "sức"
+    },
+    {
+     "start": 67.803,
+     "end": 68.083,
+     "word": "khỏe"
+    },
+    {
+     "start": 68.083,
+     "end": 68.363,
+     "word": "mạch"
+    },
+    {
+     "start": 68.363,
+     "end": 68.52,
+     "word": "máu."
+    }
+   ]
+  },
+  {
+   "start": 68.763,
+   "end": 71.9,
+   "text": "Còn DHA là một dưỡng chất quan trọng đối với não bộ.",
+   "words": [
+    {
+     "start": 68.763,
+     "end": 69.163,
+     "word": "Còn"
+    },
+    {
+     "start": 69.163,
+     "end": 69.763,
+     "word": "DHA"
+    },
+    {
+     "start": 69.763,
+     "end": 69.963,
+     "word": "là"
+    },
+    {
+     "start": 69.963,
+     "end": 70.163,
+     "word": "một"
+    },
+    {
+     "start": 70.163,
+     "end": 70.403,
+     "word": "dưỡng"
+    },
+    {
+     "start": 70.403,
+     "end": 70.643,
+     "word": "chất"
+    },
+    {
+     "start": 70.643,
+     "end": 70.843,
+     "word": "quan"
+    },
+    {
+     "start": 70.843,
+     "end": 71.083,
+     "word": "trọng"
+    },
+    {
+     "start": 71.083,
+     "end": 71.243,
+     "word": "đối"
+    },
+    {
+     "start": 71.243,
+     "end": 71.443,
+     "word": "với"
+    },
+    {
+     "start": 71.443,
+     "end": 71.763,
+     "word": "não"
+    },
+    {
+     "start": 71.763,
+     "end": 71.9,
+     "word": "bộ."
+    }
+   ]
+  },
+  {
+   "start": 72.384,
+   "end": 79.28,
+   "text": "Chăm sóc sức khỏe cần có sự là phối hợp giữa chế độ ăn uống, vận động, giấc ngủ, và lựa chọn sản phẩm cho phù hợp.",
+   "words": [
+    {
+     "start": 72.384,
+     "end": 72.544,
+     "word": "Chăm"
+    },
+    {
+     "start": 72.544,
+     "end": 72.704,
+     "word": "sóc"
+    },
+    {
+     "start": 72.704,
+     "end": 72.864,
+     "word": "sức"
+    },
+    {
+     "start": 72.864,
+     "end": 73.024,
+     "word": "khỏe"
+    },
+    {
+     "start": 73.024,
+     "end": 73.224,
+     "word": "cần"
+    },
+    {
+     "start": 73.224,
+     "end": 73.344,
+     "word": "có"
+    },
+    {
+     "start": 73.344,
+     "end": 73.544,
+     "word": "sự"
+    },
+    {
+     "start": 73.544,
+     "end": 73.744,
+     "word": "là"
+    },
+    {
+     "start": 73.744,
+     "end": 73.944,
+     "word": "phối"
+    },
+    {
+     "start": 73.944,
+     "end": 74.104,
+     "word": "hợp"
+    },
+    {
+     "start": 74.104,
+     "end": 74.384,
+     "word": "giữa"
+    },
+    {
+     "start": 74.384,
+     "end": 74.584,
+     "word": "chế"
+    },
+    {
+     "start": 74.584,
+     "end": 74.824,
+     "word": "độ"
+    },
+    {
+     "start": 74.824,
+     "end": 75.104,
+     "word": "ăn"
+    },
+    {
+     "start": 75.104,
+     "end": 75.224,
+     "word": "uống,"
+    },
+    {
+     "start": 75.584,
+     "end": 75.864,
+     "word": "vận"
+    },
+    {
+     "start": 75.864,
+     "end": 76.12,
+     "word": "động,"
+    },
+    {
+     "start": 76.384,
+     "end": 76.744,
+     "word": "giấc"
+    },
+    {
+     "start": 76.744,
+     "end": 77.06,
+     "word": "ngủ,"
+    },
+    {
+     "start": 77.144,
+     "end": 77.584,
+     "word": "và"
+    },
+    {
+     "start": 77.584,
+     "end": 77.784,
+     "word": "lựa"
+    },
+    {
+     "start": 77.784,
+     "end": 78.064,
+     "word": "chọn"
+    },
+    {
+     "start": 78.064,
+     "end": 78.264,
+     "word": "sản"
+    },
+    {
+     "start": 78.264,
+     "end": 78.544,
+     "word": "phẩm"
+    },
+    {
+     "start": 78.544,
+     "end": 78.824,
+     "word": "cho"
+    },
+    {
+     "start": 78.824,
+     "end": 79.064,
+     "word": "phù"
+    },
+    {
+     "start": 79.064,
+     "end": 79.28,
+     "word": "hợp."
+    }
+   ]
+  },
+  {
+   "start": 79.584,
+   "end": 84.92,
+   "text": "Lưu ý: ở đây thực phẩm bảo vệ sức khỏe không phải là thuốc, và không có tác dụng thay thế thuốc chữa bệnh.",
+   "words": [
+    {
+     "start": 79.584,
+     "end": 79.824,
+     "word": "Lưu"
+    },
+    {
+     "start": 79.824,
+     "end": 80.184,
+     "word": "ý:"
+    },
+    {
+     "start": 80.184,
+     "end": 80.384,
+     "word": "ở"
+    },
+    {
+     "start": 80.384,
+     "end": 80.624,
+     "word": "đây"
+    },
+    {
+     "start": 80.624,
+     "end": 80.824,
+     "word": "thực"
+    },
+    {
+     "start": 80.824,
+     "end": 81.024,
+     "word": "phẩm"
+    },
+    {
+     "start": 81.024,
+     "end": 81.184,
+     "word": "bảo"
+    },
+    {
+     "start": 81.184,
+     "end": 81.384,
+     "word": "vệ"
+    },
+    {
+     "start": 81.384,
+     "end": 81.504,
+     "word": "sức"
+    },
+    {
+     "start": 81.504,
+     "end": 81.744,
+     "word": "khỏe"
+    },
+    {
+     "start": 81.744,
+     "end": 81.984,
+     "word": "không"
+    },
+    {
+     "start": 81.984,
+     "end": 82.144,
+     "word": "phải"
+    },
+    {
+     "start": 82.144,
+     "end": 82.384,
+     "word": "là"
+    },
+    {
+     "start": 82.384,
+     "end": 82.54,
+     "word": "thuốc,"
+    },
+    {
+     "start": 82.704,
+     "end": 82.984,
+     "word": "và"
+    },
+    {
+     "start": 82.984,
+     "end": 83.184,
+     "word": "không"
+    },
+    {
+     "start": 83.184,
+     "end": 83.424,
+     "word": "có"
+    },
+    {
+     "start": 83.424,
+     "end": 83.584,
+     "word": "tác"
+    },
+    {
+     "start": 83.584,
+     "end": 83.824,
+     "word": "dụng"
+    },
+    {
+     "start": 83.824,
+     "end": 84.024,
+     "word": "thay"
+    },
+    {
+     "start": 84.024,
+     "end": 84.264,
+     "word": "thế"
+    },
+    {
+     "start": 84.264,
+     "end": 84.504,
+     "word": "thuốc"
+    },
+    {
+     "start": 84.504,
+     "end": 84.784,
+     "word": "chữa"
+    },
+    {
+     "start": 84.784,
+     "end": 84.92,
+     "word": "bệnh."
+    }
+   ]
+  },
+  {
+   "start": 85.184,
+   "end": 92.67,
+   "text": "Nếu chóng mặt, mất ngủ, tê bì tay chân kéo dài, thì cô chú anh chị nên đi khám và định hướng nguyên nhân.",
+   "words": [
+    {
+     "start": 85.184,
+     "end": 85.664,
+     "word": "Nếu"
+    },
+    {
+     "start": 85.664,
+     "end": 85.944,
+     "word": "chóng"
+    },
+    {
+     "start": 85.944,
+     "end": 86.14,
+     "word": "mặt,"
+    },
+    {
+     "start": 86.584,
+     "end": 86.904,
+     "word": "mất"
+    },
+    {
+     "start": 86.904,
+     "end": 87.24,
+     "word": "ngủ,"
+    },
+    {
+     "start": 87.384,
+     "end": 87.624,
+     "word": "tê"
+    },
+    {
+     "start": 87.624,
+     "end": 87.864,
+     "word": "bì"
+    },
+    {
+     "start": 87.864,
+     "end": 88.064,
+     "word": "tay"
+    },
+    {
+     "start": 88.064,
+     "end": 88.344,
+     "word": "chân"
+    },
+    {
+     "start": 88.344,
+     "end": 88.584,
+     "word": "kéo"
+    },
+    {
+     "start": 88.584,
+     "end": 88.76,
+     "word": "dài,"
+    },
+    {
+     "start": 88.944,
+     "end": 89.344,
+     "word": "thì"
+    },
+    {
+     "start": 89.344,
+     "end": 89.584,
+     "word": "cô"
+    },
+    {
+     "start": 89.584,
+     "end": 89.824,
+     "word": "chú"
+    },
+    {
+     "start": 89.824,
+     "end": 90.104,
+     "word": "anh"
+    },
+    {
+     "start": 90.104,
+     "end": 90.47,
+     "word": "chị"
+    },
+    {
+     "start": 90.47,
+     "end": 90.71,
+     "word": "nên"
+    },
+    {
+     "start": 90.71,
+     "end": 91.03,
+     "word": "đi"
+    },
+    {
+     "start": 91.03,
+     "end": 91.31,
+     "word": "khám"
+    },
+    {
+     "start": 91.31,
+     "end": 91.67,
+     "word": "và"
+    },
+    {
+     "start": 91.67,
+     "end": 91.95,
+     "word": "định"
+    },
+    {
+     "start": 91.95,
+     "end": 92.27,
+     "word": "hướng"
+    },
+    {
+     "start": 92.27,
+     "end": 92.55,
+     "word": "nguyên"
+    },
+    {
+     "start": 92.55,
+     "end": 92.67,
+     "word": "nhân."
+    }
+   ]
+  },
+  {
+   "start": 95.27,
+   "end": 101.8,
+   "text": "Nếu yếu đột ngột một bên người, méo miệng, hoặc là nói khó, thì cô chú anh chị cần gọi ngay cấp cứu nhé!",
+   "words": [
+    {
+     "start": 95.27,
+     "end": 95.75,
+     "word": "Nếu"
+    },
+    {
+     "start": 95.75,
+     "end": 96.07,
+     "word": "yếu"
+    },
+    {
+     "start": 96.07,
+     "end": 96.23,
+     "word": "đột"
+    },
+    {
+     "start": 96.23,
+     "end": 96.51,
+     "word": "ngột"
+    },
+    {
+     "start": 96.51,
+     "end": 96.75,
+     "word": "một"
+    },
+    {
+     "start": 96.75,
+     "end": 96.99,
+     "word": "bên"
+    },
+    {
+     "start": 96.99,
+     "end": 97.22,
+     "word": "người,"
+    },
+    {
+     "start": 97.43,
+     "end": 97.75,
+     "word": "méo"
+    },
+    {
+     "start": 97.75,
+     "end": 97.99,
+     "word": "miệng,"
+    },
+    {
+     "start": 97.99,
+     "end": 98.15,
+     "word": "hoặc"
+    },
+    {
+     "start": 98.15,
+     "end": 98.35,
+     "word": "là"
+    },
+    {
+     "start": 98.35,
+     "end": 98.59,
+     "word": "nói"
+    },
+    {
+     "start": 98.59,
+     "end": 98.84,
+     "word": "khó,"
+    },
+    {
+     "start": 99.03,
+     "end": 99.43,
+     "word": "thì"
+    },
+    {
+     "start": 99.43,
+     "end": 99.63,
+     "word": "cô"
+    },
+    {
+     "start": 99.63,
+     "end": 99.87,
+     "word": "chú"
+    },
+    {
+     "start": 99.87,
+     "end": 100.11,
+     "word": "anh"
+    },
+    {
+     "start": 100.11,
+     "end": 100.39,
+     "word": "chị"
+    },
+    {
+     "start": 100.39,
+     "end": 100.71,
+     "word": "cần"
+    },
+    {
+     "start": 100.71,
+     "end": 100.91,
+     "word": "gọi"
+    },
+    {
+     "start": 100.91,
+     "end": 101.15,
+     "word": "ngay"
+    },
+    {
+     "start": 101.15,
+     "end": 101.39,
+     "word": "cấp"
+    },
+    {
+     "start": 101.39,
+     "end": 101.63,
+     "word": "cứu"
+    },
+    {
+     "start": 101.63,
+     "end": 101.8,
+     "word": "nhé!"
+    }
+   ]
+  }
+ ]
+}

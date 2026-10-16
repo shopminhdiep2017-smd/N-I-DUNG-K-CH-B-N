@@ -1,0 +1,471 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.08,
+    0.4
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.1,
+    "focus": [
+      0.5,
+      0.55
+    ],
+    "sharpen": 0.5,
+    "denoise": true,
+    "top_shade": 0.25,
+    "bg_dim": 0.03,
+    "grade": {
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.56
+      ],
+      "radius": 0.12,
+      "light": 0.07,
+      "sharpen": 40
+    },
+    "beauty": {
+      "smooth": 0.55,
+      "teeth": 0.5
+    }
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0.0,
+        0.54
+      ],
+      [
+        16.48,
+        16.76
+      ],
+      [
+        21.38,
+        21.68
+      ],
+      [
+        28.0,
+        28.24
+      ],
+      [
+        38.28,
+        38.68
+      ],
+      [
+        43.88,
+        44.2
+      ],
+      [
+        53.12,
+        53.36
+      ],
+      [
+        56.44,
+        56.7
+      ],
+      [
+        59.64,
+        59.9
+      ],
+      [
+        65.26,
+        65.5
+      ],
+      [
+        72.08,
+        72.34
+      ],
+      [
+        86.32,
+        86.6
+      ],
+      [
+        92.84,
+        93.12
+      ],
+      [
+        95.12,
+        95.48
+      ],
+      [
+        102.3,
+        103.37
+      ],
+      [
+        92.88,
+        95.5
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:07",
+      "speech": "Chóng mặt, mất ngủ… uống bổ não mãi không đỡ",
+      "idea": "HOOK",
+      "visual": "Headline + zoom"
+    },
+    {
+      "time": "00:07–00:21",
+      "speech": "Không chỉ riêng não bộ… tim, mạch máu, não",
+      "idea": "Framework 3 khâu",
+      "visual": "Bộ não → 3 bước"
+    },
+    {
+      "time": "00:21–00:53",
+      "speech": "Khâu 1 tim · Khâu 2 mạch máu · Khâu 3 não bộ",
+      "idea": "Từng khâu",
+      "visual": "Tim đập · mạch máu · giấc ngủ + checklist triệu chứng"
+    },
+    {
+      "time": "00:53–01:12",
+      "speech": "Quan tâm cả 3 khâu; Q10, DHA",
+      "idea": "Giải pháp",
+      "visual": "3 bước xanh · checklist · bộ não"
+    },
+    {
+      "time": "01:12–01:25",
+      "speech": "Phối hợp… không phải là thuốc",
+      "idea": "Trung thực",
+      "visual": "4 bước · cảnh báo vàng"
+    },
+    {
+      "time": "01:25–01:42",
+      "speech": "Đi khám; dấu hiệu đột quỵ → gọi cấp cứu",
+      "idea": "Cảnh báo",
+      "visual": "Headline xanh · checklist đỏ · cảnh báo đỏ"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 0.3,
+      "end": 3.6,
+      "kicker": "Chóng mặt · Mất ngủ · Tê bì",
+      "text": "Uống bổ não mãi không đỡ?",
+      "accent": "red",
+      "size": 84,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 3.8,
+      "end": 6.6,
+      "kicker": "Có thể",
+      "text": "Chăm sóc chưa đúng chỗ",
+      "accent": "red",
+      "anim": "slide",
+      "y": 0.235
+    },
+    {
+      "type": "brain",
+      "start": 6.72,
+      "end": 10.9,
+      "label": "Không chỉ riêng não bộ",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "steps",
+      "start": 11.0,
+      "end": 16.4,
+      "title": "Cả một hệ thống",
+      "items": [
+        "Tim bơm máu",
+        "Mạch máu dẫn máu",
+        "Não nhận oxy"
+      ],
+      "active": [
+        [
+          12.0,
+          0
+        ],
+        [
+          12.88,
+          1
+        ],
+        [
+          14.24,
+          2
+        ]
+      ],
+      "color": "red",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 16.64,
+      "end": 21.3,
+      "kicker": "Chỉ cần một khâu gặp vấn đề",
+      "text": "Sức khỏe bị ảnh hưởng",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "heart",
+      "start": 21.54,
+      "end": 25.1,
+      "label": "Khâu 1: Tim bơm máu",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 25.18,
+      "end": 29.95,
+      "title": "Tim bơm máu kém có thể gây",
+      "items": [
+        "Chóng mặt",
+        "Mệt mỏi",
+        "Hụt hơi"
+      ],
+      "reveal": [
+        27.5,
+        27.98,
+        29.14
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "vessel",
+      "start": 30.06,
+      "end": 35.85,
+      "label": "Khâu 2: Mạch máu – tuần hoàn",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 35.9,
+      "end": 39.8,
+      "title": "Có thể liên quan đến",
+      "items": [
+        "Tê bì tay chân",
+        "Đau đầu",
+        "Cứng cổ vai gáy"
+      ],
+      "reveal": [
+        36.2,
+        37.44,
+        38.52
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 39.96,
+      "end": 43.8,
+      "kicker": "Tuy nhiên",
+      "kicker_color": "gold",
+      "text": "Có thể do nhiều nguyên nhân",
+      "accent": "gold",
+      "y": 0.235
+    },
+    {
+      "type": "sleep",
+      "start": 44.0,
+      "end": 49.5,
+      "label": "Khâu 3: Não bộ – giấc ngủ không tốt",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 49.55,
+      "end": 53.3,
+      "title": "Có thể khiến",
+      "items": [
+        "Hay quên",
+        "Khó tập trung",
+        "Mệt mỏi ban ngày"
+      ],
+      "reveal": [
+        49.6,
+        50.36,
+        51.56
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "steps",
+      "start": 53.44,
+      "end": 59.6,
+      "title": "Quan tâm cả 3 khâu",
+      "items": [
+        "Tim",
+        "Mạch máu",
+        "Não bộ"
+      ],
+      "active": [
+        [
+          58.96,
+          0
+        ],
+        [
+          59.1,
+          1
+        ],
+        [
+          59.25,
+          2
+        ]
+      ],
+      "color": "green",
+      "accent": "green",
+      "sfx": "whoosh",
+      "zoom": 1.04,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 59.72,
+      "end": 68.6,
+      "title": "Dưỡng chất thường được nhắc đến",
+      "items": [
+        "Coenzyme Q10: hỗ trợ chức năng tim mạch",
+        "Sản phẩm hỗ trợ tuần hoàn"
+      ],
+      "reveal": [
+        61.0,
+        65.32
+      ],
+      "mark": "check",
+      "accent": "green",
+      "size": 42,
+      "y": 0.235
+    },
+    {
+      "type": "brain",
+      "start": 68.76,
+      "end": 72.2,
+      "label": "DHA: dưỡng chất quan trọng cho não",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "steps",
+      "start": 72.38,
+      "end": 79.4,
+      "title": "Phối hợp",
+      "items": [
+        "Ăn uống",
+        "Vận động",
+        "Giấc ngủ",
+        "Sản phẩm phù hợp"
+      ],
+      "active": [
+        [
+          74.82,
+          0
+        ],
+        [
+          75.58,
+          1
+        ],
+        [
+          76.38,
+          2
+        ],
+        [
+          78.06,
+          3
+        ]
+      ],
+      "color": "green",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "warning",
+      "start": 79.58,
+      "end": 84.95,
+      "text": "Lưu ý",
+      "sub": "Thực phẩm bảo vệ sức khỏe không phải là thuốc",
+      "zoom": 1.04,
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 85.18,
+      "end": 92.7,
+      "kicker": "Triệu chứng kéo dài?",
+      "kicker_color": "green",
+      "text": "Nên đi khám",
+      "sub": "để định hướng nguyên nhân",
+      "accent": "green",
+      "size": 100,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 95.3,
+      "end": 99.0,
+      "title": "Dấu hiệu đột quỵ",
+      "items": [
+        "Yếu đột ngột một bên người",
+        "Méo miệng",
+        "Nói khó"
+      ],
+      "reveal": [
+        95.75,
+        97.43,
+        98.35
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "warning",
+      "start": 99.03,
+      "end": 102.3,
+      "text": "Gọi cấp cứu ngay",
+      "color": "red",
+      "accent": "red",
+      "sfx": "ding",
+      "zoom": 1.06,
+      "y": 0.235
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "y": 0.775,
+    "karaoke": "#FFD400"
+  },
+  "audio": {
+    "denoise": true,
+    "leveler": true,
+    "loudness": -9,
+    "gain_db": 2.5,
+    "music": null,
+    "sfx_db": -22
+  }
+}
