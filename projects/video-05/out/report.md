@@ -1,7 +1,7 @@
 # Render report — video-05
 
 - Source: 103.4s 480x854; output 96.0s (7.4s removed by jump cuts, 13 segments)
-- Overlays: 20, zooms: 4, subtitle cues: 60
+- Overlays: 20, zooms: 5, subtitle cues: 60
 
 ## Edit Decision List
 
@@ -17,4 +17,3 @@
 ## Checks
 
 - ⚠️ Speaker says 'thay thế thuốc' — not added to graphics; consider cutting or softening (rule 16).
-- ⚠️ No visual change 81.8s–89.1s (7.3s) — add keyword/zoom (rule 6).
