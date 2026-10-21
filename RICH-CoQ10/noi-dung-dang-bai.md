@@ -7,17 +7,19 @@
 - Công bố trên hộp: 身体的・精神的な疲労感を軽減 – giúp giảm cảm giác mệt mỏi về thể chất và tinh thần (mệt mỏi tạm thời trong sinh hoạt hằng ngày)
 - Quy cách: 120 viên nang mềm
 
-## Video đã dựng
+## Video đã dựng – bản 2
 
-`Video_RICH_CoQ10_hoan_chinh.mp4` (9:16, 480x854, 1 phút 51 giây):
+`Video_RICH_CoQ10_ban_2.mp4` (9:16, 480x854, 1 phút 31 giây):
 
-| Thời điểm | Nội dung |
-|---|---|
-| 0:00 – 1:51 | Video nói chuyện tại phòng khám, giữ nguyên tiếng gốc |
-| 0:03 – 1:38 | Ảnh sản phẩm nhỏ ở góc phải dưới |
-| 1:38 – hết | Khung kết: tiêu đề "COENZYME Q10 DẠNG KHỬ – RICH", ảnh sản phẩm, "Hàng Nhật Bản • 120 viên nang mềm" |
-| Suốt video | Dòng cảnh báo bắt buộc: "Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh." |
-| Nhạc nền | "Nhạc Sáo Trúc 2", để nhỏ dưới giọng nói, có fade-in và fade-out |
+- Cắt 2 đoạn nói lặp: "Bởi vì cái thiếu thật sự…" (giây 27,4–29,8 của video gốc) và lần nói hỏng "Sản phẩm này dùng là dạng khử…" kèm 10 giây im lặng (giây 61,2–78,7).
+- Ảnh sản phẩm hiện ở phía trên đầu, chỉ xuất hiện từ lúc nói "hai viên **Rich Coenzyme Q10**" (0:47,9) đến hết video.
+- Phụ đề chạy chữ vàng theo lời nói (karaoke), file phụ đề: `phu-de-karaoke.ass`.
+- Nhạc sáo trúc nhỏ hơn bản 1 (âm lượng 0,07 thay vì 0,12).
+- Dòng cảnh báo "Thực phẩm này không phải là thuốc…" giữ suốt video.
+
+## Lời thoại (sau khi cắt lặp)
+
+> Nếu mỗi ngày cô chú anh chị bỏ ra vài chục nghìn cho một ly cà phê chỉ là để tỉnh táo được vài tiếng. Sáng một ly, chiều thêm một ly, tính ra mỗi tháng là mất cả triệu đồng. Vậy mà hết tác dụng thì cơn mệt lại quay về, có khi là còn mệt hơn. Tối thì khó ngủ, sáng lại dậy không nổi, rồi lại cần một ly cà phê tiếp theo. Và cứ như vậy, ngày này qua ngày khác, cô chú anh chị đang phải trả tiền để mượn năng lượng, chứ không phải là tạo ra năng lượng thật cho cơ thể. Bởi vì cái thiếu thật sự là nằm bên trong tế bào. Đó là Coenzyme Q10, cục pin giúp cơ thể tạo ra năng lượng. Từ tuổi 30, cục pin này yếu dần. Mà muốn bù lại bằng đồ ăn thì mỗi ngày cô chú anh chị phải ăn tới khoảng 3 kg thịt bò. Chỉ với chưa tới 50 nghìn mỗi ngày, đúng bằng tiền hai ly cà phê, mà cô chú anh chị đã có hai viên Rich Coenzyme Q10 của nhà AFC Nhật Bản sau bữa ăn sáng. Hai viên này thì cho cô chú anh chị 100 mg Q10, bằng khoảng 3 kg thịt bò. Sản phẩm dùng Q10 dạng khử nên dễ hấp thu, có thêm thành phần Astaxanthin chống lão hóa, chống oxy hóa và tiêu đen giúp hấp thu tốt hơn. Và đây là một hộp của nó, 120 viên, dùng được trong vòng hai tháng. Cùng một số tiền thì hai ly cà phê chỉ giúp cô chú anh chị tỉnh táo được vài tiếng, còn hai viên Q10 thì sạc lại pin cho cơ thể từ bên trong. Vậy hãy đổi hai ly cà phê lấy hai viên Q10 mỗi ngày cô chú nhé. Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. Và cảm ơn cô chú anh chị đã theo dõi video.
 
 ## Caption đăng bài
 
