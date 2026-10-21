@@ -7,16 +7,16 @@
 - Công bố trên hộp: 身体的・精神的な疲労感を軽減 – giúp giảm cảm giác mệt mỏi về thể chất và tinh thần (mệt mỏi tạm thời trong sinh hoạt hằng ngày)
 - Quy cách: 120 viên nang mềm
 
-## Video đã dựng – bản 4 (phong cách thẻ thông tin)
+## Video đã dựng – bản 5 (phong cách thẻ thông tin)
 
-`Video_RICH_CoQ10_ban_4.mp4` (9:16, 1080x1920, 1 phút 30 giây). Nội dung và các đoạn cắt giống bản 3, trình bày theo video mẫu:
+`Video_RICH_CoQ10_ban_5.mp4` (9:16, 1080x1920, 1 phút 30 giây). Nội dung và các đoạn cắt giống bản 3, trình bày theo video mẫu:
 
 - Thẻ thông tin màu kem ở trên đầu: chữ nhãn nhỏ, tiêu đề chữ có chân, ô số 01/02/03 sáng dần, danh sách đánh dấu lần lượt, hình minh họa (cà phê, tế bào, cục pin, thịt bò). Thẻ trượt xuống và hiện mờ dần khi đổi ý.
-- Ảnh sản phẩm hiện trong thẻ khi nhắc "Rich Coenzyme Q10" (0:47,6), khi giới thiệu hộp 120 viên (1:07,9) và khi kêu gọi đổi 2 ly cà phê (1:20,7).
+- Ảnh sản phẩm chỉ hiện trong thẻ khi nhắc "Rich Coenzyme Q10" (0:47,6). Từ 1:08 người nói cầm hộp sản phẩm nên các thẻ sau đó chỉ có chữ, không chèn ảnh.
 - Thẻ "⚠ Lưu ý" khi đọc câu cảnh báo (1:23,7).
 - Phụ đề karaoke chữ vàng viền đen đậm (font Be Vietnam Pro ExtraBold) ở dưới.
 - Dòng cảnh báo dưới đáy hiện từ lúc ảnh sản phẩm xuất hiện lần đầu.
-- Nhạc sáo trúc âm lượng 0,07. Video dừng ngay sau câu "đã theo dõi video".
+- Nhạc sáo trúc âm lượng 0,07. Video dừng ngay sau câu "đã theo dõi video", không mờ về màn đen; thẻ cuối giữ đến khung hình cuối.
 - Mã dựng video nằm trong `dung-video/` (`cards.js` vẽ thẻ, `build.py` ghép video).
 
 ## Lời thoại (sau khi cắt lặp)

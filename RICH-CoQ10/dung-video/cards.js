@@ -70,10 +70,10 @@ const st=[
  ['j1',59.00,61.47,1,card(green,T('Thành phần nổi bật')+list(['Q10 dạng khử – dễ hấp thu','Astaxanthin – chống oxy hóa','Tiêu đen – hấp thu tốt hơn'],1,'ck'))],
  ['j2',61.47,65.44,0,card(green,T('Thành phần nổi bật')+list(['Q10 dạng khử – dễ hấp thu','Astaxanthin – chống oxy hóa','Tiêu đen – hấp thu tốt hơn'],2,'ck'))],
  ['j3',65.44,67.93,0,card(green,T('Thành phần nổi bật')+list(['Q10 dạng khử – dễ hấp thu','Astaxanthin – chống oxy hóa','Tiêu đen – hấp thu tốt hơn'],3,'ck'))],
- ['k1',67.93,71.61,1,card(pink,`<div class="img"></div><div class="cap">Hộp 120 viên</div><div class="cap2">Dùng được 2 tháng</div>`)],
+ ['k1',67.93,71.61,1,card(pink,K('Một hộp RICH')+T('120 viên')+`<div class="s red">Dùng được trong 2 tháng</div>`)],
  ['l1',71.61,76.01,1,card(gold,T('Cùng một số tiền')+`<div class="vs"><div class="b on"><div class="emo">☕☕</div><div class="l">2 ly cà phê<br>tỉnh táo vài tiếng</div></div><div class="b off"><div class="emo">🔋</div><div class="l">2 viên Q10<br>sạc lại “pin” cơ thể</div></div></div>`)],
  ['l2',76.01,80.67,0,card(gold,T('Cùng một số tiền')+`<div class="vs"><div class="b off"><div class="emo">☕☕</div><div class="l">2 ly cà phê<br>tỉnh táo vài tiếng</div></div><div class="b on" style="--ac:#2f7d4b;--soft:#e2f2e6"><div class="emo">🔋</div><div class="l">2 viên Q10<br>sạc lại “pin” cơ thể</div></div></div>`)],
- ['m1',80.67,83.67,1,card(pink,`<div class="img"></div><div class="cap">Đổi 2 ly cà phê → 2 viên Q10</div><div class="cap2">mỗi ngày cô chú nhé!</div>`)],
+ ['m1',80.67,83.67,1,card(pink,K('Mỗi ngày cô chú nhé')+T('Đổi 2 ly cà phê<br>lấy 2 viên Q10'))],
  ['n1',83.67,87.67,1,card(gold,`<div class="t" style="color:#a86b00">⚠ Lưu ý</div><div class="s">Thực phẩm này không phải là thuốc,<br>không có tác dụng thay thế thuốc chữa bệnh</div>`)],
  ['o1',87.67,90.30,1,card(pink,K('RICH Coenzyme Q10')+T('Cảm ơn cô chú<br>anh chị đã theo dõi!'))],
 ];
