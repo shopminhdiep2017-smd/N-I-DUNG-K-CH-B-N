@@ -7,17 +7,17 @@
 - Công bố trên hộp: 身体的・精神的な疲労感を軽減 – giúp giảm cảm giác mệt mỏi về thể chất và tinh thần (mệt mỏi tạm thời trong sinh hoạt hằng ngày)
 - Quy cách: 120 viên nang mềm
 
-## Video đã dựng – bản 3
+## Video đã dựng – bản 4 (phong cách thẻ thông tin)
 
-`Video_RICH_CoQ10_ban_3.mp4` (9:16, 480x854, 1 phút 30 giây):
+`Video_RICH_CoQ10_ban_4.mp4` (9:16, 1080x1920, 1 phút 30 giây). Nội dung và các đoạn cắt giống bản 3, trình bày theo video mẫu:
 
-- Cắt 2 đoạn nói lặp: "Bởi vì cái thiếu thật sự…" (giây 27,4–29,8 của video gốc) và lần nói hỏng "Sản phẩm này dùng là dạng khử…" kèm 10 giây im lặng (giây 61,2–78,7).
-- Cắt đoạn thừa cuối video: kết thúc ngay sau câu "đã theo dõi video".
-- Tiêu đề ý chính chữ vàng nền hồng ở trên cùng, đổi theo từng đoạn nói.
-- Ảnh sản phẩm hiện phía trên đầu, chỉ từ lúc nói "hai viên **Rich Coenzyme Q10**" (0:47,9) đến hết video.
-- Dòng cảnh báo "Thực phẩm này không phải là thuốc…" chỉ hiện cùng lúc với ảnh sản phẩm.
-- Phụ đề chạy chữ vàng theo lời nói (karaoke) ở dưới; tiêu đề và phụ đề nằm chung trong file `phu-de-karaoke.ass`.
-- Nhạc sáo trúc âm lượng 0,07.
+- Thẻ thông tin màu kem ở trên đầu: chữ nhãn nhỏ, tiêu đề chữ có chân, ô số 01/02/03 sáng dần, danh sách đánh dấu lần lượt, hình minh họa (cà phê, tế bào, cục pin, thịt bò). Thẻ trượt xuống và hiện mờ dần khi đổi ý.
+- Ảnh sản phẩm hiện trong thẻ khi nhắc "Rich Coenzyme Q10" (0:47,6), khi giới thiệu hộp 120 viên (1:07,9) và khi kêu gọi đổi 2 ly cà phê (1:20,7).
+- Thẻ "⚠ Lưu ý" khi đọc câu cảnh báo (1:23,7).
+- Phụ đề karaoke chữ vàng viền đen đậm (font Be Vietnam Pro ExtraBold) ở dưới.
+- Dòng cảnh báo dưới đáy hiện từ lúc ảnh sản phẩm xuất hiện lần đầu.
+- Nhạc sáo trúc âm lượng 0,07. Video dừng ngay sau câu "đã theo dõi video".
+- Mã dựng video nằm trong `dung-video/` (`cards.js` vẽ thẻ, `build.py` ghép video).
 
 ## Lời thoại (sau khi cắt lặp)
 

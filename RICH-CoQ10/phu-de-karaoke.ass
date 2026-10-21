@@ -1,13 +1,12 @@
 [Script Info]
 ScriptType: v4.00+
-PlayResX: 480
-PlayResY: 854
+PlayResX: 1080
+PlayResY: 1920
 WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: K,DejaVu Sans,25,&H0000E5FF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2.6,1.2,2,20,20,92,1
-Style: H,DejaVu Sans,19,&H0000E5FF,&H00FFFFFF,&H007A24D6,&H007A24D6,-1,0,0,0,100,100,0,0,3,7,0,8,16,16,18,1
+Style: K,Be Vietnam Pro ExtraBold,64,&H0000E5FF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,6,2,2,70,70,470,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -69,17 +68,3 @@ Dialogue: 0,0:01:23.67,0:01:25.71,K,,0,0,0,,{\kf52}Thực {\kf24}phẩm {\kf20}n
 Dialogue: 0,0:01:25.71,0:01:27.67,K,,0,0,0,,{\kf24}không {\kf16}có {\kf16}tác {\kf24}dụng {\kf16}thay {\kf20}thế {\kf20}thuốc {\kf24}chữa {\kf36}bệnh.
 Dialogue: 0,0:01:27.67,0:01:29.03,K,,0,0,0,,{\kf24}Và {\kf20}cảm {\kf20}ơn {\kf20}cô {\kf16}chú {\kf20}anh {\kf16}chị
 Dialogue: 0,0:01:29.03,0:01:30.30,K,,0,0,0,,{\kf20}đã {\kf16}theo {\kf28}dõi {\kf60}video.
-Dialogue: 1,0:00:00.70,0:00:10.50,H,,0,0,0,,{\fad(150,100)}2 LY CÀ PHÊ/NGÀY = CẢ TRIỆU ĐỒNG/THÁNG
-Dialogue: 1,0:00:10.50,0:00:19.70,H,,0,0,0,,{\fad(150,100)}HẾT TÁC DỤNG, CƠN MỆT LẠI QUAY VỀ
-Dialogue: 1,0:00:19.70,0:00:27.50,H,,0,0,0,,{\fad(150,100)}TRẢ TIỀN ĐỂ "MƯỢN" NĂNG LƯỢNG
-Dialogue: 1,0:00:27.50,0:00:32.50,H,,0,0,0,,{\fad(150,100)}CÁI THIẾU THẬT SỰ NẰM TRONG TẾ BÀO
-Dialogue: 1,0:00:32.50,0:00:37.50,H,,0,0,0,,{\fad(150,100)}COENZYME Q10 = "CỤC PIN" NĂNG LƯỢNG\NYẾU DẦN TỪ TUỔI 30
-Dialogue: 1,0:00:37.50,0:00:42.55,H,,0,0,0,,{\fad(150,100)}BÙ BẰNG ĂN UỐNG ≈ 3 KG THỊT BÒ/NGÀY
-Dialogue: 1,0:00:42.55,0:00:46.49,H,,0,0,0,,{\fad(150,100)}CHƯA TỚI 50.000Đ MỖI NGÀY
-Dialogue: 1,0:00:46.49,0:00:52.92,H,,0,0,0,,{\fad(150,100)}2 VIÊN RICH COENZYME Q10\NAFC NHẬT BẢN
-Dialogue: 1,0:00:52.92,0:00:58.85,H,,0,0,0,,{\fad(150,100)}2 VIÊN = 100 MG Q10 ≈ 3 KG THỊT BÒ
-Dialogue: 1,0:00:58.85,0:01:01.47,H,,0,0,0,,{\fad(150,100)}Q10 DẠNG KHỬ – DỄ HẤP THU
-Dialogue: 1,0:01:01.47,0:01:07.93,H,,0,0,0,,{\fad(150,100)}THÊM ASTAXANTHIN & TIÊU ĐEN
-Dialogue: 1,0:01:07.93,0:01:11.61,H,,0,0,0,,{\fad(150,100)}HỘP 120 VIÊN – DÙNG 2 THÁNG
-Dialogue: 1,0:01:11.61,0:01:20.67,H,,0,0,0,,{\fad(150,100)}SẠC LẠI "PIN" CHO CƠ THỂ TỪ BÊN TRONG
-Dialogue: 1,0:01:20.67,0:01:30.30,H,,0,0,0,,{\fad(150,100)}ĐỔI 2 LY CÀ PHÊ LẤY 2 VIÊN Q10 MỖI NGÀY
