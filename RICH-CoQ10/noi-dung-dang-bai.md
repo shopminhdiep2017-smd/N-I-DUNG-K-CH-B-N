@@ -7,15 +7,17 @@
 - Công bố trên hộp: 身体的・精神的な疲労感を軽減 – giúp giảm cảm giác mệt mỏi về thể chất và tinh thần (mệt mỏi tạm thời trong sinh hoạt hằng ngày)
 - Quy cách: 120 viên nang mềm
 
-## Video đã dựng – bản 2
+## Video đã dựng – bản 3
 
-`Video_RICH_CoQ10_ban_2.mp4` (9:16, 480x854, 1 phút 31 giây):
+`Video_RICH_CoQ10_ban_3.mp4` (9:16, 480x854, 1 phút 30 giây):
 
 - Cắt 2 đoạn nói lặp: "Bởi vì cái thiếu thật sự…" (giây 27,4–29,8 của video gốc) và lần nói hỏng "Sản phẩm này dùng là dạng khử…" kèm 10 giây im lặng (giây 61,2–78,7).
-- Ảnh sản phẩm hiện ở phía trên đầu, chỉ xuất hiện từ lúc nói "hai viên **Rich Coenzyme Q10**" (0:47,9) đến hết video.
-- Phụ đề chạy chữ vàng theo lời nói (karaoke), file phụ đề: `phu-de-karaoke.ass`.
-- Nhạc sáo trúc nhỏ hơn bản 1 (âm lượng 0,07 thay vì 0,12).
-- Dòng cảnh báo "Thực phẩm này không phải là thuốc…" giữ suốt video.
+- Cắt đoạn thừa cuối video: kết thúc ngay sau câu "đã theo dõi video".
+- Tiêu đề ý chính chữ vàng nền hồng ở trên cùng, đổi theo từng đoạn nói.
+- Ảnh sản phẩm hiện phía trên đầu, chỉ từ lúc nói "hai viên **Rich Coenzyme Q10**" (0:47,9) đến hết video.
+- Dòng cảnh báo "Thực phẩm này không phải là thuốc…" chỉ hiện cùng lúc với ảnh sản phẩm.
+- Phụ đề chạy chữ vàng theo lời nói (karaoke) ở dưới; tiêu đề và phụ đề nằm chung trong file `phu-de-karaoke.ass`.
+- Nhạc sáo trúc âm lượng 0,07.
 
 ## Lời thoại (sau khi cắt lặp)
 
