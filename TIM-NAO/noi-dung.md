@@ -1,15 +1,16 @@
 # Muốn não minh mẫn, hãy chăm sóc trái tim trước
 
-## Video đã dựng – bản 1
+## Video đã dựng – bản 2 (phong cách thẻ thông tin)
 
-`Video_Tim_Nao_ban_1.mp4` (9:16, 1080x1920, 1 phút 4 giây; video gốc 1 phút 24 giây):
+`Video_Tim_Nao_ban_2.mp4` (9:16, 1080x1920, 1 phút 3 giây; video gốc 1 phút 24 giây):
 
-- Cắt câu nói lặp: "có thể là hình… cô" (nói hỏng trước câu "Cô chú anh chị có thể là hình dung đơn giản") và câu "còn não là nơi nhận" nói 2 lần.
-- Nối liền các câu: bỏ khoảng lặng 6 giây sau câu mở đầu, khoảng lặng trước "Thứ nhất" và các chỗ ngừng dài; giữa các câu chỉ để khoảng nghỉ ngắn khoảng 0,2 giây.
-- Lọc ồn bằng RNNoise và afftdn: tiếng ồn nền giảm từ khoảng −30 dB xuống −60 dB.
-- Giọng nói nhẹ hơn: giảm âm gió (de-esser), giảm bớt âm cao, nén nhẹ. Độ lớn còn −17,5 LUFS (bản gốc −8,2 LUFS, rất to).
-- Nhạc sáo trúc âm lượng 0,05 (nhỏ hơn mức 0,07 của video RICH).
-- Phụ đề karaoke chữ vàng viền đen (Be Vietnam Pro ExtraBold), nói đến đâu chữ vàng đến đó: `phu-de-karaoke.ass`.
+- Sửa lỗi bản 1: câu cuối "bớt đồ chế biến sẵn" bị mất tiếng (tiếng ngắn hơn hình 2,7 giây). Bản 2 tiếng và hình dài bằng nhau.
+- Cắt câu nói lặp: "có thể là hình… cô cô" chỉ còn "Cô chú anh chị có thể là hình dung đơn giản", và câu "còn não là nơi nhận" nói 2 lần.
+- Nối liền các câu: bỏ khoảng lặng 6 giây sau câu mở đầu và các chỗ ngừng dài; giữa các câu nghỉ khoảng 0,2 giây.
+- Lọc ồn (RNNoise và afftdn); giọng nhẹ hơn (de-esser, giảm âm cao, nén nhẹ), độ lớn −17,5 LUFS (bản gốc −8,2 LUFS).
+- Nhạc sáo trúc âm lượng 0,15 (nhỏ hơn giọng khoảng 21 dB; mức 0,05 ở bản 1 gần như không nghe thấy).
+- Thẻ thông tin trên đầu giống video RICH bản 5, có hình minh họa (não, tim): Hãy chăm sóc trái tim trước, Dạo này…, Bộ não 2%/1/5 oxy, Tim bơm máu lên não, Hình dung đơn giản 01–03, Kéo dài sẽ hại mạch máu não, Tăng nguy cơ đột quỵ/suy giảm trí nhớ, Có thể do…, Chăm sóc tim mạch, Bắt đầu từ việc nhỏ 01–04. Thời điểm từng thẻ: `dung-video/the-thong-tin.json`.
+- Phụ đề karaoke chữ vàng viền đen ở dưới: `phu-de-karaoke.ass`.
 
 ## Lời thoại (sau khi cắt lặp)
 
