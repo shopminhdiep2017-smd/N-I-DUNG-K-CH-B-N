@@ -1,12 +1,14 @@
 # Muốn não minh mẫn, hãy chăm sóc trái tim trước
 
-## Video đã dựng – bản 2 (phong cách thẻ thông tin)
+## Video đã dựng – bản 3 (nói chậm hơn, phong cách thẻ thông tin)
 
-`Video_Tim_Nao_ban_2.mp4` (9:16, 1080x1920, 1 phút 3 giây; video gốc 1 phút 24 giây):
+`Video_Tim_Nao_ban_3_cham.mp4` (9:16, 1080x1920, 1 phút 20 giây; video gốc 1 phút 24 giây):
+
+- Nói chậm hơn bản 2: tốc độ giọng 85% (giữ nguyên cao độ giọng, hình chậm theo), khoảng nghỉ giữa các câu khoảng 0,45 giây thay vì 0,2 giây.
 
 - Sửa lỗi bản 1: câu cuối "bớt đồ chế biến sẵn" bị mất tiếng (tiếng ngắn hơn hình 2,7 giây). Bản 2 tiếng và hình dài bằng nhau.
 - Cắt câu nói lặp: "có thể là hình… cô cô" chỉ còn "Cô chú anh chị có thể là hình dung đơn giản", và câu "còn não là nơi nhận" nói 2 lần.
-- Nối liền các câu: bỏ khoảng lặng 6 giây sau câu mở đầu và các chỗ ngừng dài; giữa các câu nghỉ khoảng 0,2 giây.
+- Nối liền các câu: bỏ khoảng lặng 6 giây sau câu mở đầu và các chỗ ngừng dài; chỉ cắt những chỗ ngừng dài hơn 0,45 giây.
 - Lọc ồn (RNNoise và afftdn); giọng nhẹ hơn (de-esser, giảm âm cao, nén nhẹ), độ lớn −17,5 LUFS (bản gốc −8,2 LUFS).
 - Nhạc sáo trúc âm lượng 0,15 (nhỏ hơn giọng khoảng 21 dB; mức 0,05 ở bản 1 gần như không nghe thấy).
 - Thẻ thông tin trên đầu giống video RICH bản 5, có hình minh họa (não, tim): Hãy chăm sóc trái tim trước, Dạo này…, Bộ não 2%/1/5 oxy, Tim bơm máu lên não, Hình dung đơn giản 01–03, Kéo dài sẽ hại mạch máu não, Tăng nguy cơ đột quỵ/suy giảm trí nhớ, Có thể do…, Chăm sóc tim mạch, Bắt đầu từ việc nhỏ 01–04. Thời điểm từng thẻ: `dung-video/the-thong-tin.json`.

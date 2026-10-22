@@ -2,11 +2,11 @@ import json,sys,difflib,subprocess,unicodedata,glob
 S=sys.argv[1]; V=glob.glob("/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a/1de51183*.mp4")[0]
 M=glob.glob("/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a/fbef8c43*.mp3")[0]
 asr=json.load(open(S+"/v2/asr.json")); iv=json.load(open(S+"/v2/seg.json"))["iv"]
-DUR=83.86; MUS=0.15; CUTS=[(27.50,29.54),(34.40,36.10),(67.5,68.2)]
+DUR=83.86; MUS=0.15; TEMPO=0.85; SC=1/TEMPO; CUTS=[(27.50,29.54),(34.40,36.10),(67.5,68.2)]
 # keep = padded speech intervals minus cuts
 k=[]
 for a,b in iv:
-  a,b=max(0,a-0.1),min(DUR,b+0.12)
+  a,b=max(0,a-0.2),min(DUR,b+0.25)
   if k and a<=k[-1][1]: k[-1][1]=max(k[-1][1],b)
   else: k.append([a,b])
 def sub(segs,c):
@@ -52,7 +52,8 @@ for i in range(len(cw)):
     elif n is None: tm[i]=tm[p]+0.25*(i-p)
     else: tm[i]=tm[p]+(tm[n]-tm[p])*(i-p)/(n-p)
 print("matched",len(idx),"of",len(cw))
-W=[[w,nt(t)] for w,t in zip(cw,tm)]
+W=[[w,nt(t)*SC] for w,t in zip(cw,tm)]
+TOT_IN=TOT; TOT=TOT*SC
 ends=[]
 for i,(w,t) in enumerate(W):
   nx=W[i+1][1] if i+1<len(W) else t+0.5
@@ -106,7 +107,7 @@ if len(sys.argv)>2 and sys.argv[2]=="render":
   C=json.load(open(S+"/v2/states.json")); n=len(k)
   args=["ffmpeg","-v","error","-y","-i",V,"-i",S+"/v2/voice_edit.wav","-i",M]
   for c in C: args+=["-loop","1","-framerate","30","-t",str(c["e"]+0.2),"-i",f"{S}/v2/cards/{c['id']}.png"]
-  fc=["".join(f"[0:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS[v{i}];" for i,(a,b) in enumerate(k))+"".join(f"[v{i}]" for i in range(n))+f"concat=n={n}:v=1:a=0[vc]",
+  fc=["".join(f"[0:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS[v{i}];" for i,(a,b) in enumerate(k))+"".join(f"[v{i}]" for i in range(n))+f"concat=n={n}:v=1:a=0,setpts=PTS*{SC:.5f}[vc]",
       "[vc]scale=1080:1920:flags=lanczos,setsar=1,fps=30[b0]"]
   prev="b0"
   for i,c in enumerate(C):
@@ -118,7 +119,7 @@ if len(sys.argv)>2 and sys.argv[2]=="render":
     y_=f"40-45*max(0\\,1-(t-{c['s']})/0.3)" if c["f"] else "40"
     fc.append(f"[{prev}][c{i}]overlay=x=(W-w)/2:y='{y_}':eval=frame:enable='between(t,{c['s']},{999 if last else c['e']})'[o{i}]"); prev=f"o{i}"
   fc.append(f"[{prev}]subtitles={S}/v2/karaoke.ass:fontsdir={S}/fonts[vout]")
-  fc.append("[1:a]deesser=i=0.4,equalizer=f=4500:t=h:w=4000:g=-3,acompressor=threshold=-22dB:ratio=2.5:attack=15:release=200,loudnorm=I=-19:TP=-2:LRA=9,aresample=48000[vo]")
+  fc.append(f"[1:a]atempo={TEMPO},deesser=i=0.4,equalizer=f=4500:t=h:w=4000:g=-3,acompressor=threshold=-22dB:ratio=2.5:attack=15:release=200,loudnorm=I=-19:TP=-2:LRA=9,aresample=48000[vo]")
   fc.append(f"[2:a]atrim=0:{TOT:.2f},asetpts=PTS-STARTPTS,aresample=48000,volume={MUS},afade=t=in:d=1.5,afade=t=out:st={TOT-2.5:.2f}:d=2.5[m]")
   fc.append("[vo][m]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.9[aout]")
-  subprocess.run(args+["-filter_complex",";\n".join(fc),"-map","[vout]","-map","[aout]","-t",f"{TOT:.2f}","-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-c:a","aac","-b:a","192k","-movflags","+faststart",S+"/Video_Tim_Nao_ban_2.mp4"],check=True)
+  subprocess.run(args+["-filter_complex",";\n".join(fc),"-map","[vout]","-map","[aout]","-t",f"{TOT:.2f}","-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-c:a","aac","-b:a","192k","-movflags","+faststart",S+"/Video_Tim_Nao_ban_3_cham.mp4"],check=True)
