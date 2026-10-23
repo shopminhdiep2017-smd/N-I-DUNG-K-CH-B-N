@@ -97,17 +97,26 @@ if len(sys.argv)>2 and sys.argv[2]=="render":
   n=len(k); IMG="/tmp/claude-0/-home-user-N-I-DUNG-K-CH-B-N/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a/images/2.jpg"
   FB=S+"/fonts/BeVietnamPro-SemiBold.ttf"
   args=["ffmpeg","-v","error","-y","-i",V,"-i",S+"/v3/voice_edit.wav","-i",M,"-loop","1","-framerate","30","-t",f"{TOT+0.5:.2f}","-i",IMG]
+  CL=[("s1",0.0),("s2",3.0),("s3",6.1),("s4",8.95),("s5",13.41),("s6",19.52),("s7",25.40),("s8",27.97),("s9",31.95),("s10",35.18)]
+  for c,_ in CL: args+=["-i",f"{S}/v3/clips/{c}.mp4"]
   fc=["".join(f"[0:v]trim={a:.4f}:{b:.4f},setpts=PTS-STARTPTS[v{i}];" for i,(a,b) in enumerate(k))+"".join(f"[v{i}]" for i in range(n))+f"concat=n={n}:v=1:a=0,setpts=PTS*{SC:.5f}[vc]",
       "[vc]scale=1080:1920:flags=lanczos:in_color_matrix=bt709:out_color_matrix=bt709:in_range=tv:out_range=tv,setsar=1,fps=30[b0]",
       f"[3:v]scale=600:-2:in_color_matrix=bt601:out_color_matrix=bt709,pad=iw+10:ih+10:5:5:white,format=yuva420p,fade=in:st={RICH_T:.2f}:d=0.4:alpha=1[img]",
-      f"[b0][img]overlay=x=(W-w)/2:y=355:enable='gte(t,{RICH_T:.2f})'[o0]"]
+      "[b0]null[o0]"]
   E=f"enable='gte(t,{RICH_T:.2f})'"
   fc.append(f"[o0]drawbox=x=0:y=ih-96:w=iw:h=96:color=black@0.55:t=fill:{E},"
    f"drawtext=fontfile={FB}:text='Thực phẩm này không phải là thuốc và không có':fontsize=30:fontcolor=white:x=(w-tw)/2:y=h-84:{E},"
    f"drawtext=fontfile={FB}:text='tác dụng thay thế thuốc chữa bệnh.':fontsize=30:fontcolor=white:x=(w-tw)/2:y=h-44:{E}[o1]")
   prev="o1"
+  for i,(c,st) in enumerate(CL):
+    en=CL[i+1][1] if i+1<len(CL) else RICH_T+0.4
+    ch=f"[{4+i}:v]scale=600:400:in_color_matrix=bt601:out_color_matrix=bt709,pad=610:410:5:5:white,tpad=stop_mode=clone:stop_duration=2,setpts=PTS-STARTPTS+{st}/TB"
+    if i==0: ch+=",format=yuva420p,fade=in:st=0:d=0.4:alpha=1"
+    fc.append(ch+f"[k{i}]")
+    fc.append(f"[{prev}][k{i}]overlay=x=(W-w)/2:y=355:eof_action=pass:enable='between(t,{st},{en:.2f})'[q{i}]"); prev=f"q{i}"
+  fc.append(f"[{prev}][img]overlay=x=(W-w)/2:y=355:enable='gte(t,{RICH_T:.2f})'[pimg]"); prev="pimg"
   fc.append(f"[{prev}]subtitles={S}/v3/karaoke.ass:fontsdir={S}/fonts[vout]")
   fc.append("[1:a]acompressor=threshold=-22dB:ratio=2:attack=15:release=200,loudnorm=I=-17:TP=-1.5:LRA=9,aresample=48000[vo]")
   fc.append(f"[2:a]atrim=0:{TOT:.2f},asetpts=PTS-STARTPTS,aresample=48000,volume={MUS},afade=t=in:d=1.5,afade=t=out:st={TOT-2.5:.2f}:d=2.5[m]")
   fc.append("[vo][m]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.9[aout]")
-  subprocess.run(args+["-filter_complex",";\n".join(fc),"-map","[vout]","-map","[aout]","-t",f"{TOT:.2f}","-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-colorspace","bt709","-color_primaries","bt709","-color_trc","bt709","-color_range","tv","-c:a","aac","-b:a","192k","-movflags","+faststart",S+"/Video_RICH_DauDau_ban_1.mp4"],check=True)
+  subprocess.run(args+["-filter_complex",";\n".join(fc),"-map","[vout]","-map","[aout]","-t",f"{TOT:.2f}","-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-colorspace","bt709","-color_primaries","bt709","-color_trc","bt709","-color_range","tv","-c:a","aac","-b:a","192k","-movflags","+faststart",S+"/Video_RICH_DauDau_ban_2.mp4"],check=True)

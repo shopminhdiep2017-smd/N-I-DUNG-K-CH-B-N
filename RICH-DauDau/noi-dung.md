@@ -1,12 +1,13 @@
 # RICH Coenzyme Q10 – Đau đầu, đầu óc nặng nề
 
-## Video đã dựng – bản 1
+## Video đã dựng – bản 2
 
-`Video_RICH_DauDau_ban_1.mp4` (9:16, 1080x1920, 1 phút 17 giây; video gốc 1 phút 27 giây):
+`Video_RICH_DauDau_ban_2.mp4` (9:16, 1080x1920, 1 phút 17 giây; video gốc 1 phút 27 giây):
 
 - Cắt câu nói lặp: "nên dễ hấp thu và các tế bào…" (nói hỏng) chỉ giữ lần nói lại "nên dễ hấp thu vào các tế bào".
 - Nối liền các câu: cắt các chỗ ngừng dài hơn khoảng 0,45 giây, giữ nhịp nói tự nhiên (không tăng/giảm tốc độ giọng).
 - Phụ đề karaoke chữ vàng viền đen, nói đến đâu chữ vàng đến đó: `phu-de-karaoke.ass`.
+- Đoạn đầu (0:00–0:38) chèn 10 clip hoạt hình minh họa phía trên, sát đỉnh đầu, đổi theo lời nói: đau đầu, áp lực công việc, vỉ thuốc giảm đau, não thiếu năng lượng, não dùng ~20% năng lượng, Coenzyme Q10 – cục pin tế bào, từ tuổi 30 pin yếu dần, thức khuya, não quá tải, sạc pin cho bộ não. Clip tự vẽ bằng `dung-video/clips.js` (không dùng footage có bản quyền).
 - Ảnh sản phẩm RICH chèn phía trên, sát đỉnh đầu, xuất hiện từ lúc nói "hai viên **Rich Coenzyme Q10**" (0:38) đến hết video; dòng cảnh báo "Thực phẩm này không phải là thuốc…" dưới đáy hiện cùng lúc với ảnh.
 - Giữ nguyên độ sáng và màu của video gốc (BT.709; độ sáng đo được lệch dưới 2%).
 - Lọc ồn nền (RNNoise và afftdn); độ lớn giọng chuẩn hóa −17 LUFS.
