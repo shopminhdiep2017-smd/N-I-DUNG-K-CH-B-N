@@ -517,4 +517,48 @@ class Walk(Animated):
         self.label(img, self.spec.get("label"))
 
 
-ELEMENTS = {c.kind: c for c in (Vessel, Brain, Heart, Pressure, Nerve, Sleep, Walk)}
+# -------------------------------------------------------------- battery ----
+class Battery(Animated):
+    """Energy battery (cell energy, Q10…): fills and pulses; drains and turns red from `drain_at`."""
+    kind = "battery"
+
+    def draw(self, img, t):
+        d = ImageDraw.Draw(img)
+        bw, bh = CW * 0.56, self.h * 0.42
+        x0, y0 = (CW - bw) / 2 - 14, self.h * 0.36 - bh / 2
+        x1, y1 = x0 + bw, y0 + bh
+        d.rounded_rectangle((x0, y0, x1, y1), radius=26, outline=S.color("ink") + (255,), width=10)
+        d.rounded_rectangle((x1 + 4, y0 + bh * 0.3, x1 + 30, y1 - bh * 0.3), radius=8, fill=S.color("ink") + (255,))
+        full = float(self.spec.get("level", 0.9))
+        dr = _at(self.spec, "drain_at", self.start)
+        if dr is None or t < dr:
+            level = full * ease(t / 0.9)                       # charge up on entry
+        else:
+            level = full - (full - float(self.spec.get("low", 0.2))) * ease((t - dr) / 1.6)
+        low = level < 0.45
+        col = (206, 52, 60) if low else (46, 170, 96)
+        n = 5
+        gap = 10
+        cw = (bw - 40 - gap * (n - 1)) / n
+        for k in range(n):
+            frac = min(1.0, max(0.0, level * n - k))
+            if frac <= 0:
+                continue
+            cx0 = x0 + 20 + k * (cw + gap)
+            d.rounded_rectangle((cx0, y0 + 20, cx0 + cw * frac, y1 - 20), radius=8, fill=col + (255,))
+        if not low:                                            # lightning bolt pulsing = energy
+            pulse = 0.6 + 0.4 * math.sin(t * 5)
+            cx, cy, sz = (x0 + x1) / 2, (y0 + y1) / 2, bh * 0.36
+            bolt = [(cx + 0.15 * sz, cy - sz), (cx - 0.45 * sz, cy + 0.1 * sz), (cx - 0.02 * sz, cy + 0.1 * sz),
+                    (cx - 0.2 * sz, cy + sz), (cx + 0.45 * sz, cy - 0.15 * sz), (cx + 0.02 * sz, cy - 0.15 * sz)]
+            d.polygon(bolt, fill=(255, 214, 64, int(255 * pulse)), outline=(120, 90, 0, 255))
+        f = G.font(S.FONT_BLACK, 56)
+        pct = f"{int(round(level * 100))}%"
+        if self.spec.get("show_pct"):   # off by default: a percentage reads like a real measurement
+          G.draw_text(img, (int(x1 + 60), int((y0 + y1) / 2)), pct, f, (206, 52, 60) if low else (30, 120, 70),
+                    stroke=0, anchor="lm")
+        self.label(img, self.spec.get("label_after") if (dr is not None and t >= dr + 0.4) else self.spec.get("label"),
+                   "red" if low else "ink")
+
+
+ELEMENTS = {c.kind: c for c in (Vessel, Brain, Heart, Pressure, Nerve, Sleep, Walk, Battery)}

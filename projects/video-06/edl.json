@@ -1,0 +1,351 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.08,
+    0.4
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.1,
+    "focus": [
+      0.5,
+      0.55
+    ],
+    "sharpen": 0.5,
+    "denoise": true,
+    "top_shade": 0.25,
+    "bg_dim": 0.03,
+    "grade": {
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.56
+      ],
+      "radius": 0.12,
+      "light": 0.07,
+      "sharpen": 40
+    },
+    "beauty": {
+      "smooth": 0.55,
+      "teeth": 0.5
+    }
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0.0,
+        0.7
+      ],
+      [
+        7.02,
+        7.32
+      ],
+      [
+        12.0,
+        12.26
+      ],
+      [
+        16.18,
+        16.4
+      ],
+      [
+        19.26,
+        19.52
+      ],
+      [
+        24.98,
+        25.28
+      ],
+      [
+        57.64,
+        58.06
+      ],
+      [
+        62.94,
+        63.18
+      ],
+      [
+        67.62,
+        68.06
+      ],
+      [
+        71.48,
+        71.7
+      ],
+      [
+        77.85,
+        78.48
+      ],
+      [
+        71.4,
+        74.62
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:07",
+      "speech": "Ăn uống đầy đủ là đủ chất? … bỏ sót một thứ",
+      "idea": "HOOK",
+      "visual": "Headline + zoom; keyword"
+    },
+    {
+      "time": "00:07–00:16",
+      "speech": "Coenzyme Q10 là cục pin… có trong thịt, cá, gan",
+      "idea": "Giải thích",
+      "visual": "Pin sạc đầy · checklist"
+    },
+    {
+      "time": "00:16–00:25",
+      "speech": "Muốn 100 mg phải ăn 3 kg thịt bò…",
+      "idea": "So sánh",
+      "visual": "Checklist đỏ + zoom"
+    },
+    {
+      "time": "00:25–00:38",
+      "speech": "Từ 30 tuổi Q10 giảm… mệt mỏi, uể oải",
+      "idea": "Vấn đề",
+      "visual": "Pin cạn dần · checklist triệu chứng"
+    },
+    {
+      "time": "00:38–01:03",
+      "speech": "2 viên Q10 AFC… dạng khử, Astaxanthin, tiêu đen, 120 viên",
+      "idea": "Sản phẩm",
+      "visual": "Headline xanh · keyword · checklist điểm nổi bật"
+    },
+    {
+      "time": "01:03–01:11",
+      "speech": "Bình luận \"2 viên\"; không phải là thuốc",
+      "idea": "CTA + lưu ý",
+      "visual": "CTA · cảnh báo"
+    },
+    {
+      "time": "01:11–01:14",
+      "speech": "Cảm ơn",
+      "idea": "Kết",
+      "visual": "Keyword"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 0.6,
+      "end": 4.45,
+      "kicker": "Ăn uống đầy đủ",
+      "text": "Đã đủ chất chưa?",
+      "accent": "red",
+      "size": 104,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 4.52,
+      "end": 7.1,
+      "kicker": "Cô chú có thể đang bỏ sót",
+      "text": "Một thứ rất quan trọng",
+      "accent": "red",
+      "anim": "slide",
+      "y": 0.235
+    },
+    {
+      "type": "battery",
+      "start": 7.2,
+      "end": 12.0,
+      "label": "Coenzyme Q10: cục pin của tế bào",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 12.1,
+      "end": 16.1,
+      "title": "Q10 có trong",
+      "items": [
+        "Thịt",
+        "Cá",
+        "Gan"
+      ],
+      "reveal": [
+        13.16,
+        13.48,
+        13.92
+      ],
+      "mark": "dot",
+      "mark_color": "green",
+      "accent": "green",
+      "size": 48,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 16.24,
+      "end": 25.0,
+      "title": "Muốn có 100 mg Q10 mỗi ngày từ thức ăn",
+      "items": [
+        "Khoảng 3 kg thịt bò",
+        "Hoặc 26 con cá cơm",
+        "Hoặc 12 kg bông cải xanh"
+      ],
+      "reveal": [
+        20.61,
+        21.93,
+        23.29
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 44,
+      "zoom": 1.04,
+      "y": 0.235
+    },
+    {
+      "type": "battery",
+      "start": 25.13,
+      "end": 30.1,
+      "label": "Từ tuổi 30",
+      "label_after": "Cơ thể tự tạo Q10 ít dần",
+      "drain_at": 27.6,
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 30.17,
+      "end": 37.9,
+      "title": "Dù ăn uống đầy đủ vẫn",
+      "items": [
+        "Hay mệt mỏi, uể oải",
+        "Nhanh xuống sức",
+        "Mất năng lượng"
+      ],
+      "reveal": [
+        33.25,
+        34.97,
+        36.85
+      ],
+      "mark": "dot",
+      "mark_color": "red",
+      "accent": "red",
+      "size": 46,
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 38.0,
+      "end": 44.3,
+      "kicker": "Thay vì cả núi đồ ăn",
+      "kicker_color": "green",
+      "text": "Chỉ cần 2 viên",
+      "sub": "Coenzyme Q10 · AFC Nhật Bản",
+      "accent": "green",
+      "size": 104,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 44.36,
+      "end": 48.3,
+      "kicker": "Sau bữa ăn sáng",
+      "kicker_color": "green",
+      "text": "Đủ 100 mg Q10 mỗi ngày",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 48.4,
+      "end": 57.6,
+      "title": "Điểm nổi bật",
+      "items": [
+        "Dạng khử, hấp thu nhanh",
+        "Thêm Astaxanthin chống oxy hóa",
+        "Tiêu đen giúp hấp thu tốt hơn"
+      ],
+      "reveal": [
+        49.52,
+        53.48,
+        55.92
+      ],
+      "mark": "check",
+      "accent": "green",
+      "size": 44,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 57.94,
+      "end": 62.85,
+      "kicker": "1 hộp 120 viên",
+      "kicker_color": "green",
+      "text": "Dùng trọn 2 tháng",
+      "sub": "gọn, tiện, đủ chất",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "cta",
+      "start": 62.98,
+      "end": 67.4,
+      "kicker": "Muốn khỏe mà không ăn 3 kg thịt bò?",
+      "text": "Bình luận \"2 viên\"",
+      "accent": "green",
+      "kicker_color": "green",
+      "size": 86,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "warning",
+      "start": 67.9,
+      "end": 71.35,
+      "text": "Lưu ý",
+      "sub": "Thực phẩm này không phải là thuốc",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 74.74,
+      "end": 77.8,
+      "text": "Cảm ơn cô chú anh chị",
+      "sub": "đã theo dõi video",
+      "accent": "green",
+      "anim": "fade",
+      "y": 0.235
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "y": 0.775,
+    "karaoke": "#FFD400"
+  },
+  "audio": {
+    "denoise": true,
+    "leveler": true,
+    "loudness": -9,
+    "gain_db": 2.5,
+    "music": null,
+    "sfx_db": -22,
+    "dereverb": {
+      "rt60": 0.5,
+      "strength": 1.2
+    },
+    "rnnoise": "sh",
+    "rnnoise_mix": 0.9
+  }
+}

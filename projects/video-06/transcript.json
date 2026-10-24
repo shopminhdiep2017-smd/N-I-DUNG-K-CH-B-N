@@ -1,0 +1,1573 @@
+{
+ "language": "vi",
+ "duration": 78.48,
+ "asr": "sherpa-onnx zipformer-vi + whisper cross-check + manual correction",
+ "silences": [
+  [
+   0.0,
+   0.78
+  ],
+  [
+   4.36,
+   4.84
+  ],
+  [
+   6.84,
+   7.42
+  ],
+  [
+   8.96,
+   9.4
+  ],
+  [
+   11.82,
+   12.36
+  ],
+  [
+   13.3,
+   13.54
+  ],
+  [
+   16.0,
+   16.5
+  ],
+  [
+   19.08,
+   19.62
+  ],
+  [
+   21.72,
+   22.14
+  ],
+  [
+   24.8,
+   25.38
+  ],
+  [
+   26.02,
+   26.42
+  ],
+  [
+   29.98,
+   30.36
+  ],
+  [
+   31.9,
+   32.36
+  ],
+  [
+   33.84,
+   34.16
+  ],
+  [
+   34.66,
+   35.14
+  ],
+  [
+   35.68,
+   35.96
+  ],
+  [
+   36.7,
+   37.04
+  ],
+  [
+   37.6,
+   38.06
+  ],
+  [
+   39.64,
+   40.12
+  ],
+  [
+   44.1,
+   44.52
+  ],
+  [
+   45.3,
+   45.66
+  ],
+  [
+   48.32,
+   48.7
+  ],
+  [
+   51.9,
+   52.34
+  ],
+  [
+   54.5,
+   54.96
+  ],
+  [
+   57.46,
+   58.16
+  ],
+  [
+   60.94,
+   61.42
+  ],
+  [
+   62.76,
+   63.28
+  ],
+  [
+   67.44,
+   68.16
+  ],
+  [
+   71.3,
+   71.8
+  ],
+  [
+   74.44,
+   74.64
+  ],
+  [
+   74.66,
+   75.1
+  ],
+  [
+   77.4,
+   78.48
+  ]
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 11.84,
+   "text": "Nếu cô chú anh chị cứ nghĩ là ăn uống đầy đủ là cơ thể đủ chất, thì cô chú đang bỏ sót một thứ rất là quan trọng: đó là Coenzyme Q10, là một cục pin giúp từng tế bào tạo ra năng lượng.",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.8,
+     "word": "Nếu"
+    },
+    {
+     "start": 0.8,
+     "end": 1.04,
+     "word": "cô"
+    },
+    {
+     "start": 1.04,
+     "end": 1.28,
+     "word": "chú"
+    },
+    {
+     "start": 1.28,
+     "end": 1.52,
+     "word": "anh"
+    },
+    {
+     "start": 1.52,
+     "end": 1.72,
+     "word": "chị"
+    },
+    {
+     "start": 1.72,
+     "end": 1.96,
+     "word": "cứ"
+    },
+    {
+     "start": 1.96,
+     "end": 2.16,
+     "word": "nghĩ"
+    },
+    {
+     "start": 2.16,
+     "end": 2.4,
+     "word": "là"
+    },
+    {
+     "start": 2.4,
+     "end": 2.64,
+     "word": "ăn"
+    },
+    {
+     "start": 2.64,
+     "end": 2.88,
+     "word": "uống"
+    },
+    {
+     "start": 2.88,
+     "end": 3.08,
+     "word": "đầy"
+    },
+    {
+     "start": 3.08,
+     "end": 3.32,
+     "word": "đủ"
+    },
+    {
+     "start": 3.32,
+     "end": 3.56,
+     "word": "là"
+    },
+    {
+     "start": 3.56,
+     "end": 3.76,
+     "word": "cơ"
+    },
+    {
+     "start": 3.76,
+     "end": 4.0,
+     "word": "thể"
+    },
+    {
+     "start": 4.0,
+     "end": 4.2,
+     "word": "đủ"
+    },
+    {
+     "start": 4.2,
+     "end": 4.36,
+     "word": "chất,"
+    },
+    {
+     "start": 4.52,
+     "end": 4.84,
+     "word": "thì"
+    },
+    {
+     "start": 4.84,
+     "end": 5.04,
+     "word": "cô"
+    },
+    {
+     "start": 5.04,
+     "end": 5.2,
+     "word": "chú"
+    },
+    {
+     "start": 5.2,
+     "end": 5.4,
+     "word": "đang"
+    },
+    {
+     "start": 5.4,
+     "end": 5.56,
+     "word": "bỏ"
+    },
+    {
+     "start": 5.56,
+     "end": 5.76,
+     "word": "sót"
+    },
+    {
+     "start": 5.76,
+     "end": 5.92,
+     "word": "một"
+    },
+    {
+     "start": 5.92,
+     "end": 6.12,
+     "word": "thứ"
+    },
+    {
+     "start": 6.12,
+     "end": 6.28,
+     "word": "rất"
+    },
+    {
+     "start": 6.28,
+     "end": 6.52,
+     "word": "là"
+    },
+    {
+     "start": 6.52,
+     "end": 6.72,
+     "word": "quan"
+    },
+    {
+     "start": 6.72,
+     "end": 6.84,
+     "word": "trọng:"
+    },
+    {
+     "start": 7.2,
+     "end": 7.48,
+     "word": "đó"
+    },
+    {
+     "start": 7.48,
+     "end": 7.84,
+     "word": "là"
+    },
+    {
+     "start": 7.84,
+     "end": 8.04,
+     "word": "Coenzyme"
+    },
+    {
+     "start": 8.04,
+     "end": 8.96,
+     "word": "Q10,"
+    },
+    {
+     "start": 9.12,
+     "end": 9.36,
+     "word": "là"
+    },
+    {
+     "start": 9.36,
+     "end": 9.6,
+     "word": "một"
+    },
+    {
+     "start": 9.6,
+     "end": 9.8,
+     "word": "cục"
+    },
+    {
+     "start": 9.8,
+     "end": 10.04,
+     "word": "pin"
+    },
+    {
+     "start": 10.04,
+     "end": 10.28,
+     "word": "giúp"
+    },
+    {
+     "start": 10.28,
+     "end": 10.52,
+     "word": "từng"
+    },
+    {
+     "start": 10.52,
+     "end": 10.76,
+     "word": "tế"
+    },
+    {
+     "start": 10.76,
+     "end": 11.04,
+     "word": "bào"
+    },
+    {
+     "start": 11.04,
+     "end": 11.28,
+     "word": "tạo"
+    },
+    {
+     "start": 11.28,
+     "end": 11.48,
+     "word": "ra"
+    },
+    {
+     "start": 11.48,
+     "end": 11.72,
+     "word": "năng"
+    },
+    {
+     "start": 11.72,
+     "end": 11.84,
+     "word": "lượng."
+    }
+   ]
+  },
+  {
+   "start": 12.16,
+   "end": 16.0,
+   "text": "Q10 có trong thịt, cá, gan, nhưng rất ít và khó hấp thu.",
+   "words": [
+    {
+     "start": 12.16,
+     "end": 12.68,
+     "word": "Q10"
+    },
+    {
+     "start": 12.68,
+     "end": 12.88,
+     "word": "có"
+    },
+    {
+     "start": 12.88,
+     "end": 13.16,
+     "word": "trong"
+    },
+    {
+     "start": 13.16,
+     "end": 13.3,
+     "word": "thịt,"
+    },
+    {
+     "start": 13.48,
+     "end": 13.92,
+     "word": "cá,"
+    },
+    {
+     "start": 13.92,
+     "end": 14.32,
+     "word": "gan,"
+    },
+    {
+     "start": 14.32,
+     "end": 14.56,
+     "word": "nhưng"
+    },
+    {
+     "start": 14.56,
+     "end": 14.8,
+     "word": "rất"
+    },
+    {
+     "start": 14.8,
+     "end": 15.04,
+     "word": "ít"
+    },
+    {
+     "start": 15.04,
+     "end": 15.28,
+     "word": "và"
+    },
+    {
+     "start": 15.28,
+     "end": 15.52,
+     "word": "khó"
+    },
+    {
+     "start": 15.52,
+     "end": 15.76,
+     "word": "hấp"
+    },
+    {
+     "start": 15.76,
+     "end": 16.0,
+     "word": "thu."
+    }
+   ]
+  },
+  {
+   "start": 16.24,
+   "end": 24.8,
+   "text": "Muốn có 100 mg Q10 từ thức ăn mỗi ngày, cô chú anh chị phải ăn khoảng 3 kg thịt bò, hay 26 con cá cơm hoặc 12 kg bông cải xanh.",
+   "words": [
+    {
+     "start": 16.24,
+     "end": 16.52,
+     "word": "Muốn"
+    },
+    {
+     "start": 16.52,
+     "end": 16.72,
+     "word": "có"
+    },
+    {
+     "start": 16.72,
+     "end": 17.04,
+     "word": "100"
+    },
+    {
+     "start": 17.04,
+     "end": 17.56,
+     "word": "mg"
+    },
+    {
+     "start": 17.56,
+     "end": 18.0,
+     "word": "Q10"
+    },
+    {
+     "start": 18.0,
+     "end": 18.24,
+     "word": "từ"
+    },
+    {
+     "start": 18.24,
+     "end": 18.44,
+     "word": "thức"
+    },
+    {
+     "start": 18.44,
+     "end": 18.68,
+     "word": "ăn"
+    },
+    {
+     "start": 18.68,
+     "end": 19.0,
+     "word": "mỗi"
+    },
+    {
+     "start": 19.0,
+     "end": 19.571,
+     "word": "ngày,"
+    },
+    {
+     "start": 19.571,
+     "end": 19.731,
+     "word": "cô"
+    },
+    {
+     "start": 19.731,
+     "end": 19.891,
+     "word": "chú"
+    },
+    {
+     "start": 19.891,
+     "end": 20.051,
+     "word": "anh"
+    },
+    {
+     "start": 20.051,
+     "end": 20.211,
+     "word": "chị"
+    },
+    {
+     "start": 20.211,
+     "end": 20.411,
+     "word": "phải"
+    },
+    {
+     "start": 20.411,
+     "end": 20.611,
+     "word": "ăn"
+    },
+    {
+     "start": 20.611,
+     "end": 20.811,
+     "word": "khoảng"
+    },
+    {
+     "start": 20.811,
+     "end": 21.051,
+     "word": "3"
+    },
+    {
+     "start": 21.051,
+     "end": 21.251,
+     "word": "kg"
+    },
+    {
+     "start": 21.251,
+     "end": 21.491,
+     "word": "thịt"
+    },
+    {
+     "start": 21.491,
+     "end": 21.72,
+     "word": "bò,"
+    },
+    {
+     "start": 21.931,
+     "end": 22.171,
+     "word": "hay"
+    },
+    {
+     "start": 22.171,
+     "end": 22.771,
+     "word": "26"
+    },
+    {
+     "start": 22.771,
+     "end": 22.931,
+     "word": "con"
+    },
+    {
+     "start": 22.931,
+     "end": 23.111,
+     "word": "cá"
+    },
+    {
+     "start": 23.111,
+     "end": 23.291,
+     "word": "cơm"
+    },
+    {
+     "start": 23.291,
+     "end": 23.451,
+     "word": "hoặc"
+    },
+    {
+     "start": 23.451,
+     "end": 23.931,
+     "word": "12"
+    },
+    {
+     "start": 23.931,
+     "end": 24.171,
+     "word": "kg"
+    },
+    {
+     "start": 24.171,
+     "end": 24.371,
+     "word": "bông"
+    },
+    {
+     "start": 24.371,
+     "end": 24.651,
+     "word": "cải"
+    },
+    {
+     "start": 24.651,
+     "end": 24.8,
+     "word": "xanh."
+    }
+   ]
+  },
+  {
+   "start": 25.131,
+   "end": 29.98,
+   "text": "Trong khi đó, từ tuổi 30, thì cơ thể lại tự tạo ra Q10 ít dần đi.",
+   "words": [
+    {
+     "start": 25.131,
+     "end": 25.411,
+     "word": "Trong"
+    },
+    {
+     "start": 25.411,
+     "end": 25.691,
+     "word": "khi"
+    },
+    {
+     "start": 25.691,
+     "end": 26.02,
+     "word": "đó,"
+    },
+    {
+     "start": 26.091,
+     "end": 26.411,
+     "word": "từ"
+    },
+    {
+     "start": 26.411,
+     "end": 26.691,
+     "word": "tuổi"
+    },
+    {
+     "start": 26.691,
+     "end": 27.171,
+     "word": "30,"
+    },
+    {
+     "start": 27.171,
+     "end": 27.451,
+     "word": "thì"
+    },
+    {
+     "start": 27.451,
+     "end": 27.651,
+     "word": "cơ"
+    },
+    {
+     "start": 27.651,
+     "end": 27.891,
+     "word": "thể"
+    },
+    {
+     "start": 27.891,
+     "end": 28.091,
+     "word": "lại"
+    },
+    {
+     "start": 28.091,
+     "end": 28.331,
+     "word": "tự"
+    },
+    {
+     "start": 28.331,
+     "end": 28.531,
+     "word": "tạo"
+    },
+    {
+     "start": 28.531,
+     "end": 28.851,
+     "word": "ra"
+    },
+    {
+     "start": 28.851,
+     "end": 29.331,
+     "word": "Q10"
+    },
+    {
+     "start": 29.331,
+     "end": 29.531,
+     "word": "ít"
+    },
+    {
+     "start": 29.531,
+     "end": 29.811,
+     "word": "dần"
+    },
+    {
+     "start": 29.811,
+     "end": 29.98,
+     "word": "đi."
+    }
+   ]
+  },
+  {
+   "start": 30.171,
+   "end": 37.6,
+   "text": "Vì vậy, dù ăn uống đầy đủ, cô chú anh chị vẫn hay mệt mỏi, uể oải, nhanh xuống sức, người thì mất năng lượng.",
+   "words": [
+    {
+     "start": 30.171,
+     "end": 30.451,
+     "word": "Vì"
+    },
+    {
+     "start": 30.451,
+     "end": 30.691,
+     "word": "vậy,"
+    },
+    {
+     "start": 30.691,
+     "end": 30.971,
+     "word": "dù"
+    },
+    {
+     "start": 30.971,
+     "end": 31.211,
+     "word": "ăn"
+    },
+    {
+     "start": 31.211,
+     "end": 31.491,
+     "word": "uống"
+    },
+    {
+     "start": 31.491,
+     "end": 31.731,
+     "word": "đầy"
+    },
+    {
+     "start": 31.731,
+     "end": 31.9,
+     "word": "đủ,"
+    },
+    {
+     "start": 32.131,
+     "end": 32.371,
+     "word": "cô"
+    },
+    {
+     "start": 32.371,
+     "end": 32.571,
+     "word": "chú"
+    },
+    {
+     "start": 32.571,
+     "end": 32.731,
+     "word": "anh"
+    },
+    {
+     "start": 32.731,
+     "end": 32.931,
+     "word": "chị"
+    },
+    {
+     "start": 32.931,
+     "end": 33.091,
+     "word": "vẫn"
+    },
+    {
+     "start": 33.091,
+     "end": 33.251,
+     "word": "hay"
+    },
+    {
+     "start": 33.251,
+     "end": 33.611,
+     "word": "mệt"
+    },
+    {
+     "start": 33.611,
+     "end": 33.84,
+     "word": "mỏi,"
+    },
+    {
+     "start": 34.051,
+     "end": 34.331,
+     "word": "uể"
+    },
+    {
+     "start": 34.331,
+     "end": 34.66,
+     "word": "oải,"
+    },
+    {
+     "start": 34.971,
+     "end": 35.251,
+     "word": "nhanh"
+    },
+    {
+     "start": 35.251,
+     "end": 35.531,
+     "word": "xuống"
+    },
+    {
+     "start": 35.531,
+     "end": 35.68,
+     "word": "sức,"
+    },
+    {
+     "start": 35.971,
+     "end": 36.291,
+     "word": "người"
+    },
+    {
+     "start": 36.291,
+     "end": 36.7,
+     "word": "thì"
+    },
+    {
+     "start": 36.851,
+     "end": 37.171,
+     "word": "mất"
+    },
+    {
+     "start": 37.171,
+     "end": 37.451,
+     "word": "năng"
+    },
+    {
+     "start": 37.451,
+     "end": 37.6,
+     "word": "lượng."
+    }
+   ]
+  },
+  {
+   "start": 37.996,
+   "end": 48.32,
+   "text": "Thì thay thế cả núi đồ ăn này, cô chú anh chị chỉ cần 2 viên Coenzyme Q10 của nhà AFC Nhật Bản, sau bữa ăn sáng, là có đủ 100 mg Q10 cho mỗi ngày.",
+   "words": [
+    {
+     "start": 37.996,
+     "end": 38.236,
+     "word": "Thì"
+    },
+    {
+     "start": 38.236,
+     "end": 38.476,
+     "word": "thay"
+    },
+    {
+     "start": 38.476,
+     "end": 38.676,
+     "word": "thế"
+    },
+    {
+     "start": 38.676,
+     "end": 38.916,
+     "word": "cả"
+    },
+    {
+     "start": 38.916,
+     "end": 39.156,
+     "word": "núi"
+    },
+    {
+     "start": 39.156,
+     "end": 39.316,
+     "word": "đồ"
+    },
+    {
+     "start": 39.316,
+     "end": 39.556,
+     "word": "ăn"
+    },
+    {
+     "start": 39.556,
+     "end": 39.916,
+     "word": "này,"
+    },
+    {
+     "start": 39.916,
+     "end": 40.116,
+     "word": "cô"
+    },
+    {
+     "start": 40.116,
+     "end": 40.316,
+     "word": "chú"
+    },
+    {
+     "start": 40.316,
+     "end": 40.476,
+     "word": "anh"
+    },
+    {
+     "start": 40.476,
+     "end": 40.676,
+     "word": "chị"
+    },
+    {
+     "start": 40.676,
+     "end": 40.836,
+     "word": "chỉ"
+    },
+    {
+     "start": 40.836,
+     "end": 41.036,
+     "word": "cần"
+    },
+    {
+     "start": 41.036,
+     "end": 41.276,
+     "word": "2"
+    },
+    {
+     "start": 41.276,
+     "end": 41.676,
+     "word": "viên"
+    },
+    {
+     "start": 41.676,
+     "end": 42.236,
+     "word": "Coenzyme"
+    },
+    {
+     "start": 42.236,
+     "end": 42.716,
+     "word": "Q10"
+    },
+    {
+     "start": 42.716,
+     "end": 42.916,
+     "word": "của"
+    },
+    {
+     "start": 42.916,
+     "end": 43.116,
+     "word": "nhà"
+    },
+    {
+     "start": 43.116,
+     "end": 43.716,
+     "word": "AFC"
+    },
+    {
+     "start": 43.716,
+     "end": 43.956,
+     "word": "Nhật"
+    },
+    {
+     "start": 43.956,
+     "end": 44.1,
+     "word": "Bản,"
+    },
+    {
+     "start": 44.356,
+     "end": 44.636,
+     "word": "sau"
+    },
+    {
+     "start": 44.636,
+     "end": 44.876,
+     "word": "bữa"
+    },
+    {
+     "start": 44.876,
+     "end": 45.116,
+     "word": "ăn"
+    },
+    {
+     "start": 45.116,
+     "end": 45.3,
+     "word": "sáng,"
+    },
+    {
+     "start": 45.476,
+     "end": 45.756,
+     "word": "là"
+    },
+    {
+     "start": 45.756,
+     "end": 45.996,
+     "word": "có"
+    },
+    {
+     "start": 45.996,
+     "end": 46.196,
+     "word": "đủ"
+    },
+    {
+     "start": 46.196,
+     "end": 46.516,
+     "word": "100"
+    },
+    {
+     "start": 46.516,
+     "end": 46.996,
+     "word": "mg"
+    },
+    {
+     "start": 46.996,
+     "end": 47.516,
+     "word": "Q10"
+    },
+    {
+     "start": 47.516,
+     "end": 47.716,
+     "word": "cho"
+    },
+    {
+     "start": 47.716,
+     "end": 47.996,
+     "word": "mỗi"
+    },
+    {
+     "start": 47.996,
+     "end": 48.32,
+     "word": "ngày."
+    }
+   ]
+  },
+  {
+   "start": 48.396,
+   "end": 51.9,
+   "text": "Và sản phẩm thì là dạng khử nên cơ thể giúp hấp thu được ngay.",
+   "words": [
+    {
+     "start": 48.396,
+     "end": 48.716,
+     "word": "Và"
+    },
+    {
+     "start": 48.716,
+     "end": 48.876,
+     "word": "sản"
+    },
+    {
+     "start": 48.876,
+     "end": 49.116,
+     "word": "phẩm"
+    },
+    {
+     "start": 49.116,
+     "end": 49.316,
+     "word": "thì"
+    },
+    {
+     "start": 49.316,
+     "end": 49.516,
+     "word": "là"
+    },
+    {
+     "start": 49.516,
+     "end": 49.756,
+     "word": "dạng"
+    },
+    {
+     "start": 49.756,
+     "end": 50.036,
+     "word": "khử"
+    },
+    {
+     "start": 50.036,
+     "end": 50.276,
+     "word": "nên"
+    },
+    {
+     "start": 50.276,
+     "end": 50.476,
+     "word": "cơ"
+    },
+    {
+     "start": 50.476,
+     "end": 50.676,
+     "word": "thể"
+    },
+    {
+     "start": 50.676,
+     "end": 50.916,
+     "word": "giúp"
+    },
+    {
+     "start": 50.916,
+     "end": 51.156,
+     "word": "hấp"
+    },
+    {
+     "start": 51.156,
+     "end": 51.356,
+     "word": "thu"
+    },
+    {
+     "start": 51.356,
+     "end": 51.636,
+     "word": "được"
+    },
+    {
+     "start": 51.636,
+     "end": 51.9,
+     "word": "ngay."
+    }
+   ]
+  },
+  {
+   "start": 52.156,
+   "end": 57.94,
+   "text": "Nó còn có thêm thành phần là Astaxanthin, chống oxy hóa, và tiêu đen thì hấp thu tốt hơn.",
+   "words": [
+    {
+     "start": 52.156,
+     "end": 52.396,
+     "word": "Nó"
+    },
+    {
+     "start": 52.396,
+     "end": 52.636,
+     "word": "còn"
+    },
+    {
+     "start": 52.636,
+     "end": 52.836,
+     "word": "có"
+    },
+    {
+     "start": 52.836,
+     "end": 53.076,
+     "word": "thêm"
+    },
+    {
+     "start": 53.076,
+     "end": 53.276,
+     "word": "thành"
+    },
+    {
+     "start": 53.276,
+     "end": 53.476,
+     "word": "phần"
+    },
+    {
+     "start": 53.476,
+     "end": 53.636,
+     "word": "là"
+    },
+    {
+     "start": 53.636,
+     "end": 54.5,
+     "word": "Astaxanthin,"
+    },
+    {
+     "start": 54.796,
+     "end": 54.996,
+     "word": "chống"
+    },
+    {
+     "start": 54.996,
+     "end": 55.476,
+     "word": "oxy"
+    },
+    {
+     "start": 55.476,
+     "end": 55.676,
+     "word": "hóa,"
+    },
+    {
+     "start": 55.676,
+     "end": 55.916,
+     "word": "và"
+    },
+    {
+     "start": 55.916,
+     "end": 56.196,
+     "word": "tiêu"
+    },
+    {
+     "start": 56.196,
+     "end": 56.396,
+     "word": "đen"
+    },
+    {
+     "start": 56.396,
+     "end": 56.676,
+     "word": "thì"
+    },
+    {
+     "start": 56.676,
+     "end": 56.876,
+     "word": "hấp"
+    },
+    {
+     "start": 56.876,
+     "end": 57.116,
+     "word": "thu"
+    },
+    {
+     "start": 57.116,
+     "end": 57.396,
+     "word": "tốt"
+    },
+    {
+     "start": 57.396,
+     "end": 57.94,
+     "word": "hơn."
+    }
+   ]
+  },
+  {
+   "start": 57.94,
+   "end": 60.94,
+   "text": "Một hộp của nó là 120 viên, dùng trọn 2 tháng.",
+   "words": [
+    {
+     "start": 57.94,
+     "end": 58.14,
+     "word": "Một"
+    },
+    {
+     "start": 58.14,
+     "end": 58.34,
+     "word": "hộp"
+    },
+    {
+     "start": 58.34,
+     "end": 58.5,
+     "word": "của"
+    },
+    {
+     "start": 58.5,
+     "end": 58.7,
+     "word": "nó"
+    },
+    {
+     "start": 58.7,
+     "end": 58.9,
+     "word": "là"
+    },
+    {
+     "start": 58.9,
+     "end": 59.58,
+     "word": "120"
+    },
+    {
+     "start": 59.58,
+     "end": 59.94,
+     "word": "viên,"
+    },
+    {
+     "start": 59.94,
+     "end": 60.18,
+     "word": "dùng"
+    },
+    {
+     "start": 60.18,
+     "end": 60.5,
+     "word": "trọn"
+    },
+    {
+     "start": 60.5,
+     "end": 60.74,
+     "word": "2"
+    },
+    {
+     "start": 60.74,
+     "end": 60.94,
+     "word": "tháng."
+    }
+   ]
+  },
+  {
+   "start": 61.34,
+   "end": 62.76,
+   "text": "Gọn, tiện và đủ chất.",
+   "words": [
+    {
+     "start": 61.34,
+     "end": 61.66,
+     "word": "Gọn,"
+    },
+    {
+     "start": 61.66,
+     "end": 61.98,
+     "word": "tiện"
+    },
+    {
+     "start": 61.98,
+     "end": 62.26,
+     "word": "và"
+    },
+    {
+     "start": 62.26,
+     "end": 62.5,
+     "word": "đủ"
+    },
+    {
+     "start": 62.5,
+     "end": 62.76,
+     "word": "chất."
+    }
+   ]
+  },
+  {
+   "start": 62.98,
+   "end": 67.44,
+   "text": "Nếu cô chú anh chị muốn khỏe mà không phải ăn 3 kg thịt bò, thì hãy bình luận \"2 viên\" nhé.",
+   "words": [
+    {
+     "start": 62.98,
+     "end": 63.3,
+     "word": "Nếu"
+    },
+    {
+     "start": 63.3,
+     "end": 63.5,
+     "word": "cô"
+    },
+    {
+     "start": 63.5,
+     "end": 63.66,
+     "word": "chú"
+    },
+    {
+     "start": 63.66,
+     "end": 63.82,
+     "word": "anh"
+    },
+    {
+     "start": 63.82,
+     "end": 64.02,
+     "word": "chị"
+    },
+    {
+     "start": 64.02,
+     "end": 64.22,
+     "word": "muốn"
+    },
+    {
+     "start": 64.22,
+     "end": 64.5,
+     "word": "khỏe"
+    },
+    {
+     "start": 64.5,
+     "end": 64.7,
+     "word": "mà"
+    },
+    {
+     "start": 64.7,
+     "end": 64.9,
+     "word": "không"
+    },
+    {
+     "start": 64.9,
+     "end": 65.1,
+     "word": "phải"
+    },
+    {
+     "start": 65.1,
+     "end": 65.26,
+     "word": "ăn"
+    },
+    {
+     "start": 65.26,
+     "end": 65.46,
+     "word": "3"
+    },
+    {
+     "start": 65.46,
+     "end": 65.66,
+     "word": "kg"
+    },
+    {
+     "start": 65.66,
+     "end": 65.86,
+     "word": "thịt"
+    },
+    {
+     "start": 65.86,
+     "end": 66.1,
+     "word": "bò,"
+    },
+    {
+     "start": 66.1,
+     "end": 66.26,
+     "word": "thì"
+    },
+    {
+     "start": 66.26,
+     "end": 66.46,
+     "word": "hãy"
+    },
+    {
+     "start": 66.46,
+     "end": 66.62,
+     "word": "bình"
+    },
+    {
+     "start": 66.62,
+     "end": 66.82,
+     "word": "luận"
+    },
+    {
+     "start": 66.82,
+     "end": 67.06,
+     "word": "\"2"
+    },
+    {
+     "start": 67.06,
+     "end": 67.26,
+     "word": "viên\""
+    },
+    {
+     "start": 67.26,
+     "end": 67.44,
+     "word": "nhé."
+    }
+   ]
+  },
+  {
+   "start": 67.9,
+   "end": 71.3,
+   "text": "Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.",
+   "words": [
+    {
+     "start": 67.9,
+     "end": 68.1,
+     "word": "Thực"
+    },
+    {
+     "start": 68.1,
+     "end": 68.34,
+     "word": "phẩm"
+    },
+    {
+     "start": 68.34,
+     "end": 68.58,
+     "word": "này"
+    },
+    {
+     "start": 68.58,
+     "end": 68.74,
+     "word": "không"
+    },
+    {
+     "start": 68.74,
+     "end": 68.94,
+     "word": "phải"
+    },
+    {
+     "start": 68.94,
+     "end": 69.14,
+     "word": "là"
+    },
+    {
+     "start": 69.14,
+     "end": 69.38,
+     "word": "thuốc"
+    },
+    {
+     "start": 69.38,
+     "end": 69.62,
+     "word": "và"
+    },
+    {
+     "start": 69.62,
+     "end": 69.82,
+     "word": "không"
+    },
+    {
+     "start": 69.82,
+     "end": 70.02,
+     "word": "có"
+    },
+    {
+     "start": 70.02,
+     "end": 70.18,
+     "word": "tác"
+    },
+    {
+     "start": 70.18,
+     "end": 70.38,
+     "word": "dụng"
+    },
+    {
+     "start": 70.38,
+     "end": 70.54,
+     "word": "thay"
+    },
+    {
+     "start": 70.54,
+     "end": 70.74,
+     "word": "thế"
+    },
+    {
+     "start": 70.74,
+     "end": 70.94,
+     "word": "thuốc"
+    },
+    {
+     "start": 70.94,
+     "end": 71.14,
+     "word": "chữa"
+    },
+    {
+     "start": 71.14,
+     "end": 71.3,
+     "word": "bệnh."
+    }
+   ]
+  },
+  {
+   "start": 74.74,
+   "end": 77.4,
+   "text": "Và cám ơn cô chú anh chị đã theo dõi video nhé!",
+   "words": [
+    {
+     "start": 74.74,
+     "end": 75.06,
+     "word": "Và"
+    },
+    {
+     "start": 75.06,
+     "end": 75.26,
+     "word": "cám"
+    },
+    {
+     "start": 75.26,
+     "end": 75.5,
+     "word": "ơn"
+    },
+    {
+     "start": 75.5,
+     "end": 75.7,
+     "word": "cô"
+    },
+    {
+     "start": 75.7,
+     "end": 75.86,
+     "word": "chú"
+    },
+    {
+     "start": 75.86,
+     "end": 76.02,
+     "word": "anh"
+    },
+    {
+     "start": 76.02,
+     "end": 76.22,
+     "word": "chị"
+    },
+    {
+     "start": 76.22,
+     "end": 76.42,
+     "word": "đã"
+    },
+    {
+     "start": 76.42,
+     "end": 76.58,
+     "word": "theo"
+    },
+    {
+     "start": 76.58,
+     "end": 76.82,
+     "word": "dõi"
+    },
+    {
+     "start": 76.82,
+     "end": 77.26,
+     "word": "video"
+    },
+    {
+     "start": 77.26,
+     "end": 77.4,
+     "word": "nhé!"
+    }
+   ]
+  }
+ ]
+}
