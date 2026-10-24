@@ -13,8 +13,8 @@
       0.5,
       0.55
     ],
-    "sharpen": 0.5,
-    "denoise": true,
+    "sharpen": 0.6,
+    "denoise": false,
     "top_shade": 0.25,
     "bg_dim": 0.03,
     "grade": {
@@ -33,7 +33,7 @@
       "sharpen": 40
     },
     "beauty": {
-      "smooth": 0.55,
+      "smooth": 0.4,
       "teeth": 0.5
     }
   },
@@ -242,7 +242,7 @@
     {
       "type": "headline",
       "start": 38.0,
-      "end": 44.3,
+      "end": 41.2,
       "kicker": "Thay vì cả núi đồ ăn",
       "kicker_color": "green",
       "text": "Chỉ cần 2 viên",
@@ -254,8 +254,18 @@
       "y": 0.235
     },
     {
+      "type": "image",
+      "start": 41.3,
+      "end": 46.3,
+      "path": "san-pham.jpg",
+      "width": 900,
+      "height": 480,
+      "y": 0.235,
+      "sfx": "pop"
+    },
+    {
       "type": "keyword",
-      "start": 44.36,
+      "start": 46.4,
       "end": 48.3,
       "kicker": "Sau bữa ăn sáng",
       "kicker_color": "green",
@@ -286,12 +296,21 @@
     {
       "type": "keyword",
       "start": 57.94,
-      "end": 62.85,
+      "end": 60.1,
       "kicker": "1 hộp 120 viên",
       "kicker_color": "green",
       "text": "Dùng trọn 2 tháng",
       "sub": "gọn, tiện, đủ chất",
       "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "image",
+      "start": 60.2,
+      "end": 62.85,
+      "path": "san-pham.jpg",
+      "width": 900,
+      "height": 480,
       "y": 0.235
     },
     {
@@ -337,7 +356,7 @@
   "subtitles": {
     "max_words": 7,
     "size": 60,
-    "y": 0.775,
+    "y": 0.865,
     "karaoke": "#FFD400"
   },
   "audio": {
@@ -345,13 +364,14 @@
     "leveler": true,
     "loudness": -9,
     "gain_db": 2.5,
-    "music": null,
+    "music": "music.mp3",
     "sfx_db": -22,
     "dereverb": {
       "rt60": 0.5,
       "strength": 1.2
     },
     "rnnoise": "sh",
-    "rnnoise_mix": 0.9
+    "rnnoise_mix": 0.9,
+    "music_db": -28
   }
 }
