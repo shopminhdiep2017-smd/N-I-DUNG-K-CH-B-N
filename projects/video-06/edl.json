@@ -326,7 +326,13 @@
       "y": 0.235
     }
   ],
-  "zooms": [],
+  "zooms": [
+    {
+      "start": 40.6,
+      "end": 43.4,
+      "to": 1.04
+    }
+  ],
   "sfx": [],
   "subtitles": {
     "max_words": 7,

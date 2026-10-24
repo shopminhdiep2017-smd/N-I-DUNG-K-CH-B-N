@@ -531,11 +531,12 @@ class Battery(Animated):
         d.rounded_rectangle((x1 + 4, y0 + bh * 0.3, x1 + 30, y1 - bh * 0.3), radius=8, fill=S.color("ink") + (255,))
         full = float(self.spec.get("level", 0.9))
         dr = _at(self.spec, "drain_at", self.start)
-        if dr is None or t < dr:
-            level = full * ease(t / 0.9)                       # charge up on entry
+        draining = dr is not None and t >= dr
+        if not draining:
+            level = full * ease(t / 0.9)                       # charge up on entry (always green)
         else:
             level = full - (full - float(self.spec.get("low", 0.2))) * ease((t - dr) / 1.6)
-        low = level < 0.45
+        low = draining and level < 0.45
         col = (206, 52, 60) if low else (46, 170, 96)
         n = 5
         gap = 10
@@ -557,8 +558,7 @@ class Battery(Animated):
         if self.spec.get("show_pct"):   # off by default: a percentage reads like a real measurement
           G.draw_text(img, (int(x1 + 60), int((y0 + y1) / 2)), pct, f, (206, 52, 60) if low else (30, 120, 70),
                     stroke=0, anchor="lm")
-        self.label(img, self.spec.get("label_after") if (dr is not None and t >= dr + 0.4) else self.spec.get("label"),
-                   "red" if low else "ink")
+        self.label(img, self.spec.get("label_after") if low else self.spec.get("label"), "red" if low else "ink")
 
 
 ELEMENTS = {c.kind: c for c in (Vessel, Brain, Heart, Pressure, Nerve, Sleep, Walk, Battery)}
