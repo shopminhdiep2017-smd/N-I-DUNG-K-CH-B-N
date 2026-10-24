@@ -1,7 +1,7 @@
 # Render report — video-06
 
 - Source: 78.5s 480x854; output 71.5s (7.0s removed by jump cuts, 10 segments)
-- Overlays: 14, zooms: 5, subtitle cues: 42
+- Overlays: 16, zooms: 5, subtitle cues: 42
 
 ## Edit Decision List
 
