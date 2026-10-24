@@ -109,7 +109,7 @@ def mix_audio(work: Path, voice_wav, sfx_wav, cfg, duration, root: Path):
         mpath = (root / music) if not Path(music).is_absolute() else Path(music)
         inputs += ["-stream_loop", "-1", "-i", str(mpath)]
         m_lufs = max(-70.0, lufs + float(cfg.get("music_db", -28)))
-        fc += (f"[2:a]aresample=48000,ac=1,atrim=0:{duration:.3f},loudnorm=I={m_lufs}:TP=-2,"
+        fc += (f"[2:a]aresample=48000,aformat=channel_layouts=mono,atrim=0:{duration:.3f},loudnorm=I={m_lufs}:TP=-2,"
                f"afade=t=in:d=1,afade=t=out:st={max(0, duration - 1.5):.3f}:d=1.5[m0];"
                f"[m0][vsc]sidechaincompress=threshold=0.05:ratio=4:attack=20:release=400[m];"
                f"[v][fx][m]amix=inputs=3:normalize=0:duration=first,")
