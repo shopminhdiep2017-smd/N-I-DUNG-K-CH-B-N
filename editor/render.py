@@ -94,7 +94,7 @@ def mix_audio(work: Path, voice_wav, sfx_wav, cfg, duration, root: Path):
         voice.append("equalizer=f=300:t=q:w=1.2:g=-2.5")      # tame boxy room resonance
         voice.append("agate=threshold=0.012:ratio=2:attack=5:release=150:range=0.3")  # soften tails in pauses
     if cfg.get("denoise", True):
-        voice.append("afftdn=nr=10:nf=-45")
+        voice.append(f"afftdn=nr={float(cfg.get('denoise_nr', 10))}:nf=-45")
     if cfg.get("leveler"):
         # lift soft phrases (sentence endings that trail off) and keep the voice even
         voice.append("acompressor=threshold=-26dB:ratio=4:attack=5:release=150:makeup=4")

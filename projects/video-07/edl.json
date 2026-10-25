@@ -1,0 +1,394 @@
+{
+  "source": "input.mp4",
+  "transcript": "transcript.json",
+  "theme": "editorial",
+  "graphics_zone": [
+    0.08,
+    0.4
+  ],
+  "subject": {
+    "scale": 1.0,
+    "offset_y": 0.1,
+    "focus": [
+      0.5,
+      0.55
+    ],
+    "sharpen": 0.6,
+    "denoise": false,
+    "top_shade": 0.25,
+    "bg_dim": 0.03,
+    "grade": {
+      "brightness": 0.03,
+      "gamma": 1.08,
+      "contrast": 1.03,
+      "saturation": 1.05
+    },
+    "face": {
+      "center": [
+        0.5,
+        0.56
+      ],
+      "radius": 0.12,
+      "light": 0.07,
+      "sharpen": 40
+    },
+    "beauty": {
+      "smooth": 0.4,
+      "teeth": 0.5
+    }
+  },
+  "cuts": {
+    "auto": false,
+    "remove": [
+      [
+        0.0,
+        0.66
+      ],
+      [
+        6.64,
+        6.88
+      ],
+      [
+        13.38,
+        13.68
+      ],
+      [
+        17.54,
+        17.8
+      ],
+      [
+        18.76,
+        19.74
+      ],
+      [
+        20.24,
+        20.48
+      ],
+      [
+        23.58,
+        23.88
+      ],
+      [
+        26.9,
+        27.36
+      ],
+      [
+        31.42,
+        31.62
+      ],
+      [
+        35.24,
+        35.4
+      ],
+      [
+        37.94,
+        38.66
+      ],
+      [
+        41.52,
+        41.72
+      ],
+      [
+        44.22,
+        44.62
+      ],
+      [
+        49.04,
+        49.26
+      ],
+      [
+        51.64,
+        51.88
+      ],
+      [
+        52.88,
+        53.16
+      ],
+      [
+        56.02,
+        56.34
+      ],
+      [
+        59.84,
+        60.2
+      ],
+      [
+        63.34,
+        63.52
+      ],
+      [
+        66.5,
+        66.84
+      ],
+      [
+        70.1,
+        70.48
+      ],
+      [
+        72.44,
+        73.02
+      ],
+      [
+        75.44,
+        76.64
+      ],
+      [
+        17.52,
+        20.48
+      ],
+      [
+        69.98,
+        72.95
+      ]
+    ]
+  },
+  "edl_table": [
+    {
+      "time": "00:00–00:13",
+      "speech": "Ngoài 40 leo cầu thang hụt hơi, tim đập nhanh, huyết áp, mỡ máu",
+      "idea": "HOOK",
+      "visual": "Headline · tim đập nhanh · đồng hồ huyết áp"
+    },
+    {
+      "time": "00:13–00:31",
+      "speech": "Tim đập 100.000 lần/ngày… cần nhiều Q10… sau 40 giảm nhanh",
+      "idea": "Vấn đề",
+      "visual": "Tim · pin đầy → pin cạn"
+    },
+    {
+      "time": "00:31–00:59",
+      "speech": "2 viên Q10 AFC… dạng khử, Astaxanthin, tiêu đen, GMP",
+      "idea": "Sản phẩm",
+      "visual": "Headline · ảnh sản phẩm · checklist"
+    },
+    {
+      "time": "00:59–01:10",
+      "speech": "Đừng đợi tim lên tiếng; bình luận \"Q10\"; không phải là thuốc",
+      "idea": "CTA + lưu ý",
+      "visual": "Keyword · CTA · cảnh báo"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "headline",
+      "start": 0.6,
+      "end": 5.6,
+      "kicker": "Ngoài 40 tuổi",
+      "text": "Leo vài tầng đã hụt hơi?",
+      "accent": "red",
+      "size": 90,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "heart",
+      "start": 5.68,
+      "end": 7.35,
+      "label": "Hồi hộp",
+      "label_after": "Tim đập nhanh",
+      "fast_at": 6.0,
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "pressure",
+      "start": 7.4,
+      "end": 9.95,
+      "label": "Huyết áp, mỡ máu",
+      "label_after": "Phải để ý huyết áp, mỡ máu",
+      "high_at": 8.3,
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 10.0,
+      "end": 13.4,
+      "kicker": "Đã đến lúc",
+      "kicker_color": "green",
+      "text": "Quan tâm trái tim nhiều hơn",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "heart",
+      "start": 13.64,
+      "end": 17.5,
+      "label": "Tim đập khoảng 100.000 lần mỗi ngày",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "battery",
+      "start": 20.5,
+      "end": 23.5,
+      "label": "Tim cần nhiều Coenzyme Q10 nhất",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "battery",
+      "start": 23.65,
+      "end": 27.1,
+      "label": "Sau tuổi 40",
+      "label_after": "Q10 giảm rất nhanh",
+      "drain_at": 24.9,
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 27.21,
+      "end": 31.5,
+      "kicker": "Tim thiếu pin",
+      "text": "Làm việc vất vả hơn",
+      "sub": "cơ thể nhanh mệt",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "headline",
+      "start": 31.61,
+      "end": 35.2,
+      "kicker": "Chăm sóc trái tim mỗi ngày",
+      "kicker_color": "green",
+      "text": "2 viên Q10",
+      "accent": "green",
+      "size": 110,
+      "sfx": "whoosh",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "image",
+      "start": 35.3,
+      "end": 38.3,
+      "path": "san-pham.jpg",
+      "width": 900,
+      "height": 480,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 38.38,
+      "end": 44.3,
+      "title": "Điểm nổi bật",
+      "items": [
+        "Q10 dạng khử, dễ hấp thu",
+        "Hỗ trợ năng lượng cho tế bào cơ tim"
+      ],
+      "reveal": [
+        40.22,
+        41.62
+      ],
+      "mark": "check",
+      "accent": "green",
+      "size": 44,
+      "y": 0.235
+    },
+    {
+      "type": "checklist",
+      "start": 44.46,
+      "end": 52.85,
+      "title": "Ngoài ra còn có",
+      "items": [
+        "Astaxanthin từ tảo đỏ: chống oxy hóa",
+        "Tiêu đen: giúp hấp thu tốt hơn"
+      ],
+      "reveal": [
+        46.06,
+        50.54
+      ],
+      "mark": "check",
+      "accent": "green",
+      "size": 44,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 52.98,
+      "end": 56.3,
+      "kicker": "Nhà máy đạt chuẩn GMP",
+      "kicker_color": "green",
+      "text": "Giấy tờ đầy đủ",
+      "accent": "green",
+      "y": 0.235
+    },
+    {
+      "type": "image",
+      "start": 56.35,
+      "end": 59.8,
+      "path": "san-pham.jpg",
+      "width": 900,
+      "height": 480,
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 59.95,
+      "end": 63.2,
+      "kicker": "Đừng đợi",
+      "text": "Trái tim lên tiếng",
+      "sub": "mới bắt đầu quan tâm",
+      "accent": "red",
+      "y": 0.235
+    },
+    {
+      "type": "cta",
+      "start": 63.35,
+      "end": 66.6,
+      "kicker": "Bình luận",
+      "kicker_color": "green",
+      "text": "\"Q10\"",
+      "sub": "để được Hương tư vấn",
+      "accent": "green",
+      "size": 110,
+      "sfx": "pop",
+      "zoom": 1.05,
+      "y": 0.235
+    },
+    {
+      "type": "warning",
+      "start": 66.79,
+      "end": 69.95,
+      "text": "Lưu ý",
+      "sub": "Thực phẩm này không phải là thuốc",
+      "y": 0.235
+    },
+    {
+      "type": "keyword",
+      "start": 72.95,
+      "end": 76.3,
+      "text": "Cảm ơn cô chú anh chị",
+      "sub": "đã theo dõi video",
+      "accent": "green",
+      "anim": "fade",
+      "y": 0.235
+    }
+  ],
+  "zooms": [],
+  "sfx": [],
+  "subtitles": {
+    "max_words": 7,
+    "size": 60,
+    "y": 0.865,
+    "karaoke": "#FFD400"
+  },
+  "audio": {
+    "denoise": true,
+    "leveler": true,
+    "loudness": -9,
+    "gain_db": 2.5,
+    "music": "music.mp3",
+    "sfx_db": -22,
+    "dereverb": {
+      "rt60": 0.5,
+      "strength": 1.2
+    },
+    "rnnoise": "sh",
+    "rnnoise_mix": 1.0,
+    "music_db": -32,
+    "denoise_nr": 14
+  }
+}

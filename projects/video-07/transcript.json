@@ -1,0 +1,1527 @@
+{
+ "language": "vi",
+ "duration": 76.77,
+ "asr": "sherpa-onnx zipformer-vi + whisper cross-check + manual correction",
+ "silences": [
+  [
+   0.0,
+   0.72
+  ],
+  [
+   5.56,
+   5.82
+  ],
+  [
+   6.54,
+   6.94
+  ],
+  [
+   8.76,
+   9.04
+  ],
+  [
+   13.28,
+   13.74
+  ],
+  [
+   17.44,
+   17.86
+  ],
+  [
+   18.66,
+   19.8
+  ],
+  [
+   20.14,
+   20.54
+  ],
+  [
+   23.48,
+   23.94
+  ],
+  [
+   26.8,
+   27.42
+  ],
+  [
+   29.26,
+   29.46
+  ],
+  [
+   30.6,
+   30.84
+  ],
+  [
+   31.32,
+   31.68
+  ],
+  [
+   35.14,
+   35.46
+  ],
+  [
+   36.82,
+   37.08
+  ],
+  [
+   37.84,
+   38.72
+  ],
+  [
+   41.42,
+   41.78
+  ],
+  [
+   44.12,
+   44.68
+  ],
+  [
+   48.94,
+   49.32
+  ],
+  [
+   51.54,
+   51.94
+  ],
+  [
+   52.78,
+   53.22
+  ],
+  [
+   55.92,
+   56.4
+  ],
+  [
+   58.46,
+   58.7
+  ],
+  [
+   59.74,
+   60.26
+  ],
+  [
+   63.24,
+   63.58
+  ],
+  [
+   66.4,
+   66.9
+  ],
+  [
+   70.0,
+   70.54
+  ],
+  [
+   72.34,
+   73.08
+  ],
+  [
+   75.34,
+   76.7
+  ]
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 13.28,
+   "text": "Nếu cô chú anh chị ngoài 40 mà leo vài tầng cầu thang đã thấy hụt hơi, đôi lúc hồi hộp, tim thì đập nhanh, khi mệt lại đang phải để ý đến huyết áp, mỡ máu, thì đã đến lúc cô chú anh chị cần quan tâm đến trái tim của mình nhiều hơn.",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.72,
+     "word": "Nếu"
+    },
+    {
+     "start": 0.72,
+     "end": 0.96,
+     "word": "cô"
+    },
+    {
+     "start": 0.96,
+     "end": 1.16,
+     "word": "chú"
+    },
+    {
+     "start": 1.16,
+     "end": 1.36,
+     "word": "anh"
+    },
+    {
+     "start": 1.36,
+     "end": 1.6,
+     "word": "chị"
+    },
+    {
+     "start": 1.6,
+     "end": 1.84,
+     "word": "ngoài"
+    },
+    {
+     "start": 1.84,
+     "end": 2.24,
+     "word": "40"
+    },
+    {
+     "start": 2.24,
+     "end": 2.48,
+     "word": "mà"
+    },
+    {
+     "start": 2.48,
+     "end": 2.72,
+     "word": "leo"
+    },
+    {
+     "start": 2.72,
+     "end": 2.88,
+     "word": "vài"
+    },
+    {
+     "start": 2.88,
+     "end": 3.08,
+     "word": "tầng"
+    },
+    {
+     "start": 3.08,
+     "end": 3.24,
+     "word": "cầu"
+    },
+    {
+     "start": 3.24,
+     "end": 3.48,
+     "word": "thang"
+    },
+    {
+     "start": 3.48,
+     "end": 3.68,
+     "word": "đã"
+    },
+    {
+     "start": 3.68,
+     "end": 3.88,
+     "word": "thấy"
+    },
+    {
+     "start": 3.88,
+     "end": 4.16,
+     "word": "hụt"
+    },
+    {
+     "start": 4.16,
+     "end": 4.6,
+     "word": "hơi,"
+    },
+    {
+     "start": 4.6,
+     "end": 4.84,
+     "word": "đôi"
+    },
+    {
+     "start": 4.84,
+     "end": 5.12,
+     "word": "lúc"
+    },
+    {
+     "start": 5.12,
+     "end": 5.36,
+     "word": "hồi"
+    },
+    {
+     "start": 5.36,
+     "end": 5.56,
+     "word": "hộp,"
+    },
+    {
+     "start": 5.68,
+     "end": 5.92,
+     "word": "tim"
+    },
+    {
+     "start": 5.92,
+     "end": 6.12,
+     "word": "thì"
+    },
+    {
+     "start": 6.12,
+     "end": 6.4,
+     "word": "đập"
+    },
+    {
+     "start": 6.4,
+     "end": 6.54,
+     "word": "nhanh,"
+    },
+    {
+     "start": 6.72,
+     "end": 6.92,
+     "word": "khi"
+    },
+    {
+     "start": 6.92,
+     "end": 7.2,
+     "word": "mệt"
+    },
+    {
+     "start": 7.2,
+     "end": 7.4,
+     "word": "lại"
+    },
+    {
+     "start": 7.4,
+     "end": 7.56,
+     "word": "đang"
+    },
+    {
+     "start": 7.56,
+     "end": 7.76,
+     "word": "phải"
+    },
+    {
+     "start": 7.76,
+     "end": 7.92,
+     "word": "để"
+    },
+    {
+     "start": 7.92,
+     "end": 8.08,
+     "word": "ý"
+    },
+    {
+     "start": 8.08,
+     "end": 8.32,
+     "word": "đến"
+    },
+    {
+     "start": 8.32,
+     "end": 8.52,
+     "word": "huyết"
+    },
+    {
+     "start": 8.52,
+     "end": 8.76,
+     "word": "áp,"
+    },
+    {
+     "start": 8.8,
+     "end": 9.24,
+     "word": "mỡ"
+    },
+    {
+     "start": 9.24,
+     "end": 9.52,
+     "word": "máu,"
+    },
+    {
+     "start": 9.52,
+     "end": 9.76,
+     "word": "thì"
+    },
+    {
+     "start": 9.76,
+     "end": 10.0,
+     "word": "đã"
+    },
+    {
+     "start": 10.0,
+     "end": 10.16,
+     "word": "đến"
+    },
+    {
+     "start": 10.16,
+     "end": 10.4,
+     "word": "lúc"
+    },
+    {
+     "start": 10.4,
+     "end": 10.56,
+     "word": "cô"
+    },
+    {
+     "start": 10.56,
+     "end": 10.76,
+     "word": "chú"
+    },
+    {
+     "start": 10.76,
+     "end": 10.96,
+     "word": "anh"
+    },
+    {
+     "start": 10.96,
+     "end": 11.16,
+     "word": "chị"
+    },
+    {
+     "start": 11.16,
+     "end": 11.36,
+     "word": "cần"
+    },
+    {
+     "start": 11.36,
+     "end": 11.56,
+     "word": "quan"
+    },
+    {
+     "start": 11.56,
+     "end": 11.76,
+     "word": "tâm"
+    },
+    {
+     "start": 11.76,
+     "end": 11.96,
+     "word": "đến"
+    },
+    {
+     "start": 11.96,
+     "end": 12.16,
+     "word": "trái"
+    },
+    {
+     "start": 12.16,
+     "end": 12.4,
+     "word": "tim"
+    },
+    {
+     "start": 12.4,
+     "end": 12.6,
+     "word": "của"
+    },
+    {
+     "start": 12.6,
+     "end": 12.88,
+     "word": "mình"
+    },
+    {
+     "start": 12.88,
+     "end": 13.16,
+     "word": "nhiều"
+    },
+    {
+     "start": 13.16,
+     "end": 13.28,
+     "word": "hơn."
+    }
+   ]
+  },
+  {
+   "start": 13.64,
+   "end": 23.48,
+   "text": "Mỗi ngày thì tim đập khoảng là 100.000 lần không nghỉ một giây, nên đây là nơi cần nhiều Coenzyme Q10 nhất trong cơ thể.",
+   "words": [
+    {
+     "start": 13.64,
+     "end": 13.96,
+     "word": "Mỗi"
+    },
+    {
+     "start": 13.96,
+     "end": 14.24,
+     "word": "ngày"
+    },
+    {
+     "start": 14.24,
+     "end": 14.56,
+     "word": "thì"
+    },
+    {
+     "start": 14.56,
+     "end": 14.8,
+     "word": "tim"
+    },
+    {
+     "start": 14.8,
+     "end": 15.0,
+     "word": "đập"
+    },
+    {
+     "start": 15.0,
+     "end": 15.24,
+     "word": "khoảng"
+    },
+    {
+     "start": 15.24,
+     "end": 15.48,
+     "word": "là"
+    },
+    {
+     "start": 15.48,
+     "end": 16.2,
+     "word": "100.000"
+    },
+    {
+     "start": 16.2,
+     "end": 16.48,
+     "word": "lần"
+    },
+    {
+     "start": 16.48,
+     "end": 16.72,
+     "word": "không"
+    },
+    {
+     "start": 16.72,
+     "end": 16.96,
+     "word": "nghỉ"
+    },
+    {
+     "start": 16.96,
+     "end": 17.24,
+     "word": "một"
+    },
+    {
+     "start": 17.24,
+     "end": 17.44,
+     "word": "giây,"
+    },
+    {
+     "start": 20.5,
+     "end": 20.62,
+     "word": "nên"
+    },
+    {
+     "start": 20.568,
+     "end": 20.768,
+     "word": "đây"
+    },
+    {
+     "start": 20.768,
+     "end": 21.008,
+     "word": "là"
+    },
+    {
+     "start": 21.008,
+     "end": 21.248,
+     "word": "nơi"
+    },
+    {
+     "start": 21.248,
+     "end": 21.448,
+     "word": "cần"
+    },
+    {
+     "start": 21.448,
+     "end": 21.688,
+     "word": "nhiều"
+    },
+    {
+     "start": 21.688,
+     "end": 21.888,
+     "word": "Coenzyme"
+    },
+    {
+     "start": 21.888,
+     "end": 22.648,
+     "word": "Q10"
+    },
+    {
+     "start": 22.648,
+     "end": 22.848,
+     "word": "nhất"
+    },
+    {
+     "start": 22.848,
+     "end": 23.088,
+     "word": "trong"
+    },
+    {
+     "start": 23.088,
+     "end": 23.328,
+     "word": "cơ"
+    },
+    {
+     "start": 23.328,
+     "end": 23.48,
+     "word": "thể."
+    }
+   ]
+  },
+  {
+   "start": 23.648,
+   "end": 26.808,
+   "text": "Nhưng sau tuổi 40 thì lượng Q10 nó giảm đi rất là nhanh.",
+   "words": [
+    {
+     "start": 23.648,
+     "end": 23.928,
+     "word": "Nhưng"
+    },
+    {
+     "start": 23.928,
+     "end": 24.168,
+     "word": "sau"
+    },
+    {
+     "start": 24.168,
+     "end": 24.408,
+     "word": "tuổi"
+    },
+    {
+     "start": 24.408,
+     "end": 24.768,
+     "word": "40"
+    },
+    {
+     "start": 24.768,
+     "end": 24.968,
+     "word": "thì"
+    },
+    {
+     "start": 24.968,
+     "end": 25.168,
+     "word": "lượng"
+    },
+    {
+     "start": 25.168,
+     "end": 25.648,
+     "word": "Q10"
+    },
+    {
+     "start": 25.648,
+     "end": 25.848,
+     "word": "nó"
+    },
+    {
+     "start": 25.848,
+     "end": 26.088,
+     "word": "giảm"
+    },
+    {
+     "start": 26.088,
+     "end": 26.288,
+     "word": "đi"
+    },
+    {
+     "start": 26.288,
+     "end": 26.488,
+     "word": "rất"
+    },
+    {
+     "start": 26.488,
+     "end": 26.688,
+     "word": "là"
+    },
+    {
+     "start": 26.688,
+     "end": 26.808,
+     "word": "nhanh."
+    }
+   ]
+  },
+  {
+   "start": 27.208,
+   "end": 31.32,
+   "text": "Tim thiếu pin thì làm việc vất vả hơn, cơ thể cũng vì thế mà nhanh mệt.",
+   "words": [
+    {
+     "start": 27.208,
+     "end": 27.488,
+     "word": "Tim"
+    },
+    {
+     "start": 27.488,
+     "end": 27.688,
+     "word": "thiếu"
+    },
+    {
+     "start": 27.688,
+     "end": 27.968,
+     "word": "pin"
+    },
+    {
+     "start": 27.968,
+     "end": 28.208,
+     "word": "thì"
+    },
+    {
+     "start": 28.208,
+     "end": 28.368,
+     "word": "làm"
+    },
+    {
+     "start": 28.368,
+     "end": 28.608,
+     "word": "việc"
+    },
+    {
+     "start": 28.608,
+     "end": 28.808,
+     "word": "vất"
+    },
+    {
+     "start": 28.808,
+     "end": 29.008,
+     "word": "vả"
+    },
+    {
+     "start": 29.008,
+     "end": 29.26,
+     "word": "hơn,"
+    },
+    {
+     "start": 29.328,
+     "end": 29.488,
+     "word": "cơ"
+    },
+    {
+     "start": 29.488,
+     "end": 29.728,
+     "word": "thể"
+    },
+    {
+     "start": 29.728,
+     "end": 29.928,
+     "word": "cũng"
+    },
+    {
+     "start": 29.928,
+     "end": 30.168,
+     "word": "vì"
+    },
+    {
+     "start": 30.168,
+     "end": 30.368,
+     "word": "thế"
+    },
+    {
+     "start": 30.368,
+     "end": 30.6,
+     "word": "mà"
+    },
+    {
+     "start": 30.768,
+     "end": 31.088,
+     "word": "nhanh"
+    },
+    {
+     "start": 31.088,
+     "end": 31.32,
+     "word": "mệt."
+    }
+   ]
+  },
+  {
+   "start": 31.608,
+   "end": 44.12,
+   "text": "Thì hãy chăm sóc trái tim mỗi ngày với 2 viên Q10 của nhà AFC Nhật Bản, sau bữa ăn sáng, và đặc biệt ở đây Q10 là dạng khử, hấp thu, giúp hỗ trợ cung cấp năng lượng cho tế bào cơ tim.",
+   "words": [
+    {
+     "start": 31.608,
+     "end": 31.888,
+     "word": "Thì"
+    },
+    {
+     "start": 31.888,
+     "end": 32.128,
+     "word": "hãy"
+    },
+    {
+     "start": 32.128,
+     "end": 32.288,
+     "word": "chăm"
+    },
+    {
+     "start": 32.288,
+     "end": 32.528,
+     "word": "sóc"
+    },
+    {
+     "start": 32.528,
+     "end": 32.688,
+     "word": "trái"
+    },
+    {
+     "start": 32.688,
+     "end": 32.928,
+     "word": "tim"
+    },
+    {
+     "start": 32.928,
+     "end": 33.128,
+     "word": "mỗi"
+    },
+    {
+     "start": 33.128,
+     "end": 33.328,
+     "word": "ngày"
+    },
+    {
+     "start": 33.328,
+     "end": 33.528,
+     "word": "với"
+    },
+    {
+     "start": 33.528,
+     "end": 33.728,
+     "word": "2"
+    },
+    {
+     "start": 33.728,
+     "end": 34.928,
+     "word": "viên"
+    },
+    {
+     "start": 34.928,
+     "end": 35.14,
+     "word": "Q10"
+    },
+    {
+     "start": 35.288,
+     "end": 35.528,
+     "word": "của"
+    },
+    {
+     "start": 35.528,
+     "end": 35.768,
+     "word": "nhà"
+    },
+    {
+     "start": 35.768,
+     "end": 36.408,
+     "word": "AFC"
+    },
+    {
+     "start": 36.408,
+     "end": 36.648,
+     "word": "Nhật"
+    },
+    {
+     "start": 36.648,
+     "end": 36.82,
+     "word": "Bản,"
+    },
+    {
+     "start": 36.968,
+     "end": 37.248,
+     "word": "sau"
+    },
+    {
+     "start": 37.248,
+     "end": 37.448,
+     "word": "bữa"
+    },
+    {
+     "start": 37.448,
+     "end": 37.728,
+     "word": "ăn"
+    },
+    {
+     "start": 37.728,
+     "end": 37.848,
+     "word": "sáng,"
+    },
+    {
+     "start": 38.38,
+     "end": 38.62,
+     "word": "và"
+    },
+    {
+     "start": 38.62,
+     "end": 38.86,
+     "word": "đặc"
+    },
+    {
+     "start": 38.86,
+     "end": 39.1,
+     "word": "biệt"
+    },
+    {
+     "start": 39.1,
+     "end": 39.22,
+     "word": "ở"
+    },
+    {
+     "start": 39.22,
+     "end": 39.5,
+     "word": "đây"
+    },
+    {
+     "start": 39.5,
+     "end": 39.98,
+     "word": "Q10"
+    },
+    {
+     "start": 39.98,
+     "end": 40.22,
+     "word": "là"
+    },
+    {
+     "start": 40.22,
+     "end": 40.42,
+     "word": "dạng"
+    },
+    {
+     "start": 40.42,
+     "end": 40.98,
+     "word": "khử,"
+    },
+    {
+     "start": 40.98,
+     "end": 41.22,
+     "word": "hấp"
+    },
+    {
+     "start": 41.22,
+     "end": 41.42,
+     "word": "thu,"
+    },
+    {
+     "start": 41.62,
+     "end": 41.9,
+     "word": "giúp"
+    },
+    {
+     "start": 41.9,
+     "end": 42.06,
+     "word": "hỗ"
+    },
+    {
+     "start": 42.06,
+     "end": 42.3,
+     "word": "trợ"
+    },
+    {
+     "start": 42.3,
+     "end": 42.5,
+     "word": "cung"
+    },
+    {
+     "start": 42.5,
+     "end": 42.7,
+     "word": "cấp"
+    },
+    {
+     "start": 42.7,
+     "end": 42.9,
+     "word": "năng"
+    },
+    {
+     "start": 42.9,
+     "end": 43.1,
+     "word": "lượng"
+    },
+    {
+     "start": 43.1,
+     "end": 43.26,
+     "word": "cho"
+    },
+    {
+     "start": 43.26,
+     "end": 43.5,
+     "word": "tế"
+    },
+    {
+     "start": 43.5,
+     "end": 43.74,
+     "word": "bào"
+    },
+    {
+     "start": 43.74,
+     "end": 43.98,
+     "word": "cơ"
+    },
+    {
+     "start": 43.98,
+     "end": 44.12,
+     "word": "tim."
+    }
+   ]
+  },
+  {
+   "start": 44.46,
+   "end": 52.78,
+   "text": "Ngoài ra nó còn thành phần là Astaxanthin từ tảo đỏ giúp chống oxy hóa, bảo vệ tế bào, còn tiêu đen thì giúp hấp thu tốt hơn.",
+   "words": [
+    {
+     "start": 44.46,
+     "end": 44.74,
+     "word": "Ngoài"
+    },
+    {
+     "start": 44.74,
+     "end": 45.06,
+     "word": "ra"
+    },
+    {
+     "start": 45.06,
+     "end": 45.3,
+     "word": "nó"
+    },
+    {
+     "start": 45.3,
+     "end": 45.5,
+     "word": "còn"
+    },
+    {
+     "start": 45.5,
+     "end": 45.74,
+     "word": "thành"
+    },
+    {
+     "start": 45.74,
+     "end": 45.9,
+     "word": "phần"
+    },
+    {
+     "start": 45.9,
+     "end": 46.06,
+     "word": "là"
+    },
+    {
+     "start": 46.06,
+     "end": 46.94,
+     "word": "Astaxanthin"
+    },
+    {
+     "start": 46.94,
+     "end": 47.18,
+     "word": "từ"
+    },
+    {
+     "start": 47.18,
+     "end": 47.42,
+     "word": "tảo"
+    },
+    {
+     "start": 47.42,
+     "end": 47.74,
+     "word": "đỏ"
+    },
+    {
+     "start": 47.74,
+     "end": 48.02,
+     "word": "giúp"
+    },
+    {
+     "start": 48.02,
+     "end": 48.22,
+     "word": "chống"
+    },
+    {
+     "start": 48.22,
+     "end": 48.7,
+     "word": "oxy"
+    },
+    {
+     "start": 48.7,
+     "end": 48.94,
+     "word": "hóa,"
+    },
+    {
+     "start": 49.14,
+     "end": 49.38,
+     "word": "bảo"
+    },
+    {
+     "start": 49.38,
+     "end": 49.66,
+     "word": "vệ"
+    },
+    {
+     "start": 49.66,
+     "end": 49.86,
+     "word": "tế"
+    },
+    {
+     "start": 49.86,
+     "end": 50.18,
+     "word": "bào,"
+    },
+    {
+     "start": 50.18,
+     "end": 50.54,
+     "word": "còn"
+    },
+    {
+     "start": 50.54,
+     "end": 50.78,
+     "word": "tiêu"
+    },
+    {
+     "start": 50.78,
+     "end": 51.1,
+     "word": "đen"
+    },
+    {
+     "start": 51.1,
+     "end": 51.38,
+     "word": "thì"
+    },
+    {
+     "start": 51.38,
+     "end": 51.54,
+     "word": "giúp"
+    },
+    {
+     "start": 51.78,
+     "end": 52.02,
+     "word": "hấp"
+    },
+    {
+     "start": 52.02,
+     "end": 52.34,
+     "word": "thu"
+    },
+    {
+     "start": 52.34,
+     "end": 52.62,
+     "word": "tốt"
+    },
+    {
+     "start": 52.62,
+     "end": 52.78,
+     "word": "hơn."
+    }
+   ]
+  },
+  {
+   "start": 52.98,
+   "end": 59.74,
+   "text": "Sản phẩm được sản xuất tại nhà máy đạt chuẩn GMP, có giấy tờ đầy đủ để cô chú anh chị yên tâm dùng lâu dài.",
+   "words": [
+    {
+     "start": 52.98,
+     "end": 53.22,
+     "word": "Sản"
+    },
+    {
+     "start": 53.22,
+     "end": 53.46,
+     "word": "phẩm"
+    },
+    {
+     "start": 53.46,
+     "end": 53.66,
+     "word": "được"
+    },
+    {
+     "start": 53.66,
+     "end": 53.86,
+     "word": "sản"
+    },
+    {
+     "start": 53.86,
+     "end": 54.06,
+     "word": "xuất"
+    },
+    {
+     "start": 54.06,
+     "end": 54.3,
+     "word": "tại"
+    },
+    {
+     "start": 54.3,
+     "end": 54.5,
+     "word": "nhà"
+    },
+    {
+     "start": 54.5,
+     "end": 54.74,
+     "word": "máy"
+    },
+    {
+     "start": 54.74,
+     "end": 54.98,
+     "word": "đạt"
+    },
+    {
+     "start": 54.98,
+     "end": 55.22,
+     "word": "chuẩn"
+    },
+    {
+     "start": 55.22,
+     "end": 55.92,
+     "word": "GMP,"
+    },
+    {
+     "start": 56.347,
+     "end": 56.507,
+     "word": "có"
+    },
+    {
+     "start": 56.507,
+     "end": 56.707,
+     "word": "giấy"
+    },
+    {
+     "start": 56.707,
+     "end": 56.907,
+     "word": "tờ"
+    },
+    {
+     "start": 56.907,
+     "end": 57.107,
+     "word": "đầy"
+    },
+    {
+     "start": 57.107,
+     "end": 57.347,
+     "word": "đủ"
+    },
+    {
+     "start": 57.347,
+     "end": 57.627,
+     "word": "để"
+    },
+    {
+     "start": 57.627,
+     "end": 57.827,
+     "word": "cô"
+    },
+    {
+     "start": 57.827,
+     "end": 58.027,
+     "word": "chú"
+    },
+    {
+     "start": 58.027,
+     "end": 58.267,
+     "word": "anh"
+    },
+    {
+     "start": 58.267,
+     "end": 58.46,
+     "word": "chị"
+    },
+    {
+     "start": 58.587,
+     "end": 58.787,
+     "word": "yên"
+    },
+    {
+     "start": 58.787,
+     "end": 59.067,
+     "word": "tâm"
+    },
+    {
+     "start": 59.067,
+     "end": 59.307,
+     "word": "dùng"
+    },
+    {
+     "start": 59.307,
+     "end": 59.587,
+     "word": "lâu"
+    },
+    {
+     "start": 59.587,
+     "end": 59.74,
+     "word": "dài."
+    }
+   ]
+  },
+  {
+   "start": 59.947,
+   "end": 63.24,
+   "text": "Và đừng đợi đến khi trái tim lên tiếng thì mới bắt đầu quan tâm.",
+   "words": [
+    {
+     "start": 59.947,
+     "end": 60.267,
+     "word": "Và"
+    },
+    {
+     "start": 60.267,
+     "end": 60.547,
+     "word": "đừng"
+    },
+    {
+     "start": 60.547,
+     "end": 60.747,
+     "word": "đợi"
+    },
+    {
+     "start": 60.747,
+     "end": 60.907,
+     "word": "đến"
+    },
+    {
+     "start": 60.907,
+     "end": 61.147,
+     "word": "khi"
+    },
+    {
+     "start": 61.147,
+     "end": 61.347,
+     "word": "trái"
+    },
+    {
+     "start": 61.347,
+     "end": 61.587,
+     "word": "tim"
+    },
+    {
+     "start": 61.587,
+     "end": 61.787,
+     "word": "lên"
+    },
+    {
+     "start": 61.787,
+     "end": 61.987,
+     "word": "tiếng"
+    },
+    {
+     "start": 61.987,
+     "end": 62.187,
+     "word": "thì"
+    },
+    {
+     "start": 62.187,
+     "end": 62.427,
+     "word": "mới"
+    },
+    {
+     "start": 62.427,
+     "end": 62.587,
+     "word": "bắt"
+    },
+    {
+     "start": 62.587,
+     "end": 62.787,
+     "word": "đầu"
+    },
+    {
+     "start": 62.787,
+     "end": 63.027,
+     "word": "quan"
+    },
+    {
+     "start": 63.027,
+     "end": 63.24,
+     "word": "tâm."
+    }
+   ]
+  },
+  {
+   "start": 63.347,
+   "end": 66.4,
+   "text": "Hãy bình luận \"Q10\" để được Hương tư vấn cụ thể hơn nhé.",
+   "words": [
+    {
+     "start": 63.347,
+     "end": 63.627,
+     "word": "Hãy"
+    },
+    {
+     "start": 63.627,
+     "end": 63.787,
+     "word": "bình"
+    },
+    {
+     "start": 63.787,
+     "end": 64.067,
+     "word": "luận"
+    },
+    {
+     "start": 64.067,
+     "end": 64.587,
+     "word": "\"Q10\""
+    },
+    {
+     "start": 64.587,
+     "end": 64.747,
+     "word": "để"
+    },
+    {
+     "start": 64.747,
+     "end": 64.987,
+     "word": "được"
+    },
+    {
+     "start": 64.987,
+     "end": 65.227,
+     "word": "Hương"
+    },
+    {
+     "start": 65.227,
+     "end": 65.387,
+     "word": "tư"
+    },
+    {
+     "start": 65.387,
+     "end": 65.627,
+     "word": "vấn"
+    },
+    {
+     "start": 65.627,
+     "end": 65.787,
+     "word": "cụ"
+    },
+    {
+     "start": 65.787,
+     "end": 65.987,
+     "word": "thể"
+    },
+    {
+     "start": 65.987,
+     "end": 66.227,
+     "word": "hơn"
+    },
+    {
+     "start": 66.227,
+     "end": 66.4,
+     "word": "nhé."
+    }
+   ]
+  },
+  {
+   "start": 66.787,
+   "end": 70.0,
+   "text": "Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.",
+   "words": [
+    {
+     "start": 66.787,
+     "end": 66.987,
+     "word": "Thực"
+    },
+    {
+     "start": 66.987,
+     "end": 67.187,
+     "word": "phẩm"
+    },
+    {
+     "start": 67.187,
+     "end": 67.387,
+     "word": "này"
+    },
+    {
+     "start": 67.387,
+     "end": 67.627,
+     "word": "không"
+    },
+    {
+     "start": 67.627,
+     "end": 67.787,
+     "word": "phải"
+    },
+    {
+     "start": 67.787,
+     "end": 67.987,
+     "word": "là"
+    },
+    {
+     "start": 67.987,
+     "end": 68.187,
+     "word": "thuốc"
+    },
+    {
+     "start": 68.187,
+     "end": 68.387,
+     "word": "và"
+    },
+    {
+     "start": 68.387,
+     "end": 68.547,
+     "word": "không"
+    },
+    {
+     "start": 68.547,
+     "end": 68.747,
+     "word": "có"
+    },
+    {
+     "start": 68.747,
+     "end": 68.907,
+     "word": "tác"
+    },
+    {
+     "start": 68.907,
+     "end": 69.067,
+     "word": "dụng"
+    },
+    {
+     "start": 69.067,
+     "end": 69.227,
+     "word": "thay"
+    },
+    {
+     "start": 69.227,
+     "end": 69.427,
+     "word": "thế"
+    },
+    {
+     "start": 69.427,
+     "end": 69.667,
+     "word": "thuốc"
+    },
+    {
+     "start": 69.667,
+     "end": 69.867,
+     "word": "chữa"
+    },
+    {
+     "start": 69.867,
+     "end": 70.0,
+     "word": "bệnh."
+    }
+   ]
+  },
+  {
+   "start": 72.587,
+   "end": 75.767,
+   "text": "Cám ơn cô chú anh chị đã theo dõi video này nhé!",
+   "words": [
+    {
+     "start": 72.587,
+     "end": 72.987,
+     "word": "Cám"
+    },
+    {
+     "start": 72.987,
+     "end": 73.227,
+     "word": "ơn"
+    },
+    {
+     "start": 73.227,
+     "end": 73.427,
+     "word": "cô"
+    },
+    {
+     "start": 73.427,
+     "end": 73.627,
+     "word": "chú"
+    },
+    {
+     "start": 73.627,
+     "end": 73.827,
+     "word": "anh"
+    },
+    {
+     "start": 73.827,
+     "end": 74.027,
+     "word": "chị"
+    },
+    {
+     "start": 74.027,
+     "end": 74.187,
+     "word": "đã"
+    },
+    {
+     "start": 74.187,
+     "end": 74.347,
+     "word": "theo"
+    },
+    {
+     "start": 74.347,
+     "end": 74.587,
+     "word": "dõi"
+    },
+    {
+     "start": 74.587,
+     "end": 75.027,
+     "word": "video"
+    },
+    {
+     "start": 75.027,
+     "end": 75.267,
+     "word": "này"
+    },
+    {
+     "start": 75.267,
+     "end": 75.767,
+     "word": "nhé!"
+    }
+   ]
+  }
+ ]
+}
