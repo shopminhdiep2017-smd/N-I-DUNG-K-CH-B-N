@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: K,Be Vietnam Pro ExtraBold,66,&H0000E5FF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,6,2,2,70,70,430,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.14,0:00:01.66,K,,0,0,0,,{\kf16}Nếu {\kf16}cô {\kf20}chú {\kf20}anh {\kf16}chị {\kf32}ngoài {\kf32}40
+Dialogue: 0,0:00:01.66,0:00:02.90,K,,0,0,0,,{\kf24}mà {\kf24}leo {\kf16}vài {\kf20}tầng {\kf16}cầu {\kf24}thang
+Dialogue: 0,0:00:02.90,0:00:04.14,K,,0,0,0,,{\kf20}đã {\kf20}thấy {\kf24}hụt {\kf60}hơi,
+Dialogue: 0,0:00:04.14,0:00:05.10,K,,0,0,0,,{\kf16}đôi {\kf32}lúc {\kf20}hồi {\kf28}hộp,
+Dialogue: 0,0:00:05.10,0:00:06.38,K,,0,0,0,,{\kf24}tim {\kf20}thì {\kf24}đập {\kf60}nhanh,
+Dialogue: 0,0:00:06.38,0:00:07.18,K,,0,0,0,,{\kf12}khi {\kf24}mệt {\kf12}lại {\kf16}đang {\kf16}phải
+Dialogue: 0,0:00:07.18,0:00:08.46,K,,0,0,0,,{\kf16}để {\kf16}ý {\kf20}đến {\kf20}huyết {\kf56}áp,
+Dialogue: 0,0:00:08.46,0:00:08.94,K,,0,0,0,,{\kf28}mỡ {\kf20}máu,
+Dialogue: 0,0:00:08.94,0:00:10.58,K,,0,0,0,,{\kf24}thì {\kf24}đã {\kf16}đến {\kf24}lúc {\kf16}cô {\kf20}chú {\kf20}anh {\kf20}chị
+Dialogue: 0,0:00:10.58,0:00:11.82,K,,0,0,0,,{\kf24}cần {\kf16}quan {\kf20}tâm {\kf20}đến {\kf20}trái {\kf24}tim
+Dialogue: 0,0:00:11.82,0:00:13.07,K,,0,0,0,,{\kf20}của {\kf24}mình {\kf24}nhiều {\kf57}hơn.
+Dialogue: 0,0:00:13.07,0:00:14.19,K,,0,0,0,,{\kf20}Mỗi {\kf20}ngày {\kf24}thì {\kf24}tim {\kf24}đập
+Dialogue: 0,0:00:14.19,0:00:15.63,K,,0,0,0,,{\kf20}khoảng {\kf50}là {\kf50}100.000 {\kf24}lần,
+Dialogue: 0,0:00:15.63,0:00:16.98,K,,0,0,0,,{\kf24}không {\kf24}nghỉ {\kf24}một {\kf62}giây,
+Dialogue: 0,0:00:16.98,0:00:18.32,K,,0,0,0,,{\kf16}nên {\kf16}đây {\kf24}là {\kf20}nơi {\kf20}cần {\kf39}nhiều
+Dialogue: 0,0:00:18.32,0:00:20.34,K,,0,0,0,,{\kf39}Coenzyme {\kf39}Q10 {\kf24}nhất {\kf20}trong {\kf20}cơ {\kf60}thể.
+Dialogue: 0,0:00:20.34,0:00:21.22,K,,0,0,0,,{\kf12}Nhưng {\kf20}sau {\kf28}tuổi {\kf28}40
+Dialogue: 0,0:00:21.22,0:00:22.70,K,,0,0,0,,{\kf20}thì {\kf32}lượng {\kf32}Q10 {\kf20}nó {\kf24}giảm {\kf20}đi
+Dialogue: 0,0:00:22.70,0:00:23.51,K,,0,0,0,,{\kf16}rất {\kf20}là {\kf45}nhanh.
+Dialogue: 0,0:00:23.51,0:00:24.24,K,,0,0,0,,{\kf29}Tim {\kf16}thiếu {\kf28}pin
+Dialogue: 0,0:00:24.24,0:00:25.56,K,,0,0,0,,{\kf20}thì {\kf20}làm {\kf20}việc {\kf24}vất {\kf16}vả {\kf32}hơn,
+Dialogue: 0,0:00:25.56,0:00:27.09,K,,0,0,0,,{\kf20}cơ {\kf20}thể {\kf20}cũng {\kf24}vì {\kf20}thế {\kf50}mà
+Dialogue: 0,0:00:27.09,0:00:27.95,K,,0,0,0,,{\kf24}nhanh {\kf62}mệt.
+Dialogue: 0,0:00:27.95,0:00:29.31,K,,0,0,0,,{\kf12}Thì {\kf16}hãy {\kf16}chăm {\kf20}sóc {\kf16}trái {\kf20}tim {\kf20}mỗi {\kf16}ngày
+Dialogue: 0,0:00:29.31,0:00:31.44,K,,0,0,0,,{\kf20}với {\kf48}hai {\kf48}viên {\kf48}Rich {\kf48}CoQ10
+Dialogue: 0,0:00:31.44,0:00:32.96,K,,0,0,0,,{\kf16}của {\kf20}nhà {\kf60}AFC {\kf24}Nhật {\kf32}Bản
+Dialogue: 0,0:00:32.96,0:00:34.22,K,,0,0,0,,{\kf24}sau {\kf20}bữa {\kf24}ăn {\kf58}sáng.
+Dialogue: 0,0:00:34.22,0:00:35.16,K,,0,0,0,,{\kf12}Và {\kf12}đặc {\kf20}biệt {\kf12}ở {\kf38}đây
+Dialogue: 0,0:00:35.16,0:00:36.22,K,,0,0,0,,{\kf38}Q10 {\kf20}là {\kf24}dạng {\kf24}khử,
+Dialogue: 0,0:00:36.22,0:00:37.26,K,,0,0,0,,{\kf24}dễ {\kf24}hấp {\kf56}thu,
+Dialogue: 0,0:00:37.26,0:00:38.62,K,,0,0,0,,{\kf24}giúp {\kf16}hỗ {\kf20}trợ {\kf20}cung {\kf20}cấp {\kf16}năng {\kf20}lượng
+Dialogue: 0,0:00:38.62,0:00:40.06,K,,0,0,0,,{\kf20}cho {\kf20}tế {\kf24}bào {\kf20}cơ {\kf59}tim.
+Dialogue: 0,0:00:40.06,0:00:41.84,K,,0,0,0,,{\kf16}Ngoài {\kf28}ra {\kf24}nó {\kf20}còn {\kf20}thành {\kf16}phần {\kf54}là
+Dialogue: 0,0:00:41.84,0:00:43.14,K,,0,0,0,,{\kf54}Astaxanthin {\kf20}từ {\kf24}tảo {\kf32}đỏ
+Dialogue: 0,0:00:43.14,0:00:44.54,K,,0,0,0,,{\kf28}giúp {\kf20}chống {\kf52}oxy {\kf40}hóa,
+Dialogue: 0,0:00:44.54,0:00:45.58,K,,0,0,0,,{\kf24}bảo {\kf32}vệ {\kf20}tế {\kf28}bào,
+Dialogue: 0,0:00:45.58,0:00:47.32,K,,0,0,0,,{\kf36}còn {\kf26}tiêu {\kf26}đen {\kf28}thì {\kf58}giúp
+Dialogue: 0,0:00:47.32,0:00:48.53,K,,0,0,0,,{\kf20}hấp {\kf24}thu {\kf24}tốt {\kf53}hơn.
+Dialogue: 0,0:00:48.53,0:00:49.41,K,,0,0,0,,{\kf16}Sản {\kf16}phẩm {\kf20}được {\kf20}sản {\kf16}xuất
+Dialogue: 0,0:00:49.41,0:00:51.65,K,,0,0,0,,{\kf24}tại {\kf20}nhà {\kf24}máy {\kf24}đạt {\kf70}chuẩn {\kf62}GMP,
+Dialogue: 0,0:00:51.65,0:00:52.61,K,,0,0,0,,{\kf16}có {\kf16}giấy {\kf20}tờ {\kf20}đầy {\kf24}đủ
+Dialogue: 0,0:00:52.61,0:00:53.85,K,,0,0,0,,{\kf28}để {\kf20}cô {\kf24}chú {\kf20}anh {\kf32}chị
+Dialogue: 0,0:00:53.85,0:00:55.42,K,,0,0,0,,{\kf20}yên {\kf24}tâm {\kf28}dùng {\kf24}lâu {\kf61}dài.
+Dialogue: 0,0:00:55.42,0:00:56.34,K,,0,0,0,,{\kf16}Và {\kf20}đừng {\kf20}đợi {\kf16}đến {\kf20}khi
+Dialogue: 0,0:00:56.34,0:00:57.18,K,,0,0,0,,{\kf20}trái {\kf24}tim {\kf20}lên {\kf20}tiếng
+Dialogue: 0,0:00:57.18,0:00:58.73,K,,0,0,0,,{\kf24}thì {\kf20}mới {\kf16}bắt {\kf20}đầu {\kf20}quan {\kf55}tâm.
+Dialogue: 0,0:00:58.73,0:00:59.77,K,,0,0,0,,{\kf16}Hãy {\kf16}bình {\kf36}luận {\kf36}"Q10"
+Dialogue: 0,0:00:59.77,0:01:00.77,K,,0,0,0,,{\kf16}để {\kf24}được {\kf24}Hương {\kf16}tư {\kf20}vấn
+Dialogue: 0,0:01:00.77,0:01:01.98,K,,0,0,0,,{\kf20}cụ {\kf16}thể {\kf51}hơn {\kf34}nha.
+Dialogue: 0,0:01:01.98,0:01:03.18,K,,0,0,0,,{\kf16}Thực {\kf16}phẩm {\kf16}này {\kf20}không {\kf16}phải {\kf16}là {\kf20}thuốc
+Dialogue: 0,0:01:03.18,0:01:04.10,K,,0,0,0,,{\kf20}và {\kf16}không {\kf20}có {\kf16}tác {\kf20}dụng
+Dialogue: 0,0:01:04.10,0:01:05.30,K,,0,0,0,,{\kf12}thay {\kf20}thế {\kf20}thuốc {\kf20}chữa {\kf48}bệnh.
+Dialogue: 0,0:01:05.30,0:01:06.26,K,,0,0,0,,{\kf8}Cám {\kf20}ơn {\kf16}cô {\kf16}chú {\kf20}anh {\kf16}chị
+Dialogue: 0,0:01:06.26,0:01:07.81,K,,0,0,0,,{\kf20}đã {\kf12}theo {\kf24}dõi {\kf40}video {\kf25}này {\kf50}nha.
