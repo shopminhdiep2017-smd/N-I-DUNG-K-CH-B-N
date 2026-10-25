@@ -1,13 +1,15 @@
 # RICH CoQ10 – Chăm sóc trái tim sau tuổi 40
 
-## Video đã dựng – bản 1
+## Video đã dựng – bản 2
 
-`Video_RICH_TraiTim_ban_1.mp4` (9:16, 1080x1920, 1 phút 8 giây; video gốc 1 phút 17 giây):
+`Video_RICH_TraiTim_ban_2.mp4` (9:16, 1080x1920, 1 phút 8 giây; video gốc 1 phút 17 giây):
 
 - Cắt câu nói lặp: "Nên đây là… nên…" (nói 2 lần trước câu "Nên đây là nơi cần nhiều Coenzyme Q10 nhất") và "Cám ơn cô chú anh chị rất nhiều đã…" (nói hỏng trước câu cảm ơn cuối).
 - Nối liền các câu: cắt chỗ ngừng dài hơn khoảng 0,45 giây, giữ nguyên tốc độ nói.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Phụ đề karaoke chữ vàng viền đen, nói đến đâu chữ vàng đến đó: `phu-de-karaoke.ass`.
+- Đoạn đầu (0:00–0:30) chèn 9 clip hoạt hình minh họa phía trên đầu, đổi theo lời nói: leo cầu thang hụt hơi, tim đập nhanh, huyết áp/mỡ máu, quan tâm trái tim, tim đập ~100.000 lần/ngày, tim cần nhiều Q10 nhất, sau 40 tuổi Q10 giảm, tim thiếu pin, sạc pin cho tim (`dung-video/clips4.js`).
+- Clip và ảnh đặt cách đỉnh đầu một khoảng (mép dưới ở khoảng 600/1920 px).
 - Ảnh sản phẩm RICH phía trên đỉnh đầu từ lúc nói "hai viên **Rich CoQ10**" (0:30) đến hết; dòng cảnh báo dưới đáy hiện cùng ảnh.
 - Nhạc "Gió nơi rời" âm lượng 0,065 (video trước 0,08).
 - Giữ nguyên độ sáng và màu video gốc (BT.709).
