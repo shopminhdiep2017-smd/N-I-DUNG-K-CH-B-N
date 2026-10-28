@@ -8,7 +8,7 @@
 - Nối liền các câu: cắt chỗ ngừng dài hơn khoảng 0,45 giây, giữ nguyên tốc độ nói.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Phụ đề karaoke chữ vàng viền đen: `phu-de-karaoke.ass`.
-- 0:00–1:15: 10 clip hoạt hình minh họa phía trên đầu (cách đỉnh đầu một khoảng); clip "5 điều giữ da trẻ lâu" sáng từng ô 01–05 đúng lúc nói (`dung-video/clips6.js`).
+- 0:00–1:15: 10 clip hoạt hình minh họa phía trên đầu (đặt cao, cách đỉnh đầu rõ ràng: mép trên ở 100/1920 px); clip "5 điều giữ da trẻ lâu" sáng từng ô 01–05 đúng lúc nói (`dung-video/clips6.js`).
 - 1:15 đến hết: ảnh sản phẩm RICH, từ lúc nói "hai viên **Rich CoQ10**"; dòng cảnh báo dưới đáy hiện cùng ảnh.
 - Nhạc "Gió nơi rời" âm lượng 0,047 (video trước 0,055).
 - Giữ nguyên độ sáng và màu video gốc (BT.709).
