@@ -1,0 +1,47 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: K,Be Vietnam Pro ExtraBold,66,&H0000E5FF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,6,2,2,70,70,430,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.13,0:00:01.25,K,,0,0,0,,{\kf16}Nhiều {\kf20}cô {\kf16}chú {\kf16}anh {\kf14}chị {\kf14}hỏi {\kf16}ấy,
+Dialogue: 0,0:00:01.25,0:00:03.24,K,,0,0,0,,{\kf37}uống {\kf37}Rich {\kf37}Coenzyme {\kf37}Q10 {\kf50}này
+Dialogue: 0,0:00:03.24,0:00:05.54,K,,0,0,0,,{\kf16}có {\kf16}chữa {\kf16}được {\kf16}cái {\kf16}vấn {\kf16}đề {\kf24}về {\kf20}tim {\kf24}mạch {\kf66}không?
+Dialogue: 0,0:00:05.54,0:00:07.06,K,,0,0,0,,{\kf16}Dạ, {\kf37}cái {\kf37}Coenzyme {\kf37}Q10 {\kf24}này
+Dialogue: 0,0:00:07.06,0:00:08.13,K,,0,0,0,,{\kf16}không {\kf16}phải {\kf20}là {\kf55}thuốc.
+Dialogue: 0,0:00:08.13,0:00:09.33,K,,0,0,0,,{\kf16}Nó {\kf16}chỉ {\kf16}là {\kf16}một {\kf16}cái {\kf16}sản {\kf24}phẩm
+Dialogue: 0,0:00:09.33,0:00:10.57,K,,0,0,0,,{\kf24}để {\kf20}giúp {\kf20}cô {\kf20}chú {\kf20}anh {\kf20}chị
+Dialogue: 0,0:00:10.57,0:00:11.57,K,,0,0,0,,{\kf24}trong {\kf16}quá {\kf24}trình {\kf16}cung {\kf20}cấp
+Dialogue: 0,0:00:11.57,0:00:13.24,K,,0,0,0,,{\kf20}cái {\kf20}năng {\kf24}lượng {\kf20}cho {\kf28}tế {\kf55}bào,
+Dialogue: 0,0:00:13.24,0:00:13.96,K,,0,0,0,,{\kf12}và {\kf20}nó {\kf24}hỗ {\kf16}trợ
+Dialogue: 0,0:00:13.96,0:00:15.65,K,,0,0,0,,{\kf16}cho {\kf16}sức {\kf24}khỏe {\kf20}tim {\kf20}mạch {\kf20}thôi {\kf53}ạ.
+Dialogue: 0,0:00:15.65,0:00:16.81,K,,0,0,0,,{\kf24}Ngoài {\kf32}ra {\kf59}thì
+Dialogue: 0,0:00:16.81,0:00:18.17,K,,0,0,0,,{\kf20}Hương {\kf12}khuyến {\kf20}khích {\kf20}cô {\kf20}chú {\kf20}anh {\kf24}chị
+Dialogue: 0,0:00:18.17,0:00:19.29,K,,0,0,0,,{\kf24}trong {\kf20}cái {\kf20}giai {\kf24}đoạn {\kf24}mà
+Dialogue: 0,0:00:19.29,0:00:21.77,K,,0,0,0,,{\kf24}sử {\kf16}dụng {\kf35}cái {\kf35}Rich {\kf35}Coenzyme {\kf35}Q10 {\kf20}này {\kf48}ý,
+Dialogue: 0,0:00:21.77,0:00:23.13,K,,0,0,0,,{\kf16}thì {\kf28}nên {\kf16}kết {\kf20}hợp {\kf16}cùng {\kf16}với {\kf24}lại
+Dialogue: 0,0:00:23.13,0:00:24.50,K,,0,0,0,,{\kf16}cái {\kf20}chế {\kf20}độ {\kf24}ăn {\kf57}uống,
+Dialogue: 0,0:00:24.50,0:00:25.81,K,,0,0,0,,{\kf20}thể {\kf24}dục {\kf24}thể {\kf63}thao,
+Dialogue: 0,0:00:25.81,0:00:26.59,K,,0,0,0,,{\kf18}và {\kf20}duy {\kf24}trì {\kf16}được
+Dialogue: 0,0:00:26.59,0:00:27.94,K,,0,0,0,,{\kf20}một {\kf20}lối {\kf20}sống {\kf20}lành {\kf55}mạnh,
+Dialogue: 0,0:00:27.94,0:00:29.70,K,,0,0,0,,{\kf24}thì {\kf24}cô {\kf24}chú {\kf24}anh {\kf24}chị {\kf20}sẽ {\kf16}có {\kf20}được
+Dialogue: 0,0:00:29.70,0:00:31.18,K,,0,0,0,,{\kf16}một {\kf16}cái {\kf20}sức {\kf24}khỏe {\kf20}tốt {\kf52}nhất.
+Dialogue: 0,0:00:31.18,0:00:32.76,K,,0,0,0,,{\kf20}Tại {\kf24}vì {\kf20}khi {\kf24}mà {\kf20}mình {\kf49}dùng
+Dialogue: 0,0:00:32.76,0:00:34.46,K,,0,0,0,,{\kf49}cái {\kf49}Q10 {\kf20}này {\kf52}ý,
+Dialogue: 0,0:00:34.46,0:00:35.50,K,,0,0,0,,{\kf16}thì {\kf16}nó {\kf20}sẽ {\kf20}cung {\kf16}cấp {\kf16}được
+Dialogue: 0,0:00:35.50,0:00:37.12,K,,0,0,0,,{\kf16}cái {\kf16}năng {\kf20}lượng {\kf20}cho {\kf24}tế {\kf66}bào,
+Dialogue: 0,0:00:37.12,0:00:37.64,K,,0,0,0,,{\kf24}cho {\kf28}tim,
+Dialogue: 0,0:00:37.64,0:00:39.07,K,,0,0,0,,{\kf70}và {\kf12}khi {\kf20}mà {\kf20}tim {\kf20}khỏe
+Dialogue: 0,0:00:39.07,0:00:39.95,K,,0,0,0,,{\kf20}thì {\kf20}nó {\kf16}sẽ {\kf20}giúp {\kf12}được
+Dialogue: 0,0:00:39.95,0:00:41.67,K,,0,0,0,,{\kf20}cho {\kf20}cơ {\kf16}thể {\kf20}của {\kf20}cô {\kf20}chú {\kf20}anh {\kf36}chị
+Dialogue: 0,0:00:41.67,0:00:43.10,K,,0,0,0,,{\kf24}khỏe {\kf24}hơn {\kf20}rất {\kf20}là {\kf56}nhiều.
+Dialogue: 0,0:00:43.10,0:00:44.22,K,,0,0,0,,{\kf26}Hãy {\kf26}follow {\kf16}kênh {\kf20}của {\kf24}Hương
+Dialogue: 0,0:00:44.22,0:00:46.70,K,,0,0,0,,{\kf20}để {\kf24}nhận {\kf20}thêm {\kf24}nhiều {\kf24}giá {\kf40}trị {\kf16}hữu {\kf28}ích {\kf52}nhé.
+Dialogue: 0,0:00:46.70,0:00:48.06,K,,0,0,0,,{\kf16}Và {\kf24}cám {\kf20}ơn {\kf20}cô {\kf20}chú {\kf16}anh {\kf20}chị
+Dialogue: 0,0:00:48.06,0:00:49.45,K,,0,0,0,,{\kf16}đã {\kf16}theo {\kf16}dõi {\kf40}video {\kf24}này {\kf50}ạ.
