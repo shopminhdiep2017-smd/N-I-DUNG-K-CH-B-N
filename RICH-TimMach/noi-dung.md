@@ -8,7 +8,7 @@
 - Nối liền các câu, giữ nguyên tốc độ nói.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Phụ đề karaoke chữ vàng viền đen: `phu-de-karaoke.ass`.
-- Phía trên đầu (cách đầu vừa phải, mép trên 145/1920 px), xen kẽ clip minh họa và ảnh sản phẩm:
+- Phía trên đầu (cách xa đầu, mép trên 60/1920 px), xen kẽ clip minh họa và ảnh sản phẩm:
   - 0:00 clip "Q10 có chữa được tim mạch không?"; 0:05 clip "Q10 không phải là thuốc";
   - 0:08–0:15 ảnh sản phẩm RICH (đoạn "chỉ là sản phẩm hỗ trợ… tim mạch");
   - 0:15 clip "Dùng Q10 nên kết hợp" (Ăn uống → Thể dục → Lối sống lành mạnh sáng lần lượt); 0:28 "Sức khỏe tốt nhất"; 0:31 "Năng lượng cho tế bào, cho tim"; 0:38 "Tim khỏe – cơ thể khỏe hơn";
