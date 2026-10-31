@@ -8,7 +8,7 @@
 - Nối liền các câu, bỏ khoảng lặng dài (có chỗ 5–7 giây), giữ nguyên tốc độ nói.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Phụ đề karaoke chữ vàng viền đen: `phu-de-karaoke.ass`.
-- Phía trên đầu (mép trên 60/1920 px), xen kẽ 10 clip minh họa và ảnh sản phẩm: ảnh RICH ở 0:14–0:19 ("hiệu quả của Rich Coenzyme Q10") và từ 1:09 đến hết ("hãy một lần sử dụng Rich Coenzyme Q10"); các clip "Nếu không duy trì", "Nên tập trung vào" sáng từng ô đúng lúc nói, clip "Nếu đang gặp…" hiện từng triệu chứng (`dung-video/clips9.js`).
+- Phía trên đầu (căn giữa giữa mép trên khung hình và đỉnh đầu: mép trên 140/1920 px, cách đầu ~140 px), xen kẽ 10 clip minh họa và ảnh sản phẩm: ảnh RICH ở 0:14–0:19 ("hiệu quả của Rich Coenzyme Q10") và từ 1:09 đến hết ("hãy một lần sử dụng Rich Coenzyme Q10"); các clip "Nếu không duy trì", "Nên tập trung vào" sáng từng ô đúng lúc nói, clip "Nếu đang gặp…" hiện từng triệu chứng (`dung-video/clips9.js`).
 - Người nói không cầm hộp sản phẩm.
 - Dòng cảnh báo dưới đáy hiện từ lần đầu có ảnh sản phẩm (0:14) đến hết.
 - Nhạc "Gió nơi rời" âm lượng 0,03 (video trước 0,035).

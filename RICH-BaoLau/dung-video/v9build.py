@@ -112,8 +112,8 @@ if len(sys.argv)>2 and sys.argv[2]=="render":
     ch=f"[{4+i}:v]scale=600:400:in_color_matrix=bt601:out_color_matrix=bt709,pad=610:410:5:5:white,tpad=stop_mode=clone:stop_duration=2,setpts=PTS-STARTPTS+{st}/TB"
     if i==0: ch+=",format=yuva420p,fade=in:st=0:d=0.4:alpha=1"
     fc.append(ch+f"[k{i}]")
-    fc.append(f"[{prev}][k{i}]overlay=x=(W-w)/2:y=60:eof_action=pass:enable='between(t,{st},{en:.2f})'[q{i}]"); prev=f"q{i}"
-  fc.append(f"[{prev}][img]overlay=x=(W-w)/2:y=60:enable='between(t,{P1[0]:.2f},{P1[1]:.2f})+gte(t,{P2:.2f})'[pimg]"); prev="pimg"
+    fc.append(f"[{prev}][k{i}]overlay=x=(W-w)/2:y=140:eof_action=pass:enable='between(t,{st},{en:.2f})'[q{i}]"); prev=f"q{i}"
+  fc.append(f"[{prev}][img]overlay=x=(W-w)/2:y=140:enable='between(t,{P1[0]:.2f},{P1[1]:.2f})+gte(t,{P2:.2f})'[pimg]"); prev="pimg"
   fc.append(f"[{prev}]subtitles={S}/v9/karaoke.ass:fontsdir={S}/fonts[vout]")
   fc.append("[1:a]acompressor=threshold=-22dB:ratio=2:attack=15:release=200,loudnorm=I=-17:TP=-1.5:LRA=9,aresample=48000[vo]")
   fc.append(f"[2:a]atrim=0:{TOT:.2f},asetpts=PTS-STARTPTS,aresample=48000,volume={MUS},afade=t=in:d=1.5,afade=t=out:st={TOT-2.5:.2f}:d=2.5[m]")
