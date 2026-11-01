@@ -2,7 +2,7 @@ import json,sys,difflib,subprocess,unicodedata,glob
 S=sys.argv[1]; V=glob.glob("/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a/9db3474f*.mp4")[0]
 M=glob.glob("/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a/584c2862*.mp3")[0]
 asr=json.load(open(S+"/v10/asr.json")); iv=json.load(open(S+"/v10/seg.json"))["iv"]
-DUR=57.76; MUS=0.026; TEMPO=1.0; SC=1/TEMPO; CUTS=[(41.35,43.6)]
+DUR=57.76; MUS=0.026; TEMPO=0.9; SC=1/TEMPO; CUTS=[(41.35,43.6)]
 # keep = padded speech intervals minus cuts
 k=[]
 for a,b in iv:
@@ -103,19 +103,19 @@ if len(sys.argv)>2 and sys.argv[2]=="render":
       "[vc]scale=1080:1920:flags=lanczos:in_color_matrix=bt709:out_color_matrix=bt709:in_range=tv:out_range=tv,setsar=1,fps=30[b0]",
       f"[3:v]scale=600:-2:in_color_matrix=bt601:out_color_matrix=bt709,pad=iw+10:ih+10:5:5:white,format=yuva420p[img]",
       "[b0]null[o0]"]
-  E=f"enable='gte(t,{RICH_T:.2f})'"
+  E=f"enable='gte(t,{RICH_T*SC:.2f})'"
   fc.append(f"[o0]drawbox=x=0:y=ih-96:w=iw:h=96:color=black@0.55:t=fill:{E},"
    f"drawtext=fontfile={FB}:text='Thực phẩm này không phải là thuốc và không có':fontsize=30:fontcolor=white:x=(w-tw)/2:y=h-84:{E},"
    f"drawtext=fontfile={FB}:text='tác dụng thay thế thuốc chữa bệnh.':fontsize=30:fontcolor=white:x=(w-tw)/2:y=h-44:{E}[o1]")
   prev="o1"
   for i,(c,st,en) in enumerate(CL):
-    ch=f"[{4+i}:v]scale=600:400:in_color_matrix=bt601:out_color_matrix=bt709,pad=610:410:5:5:white,tpad=stop_mode=clone:stop_duration=2,setpts=PTS-STARTPTS+{st}/TB"
+    ch=f"[{4+i}:v]scale=600:400:in_color_matrix=bt601:out_color_matrix=bt709,pad=610:410:5:5:white,tpad=stop_mode=clone:stop_duration=2,setpts=(PTS-STARTPTS)*{SC:.5f}+{st*SC:.3f}/TB"
     if i==0: ch+=",format=yuva420p,fade=in:st=0:d=0.4:alpha=1"
     fc.append(ch+f"[k{i}]")
-    fc.append(f"[{prev}][k{i}]overlay=x=(W-w)/2:y=155:eof_action=pass:enable='between(t,{st},{en:.2f})'[q{i}]"); prev=f"q{i}"
-  fc.append(f"[{prev}][img]overlay=x=(W-w)/2:y=155:enable='between(t,{P1[0]:.2f},{P1[1]:.2f})+gte(t,{P2:.2f})'[pimg]"); prev="pimg"
+    fc.append(f"[{prev}][k{i}]overlay=x=(W-w)/2:y=155:eof_action=pass:enable='between(t,{st*SC:.2f},{en*SC:.2f})'[q{i}]"); prev=f"q{i}"
+  fc.append(f"[{prev}][img]overlay=x=(W-w)/2:y=155:enable='between(t,{P1[0]*SC:.2f},{P1[1]*SC:.2f})+gte(t,{P2*SC:.2f})'[pimg]"); prev="pimg"
   fc.append(f"[{prev}]subtitles={S}/v10/karaoke.ass:fontsdir={S}/fonts[vout]")
-  fc.append("[1:a]acompressor=threshold=-22dB:ratio=2:attack=15:release=200,loudnorm=I=-17:TP=-1.5:LRA=9,aresample=48000[vo]")
+  fc.append(f"[1:a]atempo={TEMPO},acompressor=threshold=-22dB:ratio=2:attack=15:release=200,loudnorm=I=-17:TP=-1.5:LRA=9,aresample=48000[vo]")
   fc.append(f"[2:a]atrim=0:{TOT:.2f},asetpts=PTS-STARTPTS,aresample=48000,volume={MUS},afade=t=in:d=1.5,afade=t=out:st={TOT-2.5:.2f}:d=2.5[m]")
   fc.append("[vo][m]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.9[aout]")
   subprocess.run(args+["-filter_complex",";\n".join(fc),"-map","[vout]","-map","[aout]","-t",f"{TOT:.2f}","-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-colorspace","bt709","-color_primaries","bt709","-color_trc","bt709","-color_range","tv","-c:a","aac","-b:a","192k","-movflags","+faststart",S+"/Video_RICH_UongLucNao_ban_1.mp4"],check=True)

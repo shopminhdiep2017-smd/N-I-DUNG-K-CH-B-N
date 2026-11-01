@@ -2,15 +2,17 @@
 
 ## Video đã dựng – bản 1
 
-`Video_RICH_UongLucNao_ban_1.mp4` (9:16, 1080x1920, 52 giây; video gốc 58 giây):
+`Video_RICH_UongLucNao_ban_1.mp4` (9:16, 1080x1920, 58 giây; video gốc 58 giây):
+
+- Nói chậm lại cho tự nhiên: tốc độ 90% (giữ nguyên cao độ giọng); hình, clip minh họa, ảnh sản phẩm và chữ chạy chậm theo cùng tỉ lệ nên vẫn khớp lời.
 
 - Cắt câu nói lặp: "Uống đúng giờ mỗi viên thì…" (nói hỏng, nói lại).
 - Nối liền các câu, giữ nguyên tốc độ nói.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Phụ đề karaoke chữ vàng viền đen: `phu-de-karaoke.ass`.
-- Phía trên đầu, căn giữa giữa mép trên khung hình và đỉnh đầu (mép trên 155/1920 px; đỉnh đầu ở ~720 px nên trên và dưới đều cách ~155 px), xen kẽ 9 clip minh họa và ảnh sản phẩm: ảnh RICH ở 0:27–0:33 ("Rich Coenzyme Q10 của nhà AFC Nhật Bản") và từ 0:46 đến hết; clip "Nhớ 3 điều khi uống Q10" sáng từng ô đúng lúc nói (`dung-video/clips10.js`).
+- Phía trên đầu, căn giữa giữa mép trên khung hình và đỉnh đầu (mép trên 155/1920 px; đỉnh đầu ở ~720 px nên trên và dưới đều cách ~155 px), xen kẽ 9 clip minh họa và ảnh sản phẩm: ảnh RICH ở 0:30–0:37 ("Rich Coenzyme Q10 của nhà AFC Nhật Bản") và từ 0:52 đến hết; clip "Nhớ 3 điều khi uống Q10" sáng từng ô đúng lúc nói (`dung-video/clips10.js`).
 - Người nói không cầm hộp sản phẩm.
-- Dòng cảnh báo dưới đáy hiện từ lần đầu có ảnh sản phẩm (0:27) đến hết.
+- Dòng cảnh báo dưới đáy hiện từ lần đầu có ảnh sản phẩm (0:30) đến hết.
 - Nhạc "Gió nơi rời" âm lượng 0,026 (video trước 0,03).
 - Giữ nguyên độ sáng và màu video gốc (BT.709).
 
