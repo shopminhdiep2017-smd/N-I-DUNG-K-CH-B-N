@@ -1,7 +1,7 @@
 import json,sys,subprocess,glob,wave,numpy as np
 S=sys.argv[1]; U="/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a"
 V=glob.glob(U+"/b9a28bd4*.mp4")[0]; M=glob.glob(U+"/5c0c88d3*.mp3")[0]
-DUR=43.88; MUS=0.018; Y=66; CUTS=[(35.95,37.0)]
+DUR=43.88; MUS=0.11; Y=66; CUTS=[(35.95,37.0)]
 iv=json.load(open(S+"/v14/seg.json"))["iv"]
 k=[]
 for a,b in iv:

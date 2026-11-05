@@ -11,7 +11,7 @@
 - Giữ phụ đề có sẵn, không thêm phụ đề.
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - Clip minh họa căn giữa giữa mép trên và đỉnh đầu (đỉnh đầu ~316/854 px, clip 184 px đặt ở 66 px): mở đầu "6 điều cấm kỵ khi nấu ăn", 6 clip 01–06 đổi đúng lúc nói, cuối "Theo dõi Hương" (`dung-video/clips14.js`).
-- Nhạc "Gió nơi rời" âm lượng 0,018 (lần trước dùng bài này 0,02).
+- Nhạc "Gió nơi rời" âm lượng 0,11: nhỏ hơn giọng khoảng 22 dB, nghe rõ nhưng không lấn giọng. (Bản đầu để 0,018, nhỏ hơn giọng ~38 dB nên gần như không nghe thấy.)
 
 ## Lời thoại
 
