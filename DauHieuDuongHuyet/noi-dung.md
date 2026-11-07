@@ -15,3 +15,11 @@
 ## Lời thoại
 
 > Các dấu hiệu đường huyết tăng cao. Một, khát nước liên tục: đường máu cao. Hai, tiểu nhiều lần: thận đang thải đường. Ba, đói dữ dội: tế bào thiếu năng lượng. Bốn, mệt sau khi ăn: cơ thể kháng insulin. Năm, vết thương lâu lành: do máu quá nhiều đường. Và sáu, tê bì tay chân: do thần kinh bị tổn thương. Nếu cô chú anh chị đang gặp vấn đề nào dưới đây, hãy bình luận cho Hương biết với nha.
+
+## Bản 2 – footage 3D
+
+`Video_DauHieuDuongHuyet_ban_2_3D.mp4`: giống bản 1, chỉ thay clip minh họa bằng clip phong cách 3D:
+
+- Biểu tượng 3D Microsoft Fluent Emoji (giấy phép MIT, xem `dung-video/icon-3d/LICENSE`).
+- Biểu tượng bay từ xa vào, xoay qua lại, nổi lơ lửng có bóng đổ trên mặt sàn lưới phối cảnh; số 01–06 chữ nổi 3D; vệt sáng lướt qua.
+- Dựng bằng `dung-video/clips3d.js` với nội dung cảnh trong `dung-video/scenes3d.json`.

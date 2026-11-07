@@ -1,0 +1,10 @@
+{
+"w0":{"dur":2.4,"c1":"#7a1f2c","c2":"#1a0508","objs":[["drop_of_blood",60,0],["chart_increasing",230,0.25,120]],"title":"Đường huyết<br>tăng cao","cap":"Các <b>dấu hiệu</b> cần biết"},
+"w1":{"dur":4.0,"c1":"#1f4a7a","c2":"#08111c","badge":"01","objs":[["cup_with_straw",130,0],["droplet",320,0.3,150]],"cap":"<b>Khát nước</b> liên tục"},
+"w2":{"dur":4.0,"c1":"#1f5a5a","c2":"#081414","badge":"02","objs":[["restroom",130,0],["repeat_button",320,0.3,150]],"cap":"<b>Tiểu nhiều</b> lần"},
+"w3":{"dur":4.0,"c1":"#6a4a10","c2":"#161004","badge":"03","objs":[["fork_and_knife_with_plate",120,0],["tired_face",320,0.3,160]],"cap":"<b>Đói</b> dữ dội"},
+"w4":{"dur":4.0,"c1":"#4a3a7a","c2":"#120c1c","badge":"04","objs":[["cooked_rice",120,0],["sleeping_face",320,0.3,160]],"cap":"<b>Mệt</b> sau khi ăn"},
+"w5":{"dur":4.0,"c1":"#7a2020","c2":"#1a0505","badge":"05","objs":[["adhesive_bandage",120,0],["hourglass_done",330,0.3,150]],"cap":"Vết thương <b>lâu lành</b>"},
+"w6":{"dur":4.0,"c1":"#7a2a5a","c2":"#1a0812","badge":"06","objs":[["raised_hand",120,0],["high_voltage",330,0.3,150]],"cap":"<b>Tê bì</b> tay chân"},
+"w7":{"dur":4.2,"c1":"#1f6a3a","c2":"#04140a","objs":[["speech_balloon",120,0],["backhand_index_pointing_down",330,0.3,150]],"cap":"<b>Bình luận</b> cho Hương biết nhé"}
+}
