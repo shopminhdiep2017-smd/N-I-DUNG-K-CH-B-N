@@ -1,0 +1,10 @@
+{
+"s0":{"dur":4.2,"c1":"#7a2a1a","c2":"#1a0805","objs":[["hamburger",50,0,170],["pizza",190,0.25,150]],"title":"5 thực phẩm<br>càng ăn càng hại","cap":"Hại cho <b>sức khỏe</b>"},
+"s1":{"dur":7.7,"c1":"#6a4a10","c2":"#161004","badge":"01","objs":[["bread",120,0],["chart_increasing",330,0.4,150]],"cap":"<b>Bánh mì trắng</b> – tinh bột tinh chế"},
+"s2":{"dur":8.7,"c1":"#5a3a10","c2":"#1a1004","badge":"02","objs":[["potato",120,0],["salt",330,0.4,150]],"cap":"<b>Bim bim</b> – nhiều muối, dầu"},
+"s3":{"dur":8.6,"c1":"#7a2020","c2":"#1a0505","badge":"03","objs":[["french_fries",120,0],["poultry_leg",330,0.4,160]],"cap":"<b>Khoai tây chiên, gà rán</b>"},
+"s4":{"dur":6.8,"c1":"#7a3a10","c2":"#1a0c04","badge":"04","objs":[["steaming_bowl",120,0],["salt",330,0.4,150]],"cap":"<b>Mì gói</b> – nhiều muối, ít xơ"},
+"s5":{"dur":8.9,"c1":"#1f4a7a","c2":"#08111c","badge":"05","objs":[["cup_with_straw",130,0],["bubbles",330,0.4,150]],"cap":"<b>Nước ngọt</b> có ga – nhiều đường"},
+"s6":{"dur":5.2,"c1":"#6a5a10","c2":"#1a1604","objs":[["hamburger",120,0],["warning",330,0.4,150]],"cap":"Tiện lợi nhưng <b>không nên lạm dụng</b>"},
+"s7":{"dur":8.5,"c1":"#1f6a3a","c2":"#04140a","objs":[["leafy_green",120,0],["red_apple",330,0.4,160]],"cap":"Ăn cân đối, <b>thực phẩm tươi</b>"}
+}
