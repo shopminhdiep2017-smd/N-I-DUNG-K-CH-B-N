@@ -1,0 +1,16 @@
+{
+"t0":{"dur":11.2,"c1":"#1f4a7a","c2":"#08111c","objs":[["pill",120,0],["red_question_mark",330,0.3,150]],"cap":"Uống Q10 <b>mãi</b> hay <b>một thời gian</b>?"},
+"t1":{"dur":7.8,"c1":"#6a5a10","c2":"#1a1604","objs":[["battery",120,0],["high_voltage",330,0.3,150]],"cap":"Q10 giúp <b>tạo năng lượng</b> cho tế bào"},
+"t2":{"dur":4.3,"c1":"#7a1f2c","c2":"#1a0508","objs":[["anatomical_heart",120,0],["high_voltage",330,0.3,150]],"cap":"<b>Tế bào cơ tim</b> cần nhiều năng lượng"},
+"t3":{"dur":9.6,"c1":"#4a3a7a","c2":"#120c1c","objs":[["older_person",120,0],["chart_decreasing",330,0.3,150]],"cap":"Theo tuổi tác, <b>Q10 thay đổi</b>"},
+"t4":{"dur":3.9,"c1":"#1f5a5a","c2":"#081414","objs":[["calendar",120,0],["red_question_mark",330,0.3,150]],"cap":"Có phải <b>uống suốt đời</b>?"},
+"t5":{"dur":10.3,"c1":"#14502a","c2":"#04140a","objs":[["stethoscope",120,0],["pill",330,0.3,150]],"cap":"Tùy <b>sức khỏe</b> và <b>thuốc đang dùng</b>"},
+"t6":{"dur":7.2,"c1":"#5a1d3a","c2":"#1a0812","objs":[["calendar",120,0],["cross_mark",330,0.3,150]],"cap":"<b>Không có</b> quy định uống suốt đời"},
+"t7":{"dur":15.5,"c1":"#7a2020","c2":"#1a0505","objs":[["pill",120,0],["warning",330,0.3,150]],"cap":"Đang dùng statin: <b>không tự ý</b> bổ sung"},
+"t8":{"dur":8.8,"c1":"#6a4a10","c2":"#161004","objs":[["cut_of_meat",40,0,170],["fish",215,0.25,170],["peanuts",395,0.5,160]],"cap":"Q10 có trong <b>thịt, cá, các loại hạt</b>"},
+"t9":{"dur":9.3,"c1":"#1f6a3a","c2":"#04140a","objs":[["check_mark_button",120,0],["stethoscope",330,0.3,150]],"cap":"Chọn <b>nguồn gốc rõ ràng</b>, hỏi bác sĩ"},
+"t10":{"dur":5.2,"c1":"#7a1f2c","c2":"#1a0508","objs":[["anatomical_heart",120,0],["pill",330,0.3,150]],"cap":"Nhất là khi dùng <b>thuốc tim mạch</b>"},
+"t11":{"dur":7.9,"c1":"#3a2a55","c2":"#120c1c","objs":[["shield",120,0],["pill",330,0.3,150]],"cap":"Q10 là <b>dưỡng chất</b>, không phải thuốc"},
+"t12":{"dur":8.4,"c1":"#1f4a7a","c2":"#08111c","objs":[["mobile_phone",120,0],["speech_balloon",330,0.3,150]],"cap":"<b>Nhắn tin cho Hương</b> để được tư vấn"},
+"t13":{"dur":5.6,"c1":"#7a2a3a","c2":"#1a0810","objs":[["red_heart",120,0],["flexed_biceps",330,0.3,150]],"cap":"<b>Chủ động</b> chăm sóc trái tim"}
+}
