@@ -1,0 +1,13 @@
+{
+"h0":{"dur":3.5,"c1":"#7a2020","c2":"#1a0505","objs":[["chart_decreasing",70,0,170],["warning",230,0.25,140]],"title":"10 thói quen<br>xấu","cap":"Sức khỏe <b>xuống dốc</b>"},
+"h1":{"dur":1.9,"c1":"#6a4a10","c2":"#161004","badge":"01","objs":[["fork_and_knife_with_plate",120,0],["cross_mark",330,0.2,150]],"cap":"<b>Nhịn</b> ăn sáng"},
+"h2":{"dur":2.1,"c1":"#1f4a7a","c2":"#08111c","badge":"02","objs":[["droplet",130,0],["cross_mark",330,0.2,150]],"cap":"<b>Lười</b> uống nước"},
+"h3":{"dur":2.1,"c1":"#13204a","c2":"#04060f","badge":"03","objs":[["crescent_moon",120,0],["mobile_phone",330,0.2,150]],"cap":"Hay <b>thức khuya</b>"},
+"h4":{"dur":2.1,"c1":"#4a3a10","c2":"#161004","badge":"04","objs":[["alarm_clock",120,0],["yawning_face",330,0.2,150]],"cap":"Dậy <b>quá sớm</b>"},
+"h5":{"dur":2.8,"c1":"#7a3a10","c2":"#1a0c04","badge":"05","objs":[["steaming_bowl",120,0],["stopwatch",330,0.2,150]],"cap":"Ăn uống <b>vội vã</b>"},
+"h6":{"dur":2.1,"c1":"#1f5a5a","c2":"#081414","badge":"06","objs":[["person_taking_bath",120,0],["crescent_moon",330,0.2,150]],"cap":"Liên tục <b>tắm đêm</b>"},
+"h7":{"dur":2.3,"c1":"#1f4a7a","c2":"#08111c","badge":"07","objs":[["sleeping_face",120,0],["snowflake",330,0.2,150]],"cap":"Ngủ trên <b>nền nhà lạnh</b>"},
+"h8":{"dur":3.9,"c1":"#7a2020","c2":"#1a0505","badge":"08","objs":[["french_fries",120,0],["cup_with_straw",330,0.2,150]],"cap":"Đồ <b>chiên rán</b>, nước ngọt"},
+"h9":{"dur":2.9,"c1":"#5a3a10","c2":"#1a1004","badge":"09","objs":[["beer_mug",120,0],["cigarette",330,0.2,150]],"cap":"<b>Rượu bia</b>, thuốc lá"},
+"h10":{"dur":3.2,"c1":"#3a2a55","c2":"#120c1c","badge":"10","objs":[["restroom",120,0],["hourglass_done",330,0.2,150]],"cap":"<b>Nhịn</b> đi vệ sinh"}
+}
