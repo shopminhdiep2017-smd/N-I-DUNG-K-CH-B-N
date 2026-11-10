@@ -1,0 +1,18 @@
+{
+"q0":{"dur":12.2,"c1":"#1f4a7a","c2":"#08111c","objs":[["pill",120,0],["red_question_mark",330,0.3,150]],"cap":"Q10 uống <b>mấy viên</b>, <b>lúc nào</b>?"},
+"q1":{"dur":4.2,"c1":"#1f6a3a","c2":"#04140a","objs":[["speech_balloon",120,0],["check_mark_button",330,0.3,150]],"cap":"Hương <b>giải đáp</b> thắc mắc"},
+"q2":{"dur":3.3,"c1":"#4a3a10","c2":"#161004","badge":"01","objs":[["alarm_clock",120,0],["red_question_mark",330,0.3,150]],"cap":"Nên uống Q10 <b>lúc nào</b>?"},
+"q3":{"dur":6.3,"c1":"#6a4a10","c2":"#161004","objs":[["droplet",130,0],["fork_and_knife_with_plate",320,0.3,160]],"cap":"Tan trong dầu: <b>uống cùng bữa ăn</b>"},
+"q4":{"dur":6.8,"c1":"#14502a","c2":"#04140a","objs":[["avocado",120,0],["fish",330,0.3,150]],"cap":"Bữa ăn có <b>chất béo</b> phù hợp"},
+"q5":{"dur":5.2,"c1":"#7a5a10","c2":"#1a1404","objs":[["sun",120,0],["alarm_clock",330,0.3,150]],"cap":"Ưu tiên <b>buổi sáng</b> hoặc <b>trưa</b>"},
+"q6":{"dur":10.1,"c1":"#13204a","c2":"#04060f","objs":[["crescent_moon",120,0],["cross_mark",330,0.3,150]],"cap":"Tránh uống <b>gần giờ ngủ</b>"},
+"q7":{"dur":2.2,"c1":"#3a2a55","c2":"#120c1c","badge":"02","objs":[["pill",120,0],["red_question_mark",330,0.3,150]],"cap":"Mỗi ngày <b>mấy viên</b>?"},
+"q8":{"dur":10.3,"c1":"#1f5a5a","c2":"#081414","objs":[["pill",120,0],["stethoscope",330,0.3,150]],"cap":"Tùy <b>hàm lượng</b> và <b>sức khỏe</b>"},
+"q9":{"dur":9.2,"c1":"#6a5a10","c2":"#1a1604","objs":[["warning",120,0],["pill",330,0.3,150]],"cap":"Hàm lượng cao <b>chưa chắc phù hợp</b>"},
+"q10":{"dur":14.4,"c1":"#7a1f2c","c2":"#1a0508","objs":[["anatomical_heart",120,0],["stethoscope",330,0.3,150]],"cap":"Đang dùng thuốc: <b>hỏi bác sĩ</b>"},
+"q11":{"dur":6.9,"c1":"#7a2020","c2":"#1a0505","objs":[["pill",120,0],["cross_mark",330,0.3,150]],"cap":"<b>Không tự ý</b> tăng liều"},
+"q12":{"dur":12.5,"c1":"#3a2a55","c2":"#120c1c","objs":[["shield",120,0],["pill",330,0.3,150]],"cap":"Bổ sung, <b>không phải thuốc</b>"},
+"q13":{"dur":6.5,"c1":"#1f6a3a","c2":"#04140a","objs":[["check_mark_button",120,0],["pill",330,0.3,150]],"cap":"Chọn đúng, <b>uống đúng hướng dẫn</b>"},
+"q14":{"dur":8.7,"c1":"#1f4a7a","c2":"#08111c","objs":[["stethoscope",120,0],["speech_balloon",330,0.3,150]],"cap":"Hỏi <b>người có chuyên môn</b>"},
+"q15":{"dur":5.6,"c1":"#7a2a3a","c2":"#1a0810","objs":[["red_heart",120,0],["flexed_biceps",330,0.3,150]],"cap":"Chúc cô chú anh chị <b>mạnh khỏe</b>"}
+}
