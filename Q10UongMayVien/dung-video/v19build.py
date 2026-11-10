@@ -1,6 +1,10 @@
 import json,sys,subprocess,glob,wave,numpy as np
 S=sys.argv[1]; U="/root/.claude/uploads/286f3f7c-4b6d-5e93-8ed2-de10f1d62c0a"
-V=glob.glob(U+"/f46c6810*.mp4")[0]; M=glob.glob(U+"/84b6a9ef*.mp3")[0]
+V0=glob.glob(U+"/f46c6810*.mp4")[0]
+CFR=S+"/cfr_f46c6810.mp4"
+import os
+if not os.path.exists(CFR): subprocess.run(["ffmpeg","-v","error","-y","-i",V0,"-vf","fps=30","-c:v","libx264","-preset","slow","-crf","10","-pix_fmt","yuv420p","-an",CFR],check=True)
+V=CFR; M=glob.glob(U+"/84b6a9ef*.mp3")[0]
 DUR=119.56; MUS=0.11; Y=23; CUTS=[(61.57,62.55),(73.6,76.7)]
 iv=json.load(open(S+"/v19/seg.json"))["iv"]
 k=[]

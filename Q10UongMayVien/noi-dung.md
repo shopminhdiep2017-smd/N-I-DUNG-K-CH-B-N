@@ -11,3 +11,8 @@
 - Lọc ồn nền (RNNoise và afftdn), giọng chuẩn hóa −17 LUFS.
 - 16 footage phong cách 3D. Người nói ngồi cao (đỉnh đầu ~195/854 px) nên khung footage thu nhỏ còn ~80% (220x149 px) và đặt ở 23 px để trên và dưới cách đều ~23 px.
 - Nhạc "Gió nơi rời" âm lượng 0,11 (nhỏ hơn giọng ~22 dB).
+
+## Sửa lỗi khớp miệng (xuất lại)
+
+- Video gốc thực tế chỉ ~20 khung hình/giây (dù ghi 30), bản trước cắt hình theo số khung hình giả định 30 fps nên miệng và tay lệch dần với tiếng, và còn sót một đoạn hình im lặng.
+- Bản xuất lại: chuyển video gốc về đúng 30 khung hình/giây trước khi cắt, nên hình và tiếng cắt tại cùng một thời điểm. Đã kiểm tra bằng cách so khung hình ở 5 thời điểm: hình khớp đúng thời điểm của tiếng (sai lệch ≤ 1–2 khung hình).

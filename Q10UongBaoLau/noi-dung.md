@@ -15,3 +15,8 @@
 ## Lời thoại (tóm tắt các ý)
 
 Uống Q10 mãi hay chỉ một thời gian? Q10 có sẵn trong cơ thể, tạo năng lượng cho tế bào, nhất là tế bào cơ tim; lượng Q10 thay đổi theo tuổi. Không phải ai cũng cần uống liên tục: thời gian bổ sung tùy sức khỏe, chế độ ăn, mục đích và thuốc đang dùng; không có quy định người trên 40 tuổi phải dùng mỗi ngày hay suốt đời. Người đang dùng statin không nên tự ý bổ sung chỉ vì đang dùng statin. Q10 có trong thịt, cá, nội tạng, các loại hạt nhưng hàm lượng không cao. Nên chọn sản phẩm nguồn gốc rõ ràng, dùng theo hướng dẫn, hỏi ý kiến bác sĩ/dược sĩ, nhất là khi đang dùng thuốc tim mạch hoặc thuốc chống đông. Q10 là dưỡng chất hỗ trợ, không phải thuốc điều trị bệnh tim và không thay thế thuốc chữa bệnh. Nhắn tin cho Hương để được tư vấn.
+
+## Sửa lỗi khớp miệng (xuất lại)
+
+- Video gốc thực tế chỉ ~20 khung hình/giây (dù ghi 30), bản trước cắt hình theo số khung hình giả định 30 fps nên miệng và tay lệch dần với tiếng, và còn sót một đoạn hình im lặng.
+- Bản xuất lại: chuyển video gốc về đúng 30 khung hình/giây trước khi cắt, nên hình và tiếng cắt tại cùng một thời điểm. Đã kiểm tra bằng cách so khung hình ở 5 thời điểm: hình khớp đúng thời điểm của tiếng (sai lệch ≤ 1–2 khung hình).
