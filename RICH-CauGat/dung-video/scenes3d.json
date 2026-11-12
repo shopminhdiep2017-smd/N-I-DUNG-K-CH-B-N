@@ -1,0 +1,15 @@
+{
+"r0":{"dur":4.9,"c1":"#7a2020","c2":"#1a0505","objs":[["face_with_steam_from_nose",120,0],["tired_face",330,0.3,150]],"cap":"Hay <b>cáu gắt</b> – do quá mệt?"},
+"r1":{"dur":5.1,"c1":"#3a2a55","c2":"#120c1c","objs":[["thinking_face",120,0],["red_question_mark",330,0.3,150]],"cap":"Không chỉ do <b>tính cách</b>"},
+"r2":{"dur":5.6,"c1":"#13204a","c2":"#04060f","objs":[["yawning_face",120,0],["tired_face",330,0.3,150]],"cap":"Thiếu ngủ, <b>mệt mỏi, căng thẳng</b>"},
+"r3":{"dur":7.0,"c1":"#4a3a7a","c2":"#120c1c","objs":[["sleeping_face",120,0],["dizzy",330,0.3,150]],"cap":"Uể oải, <b>mất tập trung</b>"},
+"r4":{"dur":4.2,"c1":"#7a2020","c2":"#1a0505","objs":[["face_with_steam_from_nose",120,0],["anger_symbol",330,0.3,150]],"cap":"Chuyện nhỏ cũng <b>nổi nóng</b>"},
+"r5":{"dur":9.1,"c1":"#5a1d3a","c2":"#1a0812","objs":[["people_hugging",120,0],["broken_heart",330,0.3,150]],"cap":"Ảnh hưởng <b>các mối quan hệ</b>"},
+"r6":{"dur":3.3,"c1":"#1f4a7a","c2":"#08111c","objs":[["laptop",120,0],["chart_decreasing",330,0.3,150]],"cap":"Công việc <b>giảm hiệu quả</b>"},
+"r7":{"dur":6.5,"c1":"#6a5a10","c2":"#1a1604","objs":[["light_bulb",120,0],["red_question_mark",330,0.3,150]],"cap":"<b>Giải pháp</b> là gì?"},
+"r8":{"dur":6.2,"c1":"#14502a","c2":"#04140a","objs":[["sleeping_face",40,0,170],["fork_and_knife_with_plate",215,0.25,170],["droplet",395,0.5,160]],"cap":"Ngủ đủ, ăn đúng giờ, <b>uống đủ nước</b>"},
+"r9":{"dur":8.6,"c1":"#6a5a10","c2":"#1a1604","objs":[["battery",120,0],["high_voltage",330,0.3,150]],"cap":"Q10: <b>năng lượng</b> cho tế bào"},
+"r10":{"dur":8.1,"c1":"#1f5a5a","c2":"#081414","objs":[["pill",120,0],["stethoscope",330,0.3,150]],"cap":"Liều dùng <b>theo nhãn</b> và sức khỏe"},
+"r11":{"dur":8.0,"c1":"#1f4a7a","c2":"#08111c","objs":[["mobile_phone",120,0],["speech_balloon",330,0.3,150]],"cap":"<b>Liên hệ Hương</b> để được tư vấn"},
+"r12":{"dur":5.6,"c1":"#7a2a3a","c2":"#1a0810","objs":[["red_heart",120,0],["flexed_biceps",330,0.3,150]],"cap":"Chúc luôn <b>khỏe mạnh</b>"}
+}
