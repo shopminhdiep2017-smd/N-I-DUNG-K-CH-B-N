@@ -1,0 +1,9 @@
+{
+"k0":{"dur":3.8,"c1":"#1f4a7a","c2":"#08111c","objs":[["pill",120,0],["red_question_mark",330,0.3,150]],"cap":"Uống thuốc mỡ máu, <b>dùng Q10 được?</b>"},
+"k1":{"dur":8.8,"c1":"#7a1f2c","c2":"#1a0508","objs":[["drop_of_blood",130,0],["pill",330,0.3,150]],"cap":"Thuốc mỡ máu nhóm <b>statin</b>"},
+"k2":{"dur":10.7,"c1":"#4a3a10","c2":"#161004","objs":[["chart_decreasing",120,0],["battery",330,0.3,150]],"cap":"Statin có thể làm <b>giảm Q10</b>"},
+"k3":{"dur":2.6,"c1":"#3a2a55","c2":"#120c1c","objs":[["thinking_face",120,0],["pill",330,0.3,150]],"cap":"Nhiều người <b>tìm đến Q10</b>"},
+"k4":{"dur":6.1,"c1":"#7a2020","c2":"#1a0505","objs":[["pill",120,0],["cross_mark",330,0.3,150]],"cap":"<b>Tuyệt đối không</b> tự ý bỏ thuốc"},
+"k5":{"dur":4.8,"c1":"#1f6a3a","c2":"#04140a","objs":[["stethoscope",120,0],["speech_balloon",330,0.3,150]],"cap":"Hỏi <b>bác sĩ đang điều trị</b>"},
+"k6":{"dur":9.0,"c1":"#7a2a3a","c2":"#1a0810","objs":[["shield",120,0],["red_heart",330,0.3,150]],"cap":"Chúc luôn <b>mạnh khỏe</b>"}
+}
