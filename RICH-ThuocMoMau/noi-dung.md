@@ -15,3 +15,12 @@
 ## Cần lưu ý nội dung
 
 - Video nói "Q10… rất hợp với người lớn tuổi", "một lựa chọn đáng cân nhắc" khi đang dùng statin — đã kèm lời khuyên hỏi bác sĩ và không tự ý bỏ thuốc; nên giữ nguyên các câu này khi đăng.
+
+## Bản 2 – bỏ footage, chỉ chèn ảnh Q10 khi nhắc đến
+
+`Video_ThuocMoMauQ10_ban_2.mp4`: giống bản 1 (khớp miệng, giữ hình gốc và phụ đề, lọc ồn, nhạc 0,11) nhưng:
+
+- Bỏ toàn bộ footage 3D.
+- Chỉ hiện ảnh sản phẩm RICH (hiện/ẩn mờ dần) mỗi khi nhắc đến Q10: "…có uống được Q10 không?"; "…tạo ra Q10… lượng Q10 trong máu… tìm đến Q10"; "…thay bằng Q10"; "Rich Coenzyme Q10 của nhà AFC Nhật Bản…" đến hết phần giới thiệu sản phẩm.
+- Dòng cảnh báo dưới đáy hiện từ lần đầu có ảnh sản phẩm đến hết.
+- Dựng bằng `dung-video/v21build_b.py`.
