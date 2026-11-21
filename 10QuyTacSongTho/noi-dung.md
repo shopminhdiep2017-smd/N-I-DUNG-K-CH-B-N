@@ -17,3 +17,6 @@ Chưa có nhạc (chờ file nhạc).
 ## Bản 2 – video mới có tiêu đề vàng
 
 `Video_10QuyTac_ban_2.mp4`: dựng từ video gửi lại (có khung tiêu đề vàng "10 quy tắc giúp bạn sống thọ…" ở 0–3,2 giây). Ảnh quy tắc 1 bắt đầu ngay sau khi tiêu đề tắt để không che tiêu đề; 10 ảnh còn lại như bản 1. Khớp miệng, giữ hình gốc và phụ đề, lọc ồn. Video gốc không có nhạc và chưa có file nhạc gửi kèm → chưa có nhạc.
+
+## Bản 3 – có nhạc
+`Video_10QuyTac_ban_3.mp4`: như bản 2, thêm nhạc "Gió nơi rời" (âm lượng 0,11) và mã hóa chất lượng cao hơn (CRF 14).
