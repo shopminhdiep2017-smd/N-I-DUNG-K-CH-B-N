@@ -1,6 +1,6 @@
 # 6 nguyên nhân gây nhiệt miệng
 
-`Video_NhietMieng_ban_1.mp4` (480x854, 1 phút 0,7 giây; bản gốc 1 phút 3,7 giây). Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,11, CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 đặt ở y=78 (đỉnh đầu ở y≈341, khoảng trên và dưới ảnh bằng nhau).
+`Video_NhietMieng_ban_2.mp4` (480x854, 1 phút 0,7 giây; bản gốc 1 phút 3,7 giây). Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,11, CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 đặt ở y=78 (đỉnh đầu ở y≈341, khoảng trên và dưới ảnh bằng nhau).
 
 | Lời nói (thời gian bản gốc) | Ảnh |
 |---|---|
@@ -10,7 +10,7 @@
 | 3 – Thiếu vitamin B2, B12, B9, sắt, kẽm (25,86–36,2 s) | Khối gỗ B2 B12 B9 Fe Zn |
 | 4 – Căng thẳng, thiếu ngủ (36,58–45,3 s) | Người ôm đầu bên máy tính ban đêm |
 | 5 – Đồ ăn cay, chua (45,67–54,1 s) | Ớt, chanh, cà chua |
-| 6 – Tác dụng phụ của thuốc, bệnh nền | Chờ ảnh thuốc (p35.png) |
+| 6 – Tác dụng phụ của thuốc, bệnh nền | Lọ thuốc, viên nang, ống nghe (54,47–63,6 s) |
 
 ## Lời thoại
 
