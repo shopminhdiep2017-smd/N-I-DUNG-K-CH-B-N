@@ -1,6 +1,6 @@
 # 6 nguyên nhân gây nhiệt miệng
 
-`Video_NhietMieng_ban_3.mp4` (480x854, 1 phút 1,4 giây; giữ thẻ tiêu đề vàng "6 nguyên nhân gây nhiệt miệng bạn nên biết" ở 0–0,6 s; bản gốc 1 phút 3,7 giây). Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,11, CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 đặt ở y=78 (đỉnh đầu ở y≈341, khoảng trên và dưới ảnh bằng nhau).
+`Video_NhietMieng_ban_4.mp4` (480x854, 1 phút 1,4 giây; giữ thẻ tiêu đề vàng "6 nguyên nhân gây nhiệt miệng bạn nên biết" ở 0–0,6 s; bản gốc 1 phút 3,7 giây). Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,065 (khoảng 24 dB dưới giọng nói; bản 3 dùng 0,11 bị át giọng), CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 đặt ở y=78 (đỉnh đầu ở y≈341, khoảng trên và dưới ảnh bằng nhau).
 
 | Lời nói (thời gian bản gốc) | Ảnh |
 |---|---|
