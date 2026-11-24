@@ -1,6 +1,6 @@
 # Những mẹo nhỏ với cồn nhà ai cũng cần
 
-`Video_MeoCon_ban_1.mp4` (480x854, 21,4 giây; bản gốc 22,8 giây). Giữ thẻ tiêu đề vàng ở 0–0,85 s. Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,065 (khoảng 24 dB dưới giọng nói), CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 ở y=51 (đỉnh đầu y≈286, khoảng trên và dưới ảnh bằng nhau).
+`Video_MeoCon_ban_2.mp4` (480x854, 23,7 giây, nói chậm lại 90% – giữ nguyên cao độ giọng, hình chậm theo cùng tỉ lệ nên vẫn khớp miệng; bản gốc 22,8 giây). Giữ thẻ tiêu đề vàng ở 0–0,85 s. Không có câu lặp, chỉ nối liền các câu. Lọc ồn, nhạc "Gió nơi rời" mức 0,065 (khoảng 24 dB dưới giọng nói), CRF 14, giữ nguyên khung hình gốc. Ảnh khung 272x184 ở y=51 (đỉnh đầu y≈286, khoảng trên và dưới ảnh bằng nhau).
 
 | Lời nói (thời gian bản gốc) | Ảnh |
 |---|---|
